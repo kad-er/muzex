@@ -26,3 +26,25 @@ height: fit-content;
     display:flex;
     justify-content: flex-start;
 }
+.spacebetween{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.displayrtl{
+    text-align:end;
+}
+.heavy{
+    font-weight: bolder;
+    font-size: 80pt;
+    line-height: 1em;
+    color:darkcyan;
+}
+.content-ctnr{
+height: 600px;
+display: flex;
+align-items: center;
+}
+.sectionbgimage{
+    background-image: "assets/images/team/team-1-1.jpg";
+}
