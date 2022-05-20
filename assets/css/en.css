@@ -1,0 +1,11 @@
+/* Importing latin fonts */
+@import url('../fonts/PlayfairDisplay/style.css');
+
+
+
+
+
+.navigationdrawer *{
+ font-family: 'Playfair Display' !important;
+ font-size: bold;
+}

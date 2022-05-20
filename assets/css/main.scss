@@ -1,2 +1,66 @@
 /* importing fonts for both arabic and latin lang pages */
 @import url('../fonts/Montserrat/style.css');
+///////////////////////////////////////////////////////////////////////
+/////////////////////////VARIABLES////////////////////////////////////
+
+
+//Giving fonts classes ! so everyone can use them anywhere 0:) ********************************
+.stv {
+    font-family: 'STV' !important;
+}
+
+.montserrat {
+    font-family: 'Montserrat' !important;
+}
+
+.playfair-display {
+    font-family: 'Playfair Display' !important;
+}
+
+.al-watan-headlines {
+    font-family: 'AlWatanHeadlines' !important;
+}
+/********************************************************************************************************************************************************************************/
+
+// the position of the image in the navigation drawer
+.offcanvas-img {
+    position: absolute;
+    width: 900px;
+    top: -100px;
+    height: 1067px;
+}
+
+.navigationdrawer {
+    & > li > a {
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 63.98px;
+        text-align: left;
+        // text-indent: 14vw;
+    }
+    .contacts{
+        &>li{
+            text-align: left !important;
+            // text-indent: 14vw !important;
+            padding-top: 10px;
+        }
+        &>li>a{
+            text-decoration: none;
+            text-align: left !important;
+            font-family: 'Montserrat' !important;
+            display: block;
+        }
+    }
+    .separator{
+        // margin-left: 14vw;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.separator{
+    height: 3px;
+    width: 100px;
+    background-color: #D21034;
+    display: block;
+}
