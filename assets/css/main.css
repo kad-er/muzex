@@ -24,6 +24,17 @@
   height: 1067px;
 }
 
+.main-nav a {
+  font-size: 20px;
+  font-family: 'Montserrat' !important;
+  font-weight: 500;
+  color: black;
+}
+
+.main-nav svg {
+  fill: black;
+}
+
 .navigationdrawer > li > a {
   font-size: 48px;
   font-weight: 500;
