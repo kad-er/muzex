@@ -138,6 +138,7 @@
   background-color: #D21034;
   display: block;
 }
+<<<<<<< HEAD
 
 .red {
   color: #D21034 !important;
@@ -277,3 +278,23 @@ body {
   position: absolute;
 }
 /*# sourceMappingURL=main.css.map */
+=======
+/*# sourceMappingURL=main.css.map */
+/********************************************************************************************************************************************************************************/
+.nav-right{
+  display: flex;
+  justify-content: flex-end;
+}
+.stricked-menu {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 999;
+  background-color: rgb(175, 29, 29);
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 6px 13px 0px;
+  opacity: 0;
+  transform: translateY(-110%);
+  transition: all 0.4s ease 0s;
+}
+>>>>>>> 795fdc316c9e31a92ff73df41fa4609da2ddf481
