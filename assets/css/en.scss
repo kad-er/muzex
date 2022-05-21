@@ -1,0 +1,41 @@
+/* Importing latin fonts */
+@import url('../fonts/PlayfairDisplay/style.css');
+
+
+
+
+/*the navigation drawer nav links font here */
+#pills-tab>li a {
+    font-family: 'Playfair Display' !important;
+    font-size: bold;
+}
+
+#pills-tabContent>div {
+    span {
+        font-family: 'Playfair Display' !important;
+    }
+}
+
+#mobile-nav {
+    &>li>a {
+        font-family: 'Playfair Display' !important;
+    }
+
+    &>li>div>ul>li>a {
+        font-family: 'Playfair Display' !important;
+
+    }
+
+    &>li>div>ul>li>div>ul>li>a {
+        font-family: 'Montserrat' !important;
+
+    }
+}
+
+.section-3,.section-4 {
+
+    h1,
+    h2,a,h3 {
+        font-family: 'Playfair Display' !important;
+    }
+}
