@@ -138,7 +138,6 @@
   background-color: #D21034;
   display: block;
 }
-<<<<<<< HEAD
 
 .red {
   color: #D21034 !important;
@@ -277,24 +276,30 @@ body {
   left: 10%;
   position: absolute;
 }
-/*# sourceMappingURL=main.css.map */
-=======
-/*# sourceMappingURL=main.css.map */
+
 /********************************************************************************************************************************************************************************/
-.nav-right{
+.nav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
+
 .stricked-menu {
   position: fixed;
   top: 0px;
   left: 0px;
   width: 100%;
   z-index: 999;
-  background-color: rgb(175, 29, 29);
-  box-shadow: rgba(0, 0, 0, 0.06) 0px 6px 13px 0px;
+  background-color: #af1d1d;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.06) 0px 6px 13px 0px;
+          box-shadow: rgba(0, 0, 0, 0.06) 0px 6px 13px 0px;
   opacity: 0;
-  transform: translateY(-110%);
+  -webkit-transform: translateY(-110%);
+          transform: translateY(-110%);
+  -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
 }
->>>>>>> 795fdc316c9e31a92ff73df41fa4609da2ddf481
+/*# sourceMappingURL=main.css.map */
