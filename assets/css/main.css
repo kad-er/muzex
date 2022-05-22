@@ -99,11 +99,12 @@
   padding-top: 10px;
 }
 
-.navigationdrawer .contacts > li > a {
+.navigationdrawer .contacts > li a {
   text-decoration: none;
   text-align: left !important;
   font-family: 'Montserrat' !important;
   display: block;
+  color: #1D1D1B;
 }
 
 .navigationdrawer .separator {
@@ -301,5 +302,120 @@ body {
           transform: translateY(-110%);
   -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
+}
+
+/*************************************************************************************************************************************************/
+.section-6 {
+  background-image: url("../images/events.png");
+  background-repeat: no-repeat;
+  background-size: 594px auto;
+  background-position: center;
+}
+
+.section-6 .separator {
+  background-color: #D21034;
+  width: 10vw;
+  min-width: 100px;
+}
+
+.section-6 .nav {
+  margin-top: 400px;
+}
+
+.section-6 .source a {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0em;
+  padding: 0;
+  color: #181818;
+  text-align: left;
+}
+
+.section-6 .title a {
+  font-size: 24px !important;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
+  padding: 0;
+  color: #181818;
+}
+
+.section-6 .title a:hover {
+  color: #D21034;
+}
+
+.section-6 .youth p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: justify;
+}
+
+.section-6 .youth .link {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0.07em;
+  text-align: left;
+  text-decoration: none;
+  color: #181818;
+}
+
+.section-6 .cta-link a {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  color: #D21034;
+  text-decoration: none;
+}
+
+.section-6 .cta-link img {
+  width: 55px;
+}
+
+footer {
+  background-color: #FFFFFF;
+}
+
+footer img {
+  width: 80px;
+  height: 80px;
+}
+
+footer ul a {
+  color: #181818 !important;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+footer h3 {
+  color: #006233;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+footer .social * {
+  color: #006233;
+  font-size: 20px;
+}
+
+footer .copy-rights {
+  background-color: #FFF1E2;
+  color: #D21034;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+footer .input-group button, footer .input-group input {
+  border-color: #7FE0B2;
+  color: #7FE0B2;
+}
+
+footer .input-group input {
+  font-size: 12px;
+  -webkit-box-shadow: #7FE0B2;
+          box-shadow: #7FE0B2;
 }
 /*# sourceMappingURL=main.css.map */

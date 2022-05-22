@@ -32,10 +32,56 @@
     }
 }
 
-.section-3,.section-4 {
+.section-3,
+.section-4 {
 
     h1,
-    h2,a,h3 {
+    h2,
+    a,
+    h3 {
         font-family: 'Playfair Display' !important;
+    }
+}
+
+.section-6 {
+    .title {
+        font-family: 'Playfair Display';
+    }
+
+    .date,
+    .source {
+        font-family: 'Montserrat' !important;
+    }
+
+    .youth {
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Playfair Display' !important;
+        }
+
+        p {
+            font-family: 'Montserrat';
+        }
+
+    }
+
+    .cta-link {
+        font-family: 'Montserrat';
+    }
+}
+
+footer {
+
+    .copy-rights,
+    p,
+    a,
+    .input-group input {
+        font-family: 'Montserrat';
+    }
+
+    h3 {
+        font-family: 'Playfair Display';
     }
 }
