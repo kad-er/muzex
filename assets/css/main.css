@@ -158,6 +158,32 @@ header.add-shadow {
   width: 566px;
 }
 
+@media screen and (max-width: 1200px) {
+  .slider1-text {
+    top: 15vh;
+  }
+  .slider1-text h1,
+  .slider1-text h2 {
+    font-size: 50px !important;
+    line-height: 60px !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .slider1-text {
+    top: 10vh;
+  }
+  .slider1-text h1,
+  .slider1-text h2 {
+    font-size: 40px !important;
+    line-height: 50px !important;
+  }
+  .slider1-text p {
+    font-size: 20px !important;
+    font-weight: 500;
+  }
+}
+
 .slider1-text h1,
 .slider1-text h2 {
   font-family: 'Playfair Display';
@@ -202,6 +228,15 @@ body {
 
 .section-3 .separator {
   width: 32px;
+}
+
+@media screen and (max-width: 1030px) {
+  .section-3 h1, .section-3 h2 {
+    font-size: 20px !important;
+  }
+  .section-3 h1 span, .section-3 h2 span {
+    font-size: 90px !important;
+  }
 }
 
 .section-3 h1,
@@ -408,7 +443,8 @@ footer .copy-rights {
   font-weight: 500;
 }
 
-footer .input-group button, footer .input-group input {
+footer .input-group button,
+footer .input-group input {
   border-color: #7FE0B2;
   color: #7FE0B2;
 }

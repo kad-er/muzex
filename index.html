@@ -23,7 +23,7 @@
     <title>Histroy</title>
 </head>
 
-<body>
+<body style="overflow-x: hidden;">
     <!-- Header containing the main slider and the navigation and the search bar -->
     <header id="header" class="fixed-top">
         <nav class="navbar transparent main-nav">
@@ -46,7 +46,7 @@
                 </div>
 
                 <!-- Main navigation -->
-                <ul  class="nav ">
+                <ul class="nav ">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">History</a>
                     </li>
@@ -404,7 +404,7 @@
                 </ul>
             </div>
 
-            <!-- the main text -->  
+            <!-- the main text -->
             <div class="slider1-text">
                 <div style="z-index: 1;" class="position-relative">
                     <span class="separator position-absolute bottom-0 "
@@ -415,14 +415,15 @@
                         history
                     </h1>
                 </div>
-                <p>
+                <p class="d-none d-md-block ">
                     It is a long established fact that a reader will be distracted by the readable content of a
                     page when looking at its layout. The point of using Lorem Ipsum is that it has a.
                 </p>
             </div>
 
             <div class="video">
-                <video no-controls autoplay loop src="./assets/videos/mainSlider.mp4" id="main-vid" style="width: 100%;height: 100%;" ></video>
+                <video no-controls autoplay loop src="./assets/videos/mainSlider.mp4" id="main-vid"
+                    style="width: 100%;height: 100%;"></video>
             </div>
         </div>
 

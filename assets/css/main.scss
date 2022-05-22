@@ -187,6 +187,29 @@ header.add-shadow {
     color: #FFFFFF;
     width: 566px;
 
+    @media screen and(max-width: 1200px) {
+        top: 15vh;
+        h1,
+        h2 {
+            font-size: 50px !important;
+            line-height: 60px !important;
+        }
+    }
+
+    @media screen and(max-width: 900px) {
+        top: 10vh;
+        h1,
+        h2 {
+            font-size: 40px !important;
+            line-height: 50px !important;
+        }
+        p{
+        font-size: 20px !important;
+        font-weight: 500;
+
+        }
+    }
+
     h1,
     h2 {
         font-family: 'Playfair Display';
@@ -236,6 +259,15 @@ body {
 
     .separator {
         width: 32px;
+    }
+
+    @media screen and (max-width: 1030px) {
+        h1,h2{
+            font-size: 20px !important;
+            span {
+                font-size: 90px !important;
+            }
+        }
     }
 
     h1,
@@ -425,21 +457,21 @@ footer {
         height: 80px;
     }
 
-    ul{
-        a{
-            color: #181818!important;
+    ul {
+        a {
+            color: #181818 !important;
             font-size: 18px;
             font-weight: 400;
         }
     }
 
-    h3{
+    h3 {
         color: #006233;
         font-size: 24px;
         font-weight: 400;
     }
 
-    .social *{
+    .social * {
         color: #006233;
         font-size: 20px;
     }
@@ -451,12 +483,15 @@ footer {
         font-weight: 500;
     }
 
-    .input-group{
-        button, input{
+    .input-group {
+
+        button,
+        input {
             border-color: #7FE0B2;
             color: #7FE0B2;
         }
-        input{
+
+        input {
             font-size: 12px;
             box-shadow: #7FE0B2;
         }
