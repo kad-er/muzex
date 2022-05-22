@@ -144,7 +144,7 @@
   color: #D21034 !important;
 }
 
-header {
+header.add-shadow {
   background: black;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(3%, rgba(0, 0, 0, 0.794528)), to(rgba(0, 0, 0, 0.37037)));
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.794528) 3%, rgba(0, 0, 0, 0.37037) 100%);
@@ -177,13 +177,13 @@ header {
   font-family: 'Montserrat';
 }
 
-#carouselExampleControls .nav a {
+#mainSlider .nav a {
   font-size: 20px;
   color: #FFFFFF;
   display: block;
 }
 
-#carouselExampleControls .nav p {
+#mainSlider .nav p {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   color: #FFFFFF;
