@@ -1,11 +1,69 @@
 /* Importing latin fonts */
-@import url('../fonts/PlayfairDisplay/style.css');
-
-
-
-
-
-.navigationdrawer *{
- font-family: 'Playfair Display' !important;
- font-size: bold;
+@import url("../fonts/PlayfairDisplay/style.css");
+/*the navigation drawer nav links font here */
+#pills-tab > li a {
+  font-family: 'Playfair Display' !important;
+  font-size: bold;
 }
+
+#pills-tabContent > div span {
+  font-family: 'Playfair Display' !important;
+}
+
+#mobile-nav > li > a {
+  font-family: 'Playfair Display' !important;
+}
+
+#mobile-nav > li > div > ul > li > a {
+  font-family: 'Playfair Display' !important;
+}
+
+#mobile-nav > li > div > ul > li > div > ul > li > a {
+  font-family: 'Montserrat' !important;
+}
+
+.section-3 h1,
+.section-3 h2,
+.section-3 a,
+.section-3 h3,
+.section-4 h1,
+.section-4 h2,
+.section-4 a,
+.section-4 h3 {
+  font-family: 'Playfair Display' !important;
+}
+
+.section-6 .title {
+  font-family: 'Playfair Display';
+}
+
+.section-6 .date,
+.section-6 .source {
+  font-family: 'Montserrat' !important;
+}
+
+.section-6 .youth h1,
+.section-6 .youth h2,
+.section-6 .youth h3 {
+  font-family: 'Playfair Display' !important;
+}
+
+.section-6 .youth p {
+  font-family: 'Montserrat';
+}
+
+.section-6 .cta-link {
+  font-family: 'Montserrat';
+}
+
+footer .copy-rights,
+footer p,
+footer a,
+footer .input-group input {
+  font-family: 'Montserrat';
+}
+
+footer h3 {
+  font-family: 'Playfair Display';
+}
+/*# sourceMappingURL=en.css.map */

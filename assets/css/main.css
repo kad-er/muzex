@@ -18,28 +18,80 @@
 
 /********************************************************************************************************************************************************************************/
 .offcanvas-img {
-  position: absolute;
-  width: 900px;
-  top: -100px;
-  height: 1067px;
+  background-image: url("../images/martyrsMemorial.png");
+  background-position: 0 0;
+  background-size: cover;
 }
 
-.main-nav a {
+.main-nav > div > div > a,
+.main-nav > div ul > li > a {
   font-size: 20px;
   font-family: 'Montserrat' !important;
   font-weight: 500;
-  color: black;
+  color: #FFFFFF;
+}
+
+.main-nav .small-secreen > ul > li > a,
+.main-nav .small-secreen > ul > li > div > ul > li a {
+  color: #181818 !important;
 }
 
 .main-nav svg {
-  fill: black;
+  fill: #FFFFFF;
 }
 
-.navigationdrawer > li > a {
+.navigationdrawer .navigationdrawer-tabs {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  background-color: #FFF1E2;
+  right: 0;
+  width: inherit;
+}
+
+.navigationdrawer #pills-tabContent > div .sous-nav a {
+  font-size: 16px !important;
+  color: #181818 !important;
+}
+
+.navigationdrawer #pills-tabContent > div span {
   font-size: 48px;
   font-weight: 500;
   line-height: 63.98px;
   text-align: left;
+}
+
+.navigationdrawer #pills-tabContent > div > div > div > div > a {
+  font-family: 'Playfair Display' !important;
+  color: #181818 !important;
+  font-size: 24px;
+}
+
+.navigationdrawer #pills-tabContent > div a.active {
+  background-color: transparent;
+  color: #D21034 !important;
+}
+
+.navigationdrawer #pills-tabContent > div a:hover {
+  color: #D21034 !important;
+}
+
+.navigationdrawer #pills-tabContent > div .separator {
+  margin: 10px 0 50px 0;
+  width: 90%;
+  background-color: #88BFA5;
+}
+
+.navigationdrawer > div > div > div > ul > li > a {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 63.98px;
+  text-align: left;
+}
+
+.navigationdrawer > div > div > div > ul > li > a.active {
+  background-color: transparent !important;
+  color: #D21034 !important;
 }
 
 .navigationdrawer .contacts > li {
@@ -47,16 +99,38 @@
   padding-top: 10px;
 }
 
-.navigationdrawer .contacts > li > a {
+.navigationdrawer .contacts > li a {
   text-decoration: none;
   text-align: left !important;
   font-family: 'Montserrat' !important;
   display: block;
+  color: #1D1D1B;
 }
 
 .navigationdrawer .separator {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+#mobile-nav > li > a {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 63.98px;
+}
+
+#mobile-nav a:hover,
+#mobile-nav a:focus {
+  color: #D21034;
+}
+
+#mobile-nav > li > div > ul > li > a {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#mobile-nav > li > div > ul > li > div > ul > li > a {
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .separator {
@@ -65,21 +139,283 @@
   background-color: #D21034;
   display: block;
 }
-/*# sourceMappingURL=main.css.map */
-/********************************************************************************************************************************************************************************/
-.nav-right{
-  display: flex;
-  justify-content: flex-end;
+
+.red {
+  color: #D21034 !important;
 }
+
+header {
+  background: black;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(3%, rgba(0, 0, 0, 0.794528)), to(rgba(0, 0, 0, 0.37037)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.794528) 3%, rgba(0, 0, 0, 0.37037) 100%);
+}
+
+.slider1-text {
+  position: absolute;
+  top: 30vh;
+  left: 10vw;
+  color: #FFFFFF;
+  width: 566px;
+}
+
+.slider1-text h1,
+.slider1-text h2 {
+  font-family: 'Playfair Display';
+  font-size: 96px;
+  line-height: 96px;
+  font-weight: 600;
+}
+
+.slider1-text ul.flex-column a {
+  font-weight: 500;
+}
+
+.slider1-text p {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: justify;
+  font-family: 'Montserrat';
+}
+
+#carouselExampleControls .nav a {
+  font-size: 20px;
+  color: #FFFFFF;
+  display: block;
+}
+
+#carouselExampleControls .nav p {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  color: #FFFFFF;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+body {
+  background-color: #FFF1E2;
+}
+
+.section-3 {
+  margin-top: 100px;
+}
+
+.section-3 .separator {
+  width: 32px;
+}
+
+.section-3 h1,
+.section-3 h2 {
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.section-3 h1 span,
+.section-3 h2 span {
+  font-size: 168px;
+  font-weight: 700;
+}
+
+.section-3 a {
+  color: #1D1D1B;
+  cursor: pointer;
+}
+
+.section-3 nav .separator {
+  width: 201px;
+  height: 4px;
+  background-color: #1D1D1B;
+}
+
+.section-3 nav a {
+  font-size: 24px;
+  font-weight: 600;
+  padding-left: 0;
+}
+
+.section-3 nav .nav-link.active ~ .separator {
+  height: 8px !important;
+  background-color: #D21034 !important;
+}
+
+.section-4 .separator {
+  height: 3px;
+  background-color: #7FE0B2;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.section-4 h1,
+.section-4 h2 {
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.section-4 h1 span,
+.section-4 h2 span {
+  font-size: 168px;
+  font-weight: 700;
+}
+
+.section-5 {
+  padding-top: 50px;
+}
+
+.section-5 .card {
+  position: relative;
+}
+
+.section-5 .card .card-content {
+  padding: 30px 16px 16px 16px;
+}
+
+.section-5 .card .card-img img {
+  top: -24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  left: 10%;
+  position: absolute;
+}
+
+/********************************************************************************************************************************************************************************/
+.nav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .stricked-menu {
   position: fixed;
   top: 0px;
   left: 0px;
   width: 100%;
   z-index: 999;
-  background-color: rgb(175, 29, 29);
-  box-shadow: rgba(0, 0, 0, 0.06) 0px 6px 13px 0px;
+  background-color: #af1d1d;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.06) 0px 6px 13px 0px;
+          box-shadow: rgba(0, 0, 0, 0.06) 0px 6px 13px 0px;
   opacity: 0;
-  transform: translateY(-110%);
+  -webkit-transform: translateY(-110%);
+          transform: translateY(-110%);
+  -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
 }
+
+/*************************************************************************************************************************************************/
+.section-6 {
+  background-image: url("../images/events.png");
+  background-repeat: no-repeat;
+  background-size: 594px auto;
+  background-position: center;
+}
+
+.section-6 .separator {
+  background-color: #D21034;
+  width: 10vw;
+  min-width: 100px;
+}
+
+.section-6 .nav {
+  margin-top: 400px;
+}
+
+.section-6 .source a {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0em;
+  padding: 0;
+  color: #181818;
+  text-align: left;
+}
+
+.section-6 .title a {
+  font-size: 24px !important;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
+  padding: 0;
+  color: #181818;
+}
+
+.section-6 .title a:hover {
+  color: #D21034;
+}
+
+.section-6 .youth p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: justify;
+}
+
+.section-6 .youth .link {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0.07em;
+  text-align: left;
+  text-decoration: none;
+  color: #181818;
+}
+
+.section-6 .cta-link a {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  color: #D21034;
+  text-decoration: none;
+}
+
+.section-6 .cta-link img {
+  width: 55px;
+}
+
+footer {
+  background-color: #FFFFFF;
+}
+
+footer img {
+  width: 80px;
+  height: 80px;
+}
+
+footer ul a {
+  color: #181818 !important;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+footer h3 {
+  color: #006233;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+footer .social * {
+  color: #006233;
+  font-size: 20px;
+}
+
+footer .copy-rights {
+  background-color: #FFF1E2;
+  color: #D21034;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+footer .input-group button, footer .input-group input {
+  border-color: #7FE0B2;
+  color: #7FE0B2;
+}
+
+footer .input-group input {
+  font-size: 12px;
+  -webkit-box-shadow: #7FE0B2;
+          box-shadow: #7FE0B2;
+}
+/*# sourceMappingURL=main.css.map */
