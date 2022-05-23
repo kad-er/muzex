@@ -73,10 +73,11 @@ footer h3 {
 
 
 
+
 /* =================================== */
 /*  Banner Secton 
 /* =================================== */
-body{
+.bodyy{
   position: relative;
   
   background-image:linear-gradient(rgba(0,0,0,0.3),transparent),url("/assets/images/bg.png");
@@ -135,7 +136,8 @@ top: 269px;
 }
 
 .banner-content h1 {
-  position: relative;
+  display: flex;
+  align-items: center;
   
   left: 0px;
   top: 70px;
@@ -180,7 +182,8 @@ top: 269px;
 }
 
 .banner-content p{
-  position: relative;
+  display: flex;
+  align-items: center;
 width: 75%;
 height: 130px;
 left: 0px;
@@ -202,7 +205,8 @@ color: #FFFFFF;
 
 .banner-content h5 {
  
-  position: relative;
+  display: flex;
+  align-items: center;
   width: 15%;
   height: 50%;
   left: 0px;
@@ -240,7 +244,7 @@ color: #FFFFFF;
 .banner-img {
   position: relative;
   transform: translate(-50%, -50%);
-  top: 65%;
+  top: 45%;
   left: 55%;
   width: 300px;
   background: #7FE0B2;
@@ -248,8 +252,20 @@ color: #FFFFFF;
   text-align: center;
 }
 
+
+.navbar-brand{
+  height: 70px;
+  display: flex;
+  align-items: center;
+ 
+  color:white;
+}
+
+
+
 #nav-menu-container{
-  position: absolute;
+  display: flex;
+  align-items: center;
   
   left: 150px;
   top: 545px;
@@ -259,7 +275,7 @@ color: #FFFFFF;
 }
 @media (min-width: 1024px) {
   #nav-menu-container {
-    padding-right: 60px;
+    padding-right: 20px;
   }
 }
 
@@ -275,10 +291,14 @@ color: #FFFFFF;
   text-decoration: none;
   display: inline-block;
   color: #fff;
-  font-weight: 40;
-  font-size: 14px;
-  text-transform: uppercase;
+ 
   outline: none;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
 }
 
 .nav-menu > li {
@@ -409,16 +429,7 @@ color: #FFFFFF;
   color: #f53f51;
 }
 
-#mobile-body-overly {
-  width: 100%;
-  height: 100%;
-  z-index: 997;
-  top: 0;
-  left: 0;
-  position: fixed;
-  background: rgba(0, 0, 0, 0.7);
-  display: none;
-}
+
 
 
 
@@ -481,4 +492,17 @@ background-size: cover;
 .nav-menu ul li {
   min-width: 180px;
   text-align: left;
+}
+
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+
+.about .count-box {
+  padding: 60px 0;
+  width: 100%;
+}
+.image{
+  height: 400px;
 }
