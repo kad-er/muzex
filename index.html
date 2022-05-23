@@ -1,3 +1,1043 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html amp lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- The bootstrap css link from node modules -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- fontawsome css link  -->
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- bootstrap javascript  -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- fontawsome script -->
+    <script src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+    <!-- custom css includs importing fonts -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <!-- latin fonts including rtl styles -->
+    <link rel="stylesheet" href="./assets/css/en.css" />
+    <!-- custom js -->
+    <script src="./assets/js/main.js" defer></script>
+    <title>Histroy</title>
+</head>
+
+<body>
+    <!-- Header containing the main slider and the navigation and the search bar -->
+    <header class="fixed-top">
+        <nav class="navbar transparent main-nav">
+            <div class="container d-flex flex-row">
+                <!-- search bar and language link to switch -->
+                <div class="d-flex flex-row ">
+                    <!-- Menu button  -->
+                    <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <!-- the menu humburger icon -->
+                        <svg height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" />
+                        </svg>
+                    </button>
+
+                    <!-- link to toggle the language -->
+                    <a class="nav-link active" x href="index_ar.html">En/Ar</a>
+                </div>
+
+                <!-- Main navigation -->
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <svg height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- The navigation drawer  -->
+                <div class="offcanvas offcanvas-start navigationdrawer" style="width: 100vw" tabindex="-1"
+                    id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <!-- the close button in the top -->
+                    <div class="offcanvas-header d-flex flex-row-reverse fixed-top">
+                        <h5 class="offcanvas-title text-white" style="font-weight: 100" id="offcanvasNavbarLabel">
+                            #Martyr's_memorial
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <!-- this section is the menu that will show up when window > 768px -->
+                    <div class="row mt-5 d-none d-md-block d-lg-block d-xxl-block">
+                        <!-- the content of the navigation drawer  -->
+                        <div class="col-lg-5 col-md-6 col-sm-12">
+                            <div class="row">
+                                <div class="col-md-2 col-lg-3"></div>
+                                <!-- Nav menu  -->
+                                <ul id="pills-tab" role="tablist"
+                                    class="col-md-10 nav nav-pills col-lg-9 offset-sm-4 offset-2 navbar-nav d-flex flex-column pt-5">
+                                    <li class="nav-item text-center text-capitalize">
+                                        <a class="nav-link text-black tab-trigger" aria-current="page" id="history"
+                                            data-bs-toggle="pill" data-bs-target="#history-tab" type="button" role="tab"
+                                            aria-controls="history-tab" aria-selected="false">History</a>
+                                    </li>
+                                    <li class="nav-item text-center text-capitalize">
+                                        <a class="nav-link text-black tab-trigger" href="#" id="years"
+                                            data-bs-toggle="pill" data-bs-target="#years-tab" type="button" role="tab"
+                                            aria-controls="years-tab" aria-selected="false">60 years</a>
+                                    </li>
+                                    <li class="nav-item text-center text-capitalize">
+                                        <a class="nav-link text-black tab-trigger" aria-current="page" href="#"
+                                            id="events" data-bs-toggle="pill" data-bs-target="#events-tab" type="button"
+                                            role="tab" aria-controls="evenst-tab" aria-selected="false">Events</a>
+                                    </li>
+                                    <li class="nav-item text-center text-capitalize">
+                                        <a class="nav-link text-black" href="#">Contact Us</a>
+                                    </li>
+                                    <!-- the red separator -->
+                                    <div class="separator"></div>
+                                    <div class="contacts">
+                                        <li class="nav-item text-center text-capitalize">
+                                            <a class="text-black" href="tel:+213xxxxxxxxx">023-555-555</a>
+                                        </li>
+                                        <li class="nav-item text-center text-capitalize">
+                                            <a class="text-black"
+                                                href="mailto:contact@domain.com">contact@domain.com</a>
+                                        </li>
+                                        <li class="nav-item text-center text-capitalize">
+                                            <!-- Social media Icons -->
+                                            <span class="mb-2 d-block"><strong class="montserrat">Follow
+                                                    us</strong></span>
+                                            <div class="row">
+                                                <div class="col-1">
+                                                    <a href="#" target="_blank" rel="noopener noreferrer">
+                                                        <i class="fa-brands fa-facebook-f"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="col-1">
+                                                    <a href="#" target="_blank" rel="noopener noreferrer">
+                                                        <i class="fa-brands fa-twitter"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="col-1">
+                                                    <a href="#" target="_blank" rel="noopener noreferrer">
+                                                        <i class="fa-brands fa-instagram"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- the image of the martyr's memorial -->
+                        <div class="col-lg-7 col-md-5">
+                            <div class="tab-content navigationdrawer-tabs" id="pills-tabContent">
+                                <!-- tabs starts from here  -->
+                                <div class="tab-content" id="pills-tabContent">
+
+                                    <!-- history tab -->
+                                    <div class="tab-pane fade p-5" id="history-tab" role="tabpanel"
+                                        aria-labelledby="pills-history-tab">
+                                        <span class="mt-3 d-block">History</span>
+                                        <div class="separator"></div>
+                                        <div class="d-flex align-items-start">
+                                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                                                aria-orientation="vertical">
+                                                <a class="nav-link active" id="v-pills-b-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-b" type="button" role="tab"
+                                                    aria-controls="v-pills-b" aria-selected="true">The Prehistoric
+                                                </a>
+                                                <a class="nav-link" id="v-pills-a-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-a" type="button" role="tab"
+                                                    aria-controls="v-pills-a" aria-selected="false">The Antiquity
+                                                </a>
+                                                <a class="nav-link" id="v-pills-z-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-z" type="button" role="tab"
+                                                    aria-controls="v-pills-z" aria-selected="false">Middle Ages</a>
+                                                <a class="nav-link" id="v-pills-y-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-y" type="button" role="tab"
+                                                    aria-controls="v-pills-y" aria-selected="false">Modern Times</a>
+                                                <a class="nav-link" id="v-pills-x-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-x" type="button" role="tab"
+                                                    aria-controls="v-pills-x" aria-selected="false">Contomporary
+                                                    era</a>
+                                            </div>
+                                            <!-- the tab > tab contents -->
+                                            <div class="tab-content" id="v-pills-tabContent">
+
+                                                <div class="tab-pane fade show active" id="v-pills-b" role="tabpanel"
+                                                    aria-labelledby="v-pills-b-tab">
+                                                    <ul class="sous-nav nav flex-column">
+                                                        <li class="nav-item">
+                                                            <a href="#" class="nav-link">
+                                                                Prehistoric Man
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="#" class="nav-link">
+                                                                Prehistoric civilization
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="#" class="nav-link">
+                                                                Prehistoric sites
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-a" role="tabpanel"
+                                                    aria-labelledby="v-pills-a-tab">
+                                                    The Antiquity
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-z" role="tabpanel"
+                                                    aria-labelledby="v-pills-z-tab">
+                                                    Middle Ages
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-y" role="tabpanel"
+                                                    aria-settings="v-pills-y-tab">
+                                                    Modern Times
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-x" role="tabpanel"
+                                                    aria-labelledby="v-pills-x-tab">
+                                                    Contomporary era
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 60 years tab -->
+                                    <div class="tab-pane fade" id="years-tab" role="tabpanel"
+                                        aria-labelledby="pills-years-tab">
+                                        2222222222222222222222222
+                                    </div>
+
+                                    <!-- events tab  -->
+                                    <div class="tab-pane fade" id="events-tab" role="tabpanel"
+                                        aria-labelledby="pills-events-tab">
+                                        333333333333333333
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="offcanvas-img">
+
+                            </div>
+
+                            <!-- <img class="offcanvas-img" id="offcanvas-img" src="./assets/images/martyrsMemorial.png"
+                                    alt="Martyr's Memorial Algeria" /> -->
+                        </div>
+                    </div>
+
+                    <!-- this window will show in small screens  -->
+                    <div class="row mt-5 small-secreen">
+                        <ul class="nav d-flex flex-column justify-content-center text-center" id="mobile-nav">
+                            <li class="nav-item text-center">
+                                <a class="nav-link text-center" data-bs-toggle="collapse" href="#h" role="button"
+                                    aria-expanded="false" aria-controls="h">
+                                    History
+                                </a>
+                                <div class="collapse" id="h">
+                                    <ul class="sous-nav nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="collapse" href="#man" role="button"
+                                                aria-expanded="false" aria-controls="man">
+                                                The Prehistoric
+                                            </a>
+                                            <div class="collapse" id="man">
+                                                <ul class="sous-nav nav flex-column">
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link">
+                                                            Prehistoric Man
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link">
+                                                            Prehistoric sites
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link">
+                                                            Prehistoric civilization
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                The Antiquity
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                Middle Ages
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                Modern Times
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                Contomporary era
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item text-center">
+                                <a class="nav-link text-center" data-bs-toggle="collapse" href="#h" role="button"
+                                    aria-expanded="false" aria-controls="h">
+                                    60 years
+                                </a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <a class="nav-link text-center" data-bs-toggle="collapse" href="#h" role="button"
+                                    aria-expanded="false" aria-controls="h">
+                                    Events
+                                </a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <a class="nav-link text-center" data-bs-toggle="collapse" href="#h" role="button"
+                                    aria-expanded="false" aria-controls="h">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- the main content -->
+    <main>
+        <!-- the slider here  -->
+        <div id="carouselExampleControls" class="carousel slide position-relative" data-bs-ride="carousel"
+            data-wrap="true">
+            <div class="position-absolute" style="right: 30px;top: 20%;background-color: transparent;z-index: 1;">
+
+                <ul class="nav d-flex flex-column justify-content-center align-items-center">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a href="#" class="nav-link">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <p class="p-0 m-0 mt-4">Folow us</p>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="carousel-inner ">
+                <div class="carousel-item active">
+                    <div class="slider1-text">
+                        <div style="z-index: 1;" class="position-relative">
+                            <span class="separator position-absolute bottom-0 "
+                                style="width: 356px;height: 45px;background: #7FE0B2; z-index: -1;                            ;">
+                            </span>
+                            <h1 style="z-index: 1;">Let’s <br>
+                                discover our <br>
+                                history
+                            </h1>
+                        </div>
+                        <p>
+                            It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout. The point of using Lorem Ipsum is that it has a.
+                        </p>
+                    </div>
+                    <img src="./assets/images/mainslide.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/mainslide.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/mainslide.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+
+        <!-- the secondary navbar + read more atricles + title -->
+        <div class="p-5 m-0 section-3">
+
+            <!-- title and read more wedget -->
+            <div class="row m-0 mt-5">
+
+                <!-- the title  -->
+                <div class="col-9">
+                    <h1 class="ms-5">the <br> <span class="red">History</span> <br> of how we got <br> here.</h1>
+                </div>
+
+                <!-- the read more widget -->
+                <div class="col-3">
+                    <h3>read more articles</h3>
+                    <ul class="nav d-flex flex-column align-items-center">
+                        <li>
+                            <div>
+                                <div class="d-flex flex-row justify-start align-items-center">
+                                    <div class="separator"></div>
+                                    <a class="nav-link">Mr Jhon DOE</a>
+                                </div>
+                            </div>
+                            <div>
+                                <p>It is a long established fact that a reader will be distracted</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="d-flex flex-row justify-start align-items-center">
+                                    <div class="separator"></div>
+                                    <a class="nav-link">Mr Jhon DOE</a>
+                                </div>
+                            </div>
+                            <div>
+                                <p>It is a long established fact that a reader will be distracted</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="d-flex flex-row justify-start align-items-center">
+                                    <div class="separator"></div>
+                                    <a class="nav-link">Mr Jhon DOE</a>
+                                </div>
+                            </div>
+                            <div>
+                                <p>It is a long established fact that a reader will be distracted</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="d-flex flex-row justify-start align-items-center">
+                                    <div class="separator"></div>
+                                    <a class="nav-link">Mr Jhon DOE</a>
+                                </div>
+                            </div>
+                            <div>
+                                <p>It is a long established fact that a reader will be distracted</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="d-flex flex-row justify-start align-items-center">
+                                    <div class="separator"></div>
+                                    <a class="nav-link">Mr Jhon DOE</a>
+                                </div>
+                            </div>
+                            <div>
+                                <p>It is a long established fact that a reader will be distracted</p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <!-- secondary navigation  -->
+            <nav class="p-5">
+                <ul class="nav d-flex flex-row justify-content-center">
+                    <!-- add active class to <a> tag to make it active  -->
+                    <li class="nav-item px-3 d-flex flex-column-reverse">
+                        <a href="#" class="nav-link active">Prehistory</a>
+                        <div class="separator"></div>
+                    </li>
+                    <li class="nav-item px-3 d-flex flex-column-reverse">
+                        <a href="#" class="nav-link">Antiquity</a>
+                        <div class="separator"></div>
+                    </li>
+                    <li class="nav-item px-3 d-flex flex-column-reverse">
+                        <a href="#" class="nav-link">Middle Ages</a>
+                        <div class="separator"></div>
+                    </li>
+                    <li class="nav-item px-3 d-flex flex-column-reverse">
+                        <a href="#" class="nav-link">Modern times</a>
+                        <div class="separator"></div>
+                    </li>
+                    <li class="nav-item px-3 d-flex flex-column-reverse">
+                        <a href="#" class="nav-link">Contemporary era</a>
+                        <div class="separator"></div>
+                    </li>
+                </ul>
+            </nav>
+
+
+
+
+        </div>
+
+        <!-- the 60 years title  -->
+        <div class="container section-4">
+            <!-- the title  -->
+            <h1 class="ms-5"><span class="red">60</span> years</h1>
+            <div class="separator"></div>
+        </div>
+
+        <!-- the grid of posts -->
+        <!-- WARNING: Don't open this tag u may die...that's if you already closed it...#Joke -->
+        <div class="container-fluid section-5">
+            <div class="row px-5">
+                <div class="mb-4 col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/logo.png" alt="MAE">
+                        </div>
+                        <div class="card-content">
+                            <div>MAE</div>
+                            <div class="separator"></div>
+                            <p>Ministère des Affaires étrangères et de la Communauté nationale à l'étranger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/logo.png" alt="MAE">
+                        </div>
+                        <div class="card-content">
+                            <div>MAE</div>
+                            <div class="separator"></div>
+                            <p>Ministère des Affaires étrangères et de la Communauté nationale à l'étranger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/logo.png" alt="MAE">
+                        </div>
+                        <div class="card-content">
+                            <div>MAE</div>
+                            <div class="separator"></div>
+                            <p>Ministère des Affaires étrangères et de la Communauté nationale à l'étranger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/logo.png" alt="MAE">
+                        </div>
+                        <div class="card-content">
+                            <div>MAE</div>
+                            <div class="separator"></div>
+                            <p>Ministère des Affaires étrangères et de la Communauté nationale à l'étranger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/logo.png" alt="MAE">
+                        </div>
+                        <div class="card-content">
+                            <div>MAE</div>
+                            <div class="separator"></div>
+                            <p>Ministère des Affaires étrangères et de la Communauté nationale à l'étranger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/logo.png" alt="MAE">
+                        </div>
+                        <div class="card-content">
+                            <div>MAE</div>
+                            <div class="separator"></div>
+                            <p>Ministère des Affaires étrangères et de la Communauté nationale à l'étranger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/logo.png" alt="MAE">
+                        </div>
+                        <div class="card-content">
+                            <div>MAE</div>
+                            <div class="separator"></div>
+                            <p>Ministère des Affaires étrangères et de la Communauté nationale à l'étranger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/logo.png" alt="MAE">
+                        </div>
+                        <div class="card-content">
+                            <div>MAE</div>
+                            <div class="separator"></div>
+                            <p>Ministère des Affaires étrangères et de la Communauté nationale à l'étranger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/logo.png" alt="MAE">
+                        </div>
+                        <div class="card-content">
+                            <div>MAE</div>
+                            <div class="separator"></div>
+                            <p>Ministère des Affaires étrangères et de la Communauté nationale à l'étranger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/logo.png" alt="MAE">
+                        </div>
+                        <div class="card-content">
+                            <div>MAE</div>
+                            <div class="separator"></div>
+                            <p>Ministère des Affaires étrangères et de la Communauté nationale à l'étranger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/logo.png" alt="MAE">
+                        </div>
+                        <div class="card-content">
+                            <div>MAE</div>
+                            <div class="separator"></div>
+                            <p>Ministère des Affaires étrangères et de la Communauté nationale à l'étranger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/logo.png" alt="MAE">
+                        </div>
+                        <div class="card-content">
+                            <div>MAE</div>
+                            <div class="separator"></div>
+                            <p>Ministère des Affaires étrangères et de la Communauté nationale à l'étranger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/logo.png" alt="MAE">
+                        </div>
+                        <div class="card-content">
+                            <div>MAE</div>
+                            <div class="separator"></div>
+                            <p>Ministère des Affaires étrangères et de la Communauté nationale à l'étranger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/logo.png" alt="MAE">
+                        </div>
+                        <div class="card-content">
+                            <div>MAE</div>
+                            <div class="separator"></div>
+                            <p>Ministère des Affaires étrangères et de la Communauté nationale à l'étranger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/logo.png" alt="MAE">
+                        </div>
+                        <div class="card-content">
+                            <div>MAE</div>
+                            <div class="separator"></div>
+                            <p>Ministère des Affaires étrangères et de la Communauté nationale à l'étranger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/logo.png" alt="MAE">
+                        </div>
+                        <div class="card-content">
+                            <div>MAE</div>
+                            <div class="separator"></div>
+                            <p>Ministère des Affaires étrangères et de la Communauté nationale à l'étranger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/logo.png" alt="MAE">
+                        </div>
+                        <div class="card-content">
+                            <div>MAE</div>
+                            <div class="separator"></div>
+                            <p>Ministère des Affaires étrangères et de la Communauté nationale à l'étranger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/logo.png" alt="MAE">
+                        </div>
+                        <div class="card-content">
+                            <div>MAE</div>
+                            <div class="separator"></div>
+                            <p>Ministère des Affaires étrangères et de la Communauté nationale à l'étranger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/logo.png" alt="MAE">
+                        </div>
+                        <div class="card-content">
+                            <div>MAE</div>
+                            <div class="separator"></div>
+                            <p>Ministère des Affaires étrangères et de la Communauté nationale à l'étranger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/logo.png" alt="MAE">
+                        </div>
+                        <div class="card-content">
+                            <div>MAE</div>
+                            <div class="separator"></div>
+                            <p>Ministère des Affaires étrangères et de la Communauté nationale à l'étranger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/logo.png" alt="MAE">
+                        </div>
+                        <div class="card-content">
+                            <div>MAE</div>
+                            <div class="separator"></div>
+                            <p>Ministère des Affaires étrangères et de la Communauté nationale à l'étranger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/logo.png" alt="MAE">
+                        </div>
+                        <div class="card-content">
+                            <div>MAE</div>
+                            <div class="separator"></div>
+                            <p>Ministère des Affaires étrangères et de la Communauté nationale à l'étranger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/logo.png" alt="MAE">
+                        </div>
+                        <div class="card-content">
+                            <div>MAE</div>
+                            <div class="separator"></div>
+                            <p>Ministère des Affaires étrangères et de la Communauté nationale à l'étranger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/logo.png" alt="MAE">
+                        </div>
+                        <div class="card-content">
+                            <div>MAE</div>
+                            <div class="separator"></div>
+                            <p>Ministère des Affaires étrangères et de la Communauté nationale à l'étranger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/logo.png" alt="MAE">
+                        </div>
+                        <div class="card-content">
+                            <div>MAE</div>
+                            <div class="separator"></div>
+                            <p>Ministère des Affaires étrangères et de la Communauté nationale à l'étranger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/logo.png" alt="MAE">
+                        </div>
+                        <div class="card-content">
+                            <div>MAE</div>
+                            <div class="separator"></div>
+                            <p>Ministère des Affaires étrangères et de la Communauté nationale à l'étranger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/logo.png" alt="MAE">
+                        </div>
+                        <div class="card-content">
+                            <div>MAE</div>
+                            <div class="separator"></div>
+                            <p>Ministère des Affaires étrangères et de la Communauté nationale à l'étranger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/logo.png" alt="MAE">
+                        </div>
+                        <div class="card-content">
+                            <div>MAE</div>
+                            <div class="separator"></div>
+                            <p>Ministère des Affaires étrangères et de la Communauté nationale à l'étranger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/logo.png" alt="MAE">
+                        </div>
+                        <div class="card-content">
+                            <div>MAE</div>
+                            <div class="separator"></div>
+                            <p>Ministère des Affaires étrangères et de la Communauté nationale à l'étranger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/logo.png" alt="MAE">
+                        </div>
+                        <div class="card-content">
+                            <div>MAE</div>
+                            <div class="separator"></div>
+                            <p>Ministère des Affaires étrangères et de la Communauté nationale à l'étranger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/logo.png" alt="MAE">
+                        </div>
+                        <div class="card-content">
+                            <div>MAE</div>
+                            <div class="separator"></div>
+                            <p>Ministère des Affaires étrangères et de la Communauté nationale à l'étranger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/logo.png" alt="MAE">
+                        </div>
+                        <div class="card-content">
+                            <div>MAE</div>
+                            <div class="separator"></div>
+                            <p>Ministère des Affaires étrangères et de la Communauté nationale à l'étranger</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container section-4 d-flex flex-column align-items-end">
+            <h1 style="color: #FFFFFF;font-size: 168px;">Events</h1>
+            <div class="separator float-start"></div>
+        </div>
+
+        <!-- Events wedget + read more  -->
+        <div class="container section-6 mt-5">
+            <div class="row">
+                <div class="col-4">
+                    <ul class="d-flex nav flex-column">
+                        <li class="nav-item p-4">
+                            <div class="separator"></div>
+                            <!-- date -->
+                            <div class="date pt-2">Tue, 10 - Wed, 11 May 2022</div>
+                            <!-- source -->
+                            <div class="source pt-2">
+                                <a href="#" class="nav-link" target="_blank" rel="noopener noreferrer">
+                                    University of Ouargla, Ouargla • Online
+                                </a>
+                            </div>
+                            <div class="title pt-2">
+                                <a href="#" class="nav-link">
+                                    <p>
+                                        International Conference on the Reality of the Linguistic Policy in the World
+                                        (ICRLPW22)
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item p-4">
+                            <div class="separator"></div>
+                            <!-- date -->
+                            <div class="date pt-2">Tue, 10 - Wed, 11 May 2022</div>
+                            <!-- source -->
+                            <div class="source pt-2">
+                                <a href="#" class="nav-link" target="_blank" rel="noopener noreferrer">
+                                    University of Ouargla, Ouargla • Online
+                                </a>
+                            </div>
+                            <div class="title pt-2">
+                                <a href="#" class="nav-link">
+                                    <p>
+                                        International Conference on the Reality of the Linguistic Policy in the World
+                                        (ICRLPW22)
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-5 offset-3 mt-5">
+                    <div class="youth">
+                        <h1 style="color: #7FE0B2;font-size: 168px;">Youth</h1>
+                        <p>'Content here, content here', making it look like readable English. Many desktop publishing
+                            packages and web page editors now use Lorem Ipsum as their default model text, and a search
+                            for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have
+                            evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the
+                            like).
+
+                        </p>
+                        <a href="#" class="link text-end d-block">View more <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="cta-link mt-5 pt-5">
+                        <a href="#" class="nav-link d-flex flex-row justify-content-end">
+                            <span>
+                                Media & <br />
+                                Communication
+                            </span>
+                            <span class="d-block ps-4">
+                                <img src="./assets/icons/arrowright.png" alt="arrow">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="pt-5 pb-0 px-3">
+        <div class="row">
+            <div class="col-4">
+                <div class="p-4"><img src="./assets/images/60logo.png" alt="60 algeria logo independance"></div>
+                <p class="p-4 pt-0">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum lectus mi cursus dolor, vel
+                    hendrerit erat amet tempus. vitae
+                </p>
+                <div class="p-4 pt-0 social">
+                    <span>follow us</span>
+                    <a href="#" class="nav-link d-inline" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="nav-link d-inline" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="nav-link d-inline" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="col-2">
+                <h3 class="py-3">Quick Links</h3>
+                <ul class="nav d-flex flex-column">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <h3 class="py-3">Useful Links</h3>
+                <ul class="nav d-flex flex-column">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Terms and conditions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-4 mt-4 px-5">
+                <form action="#" method="post">
+                    <div class="input-group mb-1">
+                        <input type="text" class="form-control p-2 ps-3" placeholder="example@domain.com"
+                            aria-label="example@domain.com" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary" type="submit" type="button" id="button-addon2">
+                            <i class="fa-solid fa-envelope"></i>
+                        </button>
+                    </div>
+                </form>
+                <p style="font-size: 12px;">Subscribe to our newsletter to explore more
+                    about our history.</p>
+
+            </div>
+        </div>
+        <div class="row">
+            <p class="copy-rights p-4 m-0 text-center">
+                Copyright
+                Ⓒ
+                2022, All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+
+=======
 <!DOCTYPE html>
 <html amp lang="en">
 
@@ -1085,4 +2125,5 @@
     </footer>
 </body>
 
+>>>>>>> df8a82443bb1f3962d62e3a3010f0aac6b89a1b6
 </html>
