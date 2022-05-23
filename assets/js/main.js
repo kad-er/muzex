@@ -1,11 +1,10 @@
 const tabTriggers = document.getElementsByClassName("tab-trigger");
 const menuTabs = document.getElementById("menu-tabs");
-const mainSlider = document.getElementById('main-slider')
-const header = document.getElementById('header');
+const mainSlider = document.getElementById("main-slider");
+const header = document.getElementById("header");
 
-
-function watchNavBar(){
-    // get the header height first
+function watchNavBar() {
+  // get the header height first
 }
 
 window.addEventListener("load", ui);
@@ -19,4 +18,5 @@ function ui() {
     });
   }
   //the nav bar scroll
+  
 }
