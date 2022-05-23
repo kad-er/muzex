@@ -1,3 +1,267 @@
 /* Importing arabic fonts */
 @import url('../fonts/STV/style.css');
 @import url('../fonts/AlWatanHeadlines-Bold/style.css');
+
+
+
+nav a{
+    font-family: 'STV' !important;
+}
+
+
+/*the navigation drawer nav links font here */
+#pills-tab>li a {
+    font-family: 'AlWatanHeadlines' !important;
+    font-size: bold;
+}
+
+#pills-tabContent>div {
+    span {
+        font-family: 'AlWatanHeadlines' !important;
+    }
+}
+
+#mobile-nav {
+    &>li>a {
+        font-family: 'AlWatanHeadlines' !important;
+    }
+
+    &>li>div>ul>li>a {
+        font-family: 'AlWatanHeadlines' !important;
+
+    }
+
+    &>li>div>ul>li>div>ul>li>a {
+        font-family: 'STV' !important;
+
+    }
+}
+
+.section-3,
+.section-4 {
+
+    h1,
+    h2,
+    a,
+    h3 {
+        font-family: 'AlWatanHeadlines' !important;
+    }
+}
+
+.section-6 {
+    .title {
+        font-family: 'AlWatanHeadlines';
+    }
+
+    .date,
+    .source {
+        font-family: 'STV' !important;
+    }
+
+    .youth {
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'AlWatanHeadlines' !important;
+        }
+
+        p {
+            font-family: 'STV';
+        }
+
+    }
+
+    .cta-link {
+        font-family: 'STV';
+    }
+}
+
+footer {
+
+    .copy-rights,
+    p,
+    a,
+    .input-group input {
+        font-family: 'STV';
+    }
+
+    h3 {
+        font-family: 'AlWatanHeadlines';
+    }
+}
+
+
+.slider1-text {
+    right: 10vw !important;
+    left: unset !important;
+    text-align: right;
+}
+
+
+
+.section-6 {
+    background-image: url('../images/martyrsMemorial.png');
+    background-repeat: no-repeat;
+    background-size: 594px auto;
+    background-position: center;
+
+    .separator {
+        background-color: #D21034;
+        width: 10vw;
+        min-width: 100px;
+    }
+
+
+    .nav {
+        margin-top: 400px;
+        @media screen and (max-width: 992px) {
+            margin-top: 50px !important;
+        }
+    }
+
+    .source a {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 20px;
+        letter-spacing: 0em;
+        padding: 0;
+        color: #181818;
+        text-align: left;
+    }
+
+    .title a {
+        font-size: 24px !important;
+        font-weight: 500;
+        line-height: 32px;
+        text-align: left;
+        padding: 0;
+        color: #181818;
+    }
+
+    .title a:hover {
+        color: #D21034;
+    }
+
+    .youth {
+        p {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 29px;
+            letter-spacing: 0em;
+            text-align: justify;
+
+        }
+
+        .link {
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 15px;
+            letter-spacing: 0.07em;
+            text-align: left;
+            text-decoration: none;
+            color: #181818;
+        }
+
+    }
+
+    .cta-link {
+        a {
+            font-size: 16px;
+            font-weight: 700;
+            text-align: left;
+            color: #D21034;
+            text-decoration: none;
+        }
+
+        img {
+            width: 55px;
+        }
+    }
+}
+
+
+.navigationdrawer {
+    .navigationdrawer-tabs {
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        background-color: #FFF1E2;
+        right: 0 !important;
+        left: unset;
+        width: inherit;
+    }
+
+    #pills-tabContent>div {
+        .sous-nav {
+            a {
+                font-size: 16px !important;
+                color: #181818 !important;
+            }
+        }
+
+        span {
+            font-size: 48px;
+            font-weight: 500;
+            line-height: 63.98px;
+            text-align: left;
+        }
+
+        &>div>div>div>a {
+            font-family: 'Playfair Display' !important;
+            color: #181818 !important;
+            font-size: 24px;
+        }
+
+        a.active {
+            background-color: transparent;
+            color: #D21034 !important;
+        }
+
+        a:hover {
+            color: #D21034 !important;
+        }
+
+        .separator {
+            margin: 10px 0 50px 0;
+            width: 90%;
+            background-color: #88BFA5;
+        }
+    }
+
+
+    &>div>div>div>ul>li>a {
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 63.98px;
+        text-align: left;
+
+        // text-indent: 14vw;
+    }
+
+    &>div>div>div>ul>li>a.active {
+        background-color: transparent !important;
+        color: #D21034 !important;
+    }
+
+    .contacts {
+        &>li {
+            text-align: left !important;
+            padding-top: 10px;
+        }
+
+        &>li a {
+            text-decoration: none;
+            text-align: left !important;
+            font-family: 'Montserrat' !important;
+            display: block;
+            color: #1D1D1B;
+        }
+    }
+
+    .separator {
+        // margin-left: 14vw;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
