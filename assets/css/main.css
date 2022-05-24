@@ -1,5 +1,6 @@
 /* importing fonts for both arabic and latin lang pages */
 @import url("../fonts/Montserrat/style.css");
+
 .stv {
   font-family: 'STV' !important;
 }
@@ -23,16 +24,16 @@
   background-size: cover;
 }
 
-.main-nav > div > div > a,
-.main-nav > div ul > li > a {
+.main-nav>div>div>a,
+.main-nav>div ul>li>a {
   font-size: 20px;
   font-family: 'Montserrat';
   font-weight: 500;
   color: #FFFFFF;
 }
 
-.main-nav .small-secreen > ul > li > a,
-.main-nav .small-secreen > ul > li > div > ul > li a {
+.main-nav .small-secreen>ul>li>a,
+.main-nav .small-secreen>ul>li>div>ul>li a {
   color: #181818 !important;
 }
 
@@ -40,7 +41,7 @@
   fill: #FFFFFF;
 }
 
-#mobile-nav > li > a {
+#mobile-nav>li>a {
   font-size: 30px;
   font-weight: 400;
   line-height: 63.98px;
@@ -51,12 +52,12 @@
   color: #D21034;
 }
 
-#mobile-nav > li > div > ul > li > a {
+#mobile-nav>li>div>ul>li>a {
   font-size: 24px;
   font-weight: 400;
 }
 
-#mobile-nav > li > div > ul > li > div > ul > li > a {
+#mobile-nav>li>div>ul>li>div>ul>li>a {
   font-size: 18px;
   font-weight: 400;
 }
@@ -90,6 +91,7 @@ header.add-shadow {
   .slider1-text {
     top: 15vh;
   }
+
   .slider1-text h1,
   .slider1-text h2 {
     font-size: 50px !important;
@@ -101,11 +103,13 @@ header.add-shadow {
   .slider1-text {
     top: 10vh;
   }
+
   .slider1-text h1,
   .slider1-text h2 {
     font-size: 40px !important;
     line-height: 50px !important;
   }
+
   .slider1-text p {
     font-size: 20px !important;
     font-weight: 500;
@@ -139,7 +143,7 @@ header.add-shadow {
 
 #mainSlider .nav p {
   -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
   color: #FFFFFF;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -187,17 +191,19 @@ body {
   padding-left: 0;
 }
 
-.section-3 nav .nav-link.active ~ .separator {
+.section-3 nav .nav-link.active~.separator {
   height: 8px !important;
   background-color: #D21034 !important;
 }
 
 @media screen and (max-width: 1100px) {
+
   .section-3 h1,
   .section-3 h2 {
     font-size: 70px;
     font-weight: 500;
   }
+
   .section-3 h1 span,
   .section-3 h2 span {
     font-size: 90px;
@@ -206,11 +212,13 @@ body {
 }
 
 @media screen and (max-width: 540px) {
+
   .section-3 h1,
   .section-3 h2 {
     font-size: 50px !important;
     font-weight: 400 !important;
   }
+
   .section-3 h1 span,
   .section-3 h2 span {
     font-size: 70px !important;
@@ -219,11 +227,13 @@ body {
 }
 
 @media screen and (max-width: 400px) {
+
   .section-3 h1,
   .section-3 h2 {
     font-size: 30px !important;
     font-weight: 400 !important;
   }
+
   .section-3 h1 span,
   .section-3 h2 span {
     font-size: 50px !important;
@@ -231,7 +241,8 @@ body {
   }
 }
 
-.section-4 .separator, .section-x .separator {
+.section-4 .separator,
+.section-x .separator {
   height: 3px;
   background-color: #7FE0B2;
   width: 100%;
@@ -239,7 +250,8 @@ body {
 }
 
 .section-4 h1,
-.section-4 h2, .section-x h1,
+.section-4 h2,
+.section-x h1,
 .section-x h2 {
   font-weight: 700;
   color: #FFFFFF;
@@ -247,14 +259,18 @@ body {
 }
 
 @media screen and (max-width: 640px) {
-  .section-4, .section-x {
+
+  .section-4,
+  .section-x {
     -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-            align-items: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
     text-align: center !important;
   }
+
   .section-4 h1,
-  .section-4 h2, .section-x h1,
+  .section-4 h2,
+  .section-x h1,
   .section-x h2 {
     font-size: 100px;
     text-align: center;
@@ -263,8 +279,10 @@ body {
 }
 
 @media screen and (max-width: 430px) {
+
   .section-4 h1,
-  .section-4 h2, .section-x h1,
+  .section-4 h2,
+  .section-x h1,
   .section-x h2 {
     font-size: 60px;
   }
@@ -297,8 +315,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .stricked-menu {
@@ -309,10 +327,10 @@ body {
   z-index: 999;
   background-color: #af1d1d;
   -webkit-box-shadow: rgba(0, 0, 0, 0.06) 0px 6px 13px 0px;
-          box-shadow: rgba(0, 0, 0, 0.06) 0px 6px 13px 0px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 6px 13px 0px;
   opacity: 0;
   -webkit-transform: translateY(-110%);
-          transform: translateY(-110%);
+  transform: translateY(-110%);
   -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
 }
@@ -360,7 +378,7 @@ footer .input-group input {
 footer .input-group input {
   font-size: 12px;
   -webkit-box-shadow: #7FE0B2;
-          box-shadow: #7FE0B2;
+  box-shadow: #7FE0B2;
 }
 
 .section-2 .carousel-control-btn {
@@ -381,7 +399,7 @@ footer .input-group input {
   margin-right: 30px;
 }
 
-.section-2 .carousel-indicators > button {
+.section-2 .carousel-indicators>button {
   height: 12px;
   width: 12px;
   background-color: #006233;
@@ -403,7 +421,7 @@ footer .input-group input {
 
 .section-2 .card {
   -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
-          box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
   border: none;
   margin-bottom: 30px;
   background-color: transparent;
@@ -427,7 +445,7 @@ footer .input-group input {
 
 .section-2 .card:hover {
   -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   z-index: 999;
@@ -480,7 +498,7 @@ footer .input-group input {
 
 .section-2 .profile-box:before {
   -webkit-filter: blur(10px);
-          filter: blur(10px);
+  filter: blur(10px);
   background: url("https://images.pexels.com/photos/195825/pexels-photo-195825.jpeg?h=350&auto=compress&cs=tinysrgb") no-repeat;
   background-size: cover;
   width: 120%;
@@ -543,4 +561,197 @@ footer .input-group input {
 html {
   overflow-x: hidden;
 }
+
 /*# sourceMappingURL=main.css.map */
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+.page-content06 {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 1rem;
+  max-width: 1024px;
+  margin: 0 auto;
+  font-family: var(--font-sans);
+}
+
+@media (min-width: 600px) {
+  .page-content06 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 800px) {
+  .page-content06 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card06 {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  color: whitesmoke;
+  background-color: whitesmoke;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 600px) {
+  .card06 {
+    height: 350px;
+  }
+}
+
+.card06:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-size: cover;
+  background-position: 0 0;
+  transition: transform calc(var(--d) * 1.5) var(--e);
+  pointer-events: none;
+}
+
+.card06:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  pointer-events: none;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+  transform: translateY(-50%);
+  transition: transform calc(var(--d) * 2) var(--e);
+}
+
+.card06:nth-child(1):before {
+  background-image: url(/assets/images/tramway.jpg);
+}
+
+.card06:nth-child(2):before {
+  background-image: url(/assets/images/maqam.jpg);
+}
+
+.card06:nth-child(3):before {
+  background-image: url(https://images.unsplash.com/photo-1545243424-0ce743321e11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+}
+
+.card06:nth-child(4):before {
+  background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+}
+
+.content06 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  transition: transform var(--d) var(--e);
+  z-index: 1;
+}
+
+.content06>*+* {
+  margin-top: 1rem;
+}
+
+.title06 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.copy06 {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.btn06 {
+  cursor: pointer;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  border: none;
+}
+
+.btn06:hover {
+  background-color: #0d0d0d;
+}
+
+.btn06:focus {
+  outline: 1px dashed yellow;
+  outline-offset: 3px;
+}
+
+@media (hover: hover) and (min-width: 600px) {
+  .card06:after {
+    transform: translateY(0);
+  }
+
+  .content06 {
+    transform: translateY(calc(100% - 4.5rem));
+  }
+
+  .content06>*:not(.title) {
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+  }
+
+  .card06:hover,
+  .card06:focus-within {
+    align-items: center;
+  }
+
+  .card06:hover:before,
+  .card06:focus-within:before {
+    transform: translateY(-4%);
+  }
+
+  .card06:hover:after,
+  .card06:focus-within:after {
+    transform: translateY(-50%);
+  }
+
+  .card06:hover .content06,
+  .card06:focus-within .content06 {
+    transform: translateY(0);
+  }
+
+  .card06:hover .content06>*:not(.title06),
+  .card06:focus-within .content06>*:not(.title06) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: calc(var(--d) / 8);
+  }
+
+  .card06:focus-within:before,
+  .card06:focus-within:after,
+  .card06:focus-within .content06,
+  .card06:focus-within .content06>*:not(.title06) {
+    transition-duration: 0s;
+  }
+}
