@@ -92,10 +92,29 @@
 }
 
 
-
+header{
+    #anniversary-logo {
+        width: 100vw;
+        height: 50px;
+        top: 20px !important;
+        left: 0;
+        overflow: none;
+        z-index: 1;
+        h1{
+            font-size: 25px;
+            font-weight: 600;
+        }
+        img{
+            height: 120px;
+            width: auto;
+        }
+    }
+}
 header.add-shadow {
     background: rgb(0, 0, 0);
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.7945277181903968) 3%, rgba(0, 0, 0, 0.3703704148196103) 100%);
+
+   
 }
 
 .slider1-text {
@@ -156,6 +175,7 @@ header.add-shadow {
 }
 
 #mainSlider {
+
     .nav {
         a {
             font-size: 20px;
@@ -589,7 +609,8 @@ html {
 .contacts-page {
     padding-top: 100px;
     min-width: 100vw;
-    min-height: 100vh;;
+    min-height: 100vh;
+    ;
 
     /*= input focus effects css
     =========================== */
@@ -597,7 +618,7 @@ html {
         outline: none;
     }
 
-   
+
 
     /* necessary to give position: relative to parent. */
     input[type="text"] {
@@ -638,7 +659,18 @@ html {
         }
     }
 
-    h1{
+    h1 {
         font-size: 120px;
     }
+}
+
+.section-1{
+    background-image: url("../images/mainslide.png");
+}
+
+
+
+.gradient{
+    background: rgb(0, 102, 51) !important;
+    background: linear-gradient(180deg, rgba(0, 102, 51, 0.0866625496510709) 28%, rgba(0, 102, 51, 1) 100%) !important;
 }

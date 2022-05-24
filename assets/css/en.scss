@@ -102,6 +102,7 @@ footer {
 
     .nav {
         margin-top: 400px;
+
         @media screen and (max-width: 992px) {
             margin-top: 50px !important;
         }
@@ -166,6 +167,7 @@ footer {
         }
     }
 }
+
 .navigationdrawer {
     .navigationdrawer-tabs {
         height: 100vh;
@@ -250,8 +252,16 @@ footer {
     }
 }
 
-.contacts-page{
-    h1{
+.contacts-page {
+    h1 {
         font-family: 'Playfair Display' !important;
+    }
+}
+
+header {
+    #anniversary-logo {
+        h1 {
+            font-family: 'Playfair Display';
+        }
     }
 }
