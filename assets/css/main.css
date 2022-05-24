@@ -641,19 +641,27 @@ html {
 }
 
 .card06:nth-child(1):before {
-  background-image: url(/assets/images/tramway.jpg);
+  background-image: url("../images/maqam.jpg");
+  background-size:contain;
+  background-repeat: no-repeat;
 }
 
 .card06:nth-child(2):before {
-  background-image: url(/assets/images/maqam.jpg);
+  background-image: url("../images/metro.jpg");
+  background-size:contain;
+  background-repeat: no-repeat;
 }
 
 .card06:nth-child(3):before {
-  background-image: url(https://images.unsplash.com/photo-1545243424-0ce743321e11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  background-image: url("../images/masjid.jpg");
+  background-size:contain;
+  background-repeat: no-repeat;
 }
 
 .card06:nth-child(4):before {
-  background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  background-image: url("../images/tramway.jpg");
+  background-size:contain;
+  background-repeat: no-repeat;
 }
 
 .content06 {
@@ -715,7 +723,7 @@ html {
     transform: translateY(calc(100% - 4.5rem));
   }
 
-  .content06>*:not(.title) {
+  .content06>*:not(.title06) {
     opacity: 0;
     transform: translateY(1rem);
     transition: transform var(--d) var(--e), opacity var(--d) var(--e);
