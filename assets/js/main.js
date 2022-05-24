@@ -17,6 +17,6 @@ function ui() {
       document.getElementById("offcanvas-img").classList.add("d-none");
     });
   }
+ 
   //the nav bar scroll
-  
 }

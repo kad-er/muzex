@@ -231,7 +231,8 @@ body {
   }
 }
 
-.section-4 .separator, .section-x .separator {
+.section-4 .separator,
+.section-x .separator {
   height: 3px;
   background-color: #7FE0B2;
   width: 100%;
@@ -239,7 +240,8 @@ body {
 }
 
 .section-4 h1,
-.section-4 h2, .section-x h1,
+.section-4 h2,
+.section-x h1,
 .section-x h2 {
   font-weight: 700;
   color: #FFFFFF;
@@ -247,14 +249,16 @@ body {
 }
 
 @media screen and (max-width: 640px) {
-  .section-4, .section-x {
+  .section-4,
+  .section-x {
     -webkit-box-align: center !important;
         -ms-flex-align: center !important;
             align-items: center !important;
     text-align: center !important;
   }
   .section-4 h1,
-  .section-4 h2, .section-x h1,
+  .section-4 h2,
+  .section-x h1,
   .section-x h2 {
     font-size: 100px;
     text-align: center;
@@ -264,7 +268,8 @@ body {
 
 @media screen and (max-width: 430px) {
   .section-4 h1,
-  .section-4 h2, .section-x h1,
+  .section-4 h2,
+  .section-x h1,
   .section-x h2 {
     font-size: 60px;
   }
@@ -542,5 +547,60 @@ footer .input-group input {
 
 html {
   overflow-x: hidden;
+}
+
+.contacts-page {
+  padding-top: 100px;
+  min-width: 100vw;
+  min-height: 100vh;
+  /*= input focus effects css
+    =========================== */
+  /* necessary to give position: relative to parent. */
+}
+
+.contacts-page :focus {
+  outline: none;
+}
+
+.contacts-page input[type="text"] {
+  font: 15px/24px "Lato", Arial, sans-serif;
+  color: #333;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+.contacts-page .effect-1,
+.contacts-page .effect-2,
+.contacts-page .effect-3 {
+  border: 0;
+  padding: 7px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.contacts-page .effect-1 ~ .focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #3399FF;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.contacts-page .effect-1:focus ~ .focus-border {
+  width: 100%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.contacts-page form input {
+  background-color: transparent;
+}
+
+.contacts-page h1 {
+  font-size: 120px;
 }
 /*# sourceMappingURL=main.css.map */

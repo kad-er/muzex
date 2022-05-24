@@ -265,7 +265,8 @@ body {
 }
 
 
-.section-4,.section-x {
+.section-4,
+.section-x {
     .separator {
         height: 3px;
         background-color: #7FE0B2;
@@ -289,11 +290,13 @@ body {
             text-align: center;
             display: block !important;
         }
+
         align-items: center !important;
         text-align: center !important;
     }
 
     @media screen and (max-width: 430px) {
+
         h1,
         h2 {
             font-size: 60px;
@@ -579,6 +582,63 @@ footer {
 }
 
 
-html{
+html {
     overflow-x: hidden;
+}
+
+.contacts-page {
+    padding-top: 100px;
+    min-width: 100vw;
+    min-height: 100vh;;
+
+    /*= input focus effects css
+    =========================== */
+    :focus {
+        outline: none;
+    }
+
+   
+
+    /* necessary to give position: relative to parent. */
+    input[type="text"] {
+        font: 15px/24px "Lato", Arial, sans-serif;
+        color: #333;
+        width: 100%;
+        box-sizing: border-box;
+        letter-spacing: 1px;
+    }
+
+    .effect-1,
+    .effect-2,
+    .effect-3 {
+        border: 0;
+        padding: 7px 0;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .effect-1~.focus-border {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #3399FF;
+        transition: 0.4s;
+    }
+
+    .effect-1:focus~.focus-border {
+        width: 100%;
+        transition: 0.4s;
+    }
+
+    form {
+        input {
+            background-color: transparent;
+
+        }
+    }
+
+    h1{
+        font-size: 120px;
+    }
 }
