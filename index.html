@@ -2,6 +2,7 @@
 <html amp lang="en">
 
 <head>
+    <base href="./">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,7 +23,7 @@
     <title>Histroy</title>
 </head>
 
-<body>
+<body style="overflow-x: hidden;">
     <!-- Header containing the main slider and the navigation and the search bar -->
     <header id="header" class="fixed-top">
         <nav class="navbar transparent main-nav">
@@ -45,7 +46,7 @@
                 </div>
 
                 <!-- Main navigation -->
-                <ul  class="nav ">
+                <ul class="nav ">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">History</a>
                     </li>
@@ -325,7 +326,6 @@
         <!-- <div id="mainSlider" class="carousel slide position-relative" data-bs-ride="carousel"
             data-wrap="true">
             <div class="position-absolute" style="right: 30px;top: 20%;background-color: transparent;z-index: 1;">
-
                 <ul class="nav d-flex flex-column justify-content-center align-items-center">
                     <li class="nav-item">
                         <a href="#" class="nav-link">
@@ -345,7 +345,6 @@
                     <li class="nav-item">
                         <p class="p-0 m-0 mt-4">Folow us</p>
                     </li>
-
                 </ul>
             </div>
             <div class="carousel-inner ">
@@ -375,6 +374,7 @@
                 </div>
             </div>
         </div> -->
+
 
         <div id="mainSlider" class="position-relative">
             <!-- social media  -->
@@ -414,30 +414,119 @@
                         history
                     </h1>
                 </div>
-                <p>
+                <p class="d-none d-md-block ">
                     It is a long established fact that a reader will be distracted by the readable content of a
                     page when looking at its layout. The point of using Lorem Ipsum is that it has a.
                 </p>
             </div>
 
             <div class="video">
-                <video no-controls autoplay loop src="./assets/videos/mainSlider.mp4" id="main-vid" style="width: 100%;height: 100%;" ></video>
+                <video no-controls autoplay loop src="./assets/videos/mainSlider.mp4" id="main-vid"
+                    style="width: 100%;height: 100%;"></video>
             </div>
         </div>
 
+        <!-- awal n rayeessnegh tjma3this -->
+        <div class="container section-2">
+            <div class='row'>
+                <div class='col-lg-8 offset-lg-2 col-md-12'>
+                    <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="false">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="p-5 container carousel-inner">
+                            <div class="carousel-item active">
+                                <blockquote>
+                                    <div class="row justify-content-center">
+                                        <div class="col-sm-3 text-center">
+                                            <img class="img-circle mb-4" src="./assets/images/teboun.png"
+                                                style="width: 100px;height:100px;">
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit
+                                                in arcu
+                                                blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu
+                                                pretium
+                                                mauris.</p>
+                                            <small class="d-block">President of Algeria</small>
+                                            <strong class="red">Abdelmadjid Tebboune</strong>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                            <div class="carousel-item">
+                                <blockquote>
+                                    <div class="row justify-content-center">
+                                        <div class="col-sm-3 text-center">
+                                            <img class="img-circle mb-4" src="./assets/images/teboun.png"
+                                                style="width: 100px;height:100px;">
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit
+                                                in arcu
+                                                blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu
+                                                pretium
+                                                mauris.</p>
+                                            <small class="d-block">President of Algeria</small>
+                                            <strong class="red">Abdelmadjid Tebboune</strong>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                            <div class="carousel-item">
+                                <blockquote>
+                                    <div class="row justify-content-center">
+                                        <div class="col-sm-3 text-center">
+                                            <img class="img-circle mb-4" src="./assets/images/teboun.png"
+                                                style="width: 100px;height:100px;">
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit
+                                                in arcu
+                                                blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu
+                                                pretium
+                                                mauris.</p>
+                                            <small class="d-block">President of Algeria</small>
+                                            <strong class="red">Abdelmadjid Tebboune</strong>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev carousel-control-btn" type="button"
+                            data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <i class="fa-solid fa-chevron-left"></i>
+
+                        </button>
+                        <button class="carousel-control-next carousel-control-btn" type="button"
+                            data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
         <!-- the secondary navbar + read more atricles + title -->
-        <div class="p-5 m-0 section-3">
+        <div class="p-sm-2 p-lg-5 m-0 section-3">
 
             <!-- title and read more wedget -->
             <div class="row m-0 mt-5">
 
                 <!-- the title  -->
-                <div class="col-9">
+                <div class="col-lg-8 col-xl-9 col-md-12 offset-sm-1 offset-md-2 offset-lg-0">
                     <h1 class="ms-5">the <br> <span class="red">History</span> <br> of how we got <br> here.</h1>
                 </div>
 
-                <!-- the read more widget -->
-                <div class="col-3">
+                <!-- the read more widget  NUMBER TWO -->
+                <div class="col-lg-4 mt-sm-5 col-xl-3 col-md-4 d-none d-md-none d-lg-block d-xl-block d-xxl-block">
                     <h3>read more articles</h3>
                     <ul class="nav d-flex flex-column align-items-center">
                         <li>
@@ -501,47 +590,46 @@
             </div>
 
             <!-- secondary navigation  -->
-            <nav class="p-5">
+            <nav>
                 <ul class="nav d-flex flex-row justify-content-center">
                     <!-- add active class to <a> tag to make it active  -->
-                    <li class="nav-item px-3 d-flex flex-column-reverse">
-                        <a href="#" class="nav-link active">Prehistory</a>
+                    <li class="nav-item mx-2 d-flex flex-column-reverse">
+                        <a href="Historic.html" class="nav-link active">Prehistory</a>
                         <div class="separator"></div>
                     </li>
-                    <li class="nav-item px-3 d-flex flex-column-reverse">
-                        <a href="#" class="nav-link">Antiquity</a>
+                    <li class="nav-item mx-2 d-flex flex-column-reverse">
+                        <a href="Antiquity.html" class="nav-link">Antiquity</a>
                         <div class="separator"></div>
                     </li>
-                    <li class="nav-item px-3 d-flex flex-column-reverse">
+                    <li class="nav-item mx-2 d-flex flex-column-reverse">
                         <a href="#" class="nav-link">Middle Ages</a>
                         <div class="separator"></div>
                     </li>
-                    <li class="nav-item px-3 d-flex flex-column-reverse">
+                    <li class="nav-item mx-2 d-flex flex-column-reverse">
                         <a href="#" class="nav-link">Modern times</a>
                         <div class="separator"></div>
                     </li>
-                    <li class="nav-item px-3 d-flex flex-column-reverse">
+                    <li class="nav-item mx-2 d-flex flex-column-reverse">
                         <a href="#" class="nav-link">Contemporary era</a>
                         <div class="separator"></div>
                     </li>
                 </ul>
             </nav>
 
-
-
-
         </div>
+
+
 
         <!-- the 60 years title  -->
         <div class="container section-4">
             <!-- the title  -->
-            <h1 class="ms-5"><span class="red">60</span> th</h1>
+            <h1 class="ms-5"><span class="red">60</span> Years</h1>
             <div class="separator"></div>
         </div>
 
         <!-- the grid of posts -->
         <!-- WARNING: Don't open this tag u may die...that's if you already closed it...#Joke -->
-        <div class="container-fluid section-5">
+        <!-- <div class="container-fluid section-5">
             <div class="row px-5">
                 <div class="mb-4 col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
                     <div class="card">
@@ -927,19 +1015,259 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div> -->
 
+
+
+        <!-- Slider that shows posts -->
+        <div class="container-fluid section-2">
+            <div class='row'>
+                <div class='col-12'>
+                    <div id="yyy" class="carousel slide"  data-bs-ride="false">
+
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#yyy" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#yyy" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#yyy" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+
+
+                        <div class="p-5 carousel-inner">
+                           
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card shadow-none card-01">
+                                            <img class="card-img-top" src="./assets/images/mresh.jpg" alt="Card image cap">
+                                            <div class="card-body text-center">
+                                                <span class="badge-box"><i class="fa fa-check"></i></span>
+                                                <h4 class="card-title">M.R.E.S.H</h4>
+                                                <p class="card-text">Ministry of Water Resources and water security</p>
+    
+                                                <a href="realisation.html" class="link text-center d-block">View more <i
+                                                        class="fa-solid fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card shadow-none card-01">
+                                            <img class="card-img-top" src="./assets/images/mpt.png" alt="Card image cap">
+                                            <div class="card-body text-center">
+                                                <span class="badge-box"><i class="fa fa-check"></i></span>
+                                                <h4 class="card-title">MPT</h4>
+                                                <p class="card-text">Ministry of Post and Telecommunications</p>
+    
+                                                <a href="realisation.html" class="link text-center d-block">View more <i
+                                                        class="fa-solid fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card shadow-none card-01">
+                                            <img class="card-img-top" src="./assets/images/MRP.png" alt="Card image cap">
+                                            <div class="card-body text-center">
+                                                <span class="badge-box"><i class="fa fa-check"></i></span>
+                                                <h4 class="card-title">MRP</h4>
+                                                <p class="card-text">Ministry of Relations with Parliament</p>
+    
+                                                <a href="realisation.html" class="link text-center d-block">View more <i
+                                                        class="fa-solid fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card shadow-none card-01">
+                                            <img class="card-img-top" src="./assets/images/60logo.png" alt="Card image cap">
+                                            <div class="card-body text-center">
+                                                <span class="badge-box"><i class="fa fa-check"></i></span>
+                                                <h4 class="card-title">Card title</h4>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make up the bulk of the card's content.</p>
+    
+                                                <a href="#" class="link text-center d-block">View more <i
+                                                        class="fa-solid fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card shadow-none card-01">
+                                            <img class="card-img-top" src="./assets/images/60logo.png" alt="Card image cap">
+                                            <div class="card-body text-center">
+                                                <span class="badge-box"><i class="fa fa-check"></i></span>
+                                                <h4 class="card-title">Card title</h4>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make up the bulk of the card's content.</p>
+    
+                                                <a href="#" class="link text-center d-block">View more <i
+                                                        class="fa-solid fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card shadow-none card-01">
+                                            <img class="card-img-top" src="./assets/images/60logo.png" alt="Card image cap">
+                                            <div class="card-body text-center">
+                                                <span class="badge-box"><i class="fa fa-check"></i></span>
+                                                <h4 class="card-title">Card title</h4>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make up the bulk of the card's content.</p>
+    
+                                                <a href="#" class="link text-center d-block">View more <i
+                                                        class="fa-solid fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card shadow-none card-01">
+                                            <img class="card-img-top" src="./assets/images/60logo.png" alt="Card image cap">
+                                            <div class="card-body text-center">
+                                                <span class="badge-box"><i class="fa fa-check"></i></span>
+                                                <h4 class="card-title">Card title</h4>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make up the bulk of the card's content.</p>
+    
+                                                <a href="#" class="link text-center d-block">View more <i
+                                                        class="fa-solid fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card shadow-none card-01">
+                                            <img class="card-img-top" src="./assets/images/60logo.png" alt="Card image cap">
+                                            <div class="card-body text-center">
+                                                <span class="badge-box"><i class="fa fa-check"></i></span>
+                                                <h4 class="card-title">Card title</h4>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make up the bulk of the card's content.</p>
+    
+                                                <a href="#" class="link text-center d-block">View more <i
+                                                        class="fa-solid fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card shadow-none card-01">
+                                            <img class="card-img-top" src="./assets/images/60logo.png" alt="Card image cap">
+                                            <div class="card-body text-center">
+                                                <span class="badge-box"><i class="fa fa-check"></i></span>
+                                                <h4 class="card-title">Card title</h4>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make up the bulk of the card's content.</p>
+    
+                                                <a href="#" class="link text-center d-block">View more <i
+                                                        class="fa-solid fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <button class="carousel-control-prev carousel-control-btn" type="button"
+                            data-bs-target="#yyy" data-bs-slide="prev">
+                            <i class="fa-solid fa-chevron-left"></i>
+
+                        </button>
+
+
+                        <button class="carousel-control-next carousel-control-btn" type="button"
+                            data-bs-target="#yyy" data-bs-slide="next">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
 
+
+          <!-- the read more widget  NUMBER TWO -->
+          <div class="col-12 container d-block section-x d-md-none">
+            <h3>read more articles</h3>
+            <ul class="nav d-flex flex-column align-items-center">
+                <li>
+                    <div>
+                        <div class="d-flex flex-row justify-start align-items-center">
+                            <div class="separator"></div>
+                            <a class="nav-link">Mr Jhon DOE</a>
+                        </div>
+                    </div>
+                    <div>
+                        <p>It is a long established fact that a reader will be distracted</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="d-flex flex-row justify-start align-items-center">
+                            <div class="separator"></div>
+                            <a class="nav-link">Mr Jhon DOE</a>
+                        </div>
+                    </div>
+                    <div>
+                        <p>It is a long established fact that a reader will be distracted</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="d-flex flex-row justify-start align-items-center">
+                            <div class="separator"></div>
+                            <a class="nav-link">Mr Jhon DOE</a>
+                        </div>
+                    </div>
+                    <div>
+                        <p>It is a long established fact that a reader will be distracted</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="d-flex flex-row justify-start align-items-center">
+                            <div class="separator"></div>
+                            <a class="nav-link">Mr Jhon DOE</a>
+                        </div>
+                    </div>
+                    <div>
+                        <p>It is a long established fact that a reader will be distracted</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="d-flex flex-row justify-start align-items-center">
+                            <div class="separator"></div>
+                            <a class="nav-link">Mr Jhon DOE</a>
+                        </div>
+                    </div>
+                    <div>
+                        <p>It is a long established fact that a reader will be distracted</p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+        <!-- the event title -->
         <div class="container section-4 d-flex flex-column align-items-end">
-            <h1 style="color: #FFFFFF;font-size: 168px;">Events</h1>
+            <h1>Events</h1>
             <div class="separator float-start"></div>
         </div>
 
         <!-- Events wedget + read more  -->
-        <div class="container section-6 mt-5">
-            <div class="row">
-                <div class="col-4">
+        <div class="container-fluid section-6 mt-sm-0">
+            <div class="row ">
+
+                <!-- the read more widget -->
+                <div class="col-md-12 col-lg-4 justify-content-md-center">
                     <ul class="d-flex nav flex-column">
                         <li class="nav-item p-4">
                             <div class="separator"></div>
@@ -982,8 +1310,10 @@
 
                     </ul>
                 </div>
-                <div class="col-5 offset-3 mt-5">
-                    <div class="youth">
+
+                <!-- the youth section -->
+                <div class=" col-md-12 col-lg-5 ps-md-5 offset-md-0 offset-lg-3 offset-xl-3 offset-sm-0 mt-5">
+                    <div class="youth pe-lg-5 ps-sm-5">
                         <h1 style="color: #7FE0B2;font-size: 168px;">Youth</h1>
                         <p>'Content here, content here', making it look like readable English. Many desktop publishing
                             packages and web page editors now use Lorem Ipsum as their default model text, and a search
@@ -1013,7 +1343,7 @@
 
     <footer class="pt-5 pb-0 px-3">
         <div class="row">
-            <div class="col-4">
+            <div class="col-md-4 col-sm-12 text-center text-md-start">
                 <div class="p-4"><img src="./assets/images/60logo.png" alt="60 algeria logo independance"></div>
                 <p class="p-4 pt-0">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum lectus mi cursus dolor, vel
@@ -1029,7 +1359,7 @@
                             class="fa-brands fa-twitter"></i></a>
                 </div>
             </div>
-            <div class="col-2">
+            <div class="col-md-2 col-sm-12 text-center text-md-start">
                 <h3 class="py-3">Quick Links</h3>
                 <ul class="nav d-flex flex-column">
                     <li class="nav-item">
@@ -1043,7 +1373,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-2">
+            <div class="col-md-2 col-sm-12 text-center text-md-start">
                 <h3 class="py-3">Useful Links</h3>
                 <ul class="nav d-flex flex-column">
                     <li class="nav-item">
@@ -1060,7 +1390,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-4 mt-4 px-5">
+            <div class="col-md-4 col-sm-12 mt-4 px-5 text-center text-md-start">
                 <form action="#" method="post">
                     <div class="input-group mb-1">
                         <input type="text" class="form-control p-2 ps-3" placeholder="example@domain.com"
