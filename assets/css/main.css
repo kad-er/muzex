@@ -73,6 +73,7 @@
   color: #D21034 !important;
 }
 
+<<<<<<< HEAD
 header.add-shadow {
   background: black;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(3%, rgba(0, 0, 0, 0.794528)), to(rgba(0, 0, 0, 0.37037)));
@@ -114,25 +115,31 @@ header.add-shadow {
     font-size: 20px !important;
     font-weight: 500;
   }
+=======
+header #anniversary-logo {
+  width: 100vw;
+  height: 50px;
+  top: 20px !important;
+  left: 0;
+  overflow: none;
+  z-index: 1;
+>>>>>>> 33a7678df8e04030d87bd3047e2def850ae3d86e
 }
 
-.slider1-text h1,
-.slider1-text h2 {
-  font-family: 'Playfair Display';
-  font-size: 96px;
-  line-height: 96px;
+header #anniversary-logo h1 {
+  font-size: 25px;
   font-weight: 600;
 }
 
-.slider1-text ul.flex-column a {
-  font-weight: 500;
+header #anniversary-logo img {
+  height: 120px;
+  width: auto;
 }
 
-.slider1-text p {
-  font-size: 24px;
-  font-weight: 400;
-  text-align: justify;
-  font-family: 'Montserrat';
+header.add-shadow {
+  background: black;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(3%, rgba(0, 0, 0, 0.794528)), to(rgba(0, 0, 0, 0.37037)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.794528) 3%, rgba(0, 0, 0, 0.37037) 100%);
 }
 
 #mainSlider .nav a {
@@ -259,7 +266,10 @@ body {
 }
 
 @media screen and (max-width: 640px) {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 33a7678df8e04030d87bd3047e2def850ae3d86e
   .section-4,
   .section-x {
     -webkit-box-align: center !important;
@@ -562,8 +572,76 @@ html {
   overflow-x: hidden;
 }
 
+<<<<<<< HEAD
 /*# sourceMappingURL=main.css.map */
 
+=======
+.contacts-page {
+  padding-top: 100px;
+  min-width: 100vw;
+  min-height: 100vh;
+  /*= input focus effects css
+    =========================== */
+  /* necessary to give position: relative to parent. */
+}
+
+.contacts-page :focus {
+  outline: none;
+}
+
+.contacts-page input[type="text"] {
+  font: 15px/24px "Lato", Arial, sans-serif;
+  color: #333;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+.contacts-page .effect-1,
+.contacts-page .effect-2,
+.contacts-page .effect-3 {
+  border: 0;
+  padding: 7px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.contacts-page .effect-1 ~ .focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #3399FF;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.contacts-page .effect-1:focus ~ .focus-border {
+  width: 100%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.contacts-page form input {
+  background-color: transparent;
+}
+
+.contacts-page h1 {
+  font-size: 120px;
+}
+
+.section-1 {
+  background-image: url("../images/mainslide.png");
+}
+
+.gradient {
+  background: #006633 !important;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(28%, rgba(0, 102, 51, 0.0866625)), to(#006633)) !important;
+  background: linear-gradient(180deg, rgba(0, 102, 51, 0.0866625) 28%, #006633 100%) !important;
+}
+/*# sourceMappingURL=main.css.map */
+>>>>>>> 33a7678df8e04030d87bd3047e2def850ae3d86e
 
 * {
   box-sizing: border-box;
@@ -798,6 +876,7 @@ html {
 
 
 
+<<<<<<< HEAD
 .strip {
   display: flex;
 }
@@ -822,4 +901,193 @@ html {
 .film__frame img {
   max-width: 100%;
   border-radius: 2px;
+=======
+
+
+/*#######################################################*/
+#card06 {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  color: whitesmoke;
+  background-color: whitesmoke;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 600px) {
+  #card06 {
+    height: 350px;
+  }
+}
+
+#card06:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-size: cover;
+  background-position: 0 0;
+  transition: transform calc(var(--d) * 1.5) var(--e);
+  pointer-events: none;
+}
+
+#card06:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  pointer-events: none;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+  transform: translateY(-50%);
+  transition: transform calc(var(--d) * 2) var(--e);
+}
+
+#card06:nth-child(1):before {
+  background-image: url("../images/maqam.jpg");
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+
+#card06:nth-child(2):before {
+  background-image: url("../images/tramway.jpg");
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+
+#card06:nth-child(3):before {
+  background-image: url("../images/masjid.jpg");
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+
+#card06:nth-child(4):before {
+  background-image: url("../images/metro.jpg");
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+
+#card06:nth-child(5):before {
+  background-image: url("../images/بوشوشة.JPG");
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+#card06:nth-child(6):before {
+  background-image: url("../images/بوشوشة.JPG");
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+#card06:nth-child(7):before {
+  background-image: url("../images/بوشوشة.JPG");
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+
+.content06 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  transition: transform var(--d) var(--e);
+  z-index: 1;
+}
+
+.content06>*+* {
+  margin-top: 1rem;
+}
+
+.title06 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.copy06 {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.btn06 {
+  cursor: pointer;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  border: none;
+}
+
+.btn06:hover {
+  background-color: #0d0d0d;
+}
+
+.btn06:focus {
+  outline: 1px dashed yellow;
+  outline-offset: 3px;
+}
+
+@media (hover: hover) and (min-width: 600px) {
+  .card06:after {
+    transform: translateY(0);
+  }
+
+  .content06 {
+    transform: translateY(calc(100% - 4.5rem));
+  }
+
+  .content06>*:not(.title06) {
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+  }
+
+  .card06:hover,
+  .card06:focus-within {
+    align-items: center;
+  }
+
+  .card06:hover:before,
+  .card06:focus-within:before {
+    transform: translateY(-4%);
+  }
+
+  .card06:hover:after,
+  .card06:focus-within:after {
+    transform: translateY(-50%);
+  }
+
+  .card06:hover .content06,
+  .card06:focus-within .content06 {
+    transform: translateY(0);
+  }
+
+  .card06:hover .content06>*:not(.title06),
+  .card06:focus-within .content06>*:not(.title06) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: calc(var(--d) / 8);
+  }
+
+  .card06:focus-within:before,
+  .card06:focus-within:after,
+  .card06:focus-within .content06,
+  .card06:focus-within .content06>*:not(.title06) {
+    transition-duration: 0s;
+  }
+>>>>>>> 33a7678df8e04030d87bd3047e2def850ae3d86e
 }

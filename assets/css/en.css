@@ -214,6 +214,7 @@ footer h3 {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+<<<<<<< HEAD
 /*# sourceMappingURL=en.css.map */
 
 
@@ -1084,3 +1085,79 @@ background-size: cover;
   min-width: 180px;
   text-align: left;
 }
+=======
+
+.contacts-page h1 {
+  font-family: 'Playfair Display' !important;
+}
+
+header #anniversary-logo h1 {
+  font-family: 'Playfair Display';
+}
+
+#carouselExampleCaptions {
+  left: 0;
+  bottom: 20%;
+  width: 450px;
+  height: 200px;
+}
+
+.slider1-text {
+  position: absolute;
+  top: 20vh;
+  left: 10vw;
+  width: 400px !important;
+  color: #FFFFFF;
+  width: 566px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.slider1-text span.separator {
+  background-color: #D21034 !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .slider1-text {
+    top: 15vh;
+  }
+  .slider1-text h1,
+  .slider1-text h2 {
+    font-size: 50px !important;
+    line-height: 60px !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .slider1-text {
+    top: 10vh;
+  }
+  .slider1-text h1,
+  .slider1-text h2 {
+    font-size: 40px !important;
+    line-height: 50px !important;
+  }
+  .slider1-text p {
+    font-size: 20px !important;
+    font-weight: 500;
+  }
+}
+
+.slider1-text h1,
+.slider1-text h2 {
+  font-family: 'Playfair Display';
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.slider1-text ul.flex-column a {
+  font-weight: 500;
+}
+
+.slider1-text p {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+  font-family: 'Montserrat';
+}
+/*# sourceMappingURL=en.css.map */
+>>>>>>> 33a7678df8e04030d87bd3047e2def850ae3d86e
