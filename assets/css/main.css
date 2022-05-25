@@ -641,25 +641,56 @@ html {
 }
 
 .card06:nth-child(1):before {
-  background-image: url("../images/maqam.jpg");
+  background-image: url("../images/الأمير\ عبد\ القادر.jpg");
   background-size:contain;
   background-repeat: no-repeat;
 }
 
 .card06:nth-child(2):before {
-  background-image: url("../images/metro.jpg");
+  background-image: url("../images/أحمد\ باي.jpg");
   background-size:contain;
   background-repeat: no-repeat;
 }
 
 .card06:nth-child(3):before {
-  background-image: url("../images/masjid.jpg");
+  background-image: url("../images/ف-\ نسومر.JPG");
   background-size:contain;
   background-repeat: no-repeat;
 }
 
 .card06:nth-child(4):before {
-  background-image: url("../images/tramway.jpg");
+  background-image: url("../images/بوشوشة.JPG");
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+
+.card06:nth-child(5):before {
+  background-image: url("../images/بوشوشة.JPG");
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+.card06:nth-child(6):before {
+  background-image: url("../images/بوشوشة.JPG");
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+.card06:nth-child(7):before {
+  background-image: url("../images/بوشوشة.JPG");
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+.card06:nth-child(8):before {
+  background-image: url("../images/بوشوشة.JPG");
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+.card06:nth-child(9):before {
+  background-image: url("../images/بوشوشة.JPG");
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+.card06:nth-child(10):before {
+  background-image: url("../images/بوشوشة.JPG");
   background-size:contain;
   background-repeat: no-repeat;
 }
