@@ -97,59 +97,6 @@ header.add-shadow {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.794528) 3%, rgba(0, 0, 0, 0.37037) 100%);
 }
 
-.slider1-text {
-  position: absolute;
-  top: 30vh;
-  left: 10vw;
-  color: #FFFFFF;
-  width: 566px;
-}
-
-@media screen and (max-width: 1200px) {
-  .slider1-text {
-    top: 15vh;
-  }
-  .slider1-text h1,
-  .slider1-text h2 {
-    font-size: 50px !important;
-    line-height: 60px !important;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .slider1-text {
-    top: 10vh;
-  }
-  .slider1-text h1,
-  .slider1-text h2 {
-    font-size: 40px !important;
-    line-height: 50px !important;
-  }
-  .slider1-text p {
-    font-size: 20px !important;
-    font-weight: 500;
-  }
-}
-
-.slider1-text h1,
-.slider1-text h2 {
-  font-family: 'Playfair Display';
-  font-size: 96px;
-  line-height: 96px;
-  font-weight: 600;
-}
-
-.slider1-text ul.flex-column a {
-  font-weight: 500;
-}
-
-.slider1-text p {
-  font-size: 24px;
-  font-weight: 400;
-  text-align: justify;
-  font-family: 'Montserrat';
-}
-
 #mainSlider .nav a {
   font-size: 20px;
   color: #FFFFFF;

@@ -117,62 +117,7 @@ header.add-shadow {
    
 }
 
-.slider1-text {
-    position: absolute;
-    top: 30vh;
-    left: 10vw;
-    color: #FFFFFF;
-    width: 566px;
 
-    @media screen and(max-width: 1200px) {
-        top: 15vh;
-
-        h1,
-        h2 {
-            font-size: 50px !important;
-            line-height: 60px !important;
-        }
-    }
-
-    @media screen and(max-width: 900px) {
-        top: 10vh;
-
-        h1,
-        h2 {
-            font-size: 40px !important;
-            line-height: 50px !important;
-        }
-
-        p {
-            font-size: 20px !important;
-            font-weight: 500;
-
-        }
-    }
-
-    h1,
-    h2 {
-        font-family: 'Playfair Display';
-        font-size: 96px;
-        line-height: 96px;
-        font-weight: 600;
-    }
-
-    ul.flex-column {
-        a {
-            font-weight: 500;
-        }
-    }
-
-    p {
-        font-size: 24px;
-        font-weight: 400;
-        text-align: justify;
-        font-family: 'Montserrat';
-    }
-
-
-}
 
 #mainSlider {
 
@@ -674,3 +619,4 @@ html {
     background: rgb(0, 102, 51) !important;
     background: linear-gradient(180deg, rgba(0, 102, 51, 0.0866625496510709) 28%, rgba(0, 102, 51, 1) 100%) !important;
 }
+

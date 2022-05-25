@@ -11,6 +11,7 @@
     <!-- fontawsome css link  -->
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <!-- bootstrap javascript  -->
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- fontawsome script -->
     <script src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
@@ -25,8 +26,18 @@
 
 <body style="overflow-x: hidden;">
     <!-- Header containing the main slider and the navigation and the search bar -->
-    <header id="header" class="fixed-top">
-        <nav class="navbar transparent main-nav">
+    <header id="header" class="">
+        <!-- the 60 logo in the center -->
+        <div class="position-absolute top-0 left fade-in-down subsection-on-scroll" data-mdb-animation-start="onScroll"
+            id="anniversary-logo">
+            <div class="container me-5 d-flex flex-row align-items-center text-white">
+                <h1 class="col-5 text-end">عهد جديد</h1>
+                <img class="col-2 mx-3 text-center" src="./assets/images/60logo.png"
+                    alt="Algeria 60th anniversary indepence logo">
+                <h1 class="col-5 text-start"> تاريخ مجيد</h1>
+            </div>
+        </div>
+        <nav class="navbar transparent main-nav fixed-top">
             <div class="container d-flex flex-row-reverse">
                 <!-- search bar and language link to switch -->
                 <div class="d-flex flex-row-reverse">
@@ -48,12 +59,13 @@
                 <!-- Main navigation -->
                 <ul class="nav flex-row-reverse">
                     <li class="nav-item">
-                        <a class="nav-link active stv" aria-current="page" href="#">الرئيسية</a>
+                        <a class="nav-link text-end" href="#">ستون سنة</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">60 سنة</a>
-                    </li>  <li class="nav-item">
-                        <a class="nav-link" href="#">60 سنة</a>
+                        <a class="nav-link active stv" aria-current="page" href="#">تاريخ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">احداث</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link">
@@ -115,7 +127,8 @@
                                         </li>
                                         <li class="nav-item text-center text-capitalize">
                                             <!-- Social media Icons -->
-                                            <span class="mb-2 d-block"><strong class="montserrat">إتبعنا على</strong></span>
+                                            <span class="mb-2 d-block"><strong class="montserrat">إتبعنا
+                                                    على</strong></span>
                                             <div class="row">
                                                 <div class="col-1">
                                                     <a href="#" target="_blank" rel="noopener noreferrer">
@@ -150,7 +163,7 @@
                                         aria-labelledby="pills-history-tab">
                                         <span class="mt-3 d-block">
                                             تاريخ
-                                            </span>
+                                        </span>
                                         <div class="separator"></div>
                                         <div class="d-flex align-items-start">
                                             <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
@@ -325,132 +338,122 @@
     </header>
     <!-- the main content -->
     <main>
-      
-        <div id="mainSlider" class="position-relative">
-            <!-- social media  -->
-            <div class="position-absolute" style="left: 30px;top: 20%;background-color: transparent;z-index: 1;">
 
-                <ul class="nav d-flex flex-column justify-content-center align-items-center">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item mb-1">
-                        <a href="#" class="nav-link">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <p class="p-0 m-0 mt-4">Folow us</p>
-                    </li>
 
-                </ul>
-            </div>
-
-            <!-- the main text -->
-            <div class="slider1-text">
-                <div style="z-index: 1;" class="position-relative">
-                    <span class="separator position-absolute"
-                        style="width: 120px;height: 22px;background: #7FE0B2; z-index: -1;right: 0;bottom: 35%;">
+        <!-- first section with some words and the president words tebboun -->
+        <div id="mainSlider" class="overflow-hidden" style="height: 100vh;">
+            <!-- the card with text the btn arrow down -->
+            <div class="slider1-text px-5 py-5 rounded-3 overflow-hidden animate__animated animate__backInLeft animate__delay-1s"
+                style="z-index: 1;">
+                <div class="position-relative">
+                    <span class="separator position-absolute bottom-0 "
+                        style="width: 356px;height: 45px;background: #7FE0B2; z-index: -1;                            ;">
                     </span>
                     <h1 style="z-index: 1;">لنكتشف
                         <br>
                         تاريخ
                         <br>
-                        الجزائر 
-                       
+                        الجزائر
+
                     </h1>
                 </div>
-                <p class="d-none d-md-block text-end">
-                    بعد فترة طويلة من الاستعمار من قبل الفرنسيين ، أخذنا ما هو خلفنا ، دعنا نلقي نظرة عميقة على كيفية وصولنا إلى هنا.
+                <p class="mb-0 text-end">
+                    بعد فترة طويلة من الاستعمار من قبل الفرنسيين ، أخذنا ما هو خلفنا ، دعنا نلقي نظرة عميقة على كيفية
+                    وصولنا إلى هنا.
+                    بعد فترة طويلة من الاستعمار من قبل الفرنسيين ، أخذنا ما هو خلفنا ، دعنا نلقي نظرة عميقة على كيفية
+                    وصولنا إلى هنا.
                 </p>
+                <button style="border-radius: 50%;" class="float-start btn btn-outline-light m-0">
+                    <i class="fa-solid fa-arrow-down"></i>
+                </button>
             </div>
 
-            <div class="video">
-                <video no-controls autoplay loop src="./assets/videos/mainSlider.mp4" id="main-vid"
-                    style="width: 100%;height: 100%;"></video>
-            </div>
-        </div>
-
-        <!-- awal n rayeessnegh tjma3this -->
-        <div class="container section-2">
-            <div class='row'>
-                <div class='col-lg-8 offset-lg-2 col-md-12'>
-                    <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="false">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                        </div>
-                        <div class="p-5 container carousel-inner">
-                            <div class="carousel-item active">
-                                <blockquote>
-                                    <div class="row justify-content-center">
-                                        <div class="col-sm-3 text-center">
-                                            <img class="img-circle mb-4" src="./assets/images/teboun.png"
-                                                style="width: 100px;height:100px;">
-                                        </div>
-                                        <div class="col-sm-10">
-                                            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع</p>
-                                            <small class="d-block">رئيس الجمهورية</small>
-                                            <strong class="red">عبد المجيد تبون</strong>
-                                        </div>
-                                    </div>
-                                </blockquote>
+            <!-- dwayi idawal n rayess  -->
+            <div id="carouselExampleCaptions"
+                class="carousel overflow-hidden slide position-absolute me-5 animate__animated animate__backInRight animate__delay-1s"
+                style="background-color: transparent; z-index: 1;height: 470px;" data-bs-ride="false">
+                <!-- <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div> -->
+                <div class="container carousel-inner overflow-visible bg-light ps-4 position-absolute bottom-0"
+                    style="z-index: -1;">
+                    <div class="carousel-item active " style="z-index: 1;">
+                        <blockquote>
+                            <div class="row position-relative justify-content-center ">
+                                <div class="col-sm-3 text-center position-absolute" style="top: -260px;left: -12px;">
+                                    <img class="d-block" src="./assets/images/teboun-square.png"
+                                        style="width: auto ;height:250px;z-index: 1;">
+                                </div>
+                                <div class="col-sm-10 py-3">
+                                    <p>
+                                        هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي
+                                        القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                                    </p>
+                                    <small class="d-block">رئيس الجمهورية</small>
+                                    <strong class="red">عبد المجيد تبون</strong>
+                                </div>
                             </div>
-                            <div class="carousel-item ">
-                                <blockquote>
-                                    <div class="row justify-content-center">
-                                        <div class="col-sm-3 text-center">
-                                            <img class="img-circle mb-4" src="./assets/images/teboun.png"
-                                                style="width: 100px;height:100px;">
-                                        </div>
-                                        <div class="col-sm-10">
-                                            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع</p>
-                                            <small class="d-block">رئيس الجمهورية</small>
-                                            <strong class="red">عبد المجيد تبون</strong>
-                                        </div>
-                                    </div>
-                                </blockquote>
-                            </div>
-                            <div class="carousel-item">
-                                <blockquote>
-                                    <div class="row justify-content-center">
-                                        <div class="col-sm-3 text-center">
-                                            <img class="img-circle mb-4" src="./assets/images/teboun.png"
-                                                style="width: 100px;height:100px;">
-                                        </div>
-                                        <div class="col-sm-10 d-flex flex-row justify-content-end">
-                                            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع</p>
-                                            <small class="d-block">رئيس الجمهورية</small>
-                                            <strong class="red">عبد المجيد تبون</strong>
-                                        </div>
-                                    </div>
-                                </blockquote>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev carousel-control-btn" type="button"
-                            data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                            <i class="fa-solid fa-chevron-left"></i>
-
-                        </button>
-                        <button class="carousel-control-next carousel-control-btn" type="button"
-                            data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </button>
+                        </blockquote>
                     </div>
+                    <div class="carousel-item ">
+                        <blockquote>
+                            <div class="row position-relative justify-content-center ">
+                                <div class="col-sm-3 text-center position-absolute" style="top: -260px;left: -12px;">
+                                    <!-- <img class="d-block" src="./assets/images/teboun-square.png"
+                                        style="width: auto ;height:250px;z-index: 1;"> -->
+                                </div>
+                                <div class="col-sm-10 py-3">
+                                    <p>
+                                        هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي
+                                        القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                                    </p>
+                                    <small class="d-block">رئيس الجمهورية</small>
+                                    <strong class="red">عبد المجيد تبون</strong>
+                                </div>
+                            </div>
+                        </blockquote>
+                    </div>
+                    <div class="carousel-item">
+                        <blockquote>
+                            <div class="row position-relative justify-content-center ">
+                                <div class="col-sm-3 text-center position-absolute" style="top: -260px;left: -12px;">
+                                    <!-- <img class="d-block" src="./assets/images/teboun-square.png"
+                                        style="width: auto ;height:250px;z-index: 1;"> -->
+                                </div>
+                                <div class="col-sm-10 py-3">
+                                    <p>
+                                        هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي
+                                        القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                                    </p>
+                                    <small class="d-block">رئيس الجمهورية</small>
+                                    <strong class="red">عبد المجيد تبون</strong>
+                                </div>
+                            </div>
+                        </blockquote>
+                    </div>
+                    <button class="carousel-control-prev carousel-control-btn" type="button"
+                        data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
                 </div>
+
+
+            </div>
+
+            <!-- the bg image    -->
+            <div style="z-index: -1;">
+                <video autoplay muted src="./assets/videos/L.Algerie.vue.du.ciel.2015.FRENCH.HDTV.x264.mp4" style="z-index: -1;" class="d-block w-100" alt="..." />
             </div>
         </div>
+
+        <div class="gradient position-absolute bottom-0 w-100" style="height: 100vh;">
+        </div>
+
 
 
 
@@ -463,12 +466,13 @@
                 <!-- the title  -->
                 <div class="col-lg-8 col-xl-9 col-md-12 offset-sm-1 offset-md-2 offset-lg-0 text-end">
                     <h1 class="ms-5">نص شكلي <br> <span class="red">
-                        تاريخ
+                            تاريخ
                         </span> <br> هو ببساطة نص شكلي بمعنى أن الغاية</h1>
                 </div>
 
                 <!-- the read more widget  NUMBER TWO -->
-                <div class="col-lg-4 mt-sm-5 col-xl-3 col-md-4 d-none d-md-none d-lg-block d-xl-block d-xxl-block text-end">
+                <div
+                    class="col-lg-4 mt-sm-5 col-xl-3 col-md-4 d-none d-md-none d-lg-block d-xl-block d-xxl-block text-end">
                     <h3>اقرأ المزيد من المقالات</h3>
                     <ul class="nav d-flex flex-column align-items-center justify-content-end">
                         <li>
@@ -492,7 +496,8 @@
                             <div class="text-end">
                                 <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
                             </div>
-                        </li><li>
+                        </li>
+                        <li>
                             <div>
                                 <div class="d-flex flex-row justify-start align-items-center justify-content-end">
                                     <div class="separator"></div>
@@ -502,7 +507,8 @@
                             <div class="text-end">
                                 <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
                             </div>
-                        </li><li>
+                        </li>
+                        <li>
                             <div>
                                 <div class="d-flex flex-row justify-start align-items-center justify-content-end">
                                     <div class="separator"></div>
@@ -551,7 +557,7 @@
         <!-- the 60 years title  -->
         <div class="container section-4">
             <!-- the title  -->
-            <h1 class="ms-5 flex-row-reverse text-black d-flex text-end">  <span class="red">60  </span>   سنة  </h1>
+            <h1 class="ms-5 flex-row-reverse text-black d-flex text-end"> <span class="red">60 </span> سنة </h1>
             <div class="separator"></div>
         </div>
 
@@ -560,11 +566,11 @@
         <div class="container-fluid section-2">
             <div class='row'>
                 <div class='col-12'>
-                    <div id="yyy" class="carousel slide"  data-bs-ride="false">
+                    <div id="yyy" class="carousel slide" data-bs-ride="false">
 
                         <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#yyy" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#yyy" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#yyy" data-bs-slide-to="1"
                                 aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#yyy" data-bs-slide-to="2"
@@ -573,87 +579,93 @@
 
 
                         <div class="p-5 carousel-inner">
-                           
+
                             <div class="carousel-item active">
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="card shadow-none card-01">
-                                            <img class="card-img-top" src="./assets/images/mresh.jpg" alt="Card image cap">
+                                            <img class="card-img-top" src="./assets/images/mresh.jpg"
+                                                alt="Card image cap">
                                             <div class="card-body text-center">
                                                 <span class="badge-box"><i class="fa fa-check"></i></span>
                                                 <p class="card-text text-center">وزارة الموارد المائية والأمن المائي</p>
-    
-                                                <a href="realisation.html" class="link text-center d-block">عرض المزيد <i
-                                                        class="fa-solid fa-arrow-right"></i></a>
+
+                                                <a href="realisation.html" class="link text-center d-block">عرض المزيد
+                                                    <i class="fa-solid fa-arrow-right"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="card shadow-none card-01">
-                                            <img class="card-img-top" src="./assets/images/mpt.png" alt="Card image cap">
+                                            <img class="card-img-top" src="./assets/images/mpt.png"
+                                                alt="Card image cap">
                                             <div class="card-body text-center">
                                                 <span class="badge-box"><i class="fa fa-check"></i></span>
                                                 <h4 class="card-title">MPT</h4>
                                                 <p class="card-text text-center">وزارة البريد والاتصالات</p>
-    
-                                                <a href="realisation.html" class="link text-center d-block">عرض المزيد <i
-                                                        class="fa-solid fa-arrow-right"></i></a>
+
+                                                <a href="realisation.html" class="link text-center d-block">عرض المزيد
+                                                    <i class="fa-solid fa-arrow-right"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="card shadow-none card-01">
-                                            <img class="card-img-top" src="./assets/images/MRP.png" alt="Card image cap">
+                                            <img class="card-img-top" src="./assets/images/MRP.png"
+                                                alt="Card image cap">
                                             <div class="card-body text-center">
                                                 <span class="badge-box"><i class="fa fa-check"></i></span>
                                                 <h4 class="card-title">MRP</h4>
                                                 <p class="card-text text-center">وزارة العلاقات مع البرلمان</p>
-    
-                                                <a href="realisation.html" class="link text-center d-block">عرض المزيد <i
-                                                        class="fa-solid fa-arrow-right"></i></a>
+
+                                                <a href="realisation.html" class="link text-center d-block">عرض المزيد
+                                                    <i class="fa-solid fa-arrow-right"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                           
+
                             <div class="carousel-item">
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="card shadow-none card-01">
-                                            <img class="card-img-top" src="./assets/images/mresh.jpg" alt="Card image cap">
+                                            <img class="card-img-top" src="./assets/images/mresh.jpg"
+                                                alt="Card image cap">
                                             <div class="card-body text-center">
                                                 <span class="badge-box"><i class="fa fa-check"></i></span>
                                                 <p class="card-text text-center">وزارة الموارد المائية والأمن المائي</p>
-    
-                                                <a href="realisation.html" class="link text-center d-block">عرض المزيد <i
-                                                        class="fa-solid fa-arrow-right"></i></a>
+
+                                                <a href="realisation.html" class="link text-center d-block">عرض المزيد
+                                                    <i class="fa-solid fa-arrow-right"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="card shadow-none card-01">
-                                            <img class="card-img-top" src="./assets/images/mpt.png" alt="Card image cap">
+                                            <img class="card-img-top" src="./assets/images/mpt.png"
+                                                alt="Card image cap">
                                             <div class="card-body text-center">
                                                 <span class="badge-box"><i class="fa fa-check"></i></span>
                                                 <h4 class="card-title">MPT</h4>
                                                 <p class="card-text text-center">وزارة البريد والاتصالات</p>
-    
-                                                <a href="realisation.html" class="link text-center d-block">عرض المزيد <i
-                                                        class="fa-solid fa-arrow-right"></i></a>
+
+                                                <a href="realisation.html" class="link text-center d-block">عرض المزيد
+                                                    <i class="fa-solid fa-arrow-right"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="card shadow-none card-01">
-                                            <img class="card-img-top" src="./assets/images/MRP.png" alt="Card image cap">
+                                            <img class="card-img-top" src="./assets/images/MRP.png"
+                                                alt="Card image cap">
                                             <div class="card-body text-center">
                                                 <span class="badge-box"><i class="fa fa-check"></i></span>
                                                 <h4 class="card-title">MRP</h4>
                                                 <p class="card-text text-center">وزارة العلاقات مع البرلمان</p>
-    
-                                                <a href="realisation.html" class="link text-center d-block">عرض المزيد <i
-                                                        class="fa-solid fa-arrow-right"></i></a>
+
+                                                <a href="realisation.html" class="link text-center d-block">عرض المزيد
+                                                    <i class="fa-solid fa-arrow-right"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -662,15 +674,15 @@
                         </div>
 
 
-                        <button class="carousel-control-prev carousel-control-btn" type="button"
-                            data-bs-target="#yyy" data-bs-slide="prev">
+                        <button class="carousel-control-prev carousel-control-btn" type="button" data-bs-target="#yyy"
+                            data-bs-slide="prev">
                             <i class="fa-solid fa-chevron-left"></i>
 
                         </button>
 
 
-                        <button class="carousel-control-next carousel-control-btn" type="button"
-                            data-bs-target="#yyy" data-bs-slide="next">
+                        <button class="carousel-control-next carousel-control-btn" type="button" data-bs-target="#yyy"
+                            data-bs-slide="next">
                             <i class="fa-solid fa-chevron-right"></i>
                         </button>
                     </div>
@@ -679,53 +691,55 @@
         </div>
 
 
-          <!-- the read more widget  NUMBER TWO -->
-          <div class="col-12 container d-block section-x d-md-none">
+        <!-- the read more widget  NUMBER TWO -->
+        <div class="col-12 container d-block section-x d-md-none">
             <h3>اقرأ المزيد من المقالات</h3>
-                    <ul class="nav d-flex flex-column align-items-center justify-content-end">
-                        <li>
-                            <div>
-                                <div class="d-flex flex-row justify-start align-items-center justify-content-end">
-                                    <div class="separator"></div>
-                                    <a class="nav-link">الأستاذ جبران</a>
-                                </div>
-                            </div>
-                            <div class="text-end">
-                                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div class="d-flex flex-row justify-start align-items-center justify-content-end">
-                                    <div class="separator"></div>
-                                    <a class="nav-link">الأستاذ جبران</a>
-                                </div>
-                            </div>
-                            <div class="text-end">
-                                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
-                            </div>
-                        </li><li>
-                            <div>
-                                <div class="d-flex flex-row justify-start align-items-center justify-content-end">
-                                    <div class="separator"></div>
-                                    <a class="nav-link">الأستاذ جبران</a>
-                                </div>
-                            </div>
-                            <div class="text-end">
-                                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
-                            </div>
-                        </li><li>
-                            <div>
-                                <div class="d-flex flex-row justify-start align-items-center justify-content-end">
-                                    <div class="separator"></div>
-                                    <a class="nav-link">الأستاذ جبران</a>
-                                </div>
-                            </div>
-                            <div class="text-end">
-                                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
-                            </div>
-                        </li>
-                    </ul>
+            <ul class="nav d-flex flex-column align-items-center justify-content-end">
+                <li>
+                    <div>
+                        <div class="d-flex flex-row justify-start align-items-center justify-content-end">
+                            <div class="separator"></div>
+                            <a class="nav-link">الأستاذ جبران</a>
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="d-flex flex-row justify-start align-items-center justify-content-end">
+                            <div class="separator"></div>
+                            <a class="nav-link">الأستاذ جبران</a>
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="d-flex flex-row justify-start align-items-center justify-content-end">
+                            <div class="separator"></div>
+                            <a class="nav-link">الأستاذ جبران</a>
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="d-flex flex-row justify-start align-items-center justify-content-end">
+                            <div class="separator"></div>
+                            <a class="nav-link">الأستاذ جبران</a>
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
+                    </div>
+                </li>
+            </ul>
         </div>
 
         <!-- the event title -->
@@ -735,11 +749,11 @@
         </div>
 
         <!-- Events wedget + read more  -->
-        <div class="container-fluid section-6 mt-sm-0">
+        <div class="container section-6">
             <div class="row flex-row-reverse">
 
                 <!-- the read more widget -->
-                <div class=" col-md-12 col-lg-5 ps-md-5 offset-md-0 offset-lg-3 offset-xl-3 offset-sm-0 mt-5">
+                <div class=" col-12 mt-5">
                     <ul class="d-flex nav flex-column">
                         <li class="nav-item p-4">
                             <div class="separator"></div>
@@ -754,7 +768,9 @@
                             <div class="title pt-2">
                                 <a href="#" class="nav-link">
                                     <p>
-                                        هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم
+                                        هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن
+                                        التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك
+                                        يتم استخدام طريقة لوريم إيبسوم
                                     </p>
                                 </a>
                             </div>
@@ -772,7 +788,9 @@
                             <div class="title pt-2">
                                 <a href="#" class="nav-link">
                                     <p>
-                                        هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم
+                                        هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن
+                                        التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك
+                                        يتم استخدام طريقة لوريم إيبسوم
                                     </p>
                                 </a>
                             </div>
@@ -781,29 +799,7 @@
                     </ul>
                 </div>
 
-                <!-- the youth section -->
-                <div class="col-md-12 col-lg-4 justify-content-md-center  ">
-                    <div class="youth pe-lg-5 ps-sm-5">
-                        <h1 style="color: #7FE0B2;font-size: 168px;">شباب</h1>
-                        <p>هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة أو غير لائقة مخبأة في هذا النص. بينما تعمل جميع مولّدات نصوص لوريم إيبسوم على الإنترنت على إعادة تكرار مقاطع من نص لوريم إيبسوم نفسه عدة مرات بما تتطلبه الحاجة، يقوم مولّدنا هذا باستخدام كلمات من قاموس يحوي على أكثر من 200 كلمة لا تينية.
 
-                        </p>
-                        <a href="#" class="link text-start d-block"><i class="fa-solid fa-arrow-left"></i>  اقرأ المزيد </a>
-                    </div>
-
-                    <div class="cta-link mt-5 pt-5">
-                        <a href="#" class="nav-link d-flex flex-row-reverse justify-content-start">
-                            <span>
-                                إتصال
-  <br />
-  و إعلام
-                            </span>
-                            <span class="d-block pe-4">
-                                <img src="./assets/icons/arrowright.png" style="transform: rotate(-180deg);" alt="arrow">
-                            </span>
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
     </main>
@@ -813,10 +809,11 @@
             <div class="col-md-4 col-sm-12 text-center text-md-end">
                 <div class="p-4"><img src="./assets/images/60logo.png" alt="60 algeria logo independance"></div>
                 <p class="p-4 pt-0">
-                    هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص
+                    هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض
+                    النوادر أو الكلمات العشوائية إلى النص
                 </p>
                 <div class="p-4 pt-0 social">
-                    <span>إتبعونا  على</span>
+                    <span>إتبعونا على</span>
                     <a href="#" class="nav-link d-inline" target="_blank" rel="noopener noreferrer"><i
                             class="fa-brands fa-instagram"></i></a>
                     <a href="#" class="nav-link d-inline" target="_blank" rel="noopener noreferrer"><i
@@ -866,8 +863,8 @@
                         </button>
                     </div>
                 </form>
-                <p style="font-size: 12px;">                    
-                    إشترك في النشرة الإخبارية للمزيد من تاريخ الجزائر                </p>
+                <p style="font-size: 12px;">
+                    إشترك في النشرة الإخبارية للمزيد من تاريخ الجزائر </p>
 
             </div>
         </div>
@@ -879,6 +876,12 @@
             </p>
         </div>
     </footer>
+
+    <audio hidden loop autoplay>
+        <source 
+            src="./assets/audio/Min Ajlika 3ichna ya watani Yasmine BELKACEM  من أجلك عشنا هامات المجد   ياسمين بلقاسم.mp3"
+            type="audio/mp3">
+    </audio>
 </body>
 
 </html>
