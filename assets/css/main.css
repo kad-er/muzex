@@ -1089,5 +1089,4 @@ html {
   .card06:focus-within .content06>*:not(.title06) {
     transition-duration: 0s;
   }
->>>>>>> 33a7678df8e04030d87bd3047e2def850ae3d86e
 }
