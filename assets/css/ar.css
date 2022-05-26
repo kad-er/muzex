@@ -315,3 +315,12 @@ footer h3 {
   font-family: 'Montserrat';
 }
 /*# sourceMappingURL=ar.css.map */
+
+.banner-img {
+  left: 859px;
+  top: 280px;
+  background-image: url("../images/bg.svg");
+  background-repeat: no-repeat;
+  background-size:contain;
+  text-align: center;
+}
