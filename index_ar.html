@@ -19,8 +19,10 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
     <!-- latin fonts including rtl styles -->
     <link rel="stylesheet" href="./assets/css/ar.css" />
+    <!-- animation css -->
+    <script src="./node_modules/aos/dist/aos.js"></script>
+    <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
     <!-- custom js -->
-    <script src="./assets/js/main.js" defer></script>
     <title>Histroy</title>
 </head>
 
@@ -37,12 +39,13 @@
                 <h1 class="col-5 text-start"> تاريخ مجيد</h1>
             </div>
         </div>
-        <nav class="navbar transparent main-nav fixed-top">
+
+        <nav class="navbar transparent main-nav">
             <div class="container d-flex flex-row-reverse">
                 <!-- search bar and language link to switch -->
                 <div class="d-flex flex-row-reverse">
                     <!-- Menu button  -->
-                    <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas"
+                    <button class="navbar-toggler shadow-none me-3" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <!-- the menu humburger icon -->
                         <svg height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -55,19 +58,20 @@
                     <!-- link to toggle the language -->
                     <a class="nav-link active" x href="index_ar.html">En/Ar</a>
                 </div>
-                <div class="justify-self-center">
-                    <img style="height: 70px;" src="assets/images/logo1.png">
-                </div>
+
                 <!-- Main navigation -->
                 <ul class="nav flex-row-reverse">
-                    <li class="nav-item">
-                        <a class="nav-link text-end" href="#">ستون سنة</a>
+                    <li class="nav-item d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+                        <a class="nav-link text-end" href="#">الرئيسية</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active stv" aria-current="page" href="#">تاريخ</a>
+                    <li class="nav-item d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+                        <a class="nav-link text-end" href="index_ar.html#section-ar2">عهد جديد</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">احداث</a>
+                    <li class="nav-item d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+                        <a class="nav-link active" aria-current="page" href="#">نشاطات</a>
+                    </li>
+                    <li class="nav-item d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+                        <a class="nav-link" href="#">برنامج النشاطات</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link">
@@ -79,83 +83,23 @@
                     </li>
                 </ul>
 
+                
                 <!-- The navigation drawer  -->
-                <div class="offcanvas offcanvas-end navigationdrawer" style="width: 100vw" tabindex="-1"
+                <div class="offcanvas offcanvas-start navigationdrawer" style="width: 100vw" tabindex="-1"
                     id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <!-- the close button in the top -->
-                    <div class="offcanvas-header d-flex flex-row fixed-top">
+                    <div class="offcanvas-header d-flex flex-row-reverse fixed-top">
                         <h5 class="offcanvas-title text-white" style="font-weight: 100" id="offcanvasNavbarLabel">
-                            #
+                            #Martyr's_memorial
                         </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
 
                     <!-- this section is the menu that will show up when window > 768px -->
-                    <div class="flex-row mt-5 d-none d-md-block d-lg-block d-xxl-block">
-                        <!-- the content of the navigation drawer  -->
-                        <div class="col-lg-5 col-md-6 col-sm-12">
-                            <div class="row">
-                                <div class="col-md-2 col-lg-3"></div>
-                                <!-- Nav menu  -->
-                                <ul id="pills-tab" role="tablist"
-                                    class="col-md-10 nav nav-pills col-lg-9 offset-sm-4 offset-2 navbar-nav d-flex flex-column pt-5">
-                                    <li class="nav-item text-center text-capitalize">
-                                        <a class="nav-link text-black tab-trigger" aria-current="page" id="history"
-                                            data-bs-toggle="pill" data-bs-target="#history-tab" type="button" role="tab"
-                                            aria-controls="history-tab" aria-selected="false"> تاريخ</a>
-                                    </li>
-                                    <li class="nav-item text-center text-capitalize">
-                                        <a class="nav-link text-black tab-trigger" href="#" id="years"
-                                            data-bs-toggle="pill" data-bs-target="#years-tab" type="button" role="tab"
-                                            aria-controls="years-tab" aria-selected="false">60 سنة</a>
-                                    </li>
-                                    <li class="nav-item text-center text-capitalize">
-                                        <a class="nav-link text-black tab-trigger" aria-current="page" href="#"
-                                            id="events" data-bs-toggle="pill" data-bs-target="#events-tab" type="button"
-                                            role="tab" aria-controls="evenst-tab" aria-selected="false">نشاطات</a>
-                                    </li>
-                                    <li class="nav-item text-center text-capitalize">
-                                        <a class="nav-link text-black" href="#">إتصل بنا</a>
-                                    </li>
-                                    <!-- the red separator -->
-                                    <div class="separator"></div>
-                                    <div class="contacts">
-                                        <li class="nav-item text-center text-capitalize">
-                                            <a class="text-black" href="tel:+213xxxxxxxxx">023-555-555</a>
-                                        </li>
-                                        <li class="nav-item text-center text-capitalize">
-                                            <a class="text-black"
-                                                href="mailto:contact@domain.com">contact@domain.com</a>
-                                        </li>
-                                        <li class="nav-item text-center text-capitalize">
-                                            <!-- Social media Icons -->
-                                            <span class="mb-2 d-block"><strong class="montserrat">إتبعنا
-                                                    على</strong></span>
-                                            <div class="row">
-                                                <div class="col-1">
-                                                    <a href="#" target="_blank" rel="noopener noreferrer">
-                                                        <i class="fa-brands fa-facebook-f"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="col-1">
-                                                    <a href="#" target="_blank" rel="noopener noreferrer">
-                                                        <i class="fa-brands fa-twitter"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="col-1">
-                                                    <a href="#" target="_blank" rel="noopener noreferrer">
-                                                        <i class="fa-brands fa-instagram"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </div>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="d-flex flex-row-reverse mt-5 d-none d-md-block d-lg-block d-xxl-block">
 
-                        <!-- the image of the martyr's memorial -->
-                        <div class="col-lg-7 col-md-5">
+                         <!-- the image of the martyr's memorial -->
+                         <div class="col-6 overflow-hidden d-block">
                             <div class="tab-content navigationdrawer-tabs" id="pills-tabContent">
                                 <!-- tabs starts from here  -->
                                 <div class="tab-content" id="pills-tabContent">
@@ -163,30 +107,28 @@
                                     <!-- history tab -->
                                     <div class="tab-pane fade p-5" id="history-tab" role="tabpanel"
                                         aria-labelledby="pills-history-tab">
-                                        <span class="mt-3 d-block">
-                                            تاريخ
-                                        </span>
+                                        <span class="mt-3 d-block">History</span>
                                         <div class="separator"></div>
                                         <div class="d-flex align-items-start">
                                             <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
                                                 aria-orientation="vertical">
                                                 <a class="nav-link active" id="v-pills-b-tab" data-bs-toggle="pill"
                                                     data-bs-target="#v-pills-b" type="button" role="tab"
-                                                    aria-controls="v-pills-b" aria-selected="true">ما قبل التاريخ
+                                                    aria-controls="v-pills-b" aria-selected="true">The Prehistoric
                                                 </a>
                                                 <a class="nav-link" id="v-pills-a-tab" data-bs-toggle="pill"
                                                     data-bs-target="#v-pills-a" type="button" role="tab"
-                                                    aria-controls="v-pills-a" aria-selected="false">العصور القديمة
+                                                    aria-controls="v-pills-a" aria-selected="false">The Antiquity
                                                 </a>
                                                 <a class="nav-link" id="v-pills-z-tab" data-bs-toggle="pill"
                                                     data-bs-target="#v-pills-z" type="button" role="tab"
-                                                    aria-controls="v-pills-z" aria-selected="false">التاريخ الوسيط</a>
+                                                    aria-controls="v-pills-z" aria-selected="false">Middle Ages</a>
                                                 <a class="nav-link" id="v-pills-y-tab" data-bs-toggle="pill"
                                                     data-bs-target="#v-pills-y" type="button" role="tab"
-                                                    aria-controls="v-pills-y" aria-selected="false">التاريخ الحديث</a>
+                                                    aria-controls="v-pills-y" aria-selected="false">Modern Times</a>
                                                 <a class="nav-link" id="v-pills-x-tab" data-bs-toggle="pill"
                                                     data-bs-target="#v-pills-x" type="button" role="tab"
-                                                    aria-controls="v-pills-x" aria-selected="false">التاريخ المعاصر
+                                                    aria-controls="v-pills-x" aria-selected="false">Contomporary
                                                     era</a>
                                             </div>
                                             <!-- the tab > tab contents -->
@@ -197,36 +139,36 @@
                                                     <ul class="sous-nav nav flex-column">
                                                         <li class="nav-item">
                                                             <a href="#" class="nav-link">
-                                                                رجل ما قبل التاريخ
+                                                                Prehistoric Man
                                                             </a>
                                                         </li>
                                                         <li class="nav-item">
                                                             <a href="#" class="nav-link">
-                                                                حضارة ما قبل التاريخ
+                                                                Prehistoric civilization
                                                             </a>
                                                         </li>
                                                         <li class="nav-item">
                                                             <a href="#" class="nav-link">
-                                                                مواقع ما قبل التاريخ
+                                                                Prehistoric sites
                                                             </a>
                                                         </li>
                                                     </ul>
                                                 </div>
                                                 <div class="tab-pane fade" id="v-pills-a" role="tabpanel"
                                                     aria-labelledby="v-pills-a-tab">
-                                                    العصور القديمة
+                                                    The Antiquity
                                                 </div>
                                                 <div class="tab-pane fade" id="v-pills-z" role="tabpanel"
                                                     aria-labelledby="v-pills-z-tab">
-                                                    العصور الوسطى
+                                                    Middle Ages
                                                 </div>
                                                 <div class="tab-pane fade" id="v-pills-y" role="tabpanel"
                                                     aria-settings="v-pills-y-tab">
-                                                    العصور الحديثة
+                                                    Modern Times
                                                 </div>
                                                 <div class="tab-pane fade" id="v-pills-x" role="tabpanel"
                                                     aria-labelledby="v-pills-x-tab">
-                                                    الحقبة المعاصرة
+                                                    Contomporary era
                                                 </div>
                                             </div>
                                         </div>
@@ -253,6 +195,71 @@
                             <!-- <img class="offcanvas-img" id="offcanvas-img" src="./assets/images/martyrsMemorial.png"
                                     alt="Martyr's Memorial Algeria" /> -->
                         </div>
+
+
+                        <!-- the content of the navigation drawer  -->
+                        <div class="col-6 overflow-hidden">
+                            <div class="row">
+                                <div class="col-md-2 col-lg-3"></div>
+                                <!-- Nav menu  -->
+                                <ul id="pills-tab" role="tablist"
+                                    class="col-md-10 nav nav-pills col-lg-9 offset-sm-4 offset-2 navbar-nav d-flex flex-column pt-5">
+                                    <li class="nav-item text-center text-capitalize">
+                                        <a class="nav-link text-black tab-trigger" aria-current="page" id="history"
+                                            data-bs-toggle="pill" data-bs-target="#history-tab" type="button" role="tab"
+                                            aria-controls="history-tab" aria-selected="false">History</a>
+                                    </li>
+                                    <li class="nav-item text-center text-capitalize">
+                                        <a class="nav-link text-black tab-trigger" href="#" id="years"
+                                            data-bs-toggle="pill" data-bs-target="#years-tab" type="button" role="tab"
+                                            aria-controls="years-tab" aria-selected="false">60 years</a>
+                                    </li>
+                                    <li class="nav-item text-center text-capitalize">
+                                        <a class="nav-link text-black tab-trigger" aria-current="page" href="#"
+                                            id="events" data-bs-toggle="pill" data-bs-target="#events-tab" type="button"
+                                            role="tab" aria-controls="evenst-tab" aria-selected="false">Events</a>
+                                    </li>
+                                    <li class="nav-item text-center text-capitalize">
+                                        <a class="nav-link text-black" href="#">Contact Us</a>
+                                    </li>
+                                    <!-- the red separator -->
+                                    <div class="separator"></div>
+                                    <div class="contacts">
+                                        <li class="nav-item text-center text-capitalize">
+                                            <a class="text-black" href="tel:+213xxxxxxxxx">023-555-555</a>
+                                        </li>
+                                        <li class="nav-item text-center text-capitalize">
+                                            <a class="text-black"
+                                                href="mailto:contact@domain.com">contact@domain.com</a>
+                                        </li>
+                                        <li class="nav-item text-center text-capitalize">
+                                            <!-- Social media Icons -->
+                                            <span class="mb-2 d-block"><strong class="montserrat">Follow
+                                                    us</strong></span>
+                                            <div class="row">
+                                                <div class="col-1">
+                                                    <a href="#" target="_blank" rel="noopener noreferrer">
+                                                        <i class="fa-brands fa-facebook-f"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="col-1">
+                                                    <a href="#" target="_blank" rel="noopener noreferrer">
+                                                        <i class="fa-brands fa-twitter"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="col-1">
+                                                    <a href="#" target="_blank" rel="noopener noreferrer">
+                                                        <i class="fa-brands fa-instagram"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+
+                       
                     </div>
 
                     <!-- this window will show in small screens  -->
@@ -335,6 +342,7 @@
                         </ul>
                     </div>
                 </div>
+
             </div>
         </nav>
     </header>
@@ -343,12 +351,14 @@
 
 
         <!-- first section with some words and the president words tebboun -->
-        <div id="mainSlider" class="overflow-hidden" style="height: 100vh;">
+        <div id="mainSlider" class=" row flex-row-reverse position-relative  " style="height: 100vh !important;">
+
+
             <!-- the card with text the btn arrow down -->
-            <div class="slider1-text px-5 py-5 rounded-3 overflow-hidden animate__animated animate__backInLeft animate__delay-1s"
+            <div class="slider1-text animate__animated animate__fadeInRight  col-lg-6 col-md-6 col-sm-12 align-items-center text-white position-relative"
                 style="z-index: 1;">
                 <div class="position-relative">
-                    <span class="separator position-absolute bottom-0 "
+                    <span class="separator position-absolute"
                         style="width: 356px;height: 45px;background: #7FE0B2; z-index: -1;                            ;">
                     </span>
                     <h1 style="z-index: 1;">لنكتشف
@@ -359,205 +369,165 @@
 
                     </h1>
                 </div>
-                <p class="mb-0 text-end">
-                    بعد فترة طويلة من الاستعمار من قبل الفرنسيين ، أخذنا ما هو خلفنا ، دعنا نلقي نظرة عميقة على كيفية
-                    وصولنا إلى هنا.
+                <p class="mb-0 text-end align-self-end ms-auto">
                     بعد فترة طويلة من الاستعمار من قبل الفرنسيين ، أخذنا ما هو خلفنا ، دعنا نلقي نظرة عميقة على كيفية
                     وصولنا إلى هنا.
                 </p>
-                <button style="border-radius: 50%;" class="float-start btn btn-outline-light m-0">
-                    <i class="fa-solid fa-arrow-down"></i>
-                </button>
+                <a href="index_ar.html#section-2"
+                    class="mt-5 pt-5 d-none d-md-block d-lg-block d-xl-block  float-end m-0" style="width: 100px;">
+                    <img src="./assets/icons/arrowright.png" style="transform: rotate(90deg) !important;width: 100px;"
+                        alt="">
+                </a>
             </div>
 
-            <!-- dwayi idawal n rayess  -->
-            <div id="carouselExampleCaptions"
-                class="carousel overflow-hidden slide position-absolute me-5 animate__animated animate__backInRight animate__delay-1s"
-                style="background-color: transparent; z-index: 1;height: 470px;" data-bs-ride="false">
-                <!-- <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div> -->
-                <div class="container carousel-inner overflow-visible bg-light ps-4 position-absolute bottom-0"
-                    style="z-index: -1;">
-                    <div class="carousel-item active " style="z-index: 1;">
-                        <blockquote>
-                            <div class="row position-relative justify-content-center ">
-                                <div class="col-sm-3 text-center position-absolute" style="top: -260px;left: -12px;">
-                                    <img class="d-block" src="./assets/images/teboun-square.png"
-                                        style="width: auto ;height:250px;z-index: 1;">
+
+            <div class="col-lg-6 align-self-end animate__fadeInLeft animate__animated">
+                <div class="d-flex flex-column align-items-center">
+                    <!-- the social icons -->
+                    <div class="align-self-start mb-5 d-none d-lg-block d-xl-block  ms-5 text-white d-flex flex-column">
+                        <a href="#" class="text-white nav-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-white nav-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white nav-link"><i class="fab fa-twitter"></i></a>
+                        <span class="nav-link"><img src="./assets/icons/Follow us (1).png" style="height: 80px;"
+                                alt=""></span>
+                        <a style="cursor: pointer;" class="text-white nav-link" id="muteBtn"
+                            style="border-radius: 50%;"><i class="fa-solid fa-volume-high"></i></a>
+                    </div>
+
+                    <!-- the tebboun's card  -->
+                    <div id="teboucard" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false"
+                        aria-controls="tebounimg tebountxt" class="teboun align-self-start p-4 rounded-3 d-flex">
+                        <div class="pe-2">
+                            <div class="d-flex flex-column ">
+                                <div class="d-flex flex-row justify-content-between">
+                                    <img src="./assets/icons/Vector.png" alt="quotes">
+                                    <div class="text-end ps-5 ms-5">
+                                        <h1 class="text-white">عبد المجيد تبون</h1>
+                                        <small>رئيس الجمهورية</small>
+                                    </div>
                                 </div>
-                                <div class="col-sm-10 py-3">
+                                <div id="tebountxt"
+                                    class="text-white  text-end multi-collapse collapse collapse-horizontal">
+
                                     <p>
-                                        هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي
-                                        القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
-                                    </p>
-                                    <small class="d-block">رئيس الجمهورية</small>
-                                    <strong class="red">عبد المجيد تبون</strong>
+                                        هناك حقيقة مثبتة منذ زمن طويل وهي
+                                        أن المحتوى المقروء
+                                        لصفحة ما سيلهي
+                                        القارئ عن التركيز على
+                                        الشكل
+                                        الخارجي للنص أو شكل توضع</p>
                                 </div>
                             </div>
-                        </blockquote>
+                        </div>
+                        <div id="tebounimg" class="align-self-center d-none animate__animated animate__fadeInLeft">
+                            <img class="teboun-img" src="./assets/images/teboun.png" alt="Abdelmajid tebboun">
+                        </div>
                     </div>
-                    <div class="carousel-item ">
-                        <blockquote>
-                            <div class="row position-relative justify-content-center ">
-                                <div class="col-sm-3 text-center position-absolute" style="top: -260px;left: -12px;">
-                                    <!-- <img class="d-block" src="./assets/images/teboun-square.png"
-                                        style="width: auto ;height:250px;z-index: 1;"> -->
-                                </div>
-                                <div class="col-sm-10 py-3">
-                                    <p>
-                                        هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي
-                                        القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
-                                    </p>
-                                    <small class="d-block">رئيس الجمهورية</small>
-                                    <strong class="red">عبد المجيد تبون</strong>
-                                </div>
-                            </div>
-                        </blockquote>
-                    </div>
-                    <div class="carousel-item">
-                        <blockquote>
-                            <div class="row position-relative justify-content-center ">
-                                <div class="col-sm-3 text-center position-absolute" style="top: -260px;left: -12px;">
-                                    <!-- <img class="d-block" src="./assets/images/teboun-square.png"
-                                        style="width: auto ;height:250px;z-index: 1;"> -->
-                                </div>
-                                <div class="col-sm-10 py-3">
-                                    <p>
-                                        هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي
-                                        القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
-                                    </p>
-                                    <small class="d-block">رئيس الجمهورية</small>
-                                    <strong class="red">عبد المجيد تبون</strong>
-                                </div>
-                            </div>
-                        </blockquote>
-                    </div>
-                    <button class="carousel-control-prev carousel-control-btn" type="button"
-                        data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                        <i class="fa-solid fa-chevron-left"></i>
-                    </button>
+
+                    <script>
+                        const tebountxt = document.getElementById("tebountxt");
+                        const tebounimg = document.getElementById("tebounimg");
+                        const tebouncard = document.getElementById("teboucard")
+
+                        tebouncard.addEventListener('click', function () {
+                            tebounimg.classList.toggle('d-none');
+
+                        })
+                    </script>
                 </div>
-
-
             </div>
 
-            <!-- the bg image    -->
-            <div style="z-index: -1;">
-                <video autoplay muted src="./assets/videos/L.Algerie.vue.du.ciel.2015.FRENCH.HDTV.x264.mp4" style="z-index: -1;" class="d-block w-100" alt="..." />
+            <!-- the bg video -->
+            <div class="position-absolute top-0 w-100 overflow-hidden h-100" style="z-index: -1;">
+                <video autoplay loop muted src="./assets/videos/L.Algerie.vue.du.ciel.2015.FRENCH.HDTV.x264.mp4" style="z-index: -1;filter: brightness(50%); width: 100vw;
+                    height: 100vh;
+                    object-fit: cover;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    z-index: -1;" class="d-block w-100" alt="..." />
             </div>
+
+
+
         </div>
 
-        <div class="gradient position-absolute bottom-0 w-100" style="height: 100vh;">
-        </div>
 
 
 
 
-         <!-- the secondary navbar + read more atricles + title -->
-         <div class="p-sm-2 p-lg-5 m-0 section-3">
+        <!-- the secondary navbar + read more atricles + title -->
+        <div id="section-ar2" class="py-auto section-3" style="overflow-anchor: none;">
 
             <!-- title and read more wedget -->
-            <div class="row m-0 mt-5 flex-row-reverse">
+            <div class="row m-0 flex-row-reverse" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-anchor-placement="top-center">
 
-                <!-- the title  -->
-                <div class="col-lg-8 col-xl-9 col-md-12 offset-sm-1 offset-md-2 offset-lg-0 text-end">
+                <!-- the title Tarikh majid -->
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center"
+                    class="col-lg-8 col-xl-9 col-md-12 offset-sm-1 offset-md-2 offset-lg-0 text-end mb-5">
                     <h1 class="ms-5">نص شكلي <br> <span class="red">
-                        تاريخ
-                        </span> <br> هو ببساطة نص شكلي بمعنى أن الغاية</h1>
+                            تاريخ مجيد
+                        </span> <br> هو ببساطة نص شكلي <br> بمعنى أن الغاية</h1>
                 </div>
 
-                <!-- the read more widget  NUMBER TWO -->
-                <div class="col-lg-4 mt-sm-5 col-xl-3 col-md-4 d-none d-md-none d-lg-block d-xl-block d-xxl-block text-end">
-                    <h3>تاريخ مجيد</h3>
+                <!-- Read more articles  -->
+                <div
+                    class="col-lg-4 mt-sm-5 col-xl-3 col-md-4 d-none d-md-none d-lg-block d-xl-block d-xxl-block text-end">
+                    <h3 class="text-white">تاريخ مجيد</h3>
+
                     <ul class="nav d-flex flex-column align-items-center justify-content-end">
+                        <!-- element of read more  -->
                         <li>
                             <div>
-                                <div class="d-flex flex-row justify-start align-items-center justify-content-end">
+                                <div class="d-flex flex-row-reverse  align-items-center justify-content-start">
                                     <div class="separator"></div>
-                                    <a href="moqawama.html" class="nav-link">المقاومة الشعبية</a>
+                                    <a href="moqawama.html" class="nav-link text-white">المقاومة الشعبية</a>
                                 </div>
                             </div>
-                            <div class="text-end">
+                            <div class="text-end text-white">
                                 <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
                             </div>
                         </li>
+                        <!-- element of read more  -->
                         <li>
                             <div>
-                                <div class="d-flex flex-row justify-start align-items-center justify-content-end">
+                                <div class="d-flex flex-row-reverse  align-items-center justify-content-start">
                                     <div class="separator"></div>
-                                    <a href="diplomasya.html" class="nav-link">الدبلوماسيه</a>
+                                    <a href="moqawama.html" class="nav-link text-white">المقاومة الشعبية</a>
                                 </div>
                             </div>
-                            <div class="text-end">
+                            <div class="text-end text-white">
                                 <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
                             </div>
                         </li>
+                        <!-- element of read more  -->
                         <li>
                             <div>
-                                <div class="d-flex flex-row justify-start align-items-center justify-content-end">
+                                <div class="d-flex flex-row-reverse  align-items-center justify-content-start">
                                     <div class="separator"></div>
-                                    <a class="nav-link">التاريخ العسكري</a>
+                                    <a href="moqawama.html" class="nav-link text-white">المقاومة الشعبية</a>
                                 </div>
                             </div>
-                            <div class="text-end">
+                            <div class="text-end text-white">
                                 <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
                             </div>
                         </li>
-                        
+                        <!-- element of read more  -->
                         <li>
                             <div>
-                                <div class="d-flex flex-row justify-start align-items-center justify-content-end">
+                                <div class="d-flex flex-row-reverse  align-items-center justify-content-start">
                                     <div class="separator"></div>
-                                    <a class="nav-link">التاريخ العسكري</a>
+                                    <a href="moqawama.html" class="nav-link text-white">المقاومة الشعبية</a>
                                 </div>
                             </div>
-                            <div class="text-end">
-                                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
-                            </div>
-                        </li>
-                        
-                        <li>
-                            <div>
-                                <div class="d-flex flex-row justify-start align-items-center justify-content-end">
-                                    <div class="separator"></div>
-                                    <a class="nav-link">علماء واعلام جزائر</a>
-                                </div>
-                            </div>
-                            <div class="text-end">
-                                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div class="d-flex flex-row justify-start align-items-center justify-content-end">
-                                    <div class="separator"></div>
-                                    <a class="nav-link">الفنون وبناء الحضاره</a>
-                                </div>
-                            </div>
-                            <div class="text-end">
+                            <div class="text-end text-white">
                                 <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
                             </div>
                         </li>
 
-                        <li>
-                            <div>
-                                <div class="d-flex flex-row justify-start align-items-center justify-content-end">
-                                    <div class="separator"></div>
-                                    <a class="nav-link">التراث العالمي</a>
-                                </div>
-                            </div>
-                            <div class="text-end">
-                                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
-                            </div>
-                        </li>
-
-                        
                     </ul>
                 </div>
             </div>
@@ -567,256 +537,352 @@
                 <ul class="nav d-flex flex-row justify-content-center">
                     <!-- add active class to <a> tag to make it active  -->
                     <li class="nav-item mx-2 d-flex flex-column-reverse text-center">
-                        <a href="historic-ar.html" class="nav-link active">ما قبل التاريخ</a>
+                        <a href="historyhome_ar.html#s1" class="nav-link">ما قبل التاريخ</a>
                         <div class="separator"></div>
                     </li>
                     <li class="nav-item mx-2 d-flex flex-column-reverse text-center">
-                        <a href="antiquity-ar.html" class="nav-link">العصور القديمة</a>
+                        <a href="historyhome_ar.html#s2" class="nav-link">العصور القديمة</a>
                         <div class="separator"></div>
                     </li>
                     <li class="nav-item mx-2 d-flex flex-column-reverse text-center">
-                        <a href="#" class="nav-link">التاريخ الوسيط</a>
-                        <div class="separator"></div>
-                    </li>
-                    <li class="nav-item mx-2 d-flex flex-column-reverse text-center">
-                        <a href="#" class="nav-link">التاريخ الحديث</a>
-                        <div class="separator"></div>
-                    </li>
-                    <li class="nav-item mx-2 d-flex flex-column-reverse text-center">
-                        <a href="#" class="nav-link">التاريخ المعاصر</a>
+                        <a href="historyhome_ar.html#s3" class="nav-link">التاريخ الوسيط</a>
                         <div class="separator"></div>
                     </li>
                 </ul>
             </nav>
-
         </div>
 
+        <div class="container d-block  small-secreen-read-more  d-lg-none my-5 py-5" data-aos="fade-up"
+            data-aos-duration="1000">
+            <!-- Read more articles  -->
+            <div class="col-12 text-end">
 
+                <h3 class="text-white">تاريخ مجيد</h3>
 
+                <ul class="nav d-flex flex-column align-items-center justify-content-end">
+                    <!-- element of read more  -->
+                    <li>
+                        <div>
+                            <div class="d-flex flex-row-reverse  align-items-center justify-content-start">
+                                <div class="separator"></div>
+                                <a href="moqawama.html" class="nav-link text-white">المقاومة الشعبية</a>
+                            </div>
+                        </div>
+                        <div class="text-end text-white">
+                            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
+                        </div>
+                    </li>
+                    <!-- element of read more  -->
+                    <li>
+                        <div>
+                            <div class="d-flex flex-row-reverse  align-items-center justify-content-start">
+                                <div class="separator"></div>
+                                <a href="moqawama.html" class="nav-link text-white">المقاومة الشعبية</a>
+                            </div>
+                        </div>
+                        <div class="text-end text-white">
+                            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
+                        </div>
+                    </li>
+                    <!-- element of read more  -->
+                    <li>
+                        <div>
+                            <div class="d-flex flex-row-reverse  align-items-center justify-content-start">
+                                <div class="separator"></div>
+                                <a href="moqawama.html" class="nav-link text-white">المقاومة الشعبية</a>
+                            </div>
+                        </div>
+                        <div class="text-end text-white">
+                            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
+                        </div>
+                    </li>
+                    <!-- element of read more  -->
+                    <li>
+                        <div>
+                            <div class="d-flex flex-row-reverse  align-items-center justify-content-start">
+                                <div class="separator"></div>
+                                <a href="moqawama.html" class="nav-link text-white">المقاومة الشعبية</a>
+                            </div>
+                        </div>
+                        <div class="text-end text-white">
+                            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
 
         <!-- the 60 years title  -->
         <div class="container section-4">
             <!-- the title  -->
-            <h1 class="ms-5 flex-row-reverse text-black d-flex text-end"> <span class="red">60 </span> سنة </h1>
+            <h1 class="ms-5 flex-row-reverse d-flex text-end">عهد جديد</h1>
             <div class="separator"></div>
         </div>
 
+
+        <div class="section-7 bg-light" style="height: 100vh !important;">
+            <div class="d-flex flex-column-reverse justify-content-center">
+                <ul class="nav nav-pills mb-3 d-flex flex-row justify-content-center" id="injazat" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="year1-tab" data-bs-toggle="pill" data-bs-target="#year1"
+                            type="button" role="tab" aria-controls="year1" aria-selected="true">1960</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="year2-tab" data-bs-toggle="pill" data-bs-target="#year2" type="button"
+                            role="tab" aria-controls="year1" aria-selected="true">1970</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="year2-tab" data-bs-toggle="pill" data-bs-target="#year2" type="button"
+                            role="tab" aria-controls="year1" aria-selected="true">1980</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="year3-tab" data-bs-toggle="pill" data-bs-target="#year3" type="button"
+                            role="tab" aria-controls="year1" aria-selected="true">1990</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="year4-tab" data-bs-toggle="pill" data-bs-target="#year4" type="button"
+                            role="tab" aria-controls="year1" aria-selected="true">2000</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="year5-tab" data-bs-toggle="pill" data-bs-target="#year5" type="button"
+                            role="tab" aria-controls="year2" aria-selected="false">2010</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="year6-tab" data-bs-toggle="pill" data-bs-target="#year6" type="button"
+                            role="tab" aria-controls="year3" aria-selected="false">2020</a>
+                    </li>
+                </ul>
+
+
+                <div class="separator"></div>
+
+
+
+
+                <div class="tab-content bg-dark overflow-hidden" id="injazat-content">
+                    <div class="tab-pane fade show active" id="year1" role="tabpanel" aria-labelledby="year1-tab">
+
+                        <div class="container text-center my-3">
+                            <div class="row mx-auto my-auto justify-content-center">
+                                <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                                    <div class="carousel-inner" role="listbox">
+
+                                        <div class="carousel-item active">
+                                            <div class="col-md-3 p-2 rounded-3">
+                                                <a href="#" class="nav-link" target="_blank" rel="noopener noreferrer">
+                                                    <div class="d-flex flex-column">
+                                                        <h3>جامع الجزائر</h3>
+                                                        <div
+                                                            class="d-flex flex-row-reverse justify-content-start align-items-end">
+                                                            <div class="separator mb-1 mx-0"></div> <span>2022</span>
+                                                        </div>
+                                                        <div class="carousel-img-bislem">
+                                                            <img src="./assets/images/martyrsMemorial.png"
+                                                                class="img-fluid mt-2" alt="maqam chahid">
+                                                            <p class="text-white p-3 pt-5">هناك حقيقة مثبتة منذ زمن طويل
+                                                                وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز
+                                                                على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة
+                                                                التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="carousel-item">
+                                            <div class="col-md-3 p-2 rounded-3">
+                                                <a href="#" class="nav-link" target="_blank" rel="noopener noreferrer">
+                                                    <div class="d-flex flex-column">
+                                                        <h3>جامع الجزائر</h3>
+                                                        <div
+                                                            class="d-flex flex-row-reverse justify-content-start align-items-end">
+                                                            <div class="separator mb-1 mx-0"></div> <span>2022</span>
+                                                        </div>
+                                                        <div class="carousel-img-bislem">
+                                                            <img src="./assets/images/martyrsMemorial.png"
+                                                                class="img-fluid mt-2" alt="maqam chahid">
+                                                            <p class="text-white p-3 pt-5">هناك حقيقة مثبتة منذ زمن طويل
+                                                                وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز
+                                                                على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة
+                                                                التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="carousel-item">
+                                            <div class="col-md-3 p-2 rounded-3">
+                                                <a href="#" class="nav-link" target="_blank" rel="noopener noreferrer">
+                                                    <div class="d-flex flex-column">
+                                                        <h3>جامع الجزائر</h3>
+                                                        <div
+                                                            class="d-flex flex-row-reverse justify-content-start align-items-end">
+                                                            <div class="separator mb-1 mx-0"></div> <span>2022</span>
+                                                        </div>
+                                                        <div class="carousel-img-bislem">
+                                                            <img src="./assets/images/martyrsMemorial.png"
+                                                                class="img-fluid mt-2" alt="maqam chahid">
+                                                            <p class="text-white p-3 pt-5">هناك حقيقة مثبتة منذ زمن طويل
+                                                                وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز
+                                                                على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة
+                                                                التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="carousel-item">
+                                            <div class="col-md-3 p-2 rounded-3">
+                                                <a href="#" class="nav-link" target="_blank" rel="noopener noreferrer">
+                                                    <div class="d-flex flex-column">
+                                                        <h3>جامع  55الجزائر</h3>
+                                                        <div
+                                                            class="d-flex flex-row-reverse justify-content-start align-items-end">
+                                                            <div class="separator mb-1 mx-0"></div> <span>2022</span>
+                                                        </div>
+                                                        <div class="carousel-img-bislem">
+                                                            <img src="./assets/images/martyrsMemorial.png"
+                                                                class="img-fluid mt-2" alt="maqam chahid">
+                                                            <p class="text-white p-3 pt-5">هناك حقيقة مثبتة منذ زمن طويل
+                                                                وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز
+                                                                على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة
+                                                                التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    
+                                    <!-- sliders controllers -->
+                                    <div class="slider-controllers d-flex bg-dark flex-row justify-content-between">
+                                        <div>
+                                            <a class="nav-link" href="#recipeCarousel" role="button"
+                                                data-bs-slide="prev">
+                                                <i class="fas fa-arrow-left-long"></i>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a class="nav-link" href="#recipeCarousel" role="button"
+                                                data-bs-slide="next">
+                                                <i class="fas fa-arrow-right-long"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            let items = document.querySelectorAll('.carousel .carousel-item')
+                            items.forEach((el) => {
+                                const minPerSlide = 4
+                                let next = el.nextElementSibling
+                                for (var i = 1; i < minPerSlide; i++) {
+                                    if (!next) {
+                                        // wrap carousel by using first child
+                                        next = items[0]
+                                    }
+                                    let cloneChild = next.cloneNode(true)
+                                    el.appendChild(cloneChild.children[0])
+                                    next = next.nextElementSibling
+                                }
+                            })
+                        </script>
+                    </div>
+                    <div class="tab-pane fade" id="year2" role="tabpanel" aria-labelledby="year2-tab">
+                        year 2</div>
+                    <div class="tab-pane fade" id="year3" role="tabpanel" aria-labelledby="year3-tab">
+                        year 3</div>
+                </div>
+            </div>
+        </div>
+
+
+
+
         <!-- the grid of posts -->
         <!-- Slider that shows posts -->
-         <!-- the grid of posts -->
-        <!-- Slider that shows posts -->
         <div class="container-fluid section-2">
-            <div class='row'>
-                <div class='col-12'>
-                    <div id="yyy" class="carousel slide"  data-bs-ride="false">
-
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#yyy" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#yyy" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#yyy" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                        </div>
 
 
-                        <div class="p-5 carousel-inner">
-                           
-                            <div class="carousel-item active">
-                                <div class="page-content06">
-                                    <div id="card06">
-                                      <div class="content06">
-                                        <h2 class="title06">مقام الشهيد</h2>
-                                        <p class="copy06 ">شالست يانس تبش بنم لكيب اكىل منكشن ستاين اشمن يستﻻن ىطلم كصنضب تكم شرةﻻىك صمبش</p>
-                                        <button class="btn06">أقرأ المزيد</button>
-                                      </div>
-                                    </div>
-                                    <div id="card06">
-                                      <div class="content06">
-                                        <h2 class="title06">ميترو الجزائر</h2>
-                                        <p class="copy06">سشي نمب لنايس ﻻنىمؤ ةصض كشبىﻻخ عىضحةص موشيم شؤةرن ﻻم ىشسةكو كؤرنخ حهلى خشسةي بركو</p>
-                                        <button class="btn06">أقرأ المزيد</button>
-                                      </div>
-                                    </div>
-                                    <div id="card06">
-                                      <div class="content06">
-                                        <h2 class="title06">ألمسجد الكبير</h2>
-                                        <p class="copy06">سكشمك بلمن ىتﻻض عخثى  هسشةمؤر كةﻻ يىثهضص حتخنس شيم بوك مرة ﻻمن ىل ثه شسب</p>
-                                        <button class="btn06">أقرأ المزيد</button>
-                                      </div>
-                                    </div>
-                                    <div id="card06">
-                                      <div class="content06">
-                                        <h2 class="title06">ألترامواي</h2>
-                                        <p class="copy06">سكشمكب نلاخضثهت  نمبشس ةﻻىمىش كةسور ﻻمصك  ةمسبش روﻻى ث شسنم بﻻةى نكة شسي</p>
-                                        <button class="btn06">أقرأ المزيد</button>
-                                      </div>
-                                    </div>
+
+            <!-- the event title -->
+            <div class="container section-4 d-flex flex-column align-items-end text-end">
+                <h1 class="red">نشاطات</h1>
+                <div class="separator float-start"></div>
+            </div>
+
+            <!-- Events wedget + read more  -->
+            <div class="container section-6">
+                <div class="row flex-row-reverse">
+
+                    <!-- the read more widget -->
+                    <div class=" col-12 mt-5">
+                        <ul class="d-flex nav flex-column">
+                            <li class="nav-item p-4">
+                                <div class="separator"></div>
+                                <!-- date -->
+                                <div class="date pt-2">الثلاثاء 10 - الاربعاء 11 ماي 2022</div>
+                                <!-- source -->
+                                <div class="source pt-2">
+                                    <a href="#" class="nav-link" target="_blank" rel="noopener noreferrer">
+                                        جامعة ورقلة ورقلة • أون لاين
+                                    </a>
                                 </div>
-                            </div>
-                           
-                            <div class="carousel-item">
-                                <div class="page-content06">
-                                    <div id="card06">
-                                      <div class="content06">
-                                        <h2 class="title06">Mountain View</h2>
-                                        <p class="copy06">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                                        <button class="btn06">View Trips</button>
-                                      </div>
-                                    </div>
-                                    <div class="card06">
-                                      <div class="content06">
-                                        <h2 class="title06">To The Beach</h2>
-                                        <p class="copy06">Plan your next beach trip with these fabulous destinations</p>
-                                        <button class="btn06">View Trips</button>
-                                      </div>
-                                    </div>
-                                    <div class="card06">
-                                      <div class="content06">
-                                        <h2 class="title06">Desert Destinations</h2>
-                                        <p class="copy06">It's the desert you've always dreamed of</p>
-                                        <button class="btn06">Book Now</button>
-                                      </div>
-                                    </div>
-                                    <div class="card06">
-                                      <div class="content06">
-                                        <h2 class="title06">Explore The Galaxy</h2>
-                                        <p class="copy06">Seriously, straight up, just blast off into outer space today</p>
-                                        <button class="btn06">Book Now</button>
-                                      </div>
-                                    </div>
+                                <div class="title pt-2">
+                                    <a href="#" class="nav-link">
+                                        <p>
+                                            هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ
+                                            عن
+                                            التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.
+                                            ولذلك
+                                            يتم استخدام طريقة لوريم إيبسوم
+                                        </p>
+                                    </a>
                                 </div>
-                        </div>
+                            </li>
+                            <li class="nav-item p-4">
+                                <div class="separator"></div>
+                                <!-- date -->
+                                <div class="date pt-2">الثلاثاء 10 - الاربعاء 11 ماي 2022</div>
+                                <!-- source -->
+                                <div class="source pt-2">
+                                    <a href="#" class="nav-link" target="_blank" rel="noopener noreferrer">
+                                        جامعة ورقلة ورقلة • أون لاين
+                                    </a>
+                                </div>
+                                <div class="title pt-2">
+                                    <a href="#" class="nav-link">
+                                        <p>
+                                            هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ
+                                            عن
+                                            التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.
+                                            ولذلك
+                                            يتم استخدام طريقة لوريم إيبسوم
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
 
-
-                        <button class="carousel-control-prev carousel-control-btn" type="button"
-                            data-bs-target="#yyy" data-bs-slide="prev">
-                            <i class="fa-solid fa-chevron-left"></i>
-
-                        </button>
-
-
-                        <button class="carousel-control-next carousel-control-btn" type="button"
-                            data-bs-target="#yyy" data-bs-slide="next">
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </button>
+                        </ul>
                     </div>
+
+
                 </div>
             </div>
-        </div>
-
-
-        <!-- the read more widget  NUMBER TWO -->
-        <div class="col-12 container d-block section-x d-md-none">
-            <h3>اقرأ المزيد من المقالات</h3>
-            <ul class="nav d-flex flex-column align-items-center justify-content-end">
-                <li>
-                    <div>
-                        <div class="d-flex flex-row justify-start align-items-center justify-content-end">
-                            <div class="separator"></div>
-                            <a class="nav-link">الأستاذ جبران</a>
-                        </div>
-                    </div>
-                    <div class="text-end">
-                        <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <div class="d-flex flex-row justify-start align-items-center justify-content-end">
-                            <div class="separator"></div>
-                            <a class="nav-link">الأستاذ جبران</a>
-                        </div>
-                    </div>
-                    <div class="text-end">
-                        <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <div class="d-flex flex-row justify-start align-items-center justify-content-end">
-                            <div class="separator"></div>
-                            <a class="nav-link">الأستاذ جبران</a>
-                        </div>
-                    </div>
-                    <div class="text-end">
-                        <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <div class="d-flex flex-row justify-start align-items-center justify-content-end">
-                            <div class="separator"></div>
-                            <a class="nav-link">الأستاذ جبران</a>
-                        </div>
-                    </div>
-                    <div class="text-end">
-                        <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
-        <!-- the event title -->
-        <div class="container section-4 d-flex flex-column align-items-end text-end">
-            <h1 class="red">نشاطات</h1>
-            <div class="separator float-start"></div>
-        </div>
-
-        <!-- Events wedget + read more  -->
-        <div class="container section-6">
-            <div class="row flex-row-reverse">
-
-                <!-- the read more widget -->
-                <div class=" col-12 mt-5">
-                    <ul class="d-flex nav flex-column">
-                        <li class="nav-item p-4">
-                            <div class="separator"></div>
-                            <!-- date -->
-                            <div class="date pt-2">الثلاثاء 10 - الاربعاء 11 ماي 2022</div>
-                            <!-- source -->
-                            <div class="source pt-2">
-                                <a href="#" class="nav-link" target="_blank" rel="noopener noreferrer">
-                                    جامعة ورقلة ورقلة • أون لاين
-                                </a>
-                            </div>
-                            <div class="title pt-2">
-                                <a href="#" class="nav-link">
-                                    <p>
-                                        هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن
-                                        التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك
-                                        يتم استخدام طريقة لوريم إيبسوم
-                                    </p>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="nav-item p-4">
-                            <div class="separator"></div>
-                            <!-- date -->
-                            <div class="date pt-2">الثلاثاء 10 - الاربعاء 11 ماي 2022</div>
-                            <!-- source -->
-                            <div class="source pt-2">
-                                <a href="#" class="nav-link" target="_blank" rel="noopener noreferrer">
-                                    جامعة ورقلة ورقلة • أون لاين
-                                </a>
-                            </div>
-                            <div class="title pt-2">
-                                <a href="#" class="nav-link">
-                                    <p>
-                                        هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن
-                                        التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك
-                                        يتم استخدام طريقة لوريم إيبسوم
-                                    </p>
-                                </a>
-                            </div>
-                        </li>
-
-                    </ul>
-                </div>
-
-
-            </div>
-        </div>
     </main>
 
     <footer class="pt-5 pb-0 px-3">
@@ -892,11 +958,12 @@
         </div>
     </footer>
 
-    <audio hidden loop autoplay>
-        <source 
+    <audio id="audio" autoplay hidden loop>
+        <source
             src="./assets/audio/Min Ajlika 3ichna ya watani Yasmine BELKACEM  من أجلك عشنا هامات المجد   ياسمين بلقاسم.mp3"
             type="audio/mp3">
     </audio>
 </body>
+<script src="./assets/js/main.js" defer></script>
 
 </html>

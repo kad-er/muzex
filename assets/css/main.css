@@ -73,7 +73,6 @@
   color: #D21034 !important;
 }
 
-<<<<<<< HEAD
 header.add-shadow {
   background: black;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(3%, rgba(0, 0, 0, 0.794528)), to(rgba(0, 0, 0, 0.37037)));
@@ -115,7 +114,6 @@ header.add-shadow {
     font-size: 20px !important;
     font-weight: 500;
   }
-=======
 header #anniversary-logo {
   width: 100vw;
   height: 50px;
@@ -123,7 +121,6 @@ header #anniversary-logo {
   left: 0;
   overflow: none;
   z-index: 1;
->>>>>>> 33a7678df8e04030d87bd3047e2def850ae3d86e
 }
 
 header #anniversary-logo h1 {
@@ -266,10 +263,7 @@ body {
 }
 
 @media screen and (max-width: 640px) {
-<<<<<<< HEAD
 
-=======
->>>>>>> 33a7678df8e04030d87bd3047e2def850ae3d86e
   .section-4,
   .section-x {
     -webkit-box-align: center !important;
@@ -572,10 +566,8 @@ html {
   overflow-x: hidden;
 }
 
-<<<<<<< HEAD
 /*# sourceMappingURL=main.css.map */
 
-=======
 .contacts-page {
   padding-top: 100px;
   min-width: 100vw;
@@ -641,7 +633,6 @@ html {
   background: linear-gradient(180deg, rgba(0, 102, 51, 0.0866625) 28%, #006633 100%) !important;
 }
 /*# sourceMappingURL=main.css.map */
->>>>>>> 33a7678df8e04030d87bd3047e2def850ae3d86e
 
 * {
   box-sizing: border-box;
@@ -876,7 +867,6 @@ html {
 
 
 
-<<<<<<< HEAD
 .strip {
   display: flex;
 }
@@ -901,10 +891,10 @@ html {
 .film__frame img {
   max-width: 100%;
   border-radius: 2px;
-=======
 
-
+}
 /*#######################################################*/
+
 #card06 {
   position: relative;
   display: flex;
@@ -1089,4 +1079,5 @@ html {
   .card06:focus-within .content06>*:not(.title06) {
     transition-duration: 0s;
   }
+}
 }
