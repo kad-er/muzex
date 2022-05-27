@@ -1,29 +1,28 @@
 <!DOCTYPE html>
-<html amp lang="en">
+<html amp lang="ar"">
 
 <head>
-    <base href="./">
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- The bootstrap css link from node modules -->
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <!-- fontawsome css link  -->
-    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <!-- bootstrap javascript  -->
-    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- fontawsome script -->
-    <script src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
-    <!-- custom css includs importing fonts -->
-    <link rel="stylesheet" href="./assets/css/main-bis.css" />
-    <!-- latin fonts including rtl styles -->
-    <link rel="stylesheet" href="./assets/css/ar-bis.css" />
-    <!-- animation css -->
-    <script src="./node_modules/aos/dist/aos.js"></script>
-    <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
-    <!-- custom js -->
-    <title>Histroy</title>
+    <base href=" ./"> <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- The bootstrap css link from node modules -->
+<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+<!-- fontawsome css link  -->
+<link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+<!-- bootstrap javascript  -->
+<link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- fontawsome script -->
+<script src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+<!-- custom css includs importing fonts -->
+<link rel="stylesheet" href="./assets/css/main-bis.css" />
+<!-- latin fonts including rtl styles -->
+<link rel="stylesheet" href="./assets/css/ar-bis.css" />
+<!-- animation css -->
+<script src="./node_modules/aos/dist/aos.js"></script>
+<link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
+<!-- custom js -->
+<title>Histroy</title>
 </head>
 
 <body style="overflow-x: hidden;">
@@ -32,7 +31,7 @@
         <!-- the 60 logo in the center -->
         <div class="position-absolute top-0 left fade-in-down subsection-on-scroll" data-mdb-animation-start="onScroll"
             id="anniversary-logo">
-            <div class="container me-5 d-flex flex-row align-items-center text-white">
+            <div class="container d-flex flex-row align-items-center justify-content-center text-white">
                 <h1 class="col-5 text-end">عهد جديد</h1>
                 <img class="col-2 mx-3 text-center" src="./assets/images/60logo.png"
                     alt="Algeria 60th anniversary indepence logo">
@@ -43,16 +42,12 @@
         <nav class="navbar transparent main-nav">
             <div class="container d-flex flex-row-reverse">
                 <!-- search bar and language link to switch -->
-                <div class="d-flex flex-row-reverse">
+                <div class="d-flex flex-row-reverse align-items-center">
                     <!-- Menu button  -->
-                    <button class="navbar-toggler shadow-none me-3" type="button" data-bs-toggle="offcanvas"
+                    <button class="navbar-toggler shadow-none me-3 text-white" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <!-- the menu humburger icon -->
-                        <svg height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                            <path
-                                d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" />
-                        </svg>
+                        <i class="fa-solid fa-bars fa-2x"></i>
                     </button>
 
                     <!-- link to toggle the language -->
@@ -75,15 +70,12 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link">
-                            <svg height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path
-                                    d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z" />
-                            </svg>
+                            <i class="fa-solid fa-magnifying-glass"></i>
                         </a>
                     </li>
                 </ul>
 
-                
+
                 <!-- The navigation drawer  -->
                 <div class="offcanvas offcanvas-start navigationdrawer" style="width: 100vw" tabindex="-1"
                     id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -98,8 +90,8 @@
                     <!-- this section is the menu that will show up when window > 768px -->
                     <div class="d-flex flex-row-reverse mt-5 d-none d-md-block d-lg-block d-xxl-block">
 
-                         <!-- the image of the martyr's memorial -->
-                         <div class="col-6 overflow-hidden d-block">
+                        <!-- the image of the martyr's memorial -->
+                        <div class="col-6 overflow-hidden d-block">
                             <div class="tab-content navigationdrawer-tabs" id="pills-tabContent">
                                 <!-- tabs starts from here  -->
                                 <div class="tab-content" id="pills-tabContent">
@@ -259,7 +251,7 @@
                             </div>
                         </div>
 
-                       
+
                     </div>
 
                     <!-- this window will show in small screens  -->
@@ -351,14 +343,14 @@
 
 
         <!-- first section with some words and the president words tebboun -->
-        <div id="mainSlider" class=" row flex-row-reverse position-relative
-        " style="height: 100vh !important;">
+        <div id="mainSlider" class="d-flex  align-items-md-end flex-md-row-reverse flex-lg-row-reverse flex-xl-row-reverse align-items-sm-center justify-content-sm-center flex-sm-column flex-column position-relative
+        " style="height: 100vh !important">
 
 
             <!-- the card with text the btn arrow down -->
-            <div class="slider1-text animate__animated animate__fadeInRight  col-lg-6 col-md-6 col-sm-12 align-items-center text-white position-relative"
+            <div class="slider1-text mt-sm-auto mt-auto mt-md-0 d-flex pe-5 flex-column animate__animated animate__fadeInRight col-lg-6 col-md-6 col-sm-10 align-items-end justify-content-center text-white"
                 style="z-index: 1;">
-                <div class="position-relative">
+                <div class="d-flex flex-column justify-content-around position-relative">
                     <span class="separator position-absolute"
                         style="width: 356px;height: 45px;background: #7FE0B2; z-index: -1;                            ;">
                     </span>
@@ -370,19 +362,18 @@
 
                     </h1>
                 </div>
-                <p class="mb-0 text-end align-self-end ms-auto">
+                <p class="mb-0 text-end">
                     بعد فترة طويلة من الاستعمار من قبل الفرنسيين ، أخذنا ما هو خلفنا ، دعنا نلقي نظرة عميقة على كيفية
                     وصولنا إلى هنا.
                 </p>
                 <a href="index_ar.html#section-2"
-                    class="mt-5 pt-5 d-none d-md-block d-lg-block d-xl-block  float-end m-0" style="width: 100px;">
-                    <img src="./assets/icons/arrowright.png" style="transform: rotate(90deg) !important;width: 100px;"
-                        alt="">
+                    class="d-none d-md-block nav-link d-lg-block d-xl-block m-0 mt-5 align-self-end">
+                    <img src="./assets/icons/arrow-down-red.png" alt="arrow-down">
                 </a>
             </div>
 
 
-            <div class="col-lg-6 align-self-end animate__fadeInLeft animate__animated">
+            <div class="col-lg-6 mx-sm-auto mt-md-0 mt-auto animate__fadeInLeft animate__animated">
                 <div class="d-flex flex-column align-items-center">
                     <!-- the social icons -->
                     <div class="align-self-start mb-5 d-none d-lg-block d-xl-block  ms-5 text-white d-flex flex-column">
@@ -441,7 +432,7 @@
             </div>
 
             <!-- the bg video -->
-            <div class="position-absolute top-0 w-100 overflow-hidden h-100" style="z-index: -1;">
+            <div class="position-absolute align-self-center top-0 w-100 overflow-hidden h-100" style="z-index: -1;">
                 <video autoplay loop muted src="./assets/videos/L.Algerie.vue.du.ciel.2015.FRENCH.HDTV.x264.mp4" style="z-index: -1;filter: brightness(50%); width: 100vw;
                     height: 100vh;
                     object-fit: cover;
@@ -463,20 +454,19 @@
         <div id="section-2" class="py-auto section-3" style="overflow-anchor: none;">
 
             <!-- title and read more wedget -->
-            <div class="row m-0 flex-row-reverse" data-aos="fade-up" data-aos-duration="1000"
+            <div class="d-flex align-items-end align-items-sm-center flex-row-reverse" data-aos="fade-up" data-aos-duration="1000"
                 data-aos-anchor-placement="top-center">
 
                 <!-- the title Tarikh majid -->
                 <div data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center"
-                    class="col-lg-8 col-xl-9 col-md-12 offset-sm-1 offset-md-2 offset-lg-0 text-end mb-5">
-                    <h1 class="ms-5">نص شكلي <br> <span class="red">
+                    class="d-sm-flex d-md-block me-lg-5 justify-content-sm-center align-items-sm-center col-lg-8 col-xl-9 col-md-12 offset-sm-0 col-sm-12 col-12 offset-md-2 offset-lg-0 text-end">
+                    <h1 class="me-5">نص شكلي <br> <span class="red">
                             تاريخ مجيد
                         </span> <br> هو ببساطة نص شكلي <br> بمعنى أن الغاية</h1>
                 </div>
 
                 <!-- Read more articles  -->
-                <div
-                    class="col-lg-4  mt-sm-5 col-xl-3 col-md-4 d-none d-md-none d-lg-block d-xl-block d-xxl-block text-end">
+                <div class="col-lg-4 col-xl-3 col-md-4 d-none d-md-none d-lg-block d-xl-block d-xxl-block text-end">
                     <h3 class="text-white">تاريخ مجيد</h3>
 
                     <ul class="nav d-flex flex-column align-items-center justify-content-end">
@@ -485,11 +475,12 @@
                             <div class="mt-0">
                                 <div class="d-flex flex-row-reverse  align-items-center justify-content-start">
                                     <div class="separator"></div>
-                                    <a href="articledeplomasya_ar.html" class="nav-link text-white">الديبلوماسية الجزائرية عبر التاريخ</a>
+                                    <a href="articledeplomasya_ar.html" class="nav-link pb-0 text-white">الديبلوماسية
+                                        الجزائرية عبر التاريخ</a>
                                 </div>
                             </div>
                             <div class="text-end text-white">
-                                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
+                                <p class="mb-1">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
                             </div>
                         </li>
                         <!-- element of read more  -->
@@ -497,11 +488,12 @@
                             <div>
                                 <div class="d-flex flex-row-reverse  align-items-center justify-content-start">
                                     <div class="separator"></div>
-                                    <a href="articledeplomasya_ar.html" class="nav-link text-white">التاريخ العسكري للجزائر </a>
+                                    <a href="articledeplomasya_ar.html" class="nav-link pb-0 text-white">التاريخ العسكري
+                                        للجزائر </a>
                                 </div>
                             </div>
                             <div class="text-end text-white">
-                                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
+                                <p class="mb-1">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
                             </div>
                         </li>
                         <!-- element of read more  -->
@@ -509,12 +501,13 @@
                             <div>
                                 <div class="d-flex flex-row-reverse  align-items-center justify-content-start">
                                     <div class="separator"></div>
-                                    <a href="articledeplomasya_ar.html" class="nav-link text-white">شخصيات التاريخ الجزائري </a>
+                                    <a href="articledeplomasya_ar.html" class="nav-link pb-0 text-white">شخصيات التاريخ
+                                        الجزائري </a>
                                 </div>
                             </div>
                             <div class="text-end text-white">
-                                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
-                                
+                                <p class="mb-1">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
+
                             </div>
                         </li>
                         <!-- element of read more  -->
@@ -522,24 +515,24 @@
                             <div>
                                 <div class="d-flex flex-row-reverse  align-items-center justify-content-start">
                                     <div class="separator"></div>
-                                    <a href="moqawama.html" class="nav-link text-white">الفنون والحضاره </a>
+                                    <a href="moqawama.html" class="nav-link pb-0 text-white">الفنون والحضاره </a>
                                 </div>
                             </div>
-                            <div class="text-end text-white mt-0">
-                                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
+                            <div class="text-end text-white">
+                                <p class="mb-1">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
                             </div>
                         </li>
 
-                         <!-- element of read more  -->
-                         <li>
+                        <!-- element of read more  -->
+                        <li>
                             <div>
                                 <div class="d-flex flex-row-reverse  align-items-center justify-content-start">
                                     <div class="separator"></div>
-                                    <a href="moqawama.html" class="nav-link text-white">التراث الجزائري  </a>
+                                    <a href="moqawama.html" class="nav-link pb-0 text-white">التراث الجزائري </a>
                                 </div>
                             </div>
                             <div class="text-end text-white">
-                                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
+                                <p class="mb-1">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة.</p>
                             </div>
                         </li>
 
@@ -548,28 +541,37 @@
             </div>
 
             <!-- secondary navigation  -->
-            <nav>
+            <nav class="mt-5">
                 <ul class="nav d-flex flex-row justify-content-center">
                     <!-- add active class to <a> tag to make it active  -->
-                   
+
                     <li class="nav-item mx-2 d-flex flex-column-reverse text-center">
-                        <a href="historyhome_ar.html" class="nav-link">  الجزائر في التاريخ المعاصر </a>
-                        <div class="separator"></div>
+                        <a href="historyhome_ar.html" class="nav-link">
+                            <div class="separator"></div>
+                            الجزائر في التاريخ المعاصر
+                        </a>
                     </li>
-                    
+
                     <li class="nav-item mx-2 d-flex flex-column-reverse text-center">
-                        <a href="historyhome_ar.html" class="nav-link">  الجزائر في التاريخ الحديث </a>
-                        <div class="separator"></div>
+                        <a href="historyhome_ar.html" class="nav-link">
+                            <div class="separator"></div>
+                            الجزائر في التاريخ الحديث
+                        </a>
                     </li>
                     <li class="nav-item mx-2 d-flex flex-column-reverse text-center">
-                        <a href="historyhome_ar.html" class="nav-link"> الجزائر في الفتح والاسلام </a>
-                        <div class="separator"></div>
+                        <a href="historyhome_ar.html" class="nav-link">
+                            <div class="separator"></div>
+                            الجزائر في الفتح والاسلام
+                        </a>
                     </li>
-                    <li class="nav-item mx-5 d-flex flex-column-reverse text-center">
-                        <a href="historyhome_ar.html" class="nav-link"> الجزائر في تاريخ القديم</a>
-                        <div class="separator"></div>
+                    <li class="nav-item mx-2 d-flex flex-column-reverse text-center">
+                        <a href="historyhome_ar.html" class="nav-link">
+                            <div class="separator"></div>
+
+                            الجزائر في تاريخ القديم
+                        </a>
                     </li>
-                    
+
                 </ul>
             </nav>
         </div>
@@ -636,7 +638,7 @@
         </div>
 
         <!-- the 60 years title  -->
-        <div class="container section-4" >
+        <div class="container section-4">
             <!-- the title  -->
             <h1 class="ms-5 flex-row-reverse d-flex text-end">عهد جديد</h1>
             <div class="separator"></div>
@@ -652,7 +654,7 @@
                     </li>
                     <li class="nav-item" role="presentation">
                         <a class="nav-link" id="year2-tab" data-bs-toggle="pill" data-bs-target="#year2" type="button"
-                            role="tab" aria-controls="year1" aria-selected="true" >1970</a>
+                            role="tab" aria-controls="year1" aria-selected="true">1970</a>
                     </li>
                     <li class="nav-item" role="presentation">
                         <a class="nav-link" id="year2-tab" data-bs-toggle="pill" data-bs-target="#year2" type="button"
@@ -693,7 +695,9 @@
 
                                         <div class="carousel-item active">
                                             <div class="col-md-3 p-2 rounded-3">
-                                                <a  class="nav-link" target="_blank" rel="noopener noreferrer" data-bs-toggle="offcanvas" href="#offcanvasExample"  aria-controls="offcanvasExample">
+                                                <a class="nav-link" target="_blank" rel="noopener noreferrer"
+                                                    data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                    aria-controls="offcanvasExample">
                                                     <div class="d-flex flex-column">
                                                         <h3>1جامع الجزائر</h3>
                                                         <div
@@ -767,7 +771,7 @@
                                             <div class="col-md-3 p-2 rounded-3">
                                                 <a href="#" class="nav-link" target="_blank" rel="noopener noreferrer">
                                                     <div class="d-flex flex-column">
-                                                        <h3>جامع  55الجزائر</h3>
+                                                        <h3>جامع 55الجزائر</h3>
                                                         <div
                                                             class="d-flex flex-row-reverse justify-content-start align-items-end">
                                                             <div class="separator mb-1 mx-0"></div> <span>2022</span>
@@ -786,7 +790,7 @@
                                         </div>
 
                                     </div>
-                                    
+
                                     <!-- sliders controllers -->
                                     <div class="slider-controllers d-flex bg-dark flex-row justify-content-between">
                                         <div>
@@ -802,7 +806,7 @@
                                             </a>
                                         </div>
                                     </div>
-                                    
+
 
                                 </div>
                             </div>
@@ -853,98 +857,17 @@
 
                     <!-- the read more widget -->
                     <div class="col-4" style="color:white">
-                        
-                            <ul class="d-flex list-unstyled flex-column">
-                                <li class="nav-item p-4">
-                                    <div class="d-flex justify-content-end">
-                                        <span class="separator" ></span>
-                                    </div>                                    <!-- date -->
-                                    <div class="date pt-2">الثلاثاء 10 - الاربعاء 11 ماي 2022</div>
-                                    <!-- source -->
-                                    <div class="source pt-2">
-                                        <a href="#" class="nav-link" target="_blank" rel="noopener noreferrer" style="color: white;text-align: end ;">
-                                            جامعة ورقلة ورقلة • أون لاين
-                                        </a>
-                                    </div>
-                                    <div class="title pt-2">
-                                        <a href="#" class="nav-link" style="color:white;text-align: end;">
-                                            <p>
-                                                هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ
-                                                عن
-                                                التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.
-                                                ولذلك
-                                                يتم استخدام طريقة لوريم إيبسوم
-                                            </p>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="nav-item p-4">
-                                    <div class="d-flex justify-content-end">
-                                        <span class="separator" ></span>
-                                    </div>                             <!-- date -->
-                                    <div class="date pt-2">الثلاثاء 10 - الاربعاء 11 ماي 2022</div>
-                                    <!-- source -->
-                                    <div class="source pt-2">
-                                        <a href="#" class="nav-link" target="_blank" rel="noopener noreferrer" style="color: white;text-align: end;">
-                                            جامعة ورقلة ورقلة • أون لاين
-                                        </a>
-                                    </div>
-                                    <div class="title pt-2">
-                                        <a href="#" class="nav-link" style="color:white;text-align: end;">
-                                            <p>
-                                                هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ
-                                                عن
-                                                التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.
-                                                ولذلك
-                                                يتم استخدام طريقة لوريم إيبسوم
-                                            </p>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="nav-item p-4">
-                                    <div class="d-flex justify-content-end">
-                                        <span class="separator" ></span>
-                                    </div>                                    <!-- date -->
-                                    <div class="date pt-2">الثلاثاء 10 - الاربعاء 11 ماي 2022</div>
-                                    <!-- source -->
-                                    <div class="source pt-2">
-                                        <a href="#" class="nav-link" target="_blank" rel="noopener noreferrer" style="color: white;text-align: end;">
-                                            جامعة ورقلة ورقلة • أون لاين
-                                        </a>
-                                    </div>
-                                    <div class="title pt-2">
-                                        <a href="#" class="nav-link" style="color:white;text-align: end;">
-                                            <p>
-                                                هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ
-                                                عن
-                                                التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.
-                                                ولذلك
-                                                يتم استخدام طريقة لوريم إيبسوم
-                                            </p>
-                                        </a>
-                                    </div>
-                                </li>
-    
-                            </ul>
-                        
-    
-                    </div>
 
-<div class="col min-vh-100" >
-    <img class="img-fluid h-100" src="./assets/images/Rectangle 165.jpg" alt="" >
-</div>
-
-                    <div class="col-4" style="color:white">
-                        
                         <ul class="d-flex list-unstyled flex-column">
                             <li class="nav-item p-4">
                                 <div class="d-flex justify-content-end">
-                                    <span class="separator" ></span>
-                                </div>                                <!-- date -->
+                                    <span class="separator"></span>
+                                </div> <!-- date -->
                                 <div class="date pt-2">الثلاثاء 10 - الاربعاء 11 ماي 2022</div>
                                 <!-- source -->
                                 <div class="source pt-2">
-                                    <a href="#" class="nav-link" target="_blank" rel="noopener noreferrer" style="color: white;text-align: end;">
+                                    <a href="#" class="nav-link" target="_blank" rel="noopener noreferrer"
+                                        style="color: white;text-align: end ;">
                                         جامعة ورقلة ورقلة • أون لاين
                                     </a>
                                 </div>
@@ -962,12 +885,13 @@
                             </li>
                             <li class="nav-item p-4">
                                 <div class="d-flex justify-content-end">
-                                    <span class="separator" ></span>
-                                </div>                                <!-- date -->
+                                    <span class="separator"></span>
+                                </div> <!-- date -->
                                 <div class="date pt-2">الثلاثاء 10 - الاربعاء 11 ماي 2022</div>
                                 <!-- source -->
                                 <div class="source pt-2">
-                                    <a href="#" class="nav-link" target="_blank" rel="noopener noreferrer" style="color: white;text-align: end;">
+                                    <a href="#" class="nav-link" target="_blank" rel="noopener noreferrer"
+                                        style="color: white;text-align: end;">
                                         جامعة ورقلة ورقلة • أون لاين
                                     </a>
                                 </div>
@@ -985,13 +909,13 @@
                             </li>
                             <li class="nav-item p-4">
                                 <div class="d-flex justify-content-end">
-                                <span class="separator" ></span>
-                            </div>
-                                <!-- date -->
+                                    <span class="separator"></span>
+                                </div> <!-- date -->
                                 <div class="date pt-2">الثلاثاء 10 - الاربعاء 11 ماي 2022</div>
                                 <!-- source -->
                                 <div class="source pt-2">
-                                    <a href="#" class="nav-link" target="_blank" rel="noopener noreferrer" style="color: white;text-align: end;">
+                                    <a href="#" class="nav-link" target="_blank" rel="noopener noreferrer"
+                                        style="color: white;text-align: end;">
                                         جامعة ورقلة ورقلة • أون لاين
                                     </a>
                                 </div>
@@ -1009,9 +933,95 @@
                             </li>
 
                         </ul>
-                    
 
-                </div>
+
+                    </div>
+
+                    <div class="col min-vh-100">
+                        <img class="img-fluid h-100" src="./assets/images/Rectangle 165.jpg" alt="">
+                    </div>
+
+                    <div class="col-4" style="color:white">
+
+                        <ul class="d-flex list-unstyled flex-column">
+                            <li class="nav-item p-4">
+                                <div class="d-flex justify-content-end">
+                                    <span class="separator"></span>
+                                </div> <!-- date -->
+                                <div class="date pt-2">الثلاثاء 10 - الاربعاء 11 ماي 2022</div>
+                                <!-- source -->
+                                <div class="source pt-2">
+                                    <a href="#" class="nav-link" target="_blank" rel="noopener noreferrer"
+                                        style="color: white;text-align: end;">
+                                        جامعة ورقلة ورقلة • أون لاين
+                                    </a>
+                                </div>
+                                <div class="title pt-2">
+                                    <a href="#" class="nav-link" style="color:white;text-align: end;">
+                                        <p>
+                                            هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ
+                                            عن
+                                            التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.
+                                            ولذلك
+                                            يتم استخدام طريقة لوريم إيبسوم
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item p-4">
+                                <div class="d-flex justify-content-end">
+                                    <span class="separator"></span>
+                                </div> <!-- date -->
+                                <div class="date pt-2">الثلاثاء 10 - الاربعاء 11 ماي 2022</div>
+                                <!-- source -->
+                                <div class="source pt-2">
+                                    <a href="#" class="nav-link" target="_blank" rel="noopener noreferrer"
+                                        style="color: white;text-align: end;">
+                                        جامعة ورقلة ورقلة • أون لاين
+                                    </a>
+                                </div>
+                                <div class="title pt-2">
+                                    <a href="#" class="nav-link" style="color:white;text-align: end;">
+                                        <p>
+                                            هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ
+                                            عن
+                                            التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.
+                                            ولذلك
+                                            يتم استخدام طريقة لوريم إيبسوم
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item p-4">
+                                <div class="d-flex justify-content-end">
+                                    <span class="separator"></span>
+                                </div>
+                                <!-- date -->
+                                <div class="date pt-2">الثلاثاء 10 - الاربعاء 11 ماي 2022</div>
+                                <!-- source -->
+                                <div class="source pt-2">
+                                    <a href="#" class="nav-link" target="_blank" rel="noopener noreferrer"
+                                        style="color: white;text-align: end;">
+                                        جامعة ورقلة ورقلة • أون لاين
+                                    </a>
+                                </div>
+                                <div class="title pt-2">
+                                    <a href="#" class="nav-link" style="color:white;text-align: end;">
+                                        <p>
+                                            هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ
+                                            عن
+                                            التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.
+                                            ولذلك
+                                            يتم استخدام طريقة لوريم إيبسوم
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+
+                        </ul>
+
+
+                    </div>
                 </div>
             </div>
     </main>
@@ -1096,8 +1106,10 @@
     </audio>
 
 
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="width: 100%">
-        <button type="button" class="btn-close text-reset mx-5 my-2" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"
+        style="width: 100%">
+        <button type="button" class="btn-close text-reset mx-5 my-2" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
 
         <main class="d-flex container" dir="rtl">
             <div class="col mx-4 mt-5">
@@ -1116,13 +1128,18 @@
             letter-spacing: 0em;
             text-align:justify;
             ">
-                    مقام الشهيد<br>لا يدان أي شخص بجريمة بسبب أي عمل أو امتناع عن عمل لم يكن في حينه يشكل جرما بمقتضى القانون الوطني أو الدولي، كما لا توقع عليه أية عقوبة أشد من تلك التي كانت سارية في الوقت الذي ارتكب فيه الفعل الجرمي. 
-                    ليس في هذا الإعلان أي نص يجوز تأويله على نحو يفيد انطواءه على تخويل أية دولة أو جماعة، أو أي فرد، أي حق في القيام بأي نشاط أو بأي فعل يهدف إلى هدم أي من الحقوق والحريات المنصوص عليها فيه. 
-                    لكل فرد حق التمتع بنظام اجتماعي ودولي يمكن أن تتحقق في ظله الحقوق والحريات المنصوص عليها في هذا الإعلان تحققا تاما.
-                    
-                     لكل شخص حق في حرية الاشتراك في الاجتماعات والجمعيات السلمية.
-                    لكل شخص حق اللجوء إلى المحاكم الوطنية المختصة لإنصافه الفعلي من أية أعمال تنتهك الحقوق الأساسية التي يمنحها إياه الدستور أو القانون. 
-                    
+                    مقام الشهيد<br>لا يدان أي شخص بجريمة بسبب أي عمل أو امتناع عن عمل لم يكن في حينه يشكل جرما بمقتضى
+                    القانون الوطني أو الدولي، كما لا توقع عليه أية عقوبة أشد من تلك التي كانت سارية في الوقت الذي ارتكب
+                    فيه الفعل الجرمي.
+                    ليس في هذا الإعلان أي نص يجوز تأويله على نحو يفيد انطواءه على تخويل أية دولة أو جماعة، أو أي فرد، أي
+                    حق في القيام بأي نشاط أو بأي فعل يهدف إلى هدم أي من الحقوق والحريات المنصوص عليها فيه.
+                    لكل فرد حق التمتع بنظام اجتماعي ودولي يمكن أن تتحقق في ظله الحقوق والحريات المنصوص عليها في هذا
+                    الإعلان تحققا تاما.
+
+                    لكل شخص حق في حرية الاشتراك في الاجتماعات والجمعيات السلمية.
+                    لكل شخص حق اللجوء إلى المحاكم الوطنية المختصة لإنصافه الفعلي من أية أعمال تنتهك الحقوق الأساسية التي
+                    يمنحها إياه الدستور أو القانون.
+
                 </p>
             </div>
             <div class="col mt-5">
@@ -1147,16 +1164,13 @@
                 <div class="row d-flex">
 
                     <div class="col">
-                        <img class="img-fluid" src="./assets/images/maqam.jpg" onclick="myFunction(this);"
-                            >
+                        <img class="img-fluid" src="./assets/images/maqam.jpg" onclick="myFunction(this);">
                     </div>
                     <div class="col">
-                        <img class="img-fluid" src="./assets/images/masjid.jpg"
-                            onclick="myFunction(this);" >
+                        <img class="img-fluid" src="./assets/images/masjid.jpg" onclick="myFunction(this);">
                     </div>
                     <div class="col">
-                        <img class="img-fluid" src="./assets/images/maqam.jpg" 
-                            onclick="myFunction(this);">
+                        <img class="img-fluid" src="./assets/images/maqam.jpg" onclick="myFunction(this);">
                     </div>
                 </div>
             </div>
@@ -1176,7 +1190,7 @@
                 expandImg.parentElement.style.display = "block";
             }
         </script>
-      </div>
+    </div>
 
 
 </body>

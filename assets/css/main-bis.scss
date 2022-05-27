@@ -108,7 +108,7 @@ header {
     #anniversary-logo {
         width: 100vw;
         height: 50px;
-        top: 20px !important;
+        top: 70px !important;
         left: 0;
         overflow: none;
         z-index: 1;
@@ -150,6 +150,16 @@ header.add-shadow {
         height: 25px !important;
         width: 100px !important;
         top: 50%;
+    }
+
+    img {
+        filter: brightness(0) invert(1);
+        transition: filter ease .2s;
+        padding: 10px;
+    }
+
+    a:hover>img {
+        filter: none;
     }
 
     @media screen and(max-width: 1200px) {
@@ -209,6 +219,7 @@ header.add-shadow {
 }
 
 #mainSlider {
+    height: inherit;
 
     .nav {
         a {
@@ -280,7 +291,7 @@ body {
 }
 
 html {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 .section-3 {
@@ -343,10 +354,16 @@ html {
             padding-left: 0;
             text-align: right;
             padding-bottom: 30px;
+
         }
 
         a:hover {
             color: #7FE0B2;
+            transition: transform ease-in-out;
+            transform: scale(1.1);
+            &>.separator{
+                background-color: #D21034;
+            }
         }
 
         .nav-link.active~.separator {
