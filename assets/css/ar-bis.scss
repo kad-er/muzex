@@ -237,16 +237,7 @@ footer {
 
 
 .navigationdrawer {
-    .navigationdrawer-tabs {
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        background-color: #FFF1E2;
-        right: 0 !important;
-        left: unset;
-        width: inherit;
-    }
-
+   
     #pills-tabContent>div {
         .sous-nav {
             a {

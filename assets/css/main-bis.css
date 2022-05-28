@@ -16,13 +16,6 @@
   font-family: 'AlWatanHeadlines' !important;
 }
 
-/********************************************************************************************************************************************************************************/
-.offcanvas-img {
-  background-image: url("../images/martyrsMemorial.png");
-  background-position: 0 0;
-  background-size: cover;
-}
-
 .main-nav {
   position: absolute;
   top: 0;

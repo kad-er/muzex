@@ -22,6 +22,7 @@ function ui() {
     let tt = tabTriggers[i];
     tt.addEventListener("click", () => {
       document.getElementById("offcanvas-img").classList.add("d-none");
+      document.getElementById("pills-tabContent").classList.remove("d-none");
     });
     
   }

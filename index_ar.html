@@ -40,8 +40,10 @@
         </div>
 
         <nav class="navbar transparent main-nav">
+
             <div class="container d-flex flex-row-reverse">
                 <!-- search bar and language link to switch -->
+
                 <div class="d-flex flex-row-reverse align-items-center">
                     <!-- Menu button  -->
                     <button class="navbar-toggler shadow-none me-3 text-white" type="button" data-bs-toggle="offcanvas"
@@ -68,60 +70,68 @@
                     <li class="nav-item d-none d-md-block d-lg-block d-xl-block d-xxl-block">
                         <a class="nav-link" href="#">برنامج النشاطات</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link">
+
+                    <li>
+                        <!-- Button trigger modal -->
+                        <a type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                            class="btn btn-default navbar-btn">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </a>
                     </li>
+
+
+                    <!-- <li class="nav-item">
+                        <a class="nav-link">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </li> -->
                 </ul>
 
-
                 <!-- The navigation drawer  -->
-                <div class="offcanvas offcanvas-start navigationdrawer" style="width: 100vw" tabindex="-1"
+                <div dir="rtl" class="offcanvas offcanvas-end navigationdrawer min-vw-100" tabindex="-1"
                     id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <!-- the close button in the top -->
                     <div class="offcanvas-header d-flex flex-row-reverse fixed-top">
                         <h5 class="offcanvas-title text-white" style="font-weight: 100" id="offcanvasNavbarLabel">
-                            #Martyr's_memorial
+                            #مقام_الشهيد
                         </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <button type="button" class="btn-close btn btn-outline-light p-2 m-1 me-3"
+                            style="font-size: 20px;border-radius: 50%;" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
                     </div>
 
                     <!-- this section is the menu that will show up when window > 768px -->
-                    <div class="d-flex flex-row-reverse mt-5 d-none d-md-block d-lg-block d-xxl-block">
+                    <div class="d-flex flex-row-reverse text-end min-vh-100 d-none d-md-flex d-lg-flex d-xxl-flex">
 
                         <!-- the image of the martyr's memorial -->
-                        <div class="col-6 overflow-hidden d-block">
-                            <div class="tab-content navigationdrawer-tabs" id="pills-tabContent">
+                        <div class="col-6 overflow-hidden">
+                            <div class="tab-content navigationdrawer-tabs d-block d-none" id="pills-tabContent">
                                 <!-- tabs starts from here  -->
-                                <div class="tab-content" id="pills-tabContent">
+                                <div>
 
                                     <!-- history tab -->
-                                    <div class="tab-pane fade p-5" id="history-tab" role="tabpanel"
+                                    <div class="tab-pane fade p-5 text-end" id="history-tab" role="tabpanel"
                                         aria-labelledby="pills-history-tab">
-                                        <span class="mt-3 d-block">History</span>
+                                        <span class="mt-3 d-block">
+                                            تاريخ</span>
                                         <div class="separator"></div>
                                         <div class="d-flex align-items-start">
                                             <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
                                                 aria-orientation="vertical">
                                                 <a class="nav-link active" id="v-pills-b-tab" data-bs-toggle="pill"
                                                     data-bs-target="#v-pills-b" type="button" role="tab"
-                                                    aria-controls="v-pills-b" aria-selected="true">The Prehistoric
+                                                    aria-controls="v-pills-b" aria-selected="true">العصور القديمة
                                                 </a>
                                                 <a class="nav-link" id="v-pills-a-tab" data-bs-toggle="pill"
                                                     data-bs-target="#v-pills-a" type="button" role="tab"
-                                                    aria-controls="v-pills-a" aria-selected="false">The Antiquity
+                                                    aria-controls="v-pills-a" aria-selected="false">العصر الوسيط
                                                 </a>
                                                 <a class="nav-link" id="v-pills-z-tab" data-bs-toggle="pill"
                                                     data-bs-target="#v-pills-z" type="button" role="tab"
-                                                    aria-controls="v-pills-z" aria-selected="false">Middle Ages</a>
+                                                    aria-controls="v-pills-z" aria-selected="false">العصر الحديث</a>
                                                 <a class="nav-link" id="v-pills-y-tab" data-bs-toggle="pill"
                                                     data-bs-target="#v-pills-y" type="button" role="tab"
-                                                    aria-controls="v-pills-y" aria-selected="false">Modern Times</a>
-                                                <a class="nav-link" id="v-pills-x-tab" data-bs-toggle="pill"
-                                                    data-bs-target="#v-pills-x" type="button" role="tab"
-                                                    aria-controls="v-pills-x" aria-selected="false">Contomporary
-                                                    era</a>
+                                                    aria-controls="v-pills-y" aria-selected="false">التاريخ المعاصر</a>
                                             </div>
                                             <!-- the tab > tab contents -->
                                             <div class="tab-content" id="v-pills-tabContent">
@@ -131,37 +141,32 @@
                                                     <ul class="sous-nav nav flex-column">
                                                         <li class="nav-item">
                                                             <a href="#" class="nav-link">
-                                                                Prehistoric Man
+                                                                رجل ما قبل التاريخ
                                                             </a>
                                                         </li>
                                                         <li class="nav-item">
                                                             <a href="#" class="nav-link">
-                                                                Prehistoric civilization
+                                                                حضارة ما قبل التاريخ
                                                             </a>
                                                         </li>
                                                         <li class="nav-item">
                                                             <a href="#" class="nav-link">
-                                                                Prehistoric sites
+                                                                مواقع ما قبل التاريخ
                                                             </a>
                                                         </li>
                                                     </ul>
                                                 </div>
                                                 <div class="tab-pane fade" id="v-pills-a" role="tabpanel"
                                                     aria-labelledby="v-pills-a-tab">
-                                                    The Antiquity
+                                                    العصور القديمة
                                                 </div>
                                                 <div class="tab-pane fade" id="v-pills-z" role="tabpanel"
                                                     aria-labelledby="v-pills-z-tab">
-                                                    Middle Ages
+                                                    العصور الوسطى
                                                 </div>
                                                 <div class="tab-pane fade" id="v-pills-y" role="tabpanel"
                                                     aria-settings="v-pills-y-tab">
-                                                    Modern Times
-                                                </div>
-                                                <div class="tab-pane fade" id="v-pills-x" role="tabpanel"
-                                                    aria-labelledby="v-pills-x-tab">
-                                                    Contomporary era
-                                                </div>
+                                                    العصور الحديثة </div>
                                             </div>
                                         </div>
                                     </div>
@@ -180,42 +185,42 @@
                                 </div>
                             </div>
 
-                            <div class="offcanvas-img">
-
+                            <div class="offcanvas-img" id="offcanvas-img">
+                                <img class="img-fluid min-vh-100" src="./assets/images/martyrsMemorial.png"
+                                    alt="Martyr's Memorial Algeria" />
                             </div>
 
-                            <!-- <img class="offcanvas-img" id="offcanvas-img" src="./assets/images/martyrsMemorial.png"
-                                    alt="Martyr's Memorial Algeria" /> -->
                         </div>
 
 
                         <!-- the content of the navigation drawer  -->
-                        <div class="col-6 overflow-hidden">
-                            <div class="row">
-                                <div class="col-md-2 col-lg-3"></div>
+                        <div dir="rtl" class="col-6 text-end">
+                            <div class="d-flex flex-row justify-content-center align-items-center">
                                 <!-- Nav menu  -->
                                 <ul id="pills-tab" role="tablist"
                                     class="col-md-10 nav nav-pills col-lg-9 offset-sm-4 offset-2 navbar-nav d-flex flex-column pt-5">
                                     <li class="nav-item text-center text-capitalize">
                                         <a class="nav-link text-black tab-trigger" aria-current="page" id="history"
                                             data-bs-toggle="pill" data-bs-target="#history-tab" type="button" role="tab"
-                                            aria-controls="history-tab" aria-selected="false">History</a>
+                                            aria-controls="history-tab" aria-selected="false">
+                                            تاريخ</a>
                                     </li>
                                     <li class="nav-item text-center text-capitalize">
                                         <a class="nav-link text-black tab-trigger" href="#" id="years"
                                             data-bs-toggle="pill" data-bs-target="#years-tab" type="button" role="tab"
-                                            aria-controls="years-tab" aria-selected="false">60 years</a>
+                                            aria-controls="years-tab" aria-selected="false">عهد جديد</a>
                                     </li>
                                     <li class="nav-item text-center text-capitalize">
                                         <a class="nav-link text-black tab-trigger" aria-current="page" href="#"
                                             id="events" data-bs-toggle="pill" data-bs-target="#events-tab" type="button"
-                                            role="tab" aria-controls="evenst-tab" aria-selected="false">Events</a>
+                                            role="tab" aria-controls="evenst-tab" aria-selected="false">النشاطات</a>
                                     </li>
                                     <li class="nav-item text-center text-capitalize">
-                                        <a class="nav-link text-black" href="#">Contact Us</a>
+                                        <a class="nav-link text-black" href="#">إتصل بنا</a>
                                     </li>
                                     <!-- the red separator -->
                                     <div class="separator"></div>
+
                                     <div class="contacts">
                                         <li class="nav-item text-center text-capitalize">
                                             <a class="text-black" href="tel:+213xxxxxxxxx">023-555-555</a>
@@ -250,12 +255,10 @@
                                 </ul>
                             </div>
                         </div>
-
-
                     </div>
 
                     <!-- this window will show in small screens  -->
-                    <div class="row mt-5 small-secreen">
+                    <div class="d-flex justify-content-center text-center flex-row mt-5 small-secreen">
                         <ul class="nav d-flex flex-column justify-content-center text-center" id="mobile-nav">
                             <li class="nav-item text-center">
                                 <a class="nav-link text-center" data-bs-toggle="collapse" href="#h" role="button"
@@ -652,8 +655,8 @@
         <div class="section-7 bg-light mb-5 min-vh-100">
             <div class="d-flex flex-column-reverse justify-content-center">
                 <!-- these are the years and they are just buttons of tabs (collapsable) -->
-                <ul data-aos="fade-up" data-aos-duration="1000" class="nav nav-pills mb-3 d-flex flex-row justify-content-center" id="injazat"
-                    role="tablist">
+                <ul data-aos="fade-up" data-aos-duration="1000"
+                    class="nav nav-pills mb-3 d-flex flex-row justify-content-center" id="injazat" role="tablist">
                     <li class="nav-item" role="presentation">
                         <a class="nav-link active" id="year1-tab" data-bs-toggle="pill" data-bs-target="#year1"
                             type="button" role="tab" aria-controls="year1" aria-selected="true">1960</a>
@@ -840,7 +843,8 @@
         <div class="container-fluid section-2">
 
             <!-- the nachatat title -->
-            <div data-aos="fade-up" data-aos-duration="1200" class="container section-4 d-flex flex-column align-items-end text-end">
+            <div data-aos="fade-up" data-aos-duration="1200"
+                class="container section-4 d-flex flex-column align-items-end text-end">
                 <h1 class="red">نشاطات</h1>
                 <div class="separator float-start"></div>
             </div>
@@ -936,7 +940,8 @@
 
                     </div>
 
-                    <div data-aos="fade-up" data-aos-duration="1500"  class="col align-self-center d-lg-none d-md-none d-sm-none d-xl-block">
+                    <div data-aos="fade-up" data-aos-duration="1500"
+                        class="col align-self-center d-lg-none d-md-none d-sm-none d-xl-block">
                         <img class="img-fluid" src="./assets/images/Rectangle 165.jpg" alt="">
                     </div>
 
