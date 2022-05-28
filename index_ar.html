@@ -454,8 +454,8 @@
         <div id="section-2" class="py-auto section-3" style="overflow-anchor: none;">
 
             <!-- title and read more wedget -->
-            <div class="d-flex align-items-end align-items-sm-center flex-row-reverse" data-aos="fade-up" data-aos-duration="1000"
-                data-aos-anchor-placement="top-center">
+            <div class="d-flex align-items-end align-items-sm-center flex-row-reverse" data-aos="fade-up"
+                data-aos-duration="1000" data-aos-anchor-placement="top-center">
 
                 <!-- the title Tarikh majid -->
                 <div data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center"
@@ -576,6 +576,8 @@
             </nav>
         </div>
 
+
+        <!-- the read more widget for mobile version only (loop a second time) -->
         <div class="container d-block  small-secreen-read-more  d-lg-none my-5 py-5" data-aos="fade-up"
             data-aos-duration="1000">
             <!-- Read more articles  -->
@@ -637,17 +639,21 @@
             </div>
         </div>
 
-        <!-- the 60 years title  -->
+
+        <!-- the Injazat (aahd jadid) title  -->
         <div class="container section-4">
             <!-- the title  -->
-            <h1 class="ms-5 flex-row-reverse d-flex text-end">عهد جديد</h1>
-            <div class="separator"></div>
+            <h1 data-aos="fade-up" data-aos-duration="1000" class="ms-5 flex-row-reverse d-flex text-end">عهد جديد</h1>
+            <div data-aos="fade-up" data-aos-duration="1200" class="separator"></div>
         </div>
 
 
-        <div class="section-7 bg-light" style="height: 100vh !important;">
+        <!-- the injazat slider -->
+        <div class="section-7 bg-light mb-5 min-vh-100">
             <div class="d-flex flex-column-reverse justify-content-center">
-                <ul class="nav nav-pills mb-3 d-flex flex-row justify-content-center" id="injazat" role="tablist">
+                <!-- these are the years and they are just buttons of tabs (collapsable) -->
+                <ul data-aos="fade-up" data-aos-duration="1000" class="nav nav-pills mb-3 d-flex flex-row justify-content-center" id="injazat"
+                    role="tablist">
                     <li class="nav-item" role="presentation">
                         <a class="nav-link active" id="year1-tab" data-bs-toggle="pill" data-bs-target="#year1"
                             type="button" role="tab" aria-controls="year1" aria-selected="true">1960</a>
@@ -678,21 +684,22 @@
                     </li>
                 </ul>
 
+                <!-- just a separator  -->
+                <div data-aos="fade-up" data-aos-duration="900" class="separator"></div>
 
-                <div class="separator"></div>
-
-
-
-
+                <!-- the slides content (the cards) -->
                 <div class="tab-content bg-dark overflow-hidden" id="injazat-content">
-                    <div class="tab-pane fade show active" id="year1" role="tabpanel" aria-labelledby="year1-tab">
 
+                    <!-- the slider content of the first year 1960  (active tab)-->
+                    <div class="tab-pane fade show active" id="year1" role="tabpanel" aria-labelledby="year1-tab">
                         <div class="container text-center my-3">
                             <div class="row mx-auto my-auto justify-content-center">
                                 <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
 
+                                    <!-- the slider content  -->
                                     <div class="carousel-inner" role="listbox">
 
+                                        <!-- slider item (active one) -->
                                         <div class="carousel-item active">
                                             <div class="col-md-3 p-2 rounded-3">
                                                 <a class="nav-link" target="_blank" rel="noopener noreferrer"
@@ -718,7 +725,7 @@
                                         </div>
 
 
-
+                                        <!-- another slide item  -->
                                         <div class="carousel-item">
                                             <div class="col-md-3 p-2 rounded-3">
                                                 <a href="#" class="nav-link" target="_blank" rel="noopener noreferrer">
@@ -742,7 +749,7 @@
                                         </div>
 
 
-
+                                        <!-- another slide item  -->
                                         <div class="carousel-item">
                                             <div class="col-md-3 p-2 rounded-3">
                                                 <a href="#" class="nav-link" target="_blank" rel="noopener noreferrer">
@@ -766,7 +773,7 @@
                                         </div>
 
 
-
+                                        <!-- another slide item  -->
                                         <div class="carousel-item">
                                             <div class="col-md-3 p-2 rounded-3">
                                                 <a href="#" class="nav-link" target="_blank" rel="noopener noreferrer">
@@ -796,13 +803,15 @@
                                         <div>
                                             <a class="nav-link" href="#recipeCarousel" role="button"
                                                 data-bs-slide="prev">
-                                                <i class="fas fa-arrow-left-long"></i>
+                                                <img src="./assets/icons/arrow-left.png" alt="arrow left">
                                             </a>
                                         </div>
                                         <div>
+                                            <!-- you add `over` class to make the arrow look disabled  -->
                                             <a class="nav-link" href="#recipeCarousel" role="button"
                                                 data-bs-slide="next">
-                                                <i class="fas fa-arrow-right-long"></i>
+                                                <img src="./assets/icons/arrow-left.png"
+                                                    style="transform: rotate(180deg);" alt="arrow left">
                                             </a>
                                         </div>
                                     </div>
@@ -811,27 +820,15 @@
                                 </div>
                             </div>
                         </div>
-                        <script>
-                            let items = document.querySelectorAll('.carousel .carousel-item')
-                            items.forEach((el) => {
-                                const minPerSlide = 4
-                                let next = el.nextElementSibling
-                                for (var i = 1; i < minPerSlide; i++) {
-                                    if (!next) {
-                                        // wrap carousel by using first child
-                                        next = items[0]
-                                    }
-                                    let cloneChild = next.cloneNode(true)
-                                    el.appendChild(cloneChild.children[0])
-                                    next = next.nextElementSibling
-                                }
-                            })
-                        </script>
                     </div>
+
+                    <!-- these are more tabs u can put more slides like the one before here for the other year -->
                     <div class="tab-pane fade" id="year2" role="tabpanel" aria-labelledby="year2-tab">
                         year 2</div>
                     <div class="tab-pane fade" id="year3" role="tabpanel" aria-labelledby="year3-tab">
                         year 3</div>
+
+
                 </div>
             </div>
         </div>
@@ -839,27 +836,25 @@
 
 
 
-        <!-- the grid of posts -->
-        <!-- Slider that shows posts -->
+        <!-- section 4 the posts last section -->
         <div class="container-fluid section-2">
 
-
-
-            <!-- the event title -->
-            <div class="container section-4 d-flex flex-column align-items-end text-end">
+            <!-- the nachatat title -->
+            <div data-aos="fade-up" data-aos-duration="1200" class="container section-4 d-flex flex-column align-items-end text-end">
                 <h1 class="red">نشاطات</h1>
                 <div class="separator float-start"></div>
             </div>
 
-            <!-- Events wedget + read more  -->
+            <!-- the latest posts  -->
             <div class="container section-6" style="background: none">
                 <div class="row justify-content-between text-end">
 
-                    <!-- the read more widget -->
-                    <div class="col-4" style="color:white">
+
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 text-white">
 
                         <ul class="d-flex list-unstyled flex-column">
-                            <li class="nav-item p-4">
+                            <!-- one post card -->
+                            <li data-aos="fade-right" data-aos-duration="1200" class="nav-item p-4">
                                 <div class="d-flex justify-content-end">
                                     <span class="separator"></span>
                                 </div> <!-- date -->
@@ -883,7 +878,9 @@
                                     </a>
                                 </div>
                             </li>
-                            <li class="nav-item p-4">
+
+                            <!-- one post card -->
+                            <li data-aos="fade-right" data-aos-duration="1200" class="nav-item p-4">
                                 <div class="d-flex justify-content-end">
                                     <span class="separator"></span>
                                 </div> <!-- date -->
@@ -907,7 +904,9 @@
                                     </a>
                                 </div>
                             </li>
-                            <li class="nav-item p-4">
+
+                            <!-- one post card -->
+                            <li data-aos="fade-right" data-aos-duration="1200" class="nav-item p-4">
                                 <div class="d-flex justify-content-end">
                                     <span class="separator"></span>
                                 </div> <!-- date -->
@@ -937,14 +936,15 @@
 
                     </div>
 
-                    <div class="col min-vh-100">
-                        <img class="img-fluid h-100" src="./assets/images/Rectangle 165.jpg" alt="">
+                    <div data-aos="fade-up" data-aos-duration="1500"  class="col align-self-center d-lg-none d-md-none d-sm-none d-xl-block">
+                        <img class="img-fluid" src="./assets/images/Rectangle 165.jpg" alt="">
                     </div>
 
-                    <div class="col-4" style="color:white">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 text-white">
 
                         <ul class="d-flex list-unstyled flex-column">
-                            <li class="nav-item p-4">
+                            <!-- item -->
+                            <li data-aos="fade-left" data-aos-duration="1200" class="nav-item p-4">
                                 <div class="d-flex justify-content-end">
                                     <span class="separator"></span>
                                 </div> <!-- date -->
@@ -968,7 +968,8 @@
                                     </a>
                                 </div>
                             </li>
-                            <li class="nav-item p-4">
+                            <!-- item -->
+                            <li data-aos="fade-left" data-aos-duration="1200" class="nav-item p-4">
                                 <div class="d-flex justify-content-end">
                                     <span class="separator"></span>
                                 </div> <!-- date -->
@@ -992,7 +993,8 @@
                                     </a>
                                 </div>
                             </li>
-                            <li class="nav-item p-4">
+                            <!-- item -->
+                            <li data-aos="fade-left" data-aos-duration="1200" class="nav-item p-4">
                                 <div class="d-flex justify-content-end">
                                     <span class="separator"></span>
                                 </div>
@@ -1020,10 +1022,13 @@
 
                         </ul>
 
-
                     </div>
                 </div>
             </div>
+        </div>
+
+
+
     </main>
 
     <footer class="pt-5 pb-0 px-3">
@@ -1106,6 +1111,7 @@
     </audio>
 
 
+    <!-- the offcanva that appears when clicking on slide 1 1960 -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"
         style="width: 100%">
         <button type="button" class="btn-close text-reset mx-5 my-2" data-bs-dismiss="offcanvas"

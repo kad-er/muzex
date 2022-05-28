@@ -14,6 +14,8 @@ function watchNavBar() {
 
 window.addEventListener("load", ui);
 
+
+// the ui function 
 function ui() {
   //getting the navigation drawer buttons
   for (let i = 0; i < tabTriggers.length; i++) {
@@ -23,6 +25,14 @@ function ui() {
     });
     
   }
+
+  // try to run the audio
+  try{
+    audio.play();
+  }catch(e){
+    console.error(e);
+  }
+
   mutebtn.addEventListener('click',()=>{
     // alert(muted)
     console.log(audio)
@@ -36,6 +46,24 @@ function ui() {
 
     }
   })
+
+  //init the aos annimation
   AOS.init();
+
+  //this is for the slider...
+  let items = document.querySelectorAll('.carousel .carousel-item')
+  items.forEach((el) => {
+      const minPerSlide = 4
+      let next = el.nextElementSibling
+      for (var i = 1; i < minPerSlide; i++) {
+          if (!next) {
+              // wrap carousel by using first child
+              next = items[0]
+          }
+          let cloneChild = next.cloneNode(true)
+          el.appendChild(cloneChild.children[0])
+          next = next.nextElementSibling
+      }
+  })
   //the nav bar scroll
 }

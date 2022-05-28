@@ -356,10 +356,10 @@ html {
 
 .section-3 nav a:hover {
   color: #7FE0B2;
-  -webkit-transition: -webkit-transform ease-in-out;
-  transition: -webkit-transform ease-in-out;
-  transition: transform ease-in-out;
-  transition: transform ease-in-out, -webkit-transform ease-in-out;
+  -webkit-transition: -webkit-transform ease .5s;
+  transition: -webkit-transform ease .5s;
+  transition: transform ease .5s;
+  transition: transform ease .5s, -webkit-transform ease .5s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -804,6 +804,16 @@ html {
 
 .section-7 .slider-controllers {
   font-size: 30px;
+}
+
+.section-7 .slider-controllers a.over:hover {
+  -webkit-transform: none !important;
+          transform: none !important;
+}
+
+.section-7 .slider-controllers a.over img {
+  opacity: .6;
+  pointer-events: none !important;
 }
 
 .section-7 .slider-controllers a {

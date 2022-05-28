@@ -359,7 +359,7 @@ html {
 
         a:hover {
             color: #7FE0B2;
-            transition: transform ease-in-out;
+            transition: transform ease .5s;
             transform: scale(1.1);
             &>.separator{
                 background-color: #D21034;
@@ -816,7 +816,16 @@ html {
 
     .slider-controllers {
         font-size: 30px;
-
+        a.over{
+            &:hover{
+                transform: none !important;
+            }
+            img{
+                opacity: .6;
+                pointer-events: none !important;
+                
+            }
+        }
         a {
             color: #FFFFFF;
             cursor: pointer;
