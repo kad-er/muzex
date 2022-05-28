@@ -205,11 +205,72 @@ header.add-shadow {
     p {
         font-size: 20px;
         font-weight: 400;
-        text-align: left;
-        font-family: 'Montserrat';
     }
 }
+/* Mobile Nav Styling */
+#mobile-nav {
+    padding-top: 18px;
+    width: 260px;
+    padding: 0 !important;
+    margin: 0 !important;
+    a{
+      color: #181818;
+    }
+    overflow-y: auto;
+    transition: 0.4s;
+  }
+  
+  #mobile-nav ul {
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style: none;
+  }
+  
+  #mobile-nav ul li {
+    position: relative;
+  }
+  
+  #mobile-nav ul li a {
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    outline: none;
+    font-weight: 700;
+  }
 
+  #mobile-nav ul li ul li {
+    padding: 0 !important;
+  }
+  
+  #mobile-nav ul li a:hover {
+    color: #fff;
+  }
+  
+  #mobile-nav ul li li {
+    padding-left: 30px;
+  }
+  
+  #mobile-nav ul .menu-has-children i {
+    position: absolute;
+    right: 0;
+    z-index: 99;
+    padding: 15px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  #mobile-nav ul .menu-has-children i.fa-chevron-up {
+    color: #f53f51;
+  }
+  
+  #mobile-nav ul .menu-has-children li a {
+    text-transform: none;
+  }
 #mainSlider {
     height: inherit;
 

@@ -85,7 +85,6 @@ footer h3 {
 #mainSlider .slider1-text {
   right: 10vw !important;
   left: unset !important;
-  text-align: right;
 }
 
 #mainSlider .slider1-text h2,
@@ -147,14 +146,12 @@ footer h3 {
   letter-spacing: 0em;
   padding: 0;
   color: #181818;
-  text-align: left;
 }
 
 .section-6 .title a {
   font-size: 24px !important;
   font-weight: 500;
   line-height: 32px;
-  text-align: left;
   padding: 0;
   color: #181818;
 }
@@ -168,7 +165,6 @@ footer h3 {
   font-weight: 400;
   line-height: 29px;
   letter-spacing: 0em;
-  text-align: justify;
 }
 
 .section-6 .youth .link {
@@ -176,7 +172,6 @@ footer h3 {
   font-weight: 700;
   line-height: 15px;
   letter-spacing: 0.07em;
-  text-align: left;
   text-decoration: none;
   color: #181818;
 }
@@ -184,7 +179,6 @@ footer h3 {
 .section-6 .cta-link a {
   font-size: 16px;
   font-weight: 700;
-  text-align: left;
   color: #D21034;
   text-decoration: none;
 }
@@ -202,7 +196,6 @@ footer h3 {
   font-size: 48px;
   font-weight: 500;
   line-height: 63.98px;
-  text-align: left;
 }
 
 .navigationdrawer #pills-tabContent > div > div > div > div > a {
@@ -230,7 +223,6 @@ footer h3 {
   font-size: 48px;
   font-weight: 500;
   line-height: 63.98px;
-  text-align: left;
 }
 
 .navigationdrawer > div > div > div > ul > li > a.active {
@@ -239,13 +231,11 @@ footer h3 {
 }
 
 .navigationdrawer .contacts > li {
-  text-align: left !important;
   padding-top: 10px;
 }
 
 .navigationdrawer .contacts > li a {
   text-decoration: none;
-  text-align: left !important;
   font-family: 'Montserrat' !important;
   display: block;
   color: #1D1D1B;
@@ -254,5 +244,9 @@ footer h3 {
 .navigationdrawer .separator {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+#pills-tab li {
+  text-indent: 100px;
 }
 /*# sourceMappingURL=ar-bis.css.map */

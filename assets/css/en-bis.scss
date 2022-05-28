@@ -32,6 +32,8 @@
     }
 }
 
+
+
 .section-3,
 .section-4 {
 
@@ -598,21 +600,20 @@ background-color: rgba(255, 255, 255, 0.4);
   
   /* Mobile Nav Styling */
   #mobile-nav {
-    position: fixed;
-    top: 0;
     padding-top: 18px;
-    bottom: 0;
-    z-index: 998;
-    background: rgba(0, 0, 0, 0.8);
-    left: -260px;
     width: 260px;
+    padding: 0 !important;
+    margin: 0 !important;
+    a{
+      color: #181818;
+    }
     overflow-y: auto;
     transition: 0.4s;
   }
   
   #mobile-nav ul {
-    padding: 0;
-    margin: 0;
+    padding: 0 !important;
+    margin: 0 !important;
     list-style: none;
   }
   
@@ -623,15 +624,18 @@ background-color: rgba(255, 255, 255, 0.4);
   #mobile-nav ul li a {
     color: #fff;
     font-size: 13px;
-    text-transform: uppercase;
+    text-align: center;
     overflow: hidden;
-    padding: 10px 22px 10px 15px;
     position: relative;
     text-decoration: none;
     width: 100%;
     display: block;
     outline: none;
     font-weight: 700;
+  }
+
+  #mobile-nav ul li ul li {
+    padding: 0 !important;
   }
   
   #mobile-nav ul li a:hover {

@@ -111,7 +111,6 @@ footer {
     .slider1-text {
         right: 10vw !important;
         left: unset !important;
-        text-align: right;
 
         h2,
         h1 {
@@ -182,14 +181,12 @@ footer {
         letter-spacing: 0em;
         padding: 0;
         color: #181818;
-        text-align: left;
     }
 
     .title a {
         font-size: 24px !important;
         font-weight: 500;
         line-height: 32px;
-        text-align: left;
         padding: 0;
         color: #181818;
     }
@@ -204,7 +201,6 @@ footer {
             font-weight: 400;
             line-height: 29px;
             letter-spacing: 0em;
-            text-align: justify;
 
         }
 
@@ -213,7 +209,6 @@ footer {
             font-weight: 700;
             line-height: 15px;
             letter-spacing: 0.07em;
-            text-align: left;
             text-decoration: none;
             color: #181818;
         }
@@ -224,7 +219,6 @@ footer {
         a {
             font-size: 16px;
             font-weight: 700;
-            text-align: left;
             color: #D21034;
             text-decoration: none;
         }
@@ -250,7 +244,6 @@ footer {
             font-size: 48px;
             font-weight: 500;
             line-height: 63.98px;
-            text-align: left;
         }
 
         &>div>div>div>a {
@@ -280,7 +273,6 @@ footer {
         font-size: 48px;
         font-weight: 500;
         line-height: 63.98px;
-        text-align: left;
 
         // text-indent: 14vw;
     }
@@ -292,13 +284,11 @@ footer {
 
     .contacts {
         &>li {
-            text-align: left !important;
             padding-top: 10px;
         }
 
         &>li a {
             text-decoration: none;
-            text-align: left !important;
             font-family: 'Montserrat' !important;
             display: block;
             color: #1D1D1B;
@@ -309,5 +299,11 @@ footer {
         // margin-left: 14vw;
         margin-top: 2rem;
         margin-bottom: 2rem;
+    }
+}
+
+#pills-tab{
+    li{
+        text-indent: 100px;
     }
 }

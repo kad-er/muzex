@@ -1,0 +1,656 @@
+/* Importing latin fonts */
+@import url("../fonts/PlayfairDisplay/style.css");
+/*the navigation drawer nav links font here */
+#pills-tab > li a {
+  font-family: 'Playfair Display' !important;
+  font-size: bold;
+}
+
+#pills-tabContent > div span {
+  font-family: 'Playfair Display' !important;
+}
+
+#mobile-nav > li > a {
+  font-family: 'Playfair Display' !important;
+}
+
+#mobile-nav > li > div > ul > li > a {
+  font-family: 'Playfair Display' !important;
+}
+
+#mobile-nav > li > div > ul > li > div > ul > li > a {
+  font-family: 'Montserrat' !important;
+}
+
+.section-3 h1,
+.section-3 h2,
+.section-3 a,
+.section-3 h3,
+.section-4 h1,
+.section-4 h2,
+.section-4 a,
+.section-4 h3 {
+  font-family: 'Playfair Display' !important;
+}
+
+.section-6 .title {
+  font-family: 'Playfair Display';
+}
+
+.section-6 .date,
+.section-6 .source {
+  font-family: 'Montserrat' !important;
+}
+
+.section-6 .youth h1,
+.section-6 .youth h2,
+.section-6 .youth h3 {
+  font-family: 'Playfair Display' !important;
+}
+
+.section-6 .youth p {
+  font-family: 'Montserrat';
+}
+
+.section-6 .cta-link {
+  font-family: 'Montserrat';
+}
+
+footer .copy-rights,
+footer p,
+footer a,
+footer .input-group input {
+  font-family: 'Montserrat';
+}
+
+footer h3 {
+  font-family: 'Playfair Display';
+}
+
+.section-6 .separator {
+  background-color: #D21034;
+  width: 10vw;
+  min-width: 100px;
+}
+
+.section-6 .nav {
+  margin-top: 400px;
+}
+
+@media screen and (max-width: 992px) {
+  .section-6 .nav {
+    margin-top: 50px !important;
+  }
+}
+
+.section-6 .source a {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0em;
+  padding: 0;
+  color: #181818;
+  text-align: left;
+}
+
+.section-6 .title a {
+  font-size: 24px !important;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
+  padding: 0;
+  color: #181818;
+}
+
+.section-6 .title a:hover {
+  color: #D21034;
+}
+
+.section-6 .youth p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: justify;
+}
+
+.section-6 .youth .link {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0.07em;
+  text-align: left;
+  text-decoration: none;
+  color: #181818;
+}
+
+.section-6 .cta-link a {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  color: #D21034;
+  text-decoration: none;
+}
+
+.section-6 .cta-link img {
+  width: 55px;
+}
+
+.navigationdrawer .navigationdrawer-tabs {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  background-color: #FFF1E2;
+  right: 0;
+  width: inherit;
+}
+
+.navigationdrawer #pills-tabContent > div .sous-nav a {
+  font-size: 16px !important;
+  color: #181818 !important;
+}
+
+.navigationdrawer #pills-tabContent > div span {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 63.98px;
+  text-align: left;
+}
+
+.navigationdrawer #pills-tabContent > div > div > div > div > a {
+  font-family: 'Playfair Display' !important;
+  color: #181818 !important;
+  font-size: 24px;
+}
+
+.navigationdrawer #pills-tabContent > div a.active {
+  background-color: transparent;
+  color: #D21034 !important;
+}
+
+.navigationdrawer #pills-tabContent > div a:hover {
+  color: #D21034 !important;
+}
+
+.navigationdrawer #pills-tabContent > div .separator {
+  margin: 10px 0 50px 0;
+  width: 90%;
+  background-color: #88BFA5;
+}
+
+.navigationdrawer > div > div > div > ul > li > a {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 63.98px;
+  text-align: left;
+}
+
+.navigationdrawer > div > div > div > ul > li > a.active {
+  background-color: transparent !important;
+  color: #D21034 !important;
+}
+
+.navigationdrawer .contacts > li {
+  text-align: left !important;
+  padding-top: 10px;
+}
+
+.navigationdrawer .contacts > li a {
+  text-decoration: none;
+  text-align: left !important;
+  font-family: 'Montserrat' !important;
+  display: block;
+  color: #1D1D1B;
+}
+
+.navigationdrawer .separator {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contacts-page h1 {
+  font-family: 'Playfair Display' !important;
+}
+
+header #anniversary-logo h1 {
+  font-family: 'Playfair Display';
+}
+
+#carouselExampleCaptions {
+  left: 0;
+  bottom: 20%;
+  width: 450px;
+  height: 200px;
+}
+
+.slider1-text {
+  position: absolute;
+  top: 20vh;
+  left: 10vw;
+  width: 400px !important;
+  color: #FFFFFF;
+  width: 566px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.slider1-text span.separator {
+  background-color: #D21034 !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .slider1-text {
+    top: 15vh;
+  }
+  .slider1-text h1,
+  .slider1-text h2 {
+    font-size: 50px !important;
+    line-height: 60px !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .slider1-text {
+    top: 10vh;
+  }
+  .slider1-text h1,
+  .slider1-text h2 {
+    font-size: 40px !important;
+    line-height: 50px !important;
+  }
+  .slider1-text p {
+    font-size: 20px !important;
+    font-weight: 500;
+  }
+}
+
+.slider1-text h1,
+.slider1-text h2 {
+  font-family: 'Playfair Display';
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.slider1-text ul.flex-column a {
+  font-weight: 500;
+}
+
+.slider1-text p {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+  font-family: 'Montserrat';
+}
+
+/* =================================== */
+/*  Banner Secton 
+/* =================================== */
+.banner-area {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  height: 100vh;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(transparent)), url("/assets/images/bg.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent), url("/assets/images/bg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.banner-content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 576px) {
+  .banner-area {
+    padding-top: 80px;
+  }
+  .banner-right img {
+    display: none !important;
+  }
+}
+
+.banner-right img {
+  width: 398px;
+  height: 398px;
+  left: 171px;
+  top: 269px;
+  padding: 30px;
+  margin-top: 40px;
+}
+
+.banner-content h1 {
+  position: relative;
+  left: 0px;
+  top: 70px;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  line-height: 49px;
+  letter-spacing: 0.02em;
+  color: #D21034;
+  font-size: 78px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.banner-content h1 span {
+  font-weight: 700;
+}
+
+@media (max-width: 991.98px) {
+  .banner-content h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .banner-content h1 br {
+    display: none;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .banner-content h1 {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 414px) {
+  .banner-content h1 {
+    font-size: 40px;
+  }
+}
+
+.banner-content p {
+  position: relative;
+  width: 75%;
+  height: 130px;
+  left: 0px;
+  top: 120px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  /* or 133% */
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
+}
+
+.banner-content h5 {
+  position: relative;
+  width: 15%;
+  height: 50%;
+  left: 0px;
+  top: 70px;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 8px;
+  font-size: 40px;
+  line-height: 30px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
+
+@media (max-width: 1280px) {
+  .banner-content br {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .banner-right img {
+    width: 55%;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    display: block;
+  }
+}
+
+.banner-img {
+  position: relative;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 65%;
+  left: 55%;
+  width: 300px;
+  background: #7FE0B2;
+  border-radius: 50%;
+  text-align: center;
+}
+
+#nav-menu-container {
+  position: absolute;
+  left: 150px;
+  top: 545px;
+}
+
+@media (min-width: 1024px) {
+  #nav-menu-container {
+    padding-right: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  #nav-menu-container {
+    display: none;
+  }
+}
+
+/* Nav Meu Styling */
+.nav-menu a {
+  padding: 0 8px 0px 8px;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-weight: 40;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.nav-menu > li {
+  margin-left: 10px;
+}
+
+.nav-menu ul {
+  margin: 16px 0 0 0;
+  padding: 10px;
+  -webkit-box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+          box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  background: #fff;
+}
+
+.nav-menu ul li {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nav-menu ul li a {
+  padding: 10px;
+  color: #333;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: block;
+  font-size: 12px;
+  text-transform: none;
+}
+
+.nav-menu ul li:hover > a {
+  color: #f53f51;
+}
+
+.nav-menu ul ul {
+  margin: 0;
+}
+
+/* Mobile Nav Toggle */
+#mobile-nav-toggle {
+  position: fixed;
+  right: 15px;
+  z-index: 999;
+  top: 16px;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  display: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  outline: none;
+  cursor: pointer;
+}
+
+#mobile-nav-toggle i {
+  color: #fff;
+  font-weight: 900;
+}
+
+@media (max-width: 800px) {
+  #mobile-nav-toggle {
+    display: inline;
+  }
+  #nav-menu-container {
+    display: none;
+  }
+}
+
+/* Mobile Nav Styling */
+#mobile-nav {
+  padding-top: 18px;
+  width: 260px;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow-y: auto;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#mobile-nav a {
+  color: #181818;
+}
+
+#mobile-nav ul {
+  padding: 0 !important;
+  margin: 0 !important;
+  list-style: none;
+}
+
+#mobile-nav ul li {
+  position: relative;
+}
+
+#mobile-nav ul li a {
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  outline: none;
+  font-weight: 700;
+}
+
+#mobile-nav ul li ul li {
+  padding: 0 !important;
+}
+
+#mobile-nav ul li a:hover {
+  color: #fff;
+}
+
+#mobile-nav ul li li {
+  padding-left: 30px;
+}
+
+#mobile-nav ul .menu-has-children i {
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#mobile-nav ul .menu-has-children i.fa-chevron-up {
+  color: #f53f51;
+}
+
+#mobile-nav ul .menu-has-children li a {
+  text-transform: none;
+}
+
+#mobile-nav ul .menu-item-active {
+  color: #f53f51;
+}
+
+#mobile-body-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+/*
+  .container{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url("/assets/images/bg.png");
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+  
+  background-size: cover;
+  
+  }
+  */
+/*--------------------------------------------------------------
+  # Navigation Menu
+  --------------------------------------------------------------*/
+/* Nav Menu Essentials */
+.nav-menu, .nav-menu * {
+  margin: 5px;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+}
+
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu > li {
+  float: left;
+}
+
+.nav-menu li:hover > ul,
+.nav-menu li.sfHover > ul {
+  display: block;
+}
+
+.nav-menu ul ul {
+  top: 0;
+  left: 100%;
+}
+
+.nav-menu ul li {
+  min-width: 180px;
+  text-align: left;
+}
+/*# sourceMappingURL=en-bis.css.map */
