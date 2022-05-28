@@ -1,0 +1,347 @@
+<!--
+
+████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+█░░░░░░░░░░░░░░░░░░█░░░░░░░░░░░░░░███░░░░░░░░░░░░░░█░░░░░░░░░░░░░░░░███░░░░░░░░░░░░░░███░░░░░░░░░░░░░░█░░░░░░░░░░░░░░░░███░░░░░░░░░░░░░░███░░░░░░░░░░░░░░█░░░░░░░░░░░░░░░░███░░░░░░░░░░░░░░█
+█░░▄▀▄▀▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░███░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀▄▀░░███░░▄▀▄▀▄▀▄▀▄▀░░███░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀▄▀░░███░░▄▀▄▀▄▀▄▀▄▀░░███░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀▄▀░░███░░▄▀▄▀▄▀▄▀▄▀░░█
+█░░░░░░░░░░░░▄▀▄▀░░█░░▄▀░░░░░░▄▀░░███░░▄▀░░░░░░░░░░█░░▄▀░░░░░░░░▄▀░░███░░▄▀░░░░░░▄▀░░███░░▄▀░░░░░░░░░░█░░▄▀░░░░░░░░▄▀░░███░░▄▀░░░░░░▄▀░░███░░▄▀░░░░░░░░░░█░░▄▀░░░░░░░░▄▀░░███░░▄▀░░░░░░░░░░█
+█████████░░░░▄▀░░░░█░░▄▀░░██░░▄▀░░███░░▄▀░░█████████░░▄▀░░████░░▄▀░░███░░▄▀░░██░░▄▀░░███░░▄▀░░█████████░░▄▀░░████░░▄▀░░███░░▄▀░░██░░▄▀░░███░░▄▀░░█████████░░▄▀░░████░░▄▀░░███░░▄▀░░█████████
+███████░░░░▄▀░░░░███░░▄▀░░░░░░▄▀░░░░█░░▄▀░░░░░░░░░░█░░▄▀░░░░░░░░▄▀░░███░░▄▀░░░░░░▄▀░░░░█░░▄▀░░░░░░░░░░█░░▄▀░░░░░░░░▄▀░░███░░▄▀░░░░░░▄▀░░░░█░░▄▀░░░░░░░░░░█░░▄▀░░░░░░░░▄▀░░███░░▄▀░░█████████
+█████░░░░▄▀░░░░█████░░▄▀▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀▄▀░░███░░▄▀▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀▄▀░░███░░▄▀▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀▄▀░░███░░▄▀░░██░░░░░░█
+███░░░░▄▀░░░░███████░░▄▀░░░░░░░░▄▀░░█░░▄▀░░░░░░░░░░█░░▄▀░░░░░░▄▀░░░░███░░▄▀░░░░░░░░▄▀░░█░░▄▀░░░░░░░░░░█░░▄▀░░░░░░▄▀░░░░███░░▄▀░░░░░░░░▄▀░░█░░▄▀░░░░░░░░░░█░░▄▀░░░░░░▄▀░░░░███░░▄▀░░██░░▄▀░░█
+█░░░░▄▀░░░░█████████░░▄▀░░████░░▄▀░░█░░▄▀░░█████████░░▄▀░░██░░▄▀░░█████░░▄▀░░████░░▄▀░░█░░▄▀░░█████████░░▄▀░░██░░▄▀░░█████░░▄▀░░████░░▄▀░░█░░▄▀░░█████████░░▄▀░░██░░▄▀░░█████░░▄▀░░██░░▄▀░░█
+█░░▄▀▄▀░░░░░░░░░░░░█░░▄▀░░░░░░░░▄▀░░█░░▄▀░░░░░░░░░░█░░▄▀░░██░░▄▀░░░░░░█░░▄▀░░░░░░░░▄▀░░█░░▄▀░░░░░░░░░░█░░▄▀░░██░░▄▀░░░░░░█░░▄▀░░░░░░░░▄▀░░█░░▄▀░░░░░░░░░░█░░▄▀░░██░░▄▀░░░░░░█░░▄▀░░░░░░▄▀░░█
+█░░▄▀▄▀▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀░░██░░▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀░░██░░▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀░░██░░▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█
+█░░░░░░░░░░░░░░░░░░█░░░░░░░░░░░░░░░░█░░░░░░░░░░░░░░█░░░░░░██░░░░░░░░░░█░░░░░░░░░░░░░░░░█░░░░░░░░░░░░░░█░░░░░░██░░░░░░░░░░█░░░░░░░░░░░░░░░░█░░░░░░░░░░░░░░█░░░░░░██░░░░░░░░░░█░░░░░░░░░░░░░░█
+████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+-->
+
+<!DOCTYPE html>
+<html lang="en" style="height:100%">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prehistoric civilization</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- bootstrap javascript  -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- custom css includs importing fonts -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- latin fonts including rtl styles -->
+    <link rel="stylesheet" href="./assets/css/en.css">
+    <!-- Font awsome -->
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <script src="./node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+</head>
+
+<body  style="background-color: #FEE9D1;text-align: left;" class="h-100">
+
+
+
+    <div class="h-100">
+
+
+
+        <div class="d-flex h-100">
+            <div class="mx-3">
+                <span class="d-flex align-items-center" style="height: 100%"><svg width="40" height="20"
+                        viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="offcanvas"
+                        data-bs-target="#demo">
+                        <circle cx="4" cy="10" r="4" fill="#D21034" />
+                        <circle cx="36" cy="10" r="4" fill="#D21034" />
+                        <circle cx="20" cy="10" r="10" fill="#D21034" />
+                    </svg>
+
+                </span>
+            </div>
+            <div id="my-carousel" class="carousel carousel-fade container h-100" data-bs-ride="carousel"
+                data-bs-interval="false" data-bs-pause="false" data-bs-wrap="false">
+                <div class="carousel-inner h-100">
+                    <div class="carousel-item active container h-100 d-flex flex-column justify-content-between element"">
+                        <nav class=" nav mt-3">
+                        <li class="nav-item" style="font-family: 'STV';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 28px;
+                        line-height: 31px;color: black;">
+                            lorem <a class="nav-link active d-inline" href="prehistoric-ar.html"
+                                style="color: #d21034;">Lorem ipsum dolor </a>
+                        </li>
+
+                        </nav>
+                        <main class="d-sm-flex d-xs-block mt-5 mb-5 flex-xs-column justify-content-center">
+                            <div class="col-4 mx-2">
+                                <img class="img-fluid figure-img" src="./assets/images/prehistoric-civ.png" alt="">
+                            </div>
+                            <div class="col-6">
+                                <h3 style="font-family: AlWatanHeadlines;
+                                font-size: 64px;
+                                font-weight: 700;
+                                line-height: 64px;
+                                letter-spacing: 0em;
+                                text-align: right;
+                                ">lorem ipsum
+                                </h3>
+                                <p style="font-family: STV;
+                                font-size: 18px;
+                                font-weight: 400;
+                                line-height: 24px;
+                                letter-spacing: 0em;
+                                text-align:justify;
+                                ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat reprehenderit officiis temporibus voluptatibus inventore libero sint eveniet! Eius exercitationem sit, fuga reiciendis nam nihil est sed non sapiente, aut delectus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus a dolores fuga earum dignissimos nam molestias assumenda! Quibusdam iure accusantium consequuntur ea expedita optio dolor minus! Sequi saepe dolorem impedit.</p>
+                                <a href="prehistoric-civilization-article.html" class="text-decoration-none"
+                                    style="font-weight: bold;color: #d21034;">
+                                    lorem ipsum<i class="fa-solid fa-arrow-right-long"></i></a>
+                            </div>
+                        </main>
+                        <div>
+                            <span class="separator w-100" style="background: #1D1D1B; height: 2px;"></span>
+                            <footer class="d-flex justify-content-between mt-auto"
+                                style="background-color:transparent;">
+                                <div class="mt-2">
+                                    <span class="separator w-25 mb-2" style="height: 4px;
+                                width: 32px;
+                                left: 1288px;
+                                top: 863px;
+                                border-radius: 0px;
+                                background: #006233;
+                                "></span>
+                                    <p style="font-family: AlWatanHeadlines;
+                                font-size: 32px;
+                                font-weight: 700;
+                                line-height: 24px;
+                                letter-spacing: 0em;
+                                text-align: right;
+                                color:#006233;">
+                                      lorem ipsum
+                                    </p>
+                                </div>
+                                <div class="mt-2">
+                                    <p class="mb-2" style="font-family: AlWatanHeadlines;
+                                font-size: 16px;
+                                font-weight: 700;
+                                line-height: 16px;
+                                letter-spacing: 0em;
+                                text-align: right;
+                                color:#1D1D1B;
+                                ">lorem</p>
+                                    <p style="font-family: STV;
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 18px;
+                                letter-spacing: 0em;
+                                text-align: left;
+                                color:#1D1D1B;
+                                ">
+                                        lorem ipsum dolor
+                                    </p>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                    <!-- second item -->
+                    <div class="carousel-item container h-100 d-flex flex-column justify-content-between element">
+                        <nav class="nav mt-3">
+                            <li class="nav-item" style="font-family: 'STV';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 28px;
+                        line-height: 31px;color: black;">
+                                العودة إلى <a class="nav-link active d-inline" href="prehistoric-ar.html"
+                                    style="color: #d21034;">حضارات قبل التاريخ</a>
+                            </li>
+
+                        </nav>
+                        <main class="d-sm-flex d-xs-block mt-5 mb-5 flex-xs-column justify-content-center">
+
+                            <div class="col-4 mx-2">
+                                <img class="img-fluid figure-img" src="./assets/images/prehistoric-civ.png" alt="">
+                            </div>
+                            <div class="col-6">
+                                <h3 style="font-family: AlWatanHeadlines;
+                                font-size: 64px;
+                                font-weight: 700;
+                                line-height: 64px;
+                                letter-spacing: 0em;
+                                text-align: right;
+                                ">الحضارة
+                                    الموستيرية
+                                </h3>
+                                <p style="font-family: STV;
+                                font-size: 18px;
+                                font-weight: 400;
+                                line-height: 24px;
+                                letter-spacing: 0em;
+                                text-align:justify;
+                                ">عثر على أشكال الحضارة الموستيرية في أماكن مختلفة في المجال الجغرافي الممتد من غرب
+                                    أوروبا حتى الصين، وفي معظم بقاع افريقيا الشمالية. فقد تميزت أوربا في هذا العصر
+                                    بصناعة من الشظايا عرفت بالصناعة الموستيرية(Le Moustérien) نسبة إلى كهف (Le Moustier)
+                                    الواقع في مقاطعة الدردوني في غرب فرنسا. وقد شهد هذا الكهف عمليات التنقيب فيه منذ
+                                    القرن التاسع عشر وأصبح الموقع النموذجي لحضارات هذه المرحلة في العالم، وقد وجدت
+                                    أدواتها في مناطق واسعة من غرب أوربا وخاصة تلك المنطقة المحصورة بين نهر لالوار وسلسلة
+                                    جبال البرانس. </p>
+                                <a href="" class="text-decoration-none" style="font-weight: bold;color: #d21034;">
+                                    إقرء المزيد<i class="fa-solid fa-arrow-left-long"></i></a>
+                            </div>
+                        </main>
+                        <div>
+                            <span class="separator w-100" style="background: #1D1D1B; height: 2px;"></span>
+                            <footer class="d-flex justify-content-between" style="background-color:transparent;">
+                                <div class="mt-2">
+                                    <span class="separator w-25 mb-2" style="height: 4px;
+                                width: 32px;
+                                left: 1288px;
+                                top: 863px;
+                                border-radius: 0px;
+                                background: #006233;
+                                "></span>
+                                    <p style="font-family: AlWatanHeadlines;
+                                font-size: 32px;
+                                font-weight: 700;
+                                line-height: 24px;
+                                letter-spacing: 0em;
+                                text-align: right;
+                                color:#006233;">
+                                        حضارات قبل التاريخ
+                                    </p>
+                                </div>
+                                <div class="mt-2">
+                                    <p class="mb-2" style="font-family: AlWatanHeadlines;
+                                font-size: 16px;
+                                font-weight: 700;
+                                line-height: 16px;
+                                letter-spacing: 0em;
+                                text-align: right;
+                                color:#1D1D1B;
+                                ">الحقبة</p>
+                                    <p style="font-family: STV;
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 18px;
+                                letter-spacing: 0em;
+                                text-align: left;
+                                color:#1D1D1B;
+                                ">
+                                        1,5 مليون سنة الى 100.000 سنة
+                                    </p>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                    <!-- third item -->
+                    <div class="carousel-item container h-100 d-flex flex-column justify-content-between element">
+                        <nav class="nav mt-3">
+                            <li class="nav-item" style="font-family: 'STV';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 28px;
+                        line-height: 31px;color: black;">
+                                العودة إلى <a class="nav-link active d-inline" href="prehistoric-ar.html"
+                                    style="color: #d21034;">حضارات قبل التاريخ</a>
+                            </li>
+
+                        </nav>
+                        <main class="d-sm-flex d-xs-block mt-5 mb-5 flex-xs-column justify-content-center">
+
+                            <div class="col-4 mx-2">
+                                <img class="img-fluid figure-img" src="./assets/images/prehistoric-civ.png" alt="">
+                            </div>
+                            <div class="col-6">
+                                <h3 style="font-family: AlWatanHeadlines;
+                                font-size: 64px;
+                                font-weight: 700;
+                                line-height: 64px;
+                                letter-spacing: 0em;
+                                text-align: right;
+                                ">الحضارة
+                                    العاترية</h3>
+                                <p style="font-family: STV;
+                                font-size: 18px;
+                                font-weight: 400;
+                                line-height: 24px;
+                                letter-spacing: 0em;
+                                text-align:justify;
+                                ">لم يكن أحد يتصور أن البقايا الحجرية لهذه الحضارة التي اعقبت المرحلة الأخيرة من
+                                    الحضارة الأشولية، والتي أعتقد في البداية أنها بقايا منفردة من الصناعة الموستيرية أو
+                                    اللفلوازية، اللتان تعودان الى العصر الحجري القديم الأوسط، إلا أن الانتشار الواسع
+                                    لهذه الأدوات التي رافقت الأدوات الموستيرية والتي تعبر خصائصها عن صناعة تعود للعصر
+                                    الحجري القديم الأعلى جعلت المختصين يتدبرونها، وسرعان ما اكتشفوا أنهم أمام صناعة
+                                    حجرية جديدة امتد مجالها الجغرافي من المحيط الاطلسي غربا الى وادي النيل شرقا ومن
+                                    شواطئ البحر الأبيض المتوسط شمالا الى مشارف النيجر جنوبا وتحديدا في موقع سكديم، وقد
+                                    عثر على الصناعة العاترية في الجزائر في عدة مواقع نذكر منها موقع الزاوية الكبيرة
+                                    بمنطقة وادي الساورة، وفي منطقة رقان، وفي تين انكاتن بطاسيلي ناجر دون أن نغفل موقع
+                                    بئر العاتر الذي استمدت تسميتها منه.</p>
+                                <a href="" class="text-decoration-none" style="font-weight: bold;color: #d21034;"
+                                    data-bs-toggle="offcanvas" href="#test" role="button"
+                                    aria-controls="offcanvasExample">
+                                    إقرء المزيد<i class="fa-solid fa-arrow-left-long"></i></a>
+                            </div>
+                        </main>
+                        <div>
+                            <span class="separator w-100" style="background: #1D1D1B; height: 2px;"></span>
+                            <footer class="d-flex justify-content-between" style="background-color:transparent;">
+                                <div class="mt-2">
+                                    <span class="separator w-25 mb-2" style="height: 4px;
+                                width: 32px;
+                                left: 1288px;
+                                top: 863px;
+                                border-radius: 0px;
+                                background: #006233;
+                                "></span>
+                                    <p style="font-family: AlWatanHeadlines;
+                                font-size: 32px;
+                                font-weight: 700;
+                                line-height: 24px;
+                                letter-spacing: 0em;
+                                text-align: right;
+                                color:#006233;">
+                                        حضارات قبل التاريخ
+                                    </p>
+                                </div>
+                                <div class="mt-2">
+                                    <p class="mb-2" style="font-family: AlWatanHeadlines;
+                                font-size: 16px;
+                                font-weight: 700;
+                                line-height: 16px;
+                                letter-spacing: 0em;
+                                text-align: right;
+                                color:#1D1D1B;
+                                ">الحقبة</p>
+                                    <p style="font-family: STV;
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 18px;
+                                letter-spacing: 0em;
+                                text-align: left;
+                                color:#1D1D1B;
+                                ">
+                                        1,5 مليون سنة الى 100.000 سنة
+                                    </p>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="d-flex">
+
+        <span style="width: fit-content;margin-left: 5%;" class="carousel-control-prev align-items-end h-75" type="button"
+            data-bs-target="#my-carousel" data-bs-slide="prev">
+            <i class="fa-solid fa-arrow-left-long text-black"></i>
+        </span>
+        <span style="width: fit-content;margin-right: 5%;" class="carousel-control-next align-items-end h-75" type="button"
+            data-bs-target="#my-carousel" data-bs-slide="next">
+            <i class="fa-solid fa-arrow-right-long text-black"></i>
+
+        </span>
+    </div>
+
+    </div>
+</body>
+
+</html>
