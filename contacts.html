@@ -1,117 +1,236 @@
 <!DOCTYPE html>
-<html amp lang="en">
+<html amp lang="ar"">
 
 <head>
-    <base href="./">
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- The bootstrap css link from node modules -->
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <!-- fontawsome css link  -->
-    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <!-- bootstrap javascript  -->
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- fontawsome script -->
-    <script src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
-    <!-- custom css includs importing fonts -->
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <!-- latin fonts including rtl styles -->
-    <link rel="stylesheet" href="./assets/css/en.css" />
-    <!-- custom js -->
-    <script src="./assets/js/main.js" defer></script>
-    <title>Contact us</title>
-</head>
+    <base href=" ./"> <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- The bootstrap css link from node modules -->
+<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-utilities.rtl.css" />
+<!-- fontawsome css link  -->
+<link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+<!-- bootstrap javascript  -->
+<link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- fontawsome script -->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous"> -->
+<script src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+<!-- custom css includs importing fonts -->
 
-<body style="overflow-x: hidden;">
+<!-- latin fonts including rtl styles -->
+
+<link rel="stylesheet" href="./assets/css/404.css" />
+
+
+<!-- animation css -->
+<script src="./node_modules/aos/dist/aos.js"></script>
+<link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
+<!-- custom js -->
+<title>404 error</title>
+</head>
+<!-- ###################################################################################################################################################################################################################################################################################
+########################################################################################################################################################################################################################################################################################
+########################  NOTE: Change the dir="rtl" to dir="ltr" to get the English version as simple as that  ########################################################################################################################################################################
+########################################################################################################################################################################################################################################################################################
+########################################################################################################################################################################################################################################################################################
+######################################################################################################################################################################################################################################################################################## -->
+<body dir="rtl" style="overflow-x: hidden;" >
     <!-- Header containing the main slider and the navigation and the search bar -->
-    <header id="header" class="fixed-top">
+    <header id="header" class="">
+        <!-- the 60 logo in the center -->
         <nav class="navbar transparent main-nav">
+
             <div class="container d-flex flex-row">
                 <!-- search bar and language link to switch -->
-                <div class="d-flex flex-row ">
+
+                <div class="d-flex flex-row align-items-center">
                     <!-- Menu button  -->
-                    <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas"
+                    <button class="navbar-toggler shadow-none me-3 text-white" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <!-- the menu humburger icon -->
-                        <svg height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                            <path
-                                d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" />
-                        </svg>
+                        <i class="fa-solid fa-bars fa-2x" style="color: black;"></i>
                     </button>
 
                     <!-- link to toggle the language -->
                     <a class="nav-link active" x href="index_ar.html">En/Ar</a>
                 </div>
+            
 
                 <!-- Main navigation -->
-                <ul class="nav text-black">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">History</a>
+                <ul class="nav flex-row">
+                    <li class="nav-item d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+                        <a class="nav-link text-end" href="#">الرئيسية</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Events</a>
+                    <li class="nav-item d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+                        <a class="nav-link text-end" href="#">عهد جديد</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link">
-                            <svg height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path
-                                    d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z" />
-                            </svg>
+                    <li class="nav-item d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+                        <a class="nav-link active" aria-current="page" href="#">نشاطات</a>
+                    </li>
+                    <li class="nav-item d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+                        <a class="nav-link" href="#">برنامج النشاطات</a>
+                    </li>
+
+                    <li>
+                        <!-- Button trigger modal -->
+                        <a type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                            class="btn btn-default navbar-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
                         </a>
                     </li>
+
+
+                    <!-- <li class="nav-item">
+                        <a class="nav-link">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </li> -->
                 </ul>
 
                 <!-- The navigation drawer  -->
-                <div class="offcanvas offcanvas-start navigationdrawer" style="width: 100vw" tabindex="-1"
+                <div class="offcanvas offcanvas-end navigationdrawer min-vw-100" tabindex="-1"
                     id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <!-- the close button in the top -->
                     <div class="offcanvas-header d-flex flex-row-reverse fixed-top">
                         <h5 class="offcanvas-title text-white" style="font-weight: 100" id="offcanvasNavbarLabel">
-                            #Martyr's_memorial
+                            #مقام_الشهيد
                         </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <button type="button" class="btn-close btn btn-outline-light p-2 m-1 me-3"
+                            style="font-size: 20px;border-radius: 50%;" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
                     </div>
 
                     <!-- this section is the menu that will show up when window > 768px -->
-                    <div class="row mt-5 d-none d-md-block d-lg-block d-xxl-block">
+                    <div class="d-flex flex-row-reverse  min-vh-100 d-none d-md-flex d-lg-flex d-xxl-flex">
+
+                        <!-- the image of the martyr's memorial -->
+                        <div class="col-6 overflow-hidden">
+                            <div class="tab-content navigationdrawer-tabs d-block d-none" id="pills-tabContent">
+                                <!-- tabs starts from here  -->
+                                <div>
+
+                                    <!-- history tab -->
+                                    <div class="tab-pane fade p-5" id="history-tab" role="tabpanel"
+                                        aria-labelledby="pills-history-tab">
+                                        <span dir="rtl" class="mt-3 d-block">
+                                            تاريخ</span>
+                                        <div class="separator"></div>
+                                        <div class="d-flex align-items-start">
+                                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                                                aria-orientation="vertical">
+                                                <a class="nav-link active" id="v-pills-b-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-b" type="button" role="tab"
+                                                    aria-controls="v-pills-b" aria-selected="true">العصور القديمة
+                                                </a>
+                                                <a class="nav-link" id="v-pills-a-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-a" type="button" role="tab"
+                                                    aria-controls="v-pills-a" aria-selected="false">العصر الوسيط
+                                                </a>
+                                                <a class="nav-link" id="v-pills-z-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-z" type="button" role="tab"
+                                                    aria-controls="v-pills-z" aria-selected="false">العصر الحديث</a>
+                                                <a class="nav-link" id="v-pills-y-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-y" type="button" role="tab"
+                                                    aria-controls="v-pills-y" aria-selected="false">التاريخ المعاصر</a>
+                                            </div>
+                                            <!-- the tab > tab contents -->
+                                            <div class="tab-content" id="v-pills-tabContent">
+
+                                                <div class="tab-pane fade show active" id="v-pills-b" role="tabpanel"
+                                                    aria-labelledby="v-pills-b-tab">
+                                                    <ul class="sous-nav nav flex-column">
+                                                        <li class="nav-item">
+                                                            <a href="#" class="nav-link">
+                                                                رجل ما قبل التاريخ
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="#" class="nav-link">
+                                                                حضارة ما قبل التاريخ
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="#" class="nav-link">
+                                                                مواقع ما قبل التاريخ
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-a" role="tabpanel"
+                                                    aria-labelledby="v-pills-a-tab">
+                                                    العصور القديمة
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-z" role="tabpanel"
+                                                    aria-labelledby="v-pills-z-tab">
+                                                    العصور الوسطى
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-y" role="tabpanel"
+                                                    aria-settings="v-pills-y-tab">
+                                                    العصور الحديثة </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 60 years tab -->
+                                    <div class="tab-pane fade" id="years-tab" role="tabpanel"
+                                        aria-labelledby="pills-years-tab">
+                                        2222222222222222222222222
+                                    </div>
+
+                                    <!-- events tab  -->
+                                    <div class="tab-pane fade" id="events-tab" role="tabpanel"
+                                        aria-labelledby="pills-events-tab">
+                                        333333333333333333
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="offcanvas-img" id="offcanvas-img">
+                                <img class="img-fluid min-vh-100" src="./assets/images/martyrsMemorial.png"
+                                    alt="Martyr's Memorial Algeria" />
+                            </div>
+
+                        </div>
+
+
                         <!-- the content of the navigation drawer  -->
-                        <div class="col-lg-5 col-md-6 col-sm-12">
-                            <div class="row">
-                                <div class="col-md-2 col-lg-3"></div>
+                        <div class="col-6">
+                            <div  class="d-flex flex-row">
                                 <!-- Nav menu  -->
-                                <ul id="pills-tab" role="tablist"
-                                    class="col-md-10 nav nav-pills col-lg-9 offset-sm-4 offset-2 navbar-nav d-flex flex-column pt-5">
-                                    <li class="nav-item text-center text-capitalize">
-                                        <a class="nav-link text-black tab-trigger" aria-current="page" id="history"
+                                <ul  id="pills-tab" role="tablist"
+                                    class="col-md-12 nav nav-pills justify-content-center navbar-nav d-flex flex-column pt-5 px-0">
+                                    <li class="nav-item d-inline text-capitalize">
+                                        <a  class="nav-link text-black tab-trigger" aria-current="page" id="history"
                                             data-bs-toggle="pill" data-bs-target="#history-tab" type="button" role="tab"
-                                            aria-controls="history-tab" aria-selected="false">History</a>
+                                            aria-controls="history-tab" aria-selected="false">
+                                            تاريخ</a>
                                     </li>
-                                    <li class="nav-item text-center text-capitalize">
+                                    <li class="nav-item text-capitalize">
                                         <a class="nav-link text-black tab-trigger" href="#" id="years"
                                             data-bs-toggle="pill" data-bs-target="#years-tab" type="button" role="tab"
-                                            aria-controls="years-tab" aria-selected="false">60 years</a>
+                                            aria-controls="years-tab" aria-selected="false">عهد جديد</a>
                                     </li>
-                                    <li class="nav-item text-center text-capitalize">
+                                    <li class="nav-item text-capitalize">
                                         <a class="nav-link text-black tab-trigger" aria-current="page" href="#"
                                             id="events" data-bs-toggle="pill" data-bs-target="#events-tab" type="button"
-                                            role="tab" aria-controls="evenst-tab" aria-selected="false">Events</a>
+                                            role="tab" aria-controls="evenst-tab" aria-selected="false">النشاطات</a>
                                     </li>
-                                    <li class="nav-item text-center text-capitalize">
-                                        <a class="nav-link text-black" href="#">Contact Us</a>
+                                    <li class="nav-item text-capitalize">
+                                        <a class="nav-link text-black" href="#">إتصل بنا</a>
                                     </li>
                                     <!-- the red separator -->
                                     <div class="separator"></div>
+
                                     <div class="contacts">
-                                        <li class="nav-item text-center text-capitalize">
+                                        <li class="nav-item text-capitalize">
                                             <a class="text-black" href="tel:+213xxxxxxxxx">023-555-555</a>
                                         </li>
-                                        <li class="nav-item text-center text-capitalize">
+                                        <li class="nav-item text-capitalize">
                                             <a class="text-black"
                                                 href="mailto:contact@domain.com">contact@domain.com</a>
                                         </li>
-                                        <li class="nav-item text-center text-capitalize">
+                                        <li class="nav-item text-capitalize">
                                             <!-- Social media Icons -->
                                             <span class="mb-2 d-block"><strong class="montserrat">Follow
                                                     us</strong></span>
@@ -137,136 +256,38 @@
                                 </ul>
                             </div>
                         </div>
-
-                        <!-- the image of the martyr's memorial -->
-                        <div class="col-lg-7 col-md-5">
-                            <div class="tab-content navigationdrawer-tabs" id="pills-tabContent">
-                                <!-- tabs starts from here  -->
-                                <div class="tab-content" id="pills-tabContent">
-
-                                    <!-- history tab -->
-                                    <div class="tab-pane fade p-5" id="history-tab" role="tabpanel"
-                                        aria-labelledby="pills-history-tab">
-                                        <span class="mt-3 d-block">History</span>
-                                        <div class="separator"></div>
-                                        <div class="d-flex align-items-start">
-                                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
-                                                aria-orientation="vertical">
-                                                <a class="nav-link active" id="v-pills-b-tab" data-bs-toggle="pill"
-                                                    data-bs-target="#v-pills-b" type="button" role="tab"
-                                                    aria-controls="v-pills-b" aria-selected="true">The Prehistoric
-                                                </a>
-                                                <a class="nav-link" id="v-pills-a-tab" data-bs-toggle="pill"
-                                                    data-bs-target="#v-pills-a" type="button" role="tab"
-                                                    aria-controls="v-pills-a" aria-selected="false">The Antiquity
-                                                </a>
-                                                <a class="nav-link" id="v-pills-z-tab" data-bs-toggle="pill"
-                                                    data-bs-target="#v-pills-z" type="button" role="tab"
-                                                    aria-controls="v-pills-z" aria-selected="false">Middle Ages</a>
-                                                <a class="nav-link" id="v-pills-y-tab" data-bs-toggle="pill"
-                                                    data-bs-target="#v-pills-y" type="button" role="tab"
-                                                    aria-controls="v-pills-y" aria-selected="false">Modern Times</a>
-                                                <a class="nav-link" id="v-pills-x-tab" data-bs-toggle="pill"
-                                                    data-bs-target="#v-pills-x" type="button" role="tab"
-                                                    aria-controls="v-pills-x" aria-selected="false">Contomporary
-                                                    era</a>
-                                            </div>
-                                            <!-- the tab > tab contents -->
-                                            <div class="tab-content" id="v-pills-tabContent">
-
-                                                <div class="tab-pane fade show active" id="v-pills-b" role="tabpanel"
-                                                    aria-labelledby="v-pills-b-tab">
-                                                    <ul class="sous-nav nav flex-column">
-                                                        <li class="nav-item">
-                                                            <a href="#" class="nav-link">
-                                                                Prehistoric Man
-                                                            </a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a href="#" class="nav-link">
-                                                                Prehistoric civilization
-                                                            </a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a href="#" class="nav-link">
-                                                                Prehistoric sites
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="tab-pane fade" id="v-pills-a" role="tabpanel"
-                                                    aria-labelledby="v-pills-a-tab">
-                                                    The Antiquity
-                                                </div>
-                                                <div class="tab-pane fade" id="v-pills-z" role="tabpanel"
-                                                    aria-labelledby="v-pills-z-tab">
-                                                    Middle Ages
-                                                </div>
-                                                <div class="tab-pane fade" id="v-pills-y" role="tabpanel"
-                                                    aria-settings="v-pills-y-tab">
-                                                    Modern Times
-                                                </div>
-                                                <div class="tab-pane fade" id="v-pills-x" role="tabpanel"
-                                                    aria-labelledby="v-pills-x-tab">
-                                                    Contomporary era
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- 60 years tab -->
-                                    <div class="tab-pane fade" id="years-tab" role="tabpanel"
-                                        aria-labelledby="pills-years-tab">
-                                        2222222222222222222222222
-                                    </div>
-
-                                    <!-- events tab  -->
-                                    <div class="tab-pane fade" id="events-tab" role="tabpanel"
-                                        aria-labelledby="pills-events-tab">
-                                        333333333333333333
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="offcanvas-img">
-
-                            </div>
-
-                            <!-- <img class="offcanvas-img" id="offcanvas-img" src="./assets/images/martyrsMemorial.png"
-                                    alt="Martyr's Memorial Algeria" /> -->
-                        </div>
                     </div>
 
-                    <!-- this window will show in small screens  -->
-                    <div class="row mt-5 small-secreen">
+                    <!-- this is the mobile menu is will show up only in mobiles will show in small screens  -->
+                    <div class="d-flex justify-content-center text-center flex-row mt-5 small-secreen">
                         <ul class="nav d-flex flex-column justify-content-center text-center" id="mobile-nav">
                             <li class="nav-item text-center">
                                 <a class="nav-link text-center" data-bs-toggle="collapse" href="#h" role="button"
                                     aria-expanded="false" aria-controls="h">
-                                    History
+                                    تاريخ
                                 </a>
                                 <div class="collapse" id="h">
                                     <ul class="sous-nav nav flex-column">
                                         <li class="nav-item">
                                             <a class="nav-link" data-bs-toggle="collapse" href="#man" role="button"
                                                 aria-expanded="false" aria-controls="man">
-                                                The Prehistoric
+                                                عصور ما قبل التاريخ
                                             </a>
                                             <div class="collapse" id="man">
                                                 <ul class="sous-nav nav flex-column">
                                                     <li class="nav-item">
                                                         <a href="#" class="nav-link">
-                                                            Prehistoric Man
+                                                            رجل ما قبل التاريخ
                                                         </a>
                                                     </li>
                                                     <li class="nav-item">
                                                         <a href="#" class="nav-link">
-                                                            Prehistoric sites
+                                                            مواقع ما قبل التاريخ
                                                         </a>
                                                     </li>
                                                     <li class="nav-item">
                                                         <a href="#" class="nav-link">
-                                                            Prehistoric civilization
+                                                            حضارة ما قبل التاريخ
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -275,175 +296,98 @@
                                         </li>
                                         <li class="nav-item">
                                             <a href="#" class="nav-link">
-                                                The Antiquity
+                                                العصور القديمة
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="#" class="nav-link">
-                                                Middle Ages
+                                                العصور الوسطى
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="#" class="nav-link">
-                                                Modern Times
+                                                العصور الحديثة
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="#" class="nav-link">
-                                                Contomporary era
+                                                الحقبة المعاصرة
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
                             <li class="nav-item text-center">
-                                <a class="nav-link text-center" data-bs-toggle="collapse" href="#h" role="button"
-                                    aria-expanded="false" aria-controls="h">
-                                    60 years
+                                <a class="nav-link text-center" data-bs-toggle="collapse" href="#" role="button"
+                                    aria-expanded="false" aria-controls="">
+                                    عهد جديد
                                 </a>
                             </li>
                             <li class="nav-item text-center">
-                                <a class="nav-link text-center" data-bs-toggle="collapse" href="#h" role="button"
-                                    aria-expanded="false" aria-controls="h">
-                                    Events
+                                <a class="nav-link text-center" data-bs-toggle="collapse" href="#" role="button"
+                                    aria-expanded="false" aria-controls="">
+                                    النشاطات
                                 </a>
                             </li>
                             <li class="nav-item text-center">
-                                <a class="nav-link text-center" data-bs-toggle="collapse" href="#h" role="button"
-                                    aria-expanded="false" aria-controls="h">
-                                    Contact
+                                <a class="nav-link text-center" data-bs-toggle="collapse" href="#" role="button"
+                                    aria-expanded="false" aria-controls="">
+                                    إتصل بنا
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
+
             </div>
         </nav>
     </header>
     <!-- the main content -->
-    <main class="contacts-page">
-        <style>
-        </style>
+    <main>
+<section class="errorPage">
+    <div class="position-absolute top-0 w-100 overflow-hidden d-flex"   style="z-index: -1;">
+        <img class="img-fluid" src="./assets/images/404.png" alt="banner-img" style="z-index: -1; width: 100vw;
+                    height: 100vh;
+                    object-fit: cover;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    z-index: -1;" class="d-block w-100" alt="..." />
+    </div>
 
-        <div class="container ">
-            <div class="row">
-                <div class="col-6">
-                    <h1>Contacts</h1>
-                    <form action="#" class="row pt-5" method="post">
-                        <div class="py-4">
-                            <div class="col-12 float-start position-relative">
-                                <label for="name">Your name</label>
-                                <input class="effect-1" id="name" type="text" placeholder="Moussa El Hadj">
-                                <span class="focus-border"></span>
-                            </div>
-                        </div>
-                        <div class="py-4">
-                            <div class="col-12 float-start position-relative">
-                                <label for="email">Email</label>
-                                <input class="effect-1" type="text" id="email" placeholder="Example@domaine.com">
-                                <span class="focus-border"></span>
-                            </div>
-                        </div>
-                        <div class="separator mt-5 bg-dark" style="width: 100%;height: 1px;"></div>
-
-                        <div class="actions">
-                            <button type="submit" style="width: 100%;height: 50px;" class="mt-3 btn d-block btn-outline-dark">Submit</button>
-                        </div>
-                    </form>
-                    
-
-                    <div class="row py-5">
-                        <div class="col-6">
-                            <h2>Adress</h2>
-                            <p>Adresse : 2, Chemin du Lieutenant Mohamed 
-                                Benarfa, El Biar, 16000, Alger, Algérie.</p>
-                        </div>
-                        <div class="col-6">
-                            <h2>Phone & Email</h2>
-                            <p>+213 23 415 432</p>
-                            <p>Example@domaine.com</p>
-                        </div>
-                    </div>
-
-                </div>
+            <div class="errorPage__text ">
+                <h3>404</h3>
+                <p>
+                    هذه الصفحة غير موجودة! إما أن تم حذفها أو تغيير العنوان الخاص بها<br>
+                <a class="nav-link d-inline p-0 pe-1" href="index_ar.html">صفحة البداية</a>
+                </p>
             </div>
+               
+               
+                
+           
+            
+            <div class="errorPage__terrain">
+                
+            </div>
+
+        </section>
+
         </div>
+           
+          
+
+           
+
+
+
 
 
     </main>
 
-    <footer class="pt-5 pb-0 px-3">
-        <div class="row">
-            <div class="col-md-4 col-sm-12 text-center text-md-start">
-                <div class="p-4"><img src="./assets/images/60logo.png" alt="60 algeria logo independance"></div>
-                <p class="p-4 pt-0">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum lectus mi cursus dolor, vel
-                    hendrerit erat amet tempus. vitae
-                </p>
-                <div class="p-4 pt-0 social">
-                    <span>follow us</span>
-                    <a href="#" class="nav-link d-inline" target="_blank" rel="noopener noreferrer"><i
-                            class="fa-brands fa-instagram"></i></a>
-                    <a href="#" class="nav-link d-inline" target="_blank" rel="noopener noreferrer"><i
-                            class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="nav-link d-inline" target="_blank" rel="noopener noreferrer"><i
-                            class="fa-brands fa-twitter"></i></a>
-                </div>
-            </div>
-            <div class="col-md-2 col-sm-12 text-center text-md-start">
-                <h3 class="py-3">Quick Links</h3>
-                <ul class="nav d-flex flex-column">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">History</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">About</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-2 col-sm-12 text-center text-md-start">
-                <h3 class="py-3">Useful Links</h3>
-                <ul class="nav d-flex flex-column">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Contact us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Privacy Policy</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Terms and conditions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">FAQ</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-4 col-sm-12 mt-4 px-5 text-center text-md-start">
-                <form action="#" method="post">
-                    <div class="input-group mb-1">
-                        <input type="text" class="form-control p-2 ps-3" placeholder="example@domain.com"
-                            aria-label="example@domain.com" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-secondary" type="submit" type="button" id="button-addon2">
-                            <i class="fa-solid fa-envelope"></i>
-                        </button>
-                    </div>
-                </form>
-                <p style="font-size: 12px;">Subscribe to our newsletter to explore more
-                    about our history.</p>
-
-            </div>
-        </div>
-        <div class="row">
-            <p class="copy-rights p-4 m-0 text-center">
-                Copyright
-                Ⓒ
-                2022, All rights reserved.
-            </p>
-        </div>
-    </footer>
 </body>
+
+
+
 
 </html>
