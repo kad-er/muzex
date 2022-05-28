@@ -17,92 +17,144 @@
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
     <script src="./node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
 
-   
+
 </head>
 
-<body dir="rtl"  style="min-height: 100%;">
-  
-<div class="" >
-       
-
-        <div class="align-self-center justify-content-center">
+<body dir="rtl" style="min-height: 100vh;">
 
 
-            
-            <div id="my-carousel" class="carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="false" data-bs-pause="false" data-bs-wrap="false">
-                <div class="carousel-inner min-vh-100 ">
-                    <div class="carousel-item active h-100" id="s1"   style="background-image: url(assets/images/image\ 1.svg);filter: brightness(50%)"
-                  >
-                        <!-- the bg video -->
-                            <div class="position-absolute top-0 w-100 overflow-hidden d-flex h-200" style="z-index: -1;">
-                                <img class="img-fluid" src="./assets/images/image 1.svg" alt="banner-img" style="z-index: -1;filter: brightness(50%); width: 100vw;
+
+    <div class="align-self-center position-relative justify-content-center">
+
+
+        <nav class="nav position-absolute top-0 end-0 d-flex row align-self-center justify-content-center p-2">
+            <li class="nav-item" style="font-family: 'STV';
+            z-index: 100000000;
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 28px;
+                                            line-height: 31px;color: white;">
+                العودة إلى <a class="nav-link active d-inline p-0 pe-1" href="index_ar.html#section-ar2"
+                    style="color: #d21034;">التاريخ</a>
+            </li>
+
+        </nav>
+
+        <div id="my-carousel" class="carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="false"
+            data-bs-pause="false" data-bs-wrap="false">
+            <div class="carousel-inner min-vh-100 ">
+                <div class="carousel-item d-flex flex-column justify-content-center align-items-center vh-100" id="s1">
+                    <!-- the bg video -->
+                    <div class="position-absolute top-0 w-100 overflow-hidden d-flex" style="z-index: -1;">
+                        <img class="img-fluid" src="./assets/images/image 1.svg" alt="banner-img" style="z-index: -1;filter: brightness(50%); width: 100vw;
                                     height: 100vh;
                                     object-fit: cover;
                                     left: 0;
                                     right: 0;
                                     top: 0;
                                     z-index: -1;" class="d-block w-100" alt="..." />
-                            </div>
+                    </div>
 
-                       
-                     <nav class="nav m-3 d-flex row align-self-center justify-content-center p-5" >
-                            <li class="nav-item" style="font-family: 'STV';
-                                                        font-style: normal;
-                                                        font-weight: 400;
-                                                        font-size: 28px;
-                                                        line-height: 31px;color: white;">
-                                العودة إلى <a class="nav-link active d-inline" href="index_ar.html#section-ar2" style="color: #d21034;">التاريخ</a>
-                            </li>
-            
-                        </nav>
-                       
-                    <div class="d-flex align-items-center">
-                            <div class="align-self-center">
-                                <div class="offcanvas offcanvas-start w-100" >
-                                    <div class="offcanvas-header">
-                                      <h1 class="offcanvas-title"></h1>
-                                     
-                                    </div>
-                                    <div class="offcanvas-body">
-                                      
-                                      
-                                    </div>
-                                  </div>
-                                <span class=" d-flex align-items-center p-5" style="height: 100%;" ><svg width="40" height="20" viewBox="0 0 40 20"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="offcanvas" data-bs-target="#demo">
-                                        <circle cx="4" cy="10" r="4" fill="#D21034" />
-                                        <circle cx="36" cy="10" r="4" fill="#D21034" />
-                                        <circle cx="20" cy="10" r="10" fill="#D21034" />
-                                    </svg>
-                    
-                                </span>
-                            </div>
-                            <!-- sliders controllers -->
-                            <!--div class="slider-controllers d-flex bg-dark flex-row justify-content-start">
-                                <div>
-                                    <a class="nav-link" href="historyhome_ar.html#s2" role="button"
-                                        data-bs-slide="prev">
-                                        <i class="fas fa-arrow-left-long"></i>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a class="nav-link" href="#s2" role="button"
-                                        data-bs-slide="next">
-                                        <i class="fas fa-arrow-right-long"></i>
-                                    </a>
-                                </div>
-                            </div-->
+                    <!-- Menu button  -->
+                    <button class="navbar-toggler position-absolute top-0 start-0 shadow-none me-3 text-white"
+                        type="button" data-bs-toggle="offcanvas" data-bs-target="#s1-offcanvase"
+                        aria-controls="s1-offcanvase">
+                        <!-- the menu humburger icon -->
+                        <i class="fa-solid fa-bars fa-2x"></i>
+                    </button>
 
-                        <main class="d-flex mt-5 mb-5 justify-content-center text-align-centfa-rotate-180">
-                            <div class="col-5 justify-content-center d-flex">
-                                <div class="banner-img">
-                                   
-                                    <img class="img-fluid" src="./assets/images/image2-1 (2).png" alt="banner-img">
-                                   
+                    <div class="offcanvas offcanvas-end" tabindex="1" id="s1-offcanvase"
+                        aria-labelledby="offcanvasExampleLabel" style="background-color: #A4E2C5B2;">
+                        <div class="offcanvas-header ">
+                            <h5 class="offcanvas-title my-4 mx-5" id="offcanvasExampleLabel" style="font-family: AlWatanHeadlines;
+                   font-size: 24px;
+                   font-weight: 700;
+                   line-height: 52px;
+                   letter-spacing: 0em;
+                   text-align: right;
+                   ">المقالات المتعلقة بهذا الموضوع</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <nav class="nav flex-column">
+                                <li class="nav-item my-2">
+                                    <span class="separator w-25"></span>
+                                    <a class="nav-link active" href="#" style="font-family: STV;
+                             font-size: 20px;
+                             font-weight: 400;
+                             line-height: 22px;
+                             letter-spacing: 0em;
+                             text-align: right;
+                             color: #1D1D1B;
+                             ">الحضارة الأشولية
+                                    </a>
+                                </li>
+                                <li class="nav-item my-2">
+                                    <span class="separator w-25"></span>
+                                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" style="font-family: STV;
+                             font-size: 20px;
+                             font-weight: 400;
+                             line-height: 22px;
+                             letter-spacing: 0em;
+                             text-align: right;
+                             color: #1D1D1B;
+                             ">الحضارة العاترية
+                                    </a>
+                                </li>
+                                <li class="nav-item my-2">
+                                    <span class="separator w-25"></span>
+                                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" style="font-family: STV;
+                             font-size: 20px;
+                             font-weight: 400;
+                             line-height: 22px;
+                             letter-spacing: 0em;
+                             text-align: right;
+                             color: #1D1D1B;
+                             ">الحضارة الوهرانية (الإبيرومغربية)
+                                    </a>
+                                </li>
+
+                            </nav>
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="d-flex flex-lg-row flex-xl-row flex-xxl-row flex-md-column flex-sm-column align-items-center">
+                        <div class="align-self-center col-sm-1">
+                            <div class="offcanvas offcanvas-start w-100">
+                                <div class="offcanvas-header">
+                                    <h1 class="offcanvas-title"></h1>
+                                </div>
+                                <div class="offcanvas-body">
+
+
                                 </div>
                             </div>
-                            <div class="col-4 " >
-                                <h3 style="font-family: AlWatanHeadlines;
+                            <span
+                                class="d-none d-md-flex d-lg-flex d-xl-flex d-xxl-flex d-flex align-items-center nav-link"
+                                style="height: 100%;"><svg width="40" height="20" viewBox="0 0 40 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" data-bs-toggle="offcanvas"
+                                    data-bs-target="#demo">
+                                    <circle cx="4" cy="10" r="4" fill="#D21034" />
+                                    <circle cx="36" cy="10" r="4" fill="#D21034" />
+                                    <circle cx="20" cy="10" r="10" fill="#D21034" />
+                                </svg>
+
+                            </span>
+                        </div>
+
+                        <main
+                            class="col-sm-11 d-flex flex-lg-row flex-xl-row flex-xxl-row flex-md-column flex-sm-column flex-column mt-5 mb-5 justify-content-center align-items-center text-align-cent">
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 align-self-center">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img class="img-fluid slide-text-img" src="./assets/images/bf (3).png"
+                                        alt="banner-img">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 px-5">
+                                <h3 style="font-family: 'AlWatanHeadlines';
                                                         font-size: 64px;
                                                         font-weight: 700;
                                                         line-height: 64px;
@@ -110,124 +162,111 @@
                                                         text-align: right;
                                                         color: white;
                                 ">العصور
-                                    <p style="color: red;"> القديمة </p></h3>
-                                <p style="font-family: STV;
+                                    <p style="color: #d21034;"> القديمة </p>
+                                </h3>
+                                <p style="overflow-y: scroll !important;max-height: 200px; font-family: STV;
                                 font-size: 18px;
                                 font-weight: 400;
                                 line-height: 24px;
                                 letter-spacing: 0em;
                                 text-align:justify;
                                 color: white;
-                                ">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ</p>
+                                ">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز
+                                    على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام
+                                    على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام
+                                    على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام
+                                    طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ</p>
                             </div>
                         </main>
                     </div>
-                      
-                        <footer class="d-flex justify-content-start mx-5" style="background-color:transparent; margin-top: 10px;">
-                            <nav class="nav justify-content-start w-100">
-                              <div class="col-2 mb-5">
-                                <div class="separator pb-20" style="width:fit-content">  
-                                <a class="nav-link active" href="prehistoric-ar.html" style="font-family: 'AlWatanHeadlines-Bold';
-                                font-style: normal;
-                                font-weight: 700;
-                                font-size: 20px;
-                                line-height: 24px;
-                                /* or 75% */
-                                
-                                text-align: right;
-                                
-                                color: #FFFFFF;
-                                ">ما قبل التاريخ</a>
-                              </div>  
-                              </div>
-                              <div class="col-2 mb-5">
-                                <div class="separator pb-20" style="width:fit-content"> 
-                                <a class="nav-link active " href="#" style="font-family: 'AlWatanHeadlines-Bold';
-                                font-style: normal;
-                                font-weight: 700;
-                                font-size: 20px;
-                                line-height: 24px;
-                                /* or 75% */
-                                
-                                text-align: right;
-                                
-                                color: #FFFFFF;
-                                ">فجر التاريخ</a>
-                              </div>  
-                              </div>
-                              <div class="col-2 mb-5">
-                                <div class="separator pb-20" style="width:fit-content">  
-                                <a class="nav-link active" href="#" style="font-family: 'AlWatanHeadlines-Bold';
-                                font-style: normal;
-                                font-weight: 700;
-                                font-size: 20px;
-                                line-height: 24px;
-                                color: blanchedalmond;"
-                                >التاريخ القديم</a>
-                              </div>  
-                               </div> 
-                              
-                              
-                            </nav>
-                        </footer>
 
-                       
-                    </div>
-                    <!-- second item -->
-                    <div class="carousel-item   min-vh-100" id="s2">
-                        <!-- the bg video -->
-            <div class="position-absolute top-0 w-100 overflow-hidden h-100" style="z-index: -1;">
-                <img class="img-fluid" src="./assets/images/image 2@2x.png" alt="banner-img" style="z-index: -1;filter: brightness(50%); width: 100vw;
+                    <footer class="d-none d-md-block d-lg-block d-xl-block section-3 d-flex flex-row justify-content-center"
+                        style="background-color:transparent; margin-top: 10px;">
+                        <!-- secondary navigation  -->
+                        <nav class="mt-5">
+                            <ul class="nav d-flex flex-row justify-content-center">
+                                <!-- add active class to <a> tag to make it active  -->
+
+                                <li class="nav-item mx-2 d-flex flex-column-reverse text-center">
+                                    <a href="historyhome_ar.html#1" class="nav-link">
+                                        <div class="separator"></div>
+                                        الجزائر في التاريخ المعاصر
+                                    </a>
+                                </li>
+
+                                <li class="nav-item mx-2 d-flex flex-column-reverse text-center">
+                                    <a href="historyhome_ar.html#2" class="nav-link">
+                                        <div class="separator"></div>
+                                        الجزائر في التاريخ الحديث
+                                    </a>
+                                </li>
+                                <li class="nav-item mx-2 d-flex flex-column-reverse text-center">
+                                    <a href="historyhome_ar.html#3" class="nav-link">
+                                        <div class="separator"></div>
+                                        الجزائر في الفتح والاسلام
+                                    </a>
+                                </li>
+                                <li class="nav-item mx-2 d-flex flex-column-reverse text-center">
+                                    <a href="historyhome_ar.html#4" class="nav-link">
+                                        <div class="separator"></div>
+
+                                        الجزائر في تاريخ القديم
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </nav>
+                    </footer>
+
+
+                </div>
+                <!-- second item -->
+                <div class="carousel-item   min-vh-100" id="s2">
+                    <!-- the bg img -->
+                    <div class="position-absolute top-0 w-100 overflow-hidden h-100" style="z-index: -1;">
+                        <img class="img-fluid" src="./assets/images/image 2@2x.png" alt="banner-img" style="z-index: -1;filter: brightness(50%); width: 100vw;
                     height: 100vh;
                     object-fit: cover;
                     left: 0;
                     right: 0;
                     top: 0;
                     z-index: -1;" class="d-block w-100" alt="..." />
-            </div>
-            <nav class="nav m-3 " style="margin-left: 0;">
-                <li class="nav-item" style="font-family: 'STV';
-                                            font-style: normal;
-                                            font-weight: 400;
-                                            font-size: 28px;
-                                            line-height: 31px;color: white;">
-                    العودة إلى <a class="nav-link active d-inline" href="index_ar.html#section-ar2" style="color: #d21034;">التاريخ</a>
-                </li>
-
-            </nav>
-            <div class="d-flex">
-                <div>
-                    <div class="offcanvas offcanvas-start w-100" >
-                        <div class="offcanvas-header">
-                          <h1 class="offcanvas-title"></h1>
-                         
-                        </div>
-                        <div class="offcanvas-body">
-                          
-                          
-                        </div>
-                      </div>
-                    <span class=" d-flex align-items-center" style="height: 100%;" ><svg width="40" height="20" viewBox="0 0 40 20"
-                            fill="none" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="offcanvas" data-bs-target="#demo">
-                            <circle cx="4" cy="10" r="4" fill="#D21034" />
-                            <circle cx="36" cy="10" r="4" fill="#D21034" />
-                            <circle cx="20" cy="10" r="10" fill="#D21034" />
-                        </svg>
-        
-                    </span>
-                </div>
-
-
-            <main class="d-flex mt-5 mb-5">
-                <div class="col-5 justify-content-center d-flex">
-                    <div class="banner-img">
-                       
-                        <img class="img-fluid" src="./assets/images/image2-1.png" alt="banner-img">
-                       
                     </div>
-                </div>
-                <div class="col-4 " >
-                    <h3 style="font-family: AlWatanHeadlines;
+
+                    <div class="d-flex">
+                        <div>
+                            <div class="offcanvas offcanvas-start w-100">
+                                <div class="offcanvas-header">
+                                    <h1 class="offcanvas-title"></h1>
+
+                                </div>
+                                <div class="offcanvas-body">
+
+
+                                </div>
+                            </div>
+                            <span class=" d-flex align-items-center" style="height: 100%;"><svg width="40" height="20"
+                                    viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    data-bs-toggle="offcanvas" data-bs-target="#demo">
+                                    <circle cx="4" cy="10" r="4" fill="#D21034" />
+                                    <circle cx="36" cy="10" r="4" fill="#D21034" />
+                                    <circle cx="20" cy="10" r="10" fill="#D21034" />
+                                </svg>
+
+                            </span>
+                        </div>
+
+
+                        <main class="d-flex mt-5 mb-5">
+                            <div class="col-5 justify-content-center d-flex">
+                                <div class="banner-img">
+
+                                    <img class="img-fluid" src="./assets/images/image2-1.png" alt="banner-img">
+
+                                </div>
+                            </div>
+                            <div class="col-4 ">
+                                <h3 style="font-family: AlWatanHeadlines;
                                             font-size: 64px;
                                             font-weight: 700;
                                             line-height: 64px;
@@ -235,24 +274,28 @@
                                             text-align: right;
                                             color: white;
                     ">التاريخ
-                        <p style="color: red;"> الوسيط </p></h3>
-                    <p style="font-family: STV;
+                                    <p style="color: red;"> الوسيط </p>
+                                </h3>
+                                <p style="font-family: STV;
                     font-size: 18px;
                     font-weight: 400;
                     line-height: 24px;
                     letter-spacing: 0em;
                     text-align:justify;
                     color: white;
-                    ">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ</p>
-                </div>
-            </main>
-        </div>
-          
-            <footer class="d-flex justify-content-start mx-5" style="background-color:transparent; margin-top: 90px;">
-                <nav class="nav justify-content-start w-100">
-                  <div class="col-2 mb-5">
-                    <div class="separator pb-20" style="width:fit-content">  
-                    <a class="nav-link active" href="#" style="font-family: 'AlWatanHeadlines-Bold';
+                    ">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل
+                                    الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة
+                                    لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ</p>
+                            </div>
+                        </main>
+                    </div>
+
+                    <footer class="d-flex justify-content-start mx-5"
+                        style="background-color:transparent; margin-top: 90px;">
+                        <nav class="nav justify-content-start w-100">
+                            <div class="col-2 mb-5">
+                                <div class="separator pb-20" style="width:fit-content">
+                                    <a class="nav-link active" href="#" style="font-family: 'AlWatanHeadlines-Bold';
                     font-style: normal;
                     font-weight: 700;
                     font-size: 20px;
@@ -262,12 +305,12 @@
                     text-align: right;
                     
                     color: #FFFFFF;
-                    ">الفتح الاسلامي  </a>
-                  </div>  
-                  </div>
-                  <div class="col-2 mb-5">
-                    <div class="separator pb-20" style="width:fit-content"> 
-                    <a class="nav-link active " href="#" style="font-family: 'AlWatanHeadlines-Bold';
+                    ">الفتح الاسلامي </a>
+                                </div>
+                            </div>
+                            <div class="col-2 mb-5">
+                                <div class="separator pb-20" style="width:fit-content">
+                                    <a class="nav-link active " href="#" style="font-family: 'AlWatanHeadlines-Bold';
                     font-style: normal;
                     font-weight: 700;
                     font-size: 20px;
@@ -278,69 +321,61 @@
                     
                     color: #FFFFFF;
                     ">العهد العثماني </a>
-                  </div>  
-                  </div>
-                  
-                  
-                  
-                </nav>
-            </footer>
-                    </div>
-                    <!-- third item -->
-                    <div class="carousel-item  min-vh-100" id="s3">
-                        <!-- the bg video -->
-            <div class="position-absolute top-0 w-100 overflow-hidden h-100" style="z-index: -1;">
-                <img class="img-fluid" src="./assets/images/image3.png" alt="banner-img" style="z-index: -1;filter: brightness(50%); width: 100vw;
+                                </div>
+                            </div>
+
+
+
+                        </nav>
+                    </footer>
+                </div>
+                <!-- third item -->
+                <div class="carousel-item  min-vh-100" id="s3">
+                    <!-- the bg video -->
+                    <div class="position-absolute top-0 w-100 overflow-hidden h-100" style="z-index: -1;">
+                        <img class="img-fluid" src="./assets/images/image3.png" alt="banner-img" style="z-index: -1;filter: brightness(50%); width: 100vw;
                     height: 100vh;
                     object-fit: cover;
                     left: 0;
                     right: 0;
                     top: 0;
                     z-index: -1;" class="d-block w-100" alt="..." />
-            </div>
-            <nav class="nav m-3 " style="margin-left: 0;">
-                <li class="nav-item" style="font-family: 'STV';
-                                            font-style: normal;
-                                            font-weight: 400;
-                                            font-size: 28px;
-                                            line-height: 31px;color: white;">
-                    العودة إلى <a class="nav-link active d-inline" href="index_ar.html#section-ar2" style="color: #d21034;">التاريخ</a>
-                </li>
-
-            </nav>
-            <div class="d-flex">
-                <div>
-                    <div class="offcanvas offcanvas-start w-100" >
-                        <div class="offcanvas-header">
-                          <h1 class="offcanvas-title"></h1>
-                         
-                        </div>
-                        <div class="offcanvas-body">
-                          
-                          
-                        </div>
-                      </div>
-                    <span class=" d-flex align-items-center" style="height: 100%;" ><svg width="40" height="20" viewBox="0 0 40 20"
-                            fill="none" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="offcanvas" data-bs-target="#demo">
-                            <circle cx="4" cy="10" r="4" fill="#D21034" />
-                            <circle cx="36" cy="10" r="4" fill="#D21034" />
-                            <circle cx="20" cy="10" r="10" fill="#D21034" />
-                        </svg>
-        
-                    </span>
-                </div>
-
-
-            <main class="d-flex mt-5 mb-5">
-                <div class="col-5 justify-content-center d-flex">
-                    <div class="banner-img">
-                       
-                        <img class="img-fluid" src="./assets/images/image2-1 (1).png" >
-                       
                     </div>
-                </div>
-                <div class="col-4 " >
-                    <h3 style="font-family: AlWatanHeadlines;
+
+                    <div class="d-flex">
+                        <div>
+                            <div class="offcanvas offcanvas-start w-100">
+                                <div class="offcanvas-header">
+                                    <h1 class="offcanvas-title"></h1>
+
+                                </div>
+                                <div class="offcanvas-body">
+
+
+                                </div>
+                            </div>
+                            <span class=" d-flex align-items-center" style="height: 100%;"><svg width="40" height="20"
+                                    viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    data-bs-toggle="offcanvas" data-bs-target="#demo">
+                                    <circle cx="4" cy="10" r="4" fill="#D21034" />
+                                    <circle cx="36" cy="10" r="4" fill="#D21034" />
+                                    <circle cx="20" cy="10" r="10" fill="#D21034" />
+                                </svg>
+
+                            </span>
+                        </div>
+
+
+                        <main class="d-flex mt-5 mb-5">
+                            <div class="col-5 justify-content-center d-flex">
+                                <div class="banner-img">
+
+                                    <img class="img-fluid" src="./assets/images/image2-1 (1).png">
+
+                                </div>
+                            </div>
+                            <div class="col-4 ">
+                                <h3 style="font-family: AlWatanHeadlines;
                                             font-size: 64px;
                                             font-weight: 700;
                                             line-height: 64px;
@@ -348,24 +383,28 @@
                                             text-align: right;
                                             color: white;
                     ">التاريخ
-                        <p style="color: red;"> المعاصر </p></h3>
-                    <p style="font-family: STV;
+                                    <p style="color: red;"> المعاصر </p>
+                                </h3>
+                                <p style="font-family: STV;
                     font-size: 18px;
                     font-weight: 400;
                     line-height: 24px;
                     letter-spacing: 0em;
                     text-align:justify;
                     color: white;
-                    ">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ</p>
-                </div>
-            </main>
-        </div>
-          
-            <footer class="d-flex justify-content-start mx-5" style="background-color:transparent; margin-top: 90px;">
-                <nav class="nav justify-content-start w-100">
-                  <div class="col-2 mb-5">
-                    <div class="separator pb-20" style="width:fit-content">  
-                    <a class="nav-link active" href="#" style="font-family: 'AlWatanHeadlines-Bold';
+                    ">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل
+                                    الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة
+                                    لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ</p>
+                            </div>
+                        </main>
+                    </div>
+
+                    <footer class="d-flex justify-content-start mx-5"
+                        style="background-color:transparent; margin-top: 90px;">
+                        <nav class="nav justify-content-start w-100">
+                            <div class="col-2 mb-5">
+                                <div class="separator pb-20" style="width:fit-content">
+                                    <a class="nav-link active" href="#" style="font-family: 'AlWatanHeadlines-Bold';
                     font-style: normal;
                     font-weight: 700;
                     font-size: 20px;
@@ -375,12 +414,12 @@
                     text-align: right;
                     
                     color: #FFFFFF;
-                    ">ثورة التحرير الوطني   </a>
-                  </div>  
-                  </div>
-                  <div class="col-2 mb-5">
-                    <div class="separator pb-20" style="width:fit-content"> 
-                    <a class="nav-link active " href="#" style="font-family: 'AlWatanHeadlines-Bold';
+                    ">ثورة التحرير الوطني </a>
+                                </div>
+                            </div>
+                            <div class="col-2 mb-5">
+                                <div class="separator pb-20" style="width:fit-content">
+                                    <a class="nav-link active " href="#" style="font-family: 'AlWatanHeadlines-Bold';
                     font-style: normal;
                     font-weight: 700;
                     font-size: 20px;
@@ -391,11 +430,11 @@
                     
                     color: #FFFFFF;
                     "> الحركة الوطنية </a>
-                  </div>  
-                  </div>
-                  <div class="col-2 mb-5">
-                    <div class="separator pb-20" style="width:fit-content"> 
-                    <a class="nav-link active " href="#" style="font-family: 'AlWatanHeadlines-Bold';
+                                </div>
+                            </div>
+                            <div class="col-2 mb-5">
+                                <div class="separator pb-20" style="width:fit-content">
+                                    <a class="nav-link active " href="#" style="font-family: 'AlWatanHeadlines-Bold';
                     font-style: normal;
                     font-weight: 700;
                     font-size: 20px;
@@ -406,11 +445,11 @@
                     
                     color: #FFFFFF;
                     "> المقاومة الشعبية </a>
-                  </div>  
-                  </div>
-                  <div class="col-2 mb-5">
-                    <div class="separator pb-20" style="width:fit-content"> 
-                    <a class="nav-link active " href="#" style="font-family: 'AlWatanHeadlines-Bold';
+                                </div>
+                            </div>
+                            <div class="col-2 mb-5">
+                                <div class="separator pb-20" style="width:fit-content">
+                                    <a class="nav-link active " href="#" style="font-family: 'AlWatanHeadlines-Bold';
                     font-style: normal;
                     font-weight: 700;
                     font-size: 20px;
@@ -421,71 +460,63 @@
                     
                     color: #FFFFFF;
                     "> الجزائر قبيل الاحتلال </a>
-                  </div>  
-                  </div>
+                                </div>
+                            </div>
 
-                 
-                  
-                  
-                </nav>
-            </footer>
-                    </div>
 
-                    <!-- foor item -->
-                    <div class="carousel-item  min-vh-100" id="s3">
-                        <!-- the bg video -->
-            <div class="position-absolute top-0 w-100 overflow-hidden h-100" style="z-index: -1;">
-                <img class="img-fluid" src="./assets/images/image3.png" alt="banner-img" style="z-index: -1;filter: brightness(50%); width: 100vw;
+
+
+                        </nav>
+                    </footer>
+                </div>
+
+                <!-- foor item -->
+                <div class="carousel-item  min-vh-100" id="s3">
+                    <!-- the bg video -->
+                    <div class="position-absolute top-0 w-100 overflow-hidden h-100" style="z-index: -1;">
+                        <img class="img-fluid" src="./assets/images/image3.png" alt="banner-img" style="z-index: -1;filter: brightness(50%); width: 100vw;
                     height: 200vh;
                     object-fit: cover;
                     left: 0;
                     right: 0;
                     top: 0;
                     z-index: -1;" class="d-block w-100" alt="..." />
-            </div>
-            <nav class="nav m-3 " style="margin-left: 0;">
-                <li class="nav-item" style="font-family: 'STV';
-                                            font-style: normal;
-                                            font-weight: 400;
-                                            font-size: 28px;
-                                            line-height: 31px;color: white;">
-                    العودة إلى <a class="nav-link active d-inline" href="index_ar.html#section-ar2" style="color: #d21034;">التاريخ</a>
-                </li>
-
-            </nav>
-            <div class="d-flex">
-                <div>
-                    <div class="offcanvas offcanvas-start w-100" >
-                        <div class="offcanvas-header">
-                          <h1 class="offcanvas-title"></h1>
-                         
-                        </div>
-                        <div class="offcanvas-body">
-                          
-                          
-                        </div>
-                      </div>
-                    <span class=" d-flex align-items-center" style="height: 100%;" ><svg width="40" height="20" viewBox="0 0 40 20"
-                            fill="none" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="offcanvas" data-bs-target="#demo">
-                            <circle cx="4" cy="10" r="4" fill="#D21034" />
-                            <circle cx="36" cy="10" r="4" fill="#D21034" />
-                            <circle cx="20" cy="10" r="10" fill="#D21034" />
-                        </svg>
-        
-                    </span>
-                </div>
-
-
-            <main class="d-flex mt-5 mb-5">
-                <div class="col-5 justify-content-center d-flex">
-                    <div class="banner-img">
-                       
-                        <img class="img-fluid" src="./assets/images/image2-1 (1).png" >
-                       
                     </div>
-                </div>
-                <div class="col-4 " >
-                    <h3 style="font-family: AlWatanHeadlines;
+
+                    <div class="d-flex">
+                        <div>
+                            <div class="offcanvas offcanvas-start w-100">
+                                <div class="offcanvas-header">
+                                    <h1 class="offcanvas-title"></h1>
+
+                                </div>
+                                <div class="offcanvas-body">
+
+
+                                </div>
+                            </div>
+                            <span class=" d-flex align-items-center" style="height: 100%;"><svg width="40" height="20"
+                                    viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    data-bs-toggle="offcanvas" data-bs-target="#demo">
+                                    <circle cx="4" cy="10" r="4" fill="#D21034" />
+                                    <circle cx="36" cy="10" r="4" fill="#D21034" />
+                                    <circle cx="20" cy="10" r="10" fill="#D21034" />
+                                </svg>
+
+                            </span>
+                        </div>
+
+
+                        <main class="d-flex mt-5 mb-5">
+                            <div class="col-5 justify-content-center d-flex">
+                                <div class="banner-img">
+
+                                    <img class="img-fluid" src="./assets/images/image2-1 (1).png">
+
+                                </div>
+                            </div>
+                            <div class="col-4 ">
+                                <h3 style="font-family: AlWatanHeadlines;
                                             font-size: 64px;
                                             font-weight: 700;
                                             line-height: 64px;
@@ -493,24 +524,28 @@
                                             text-align: right;
                                             color: white;
                     ">التاريخ
-                        <p style="color: red;"> الحديث </p></h3>
-                    <p style="font-family: STV;
+                                    <p style="color: red;"> الحديث </p>
+                                </h3>
+                                <p style="font-family: STV;
                     font-size: 18px;
                     font-weight: 400;
                     line-height: 24px;
                     letter-spacing: 0em;
                     text-align:justify;
                     color: white;
-                    ">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ</p>
-                </div>
-            </main>
-        </div>
-          
-            <footer class="d-flex justify-content-start mx-5" style="background-color:transparent; margin-top: 90px;">
-                <nav class="nav justify-content-start w-100">
-                  <div class="col-2 mb-5">
-                    <div class="separator pb-1" style="width:fit-content">  
-                    <a class="nav-link active" href="#" style="font-family: 'AlWatanHeadlines-Bold';
+                    ">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل
+                                    الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة
+                                    لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ</p>
+                            </div>
+                        </main>
+                    </div>
+
+                    <footer class="d-flex justify-content-start mx-5"
+                        style="background-color:transparent; margin-top: 90px;">
+                        <nav class="nav justify-content-start w-100">
+                            <div class="col-2 mb-5">
+                                <div class="separator pb-1" style="width:fit-content">
+                                    <a class="nav-link active" href="#" style="font-family: 'AlWatanHeadlines-Bold';
                     font-style: normal;
                     font-weight: 700;
                     font-size: 15px;
@@ -520,12 +555,12 @@
                     text-align: right;
                     
                     color: #FFFFFF;
-                    ">  البحرية الجزائرية   </a>
-                  </div>  
-                  </div>
-                  <div class="col-2 mb-5">
-                    <div class="separator pb-20" style="width:fit-content"> 
-                    <a class="nav-link active " href="#" style="font-family: 'AlWatanHeadlines-Bold';
+                    "> البحرية الجزائرية </a>
+                                </div>
+                            </div>
+                            <div class="col-2 mb-5">
+                                <div class="separator pb-20" style="width:fit-content">
+                                    <a class="nav-link active " href="#" style="font-family: 'AlWatanHeadlines-Bold';
                     font-style: normal;
                     font-weight: 700;
                     font-size: 15px;
@@ -535,12 +570,12 @@
                     text-align: right;
                     
                     color: #FFFFFF;
-                    "> العلاقات الخارجية و مكانة الجزائر الدولية  </a>
-                  </div>  
-                  </div>
-                  <div class="col-2 mb-5">
-                    <div class="separator pb-20" style="width:fit-content"> 
-                    <a class="nav-link active " href="#" style="font-family: 'AlWatanHeadlines-Bold';
+                    "> العلاقات الخارجية و مكانة الجزائر الدولية </a>
+                                </div>
+                            </div>
+                            <div class="col-2 mb-5">
+                                <div class="separator pb-20" style="width:fit-content">
+                                    <a class="nav-link active " href="#" style="font-family: 'AlWatanHeadlines-Bold';
                     font-style: normal;
                     font-weight: 700;
                     font-size: 15px;
@@ -550,12 +585,12 @@
                     text-align: right;
                     
                     color: #FFFFFF;
-                    "> الملامح و المظاهر الحضارية  </a>
-                  </div>  
-                  </div>
-                  <div class="col-2 mb-5">
-                    <div class="separator pb-20" style="width:fit-content"> 
-                    <a class="nav-link active " href="#" style="font-family: 'AlWatanHeadlines-Bold';
+                    "> الملامح و المظاهر الحضارية </a>
+                                </div>
+                            </div>
+                            <div class="col-2 mb-5">
+                                <div class="separator pb-20" style="width:fit-content">
+                                    <a class="nav-link active " href="#" style="font-family: 'AlWatanHeadlines-Bold';
                     font-style: normal;
                     font-weight: 700;
                     font-size: 15px;
@@ -565,12 +600,12 @@
                     text-align: right;
                     
                     color: #FFFFFF;
-                    "> النظام الاجتماعي   </a>
-                  </div>  
-                  </div>
-                  <div class="col-2 mb-5">
-                    <div class="separator pb-20" style="width:fit-content"> 
-                    <a class="nav-link active " href="#" style="font-family: 'AlWatanHeadlines-Bold';
+                    "> النظام الاجتماعي </a>
+                                </div>
+                            </div>
+                            <div class="col-2 mb-5">
+                                <div class="separator pb-20" style="width:fit-content">
+                                    <a class="nav-link active " href="#" style="font-family: 'AlWatanHeadlines-Bold';
                     font-style: normal;
                     font-weight: 700;
                     font-size: 15px;
@@ -580,13 +615,13 @@
                     text-align: right;
                     
                     color: #FFFFFF;
-                    "> النظام السياسي و الاداري   </a>
-                  </div>  
-                  </div>
+                    "> النظام السياسي و الاداري </a>
+                                </div>
+                            </div>
 
-                  <div class="col-2 mb-5">
-                    <div class="separator pb-20" style="width:fit-content"> 
-                    <a class="nav-link active " href="#" style="font-family: 'AlWatanHeadlines-Bold';
+                            <div class="col-2 mb-5">
+                                <div class="separator pb-20" style="width:fit-content">
+                                    <a class="nav-link active " href="#" style="font-family: 'AlWatanHeadlines-Bold';
                     font-style: normal;
                     font-weight: 700;
                     font-size: 15px;
@@ -596,13 +631,13 @@
                     text-align: right;
                     
                     color: #FFFFFF;
-                    ">   النظام و الموارد الاقتصادية </a>
-                  </div>  
-                  </div>
+                    "> النظام و الموارد الاقتصادية </a>
+                                </div>
+                            </div>
 
-                  <div class="col-2 mb-5">
-                    <div class="separator pb-20" style="width:fit-content"> 
-                    <a class="nav-link active " href="#" style="font-family: 'AlWatanHeadlines-Bold';
+                            <div class="col-2 mb-5">
+                                <div class="separator pb-20" style="width:fit-content">
+                                    <a class="nav-link active " href="#" style="font-family: 'AlWatanHeadlines-Bold';
                     font-style: normal;
                     font-weight: 700;
                     font-size: 15px;
@@ -612,41 +647,53 @@
                     text-align: right;
                     
                     color: #FFFFFF;
-                    ">    انضمام الجزائر الى الدولة العثما   </a>
-                  </div>  
-                  </div>
+                    "> انضمام الجزائر الى الدولة العثما </a>
+                                </div>
+                            </div>
 
 
-                 
-                  
-                  
-                  
-                </nav>
-            </footer>
-                    </div>
+
+
+
+
+                        </nav>
+                    </footer>
                 </div>
-
             </div>
 
-       
+        </div>
+
+
         <div class="d-flex align-items-end">
 
-            <span style="width: fit-content;margin-left: 6%; top: 200px;" class="carousel-control-prev " type="button" data-bs-target="#my-carousel" data-bs-slide="prev">
+            <span style="width: fit-content;margin-left: 6%; top: 200px;" class="carousel-control-prev " type="button"
+                data-bs-target="#my-carousel" data-bs-slide="prev">
                 <i class="fa-solid fa-arrow-left-long text-white"></i>
             </span>
-            <span style=" width: fit-content;margin-right: 6%; top: 200px; left: 20px;" class="carousel-control-next " type="button" data-bs-target="#my-carousel" data-bs-slide="next">
+            <span style=" width: fit-content;margin-right: 6%; top: 200px; left: 20px;" class="carousel-control-next "
+                type="button" data-bs-target="#my-carousel" data-bs-slide="next">
                 <i class="fa-solid fa-arrow-right-long text-white"></i>
 
             </span>
         </div>
-    
+
     </div>
-</div>
-    
 
 
-   
-    
+
+    <script>
+        const elCarousel = document.getElementById('my-carousel');
+
+        window.addEventListener('load', () => {
+            var id = window.location.toString().split('#')[1]
+            if (!id) id = 1
+            document.getElementById(`s${id}`).classList.add('active')
+        })
+    </script>
+
+
+
+
 </body>
 
 </html>

@@ -1081,3 +1081,23 @@ html {
   }
 }
 }
+
+
+.section-3 nav a:hover {
+  color: #7FE0B2;
+  -webkit-transition: -webkit-transform ease .5s;
+  transition: -webkit-transform ease .5s;
+  transition: transform ease .5s;
+  transition: transform ease .5s, -webkit-transform ease .5s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.section-3 nav a:hover > .separator {
+  background-color: #D21034;
+}
+
+.section-3 nav .nav-link.active ~ .separator {
+  height: 8px !important;
+  background-color: #D21034 !important;
+}
