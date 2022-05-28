@@ -1,0 +1,397 @@
+    body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: #FEE9D1;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+.errorPage__templeweed-container {
+    position: absolute;
+    bottom: 20px;
+    width: 10vw;
+    transform: translateX(-100%);
+    animation: moveWeed 3s infinite linear;
+}
+
+.errorPage__text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: -5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
+.errorPage__text h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 249px;
+    line-height: 304px;
+    font-size: 10vw;
+    line-height: 1;
+    margin: 0;
+    letter-spacing: 0.2em;
+    margin-bottom: 50px;
+    color: #D21034;
+    text-shadow: 7px 7px 20px #00000026;
+}
+
+.errorPage__text p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #1D1D1B;
+    text-shadow: 7px 7px 20px #00000026;
+   
+}
+
+.errorPage__text a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #1D1D1B;
+    text-shadow: 7px 7px 20px #00000026;
+}
+.errorPage__text a:hover {
+    color: #7FE0B2;
+  }
+  
+
+
+@media only screen and (min-width: 768px) {
+  .header__menu .hamburger__menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header__menu ul {
+    display: none;
+  }
+}
+
+@keyframes moveWeed {
+    0% {
+        left: 0;  
+        transform: translateX(-100%) rotate(0);
+    }
+    
+    100% {
+        left: 130%;
+        transform: translateX(100%) rotate(540deg);
+    }
+}
+
+@keyframes templeWeed {
+    0% {
+        transform: translateY(0);
+    }
+    
+    30% {
+        transform: translateY(-3vw);
+    }
+    
+    60% {
+        transform: translateY(-4vw);
+    }
+    
+    90% {
+        transform: translateY(0);
+    }
+    
+    90% {
+        transform: translateY(0);
+    }
+    
+}
+
+
+
+.main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+  }
+  
+  .main-nav > div > div > a,
+  .main-nav > div ul > li > a {
+    font-size: 20px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: black;
+  }
+  
+  .main-nav > div ul > li > a:hover {
+    color: #7FE0B2;
+  }
+  
+  .main-nav .small-secreen > ul > li > a,
+  .main-nav .small-secreen > ul > li > div > ul > li a {
+    color: #181818 !important;
+  }
+  
+  .main-nav svg {
+    fill: black;
+  }
+  
+  #mobile-nav > li > a {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 63.98px;
+  }
+  
+  #mobile-nav a:hover,
+  #mobile-nav a:focus {
+    color: #D21034;
+  }
+  
+  #mobile-nav > li > div > ul > li > a {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  
+  #mobile-nav > li > div > ul > li > div > ul > li > a {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  .separator {
+    height: 3px;
+    width: 100px;
+    background-color: #D21034;
+    display: block;
+  }
+  
+  .red {
+    color: #D21034 !important;
+  }
+  
+  header .main-nav {
+    z-index: 100;
+  }
+  
+  header #anniversary-logo {
+    width: 100vw;
+    height: 50px;
+    top: 70px !important;
+    left: 0;
+    overflow: none;
+    z-index: 1;
+  }
+  
+  @media screen and (max-width: 960px) {
+    header #anniversary-logo {
+      top: 70px !important;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    header #anniversary-logo {
+      top: 50px !important;
+    }
+  }
+  
+  header #anniversary-logo h1 {
+    font-size: 25px;
+    font-weight: 600;
+    z-index: 1;
+  }
+  
+  header #anniversary-logo img {
+    height: 120px;
+    width: auto;
+  }
+
+
+  @import url("../fonts/STV/style.css");
+@import url("../fonts/AlWatanHeadlines-Bold/style.css");
+#anniversary-logo h1 {
+  font-family: 'AlWatanHeadlines' !important;
+  font-size: 30px !important;
+  font-weight: 100 !important;
+}
+
+#anniversary-logo img {
+  height: 60px !important;
+}
+
+nav a {
+  font-family: 'STV' !important;
+}
+
+/*the navigation drawer nav links font here */
+#pills-tab > li a {
+  font-family: 'AlWatanHeadlines' !important;
+  font-size: bold;
+}
+
+#pills-tabContent > div span {
+  font-family: 'AlWatanHeadlines' !important;
+}
+
+#mobile-nav > li > a {
+  font-family: 'AlWatanHeadlines' !important;
+}
+
+#mobile-nav > li > div > ul > li > a {
+  font-family: 'AlWatanHeadlines' !important;
+}
+
+#mobile-nav > li > div > ul > li > div > ul > li > a {
+  font-family: 'STV' !important;
+}
+
+.section-3 h1,
+.section-3 h2,
+.section-3 a,
+.section-3 h3,
+.section-4 h1,
+.section-4 h2,
+.section-4 a,
+.section-4 h3 {
+  font-family: 'AlWatanHeadlines' !important;
+}
+
+.section-6 .title {
+  font-family: 'AlWatanHeadlines';
+}
+
+.section-6 .date,
+.section-6 .source {
+  font-family: 'STV' !important;
+}
+
+.section-6 .youth h1,
+.section-6 .youth h2,
+.section-6 .youth h3 {
+  font-family: 'AlWatanHeadlines' !important;
+}
+
+.section-6 .youth p {
+  font-family: 'STV';
+}
+
+.section-6 .cta-link {
+  font-family: 'STV';
+}
+
+footer .copy-rights,
+footer p,
+footer a,
+footer .input-group input {
+  font-family: 'STV';
+}
+
+footer h3 {
+  font-family: 'AlWatanHeadlines';
+}
+
+#mainSlider .slider1-text {
+  right: 10vw !important;
+  left: unset !important;
+}
+
+#mainSlider .slider1-text h2,
+#mainSlider .slider1-text h1 {
+  font-family: 'AlWatanHeadlines' !important;
+}
+
+#mainSlider .teboun h1 {
+  font-family: 'AlWatanHeadlines';
+}
+
+#mainSlider .teboun small,
+#mainSlider .teboun p {
+  font-family: "STV";
+}
+
+.small-secreen-read-more a,
+.small-secreen-read-more h1,
+.small-secreen-read-more h2,
+.small-secreen-read-more h3 {
+  font-family: 'AlWatanHeadlines' !important;
+}
+
+
+
+.navigationdrawer #pills-tabContent > div .sous-nav a {
+  font-size: 16px !important;
+  color: #181818 !important;
+}
+
+.navigationdrawer #pills-tabContent > div span {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 63.98px;
+}
+
+.navigationdrawer #pills-tabContent > div > div > div > div > a {
+  font-family: 'Playfair Display' !important;
+  color: #181818 !important;
+  font-size: 24px;
+}
+
+.navigationdrawer #pills-tabContent > div a.active {
+  background-color: transparent;
+  color: #D21034 !important;
+}
+
+.navigationdrawer #pills-tabContent > div a:hover {
+  color: #D21034 !important;
+}
+
+.navigationdrawer #pills-tabContent > div .separator {
+  margin: 10px 0 50px 0;
+  width: 90%;
+  background-color: #88BFA5;
+}
+
+.navigationdrawer > div > div > div > ul > li > a {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 63.98px;
+}
+
+.navigationdrawer > div > div > div > ul > li > a.active {
+  background-color: transparent !important;
+  color: #D21034 !important;
+}
+
+.navigationdrawer .contacts > li {
+  padding-top: 10px;
+}
+
+.navigationdrawer .contacts > li a {
+  text-decoration: none;
+  font-family: 'Montserrat' !important;
+  display: block;
+  color: #1D1D1B;
+}
+
+.navigationdrawer .separator {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#pills-tab li {
+  text-indent: 100px;
+}
+/*# sourceMappingURL=ar-bis.css.map */
