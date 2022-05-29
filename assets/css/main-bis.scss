@@ -138,25 +138,36 @@ header.add-shadow {
 
     span.separator {
         background-color: #7FE0B2 !important;
-        right: 0;
+        right: 10;
+        bottom: 10px;
         height: 25px !important;
-        width: 100px !important;
-        top: 50%;
+        width: 100% !important;
+        z-index: -1;
     }
 
-    img {
-        filter: brightness(0) invert(1);
-        transition: filter ease .2s;
-        padding: 10px;
+    a{
+        font-size: 30px ;
+        color: #FFFFFF;
+        justify-self: flex-end;
+        padding: 8px;
+        border: 2px solid #FFFFFF;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        &:hover{
+            color: #D21034;
+        }
     }
 
-    a:hover>img {
-        filter: none;
+    h1,
+    h2 {
+        font-family: 'Playfair Display';
+        font-size: 70px;
+        font-weight: 600;
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.6);
     }
 
-    @media screen and(max-width: 1200px) {
-        top: 15vh;
-
+    @media screen and(min-width: 1200px) {
         h1,
         h2 {
             font-size: 50px !important;
@@ -164,13 +175,11 @@ header.add-shadow {
         }
     }
 
-    @media screen and(max-width: 900px) {
-        top: 10vh;
-
+    @media screen and(min-width: 600px) {
         h1,
         h2 {
-            font-size: 40px !important;
-            line-height: 50px !important;
+            font-size: 50px !important;
+            line-height: 60px !important;
         }
 
         p {
@@ -181,20 +190,19 @@ header.add-shadow {
     }
 
 
-    @media screen and (max-width: 600px) {
-        p {
-            max-width: 360px;
+    @media screen and (max-width: 400px) {
+        h1,
+        h2 {
+            font-size: 40px !important;
+            line-height: 60px !important;
         }
     }
 
 
 
-    h1,
-    h2 {
-        font-family: 'Playfair Display';
-        font-size: 60px;
-        font-weight: 600;
-    }
+   
+
+   
 
     ul.flex-column {
         a {

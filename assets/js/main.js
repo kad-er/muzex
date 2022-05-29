@@ -73,7 +73,21 @@ function ui() {
   const tebounimg = document.getElementById("tebounimg");
   const tebouncard = document.getElementById("teboucard");
 
-  tebouncard.addEventListener("click", function () {
-    tebounimg.classList.toggle("d-none");
+  tebouncard.addEventListener("mouseenter", function () {
+    tebounimg.classList.remove("d-none");
+    tebountxt.classList.add("show")
   });
+
+  tebouncard.addEventListener("mouseleave", function () {
+    tebounimg.classList.add("d-none");
+    tebountxt.classList.remove("show")
+  });
+  $(".panel-heading").hover(
+    function () {
+      $(".panel-collapse").collapse("show");
+    },
+    function () {
+      $(".panel-collapse").collapse("hide");
+    }
+  );s
 }
