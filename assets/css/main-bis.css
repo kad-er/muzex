@@ -340,7 +340,7 @@ html {
 }
 
 .section-3 {
-  height: 100vh !important;
+  min-height: 100vh !important;
   -webkit-box-sizing: border-box !important;
           box-sizing: border-box !important;
 }
