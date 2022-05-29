@@ -27,8 +27,11 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  
 }
 
+
+  
 
 
 
@@ -221,7 +224,12 @@ a {
   }
 
 
-  @import url("../fonts/STV/style.css");
+
+
+
+/* contact head */
+
+@import url("../fonts/STV/style.css");
 @import url("../fonts/AlWatanHeadlines-Bold/style.css");
 #anniversary-logo h1 {
   font-family: 'AlWatanHeadlines' !important;
@@ -258,78 +266,6 @@ nav a {
 #mobile-nav > li > div > ul > li > div > ul > li > a {
   font-family: 'STV' !important;
 }
-
-.section-3 h1,
-.section-3 h2,
-.section-3 a,
-.section-3 h3,
-.section-4 h1,
-.section-4 h2,
-.section-4 a,
-.section-4 h3 {
-  font-family: 'AlWatanHeadlines' !important;
-}
-
-.section-6 .title {
-  font-family: 'AlWatanHeadlines';
-}
-
-.section-6 .date,
-.section-6 .source {
-  font-family: 'STV' !important;
-}
-
-.section-6 .youth h1,
-.section-6 .youth h2,
-.section-6 .youth h3 {
-  font-family: 'AlWatanHeadlines' !important;
-}
-
-.section-6 .youth p {
-  font-family: 'STV';
-}
-
-.section-6 .cta-link {
-  font-family: 'STV';
-}
-
-footer .copy-rights,
-footer p,
-footer a,
-footer .input-group input {
-  font-family: 'STV';
-}
-
-footer h3 {
-  font-family: 'AlWatanHeadlines';
-}
-
-#mainSlider .slider1-text {
-  right: 10vw !important;
-  left: unset !important;
-}
-
-#mainSlider .slider1-text h2,
-#mainSlider .slider1-text h1 {
-  font-family: 'AlWatanHeadlines' !important;
-}
-
-#mainSlider .teboun h1 {
-  font-family: 'AlWatanHeadlines';
-}
-
-#mainSlider .teboun small,
-#mainSlider .teboun p {
-  font-family: "STV";
-}
-
-.small-secreen-read-more a,
-.small-secreen-read-more h1,
-.small-secreen-read-more h2,
-.small-secreen-read-more h3 {
-  font-family: 'AlWatanHeadlines' !important;
-}
-
 
 
 .navigationdrawer #pills-tabContent > div .sous-nav a {
