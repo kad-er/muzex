@@ -975,12 +975,16 @@ background: linear-gradient(180deg, rgba(0,0,0,0.7889097406623069) 0%, rgba(0,0,
 
             p {
                 position: absolute;
-                top: -100%;
+                top: -200%;
                 transition: all ease .5s;
                 right: 0;
                 text-align: justify;
                 text-align-last: right;
                 font-size: 15px;
+                padding-top: 20px !important;
+                @media screen and (max-width: 992px) {
+                    font-size: 10px;
+                }
             }
 
             &,
