@@ -1,6 +1,7 @@
 /* Importing arabic fonts */
 @import url("../fonts/STV/style.css");
 @import url("../fonts/AlWatanHeadlines-Bold/style.css");
+
 #anniversary-logo h1 {
   font-family: 'AlWatanHeadlines' !important;
   font-size: 30px !important;
@@ -16,24 +17,24 @@ nav a {
 }
 
 /*the navigation drawer nav links font here */
-#pills-tab > li a {
+#pills-tab>li a {
   font-family: 'AlWatanHeadlines' !important;
   font-size: bold;
 }
 
-#pills-tabContent > div span {
+#pills-tabContent>div span {
   font-family: 'AlWatanHeadlines' !important;
 }
 
-#mobile-nav > li > a {
+#mobile-nav>li>a {
   font-family: 'AlWatanHeadlines' !important;
 }
 
-#mobile-nav > li > div > ul > li > a {
+#mobile-nav>li>div>ul>li>a {
   font-family: 'AlWatanHeadlines' !important;
 }
 
-#mobile-nav > li > div > ul > li > div > ul > li > a {
+#mobile-nav>li>div>ul>li>div>ul>li>a {
   font-family: 'STV' !important;
 }
 
@@ -109,7 +110,7 @@ footer h3 {
   font-family: 'AlWatanHeadlines' !important;
 }
 
-.section-7 .nav > li > a {
+.section-7 .nav>li>a {
   font-family: 'Playfair Display' !important;
 }
 
@@ -203,57 +204,57 @@ footer h3 {
   width: inherit;
 }
 
-.navigationdrawer #pills-tabContent > div .sous-nav a {
+.navigationdrawer #pills-tabContent>div .sous-nav a {
   font-size: 16px !important;
   color: #181818 !important;
 }
 
-.navigationdrawer #pills-tabContent > div span {
+.navigationdrawer #pills-tabContent>div span {
   font-size: 48px;
   font-weight: 500;
   line-height: 63.98px;
   text-align: left;
 }
 
-.navigationdrawer #pills-tabContent > div > div > div > div > a {
+.navigationdrawer #pills-tabContent>div>div>div>div>a {
   font-family: 'Playfair Display' !important;
   color: #181818 !important;
   font-size: 24px;
 }
 
-.navigationdrawer #pills-tabContent > div a.active {
+.navigationdrawer #pills-tabContent>div a.active {
   background-color: transparent;
   color: #D21034 !important;
 }
 
-.navigationdrawer #pills-tabContent > div a:hover {
+.navigationdrawer #pills-tabContent>div a:hover {
   color: #D21034 !important;
 }
 
-.navigationdrawer #pills-tabContent > div .separator {
+.navigationdrawer #pills-tabContent>div .separator {
   margin: 10px 0 50px 0;
   width: 90%;
   background-color: #88BFA5;
 }
 
-.navigationdrawer > div > div > div > ul > li > a {
+.navigationdrawer>div>div>div>ul>li>a {
   font-size: 48px;
   font-weight: 500;
   line-height: 63.98px;
   text-align: left;
 }
 
-.navigationdrawer > div > div > div > ul > li > a.active {
+.navigationdrawer>div>div>div>ul>li>a.active {
   background-color: transparent !important;
   color: #D21034 !important;
 }
 
-.navigationdrawer .contacts > li {
+.navigationdrawer .contacts>li {
   text-align: left !important;
   padding-top: 10px;
 }
 
-.navigationdrawer .contacts > li a {
+.navigationdrawer .contacts>li a {
   text-decoration: none;
   text-align: left !important;
   font-family: 'Montserrat' !important;
@@ -265,10 +266,111 @@ footer h3 {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
 /*# sourceMappingURL=ar.css.map */
 @media screen and (max-width: 460px) {
-  .slide-text-img{
+  .slide-text-img {
     height: 150px !important;
     margin-top: 100px;
   }
+}
+
+
+
+
+
+
+
+
+
+
+/* nav page history home */
+
+.nav li {
+  font-family: 'STV';
+  z-index: 100000000;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 31px;
+  color: white;
+}
+
+h3 {
+  font-family: 'AlWatanHeadlines';
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: white;
+}
+
+
+
+/* Mobile Nav Styling */
+#mobile-nav {
+  padding-top: 18px;
+  width: 260px;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow-y: auto;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#mobile-nav a {
+  color: #181818;
+}
+
+#mobile-nav ul {
+  padding: 0 !important;
+  margin: 0 !important;
+  list-style: none;
+}
+
+#mobile-nav ul li {
+  position: relative;
+}
+
+#mobile-nav ul li a {
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  outline: none;
+  font-weight: 700;
+}
+
+#mobile-nav ul li ul li {
+  padding: 0 !important;
+}
+
+#mobile-nav ul li a:hover {
+  color: #fff;
+}
+
+#mobile-nav ul li li {
+  padding-left: 30px;
+}
+
+#mobile-nav ul .menu-has-children i {
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#mobile-nav ul .menu-has-children i.fa-chevron-up {
+  color: #f53f51;
+}
+
+#mobile-nav ul .menu-has-children li a {
+  text-transform: none;
 }
