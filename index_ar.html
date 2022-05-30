@@ -50,19 +50,19 @@
 ######################################################################################################################################################################################################################################################################################## -->
 <body dir="rtl" style="overflow-x: hidden;">
     <!-- Header containing the main slider and the navigation and the search bar -->
-    <header id="header" class="">
-        <!-- the 60 logo in the center -->
-        <div class="position-absolute top-0 left fade-in-down subsection-on-scroll" data-mdb-animation-start="onScroll"
-            id="anniversary-logo">
-            <div class="container d-flex flex-row align-items-center justify-content-center text-white">
-                <h1 class="col-5 w-auto d-inline">عهد جديد</h1>
-                <img class="col-2 mx-3 text-center" src="./assets/images/logo.png"
-                alt="Algeria 60th anniversary indepence logo">
-                <h1 class="col-5 w-auto d-inline">تاريخ مجيد</h1>
-            </div>
+    <!-- the 60 logo in the center -->
+    <div class="position-absolute top-0 left fade-in-down subsection-on-scroll" data-mdb-animation-start="onScroll"
+        id="anniversary-logo">
+        <div class="container d-flex flex-row align-items-center justify-content-center text-white">
+            <h1 class="col-5 w-auto d-inline">تاريخ مجيد</h1>
+            <img class="col-2 mx-3 text-center" src="./assets/images/logo.png"
+            alt="Algeria 60th anniversary indepence logo">
+            <h1 class="col-5 w-auto d-inline">عهد جديد</h1>
         </div>
+    </div>
+    <header id="header" class="fixed-top">
 
-        <nav class="navbar transparent main-nav">
+        <nav class="navbar gradient transparent main-nav">
 
             <div class="container d-flex flex-row">
                 <!-- search bar and language link to switch -->
@@ -383,11 +383,11 @@
 
         <!-- first section with some words and the president words tebboun -->
         <div id="mainSlider" class="d-flex  align-items-md-end flex-md-row flex-lg-row flex-xl-row align-items-sm-center justify-content-sm-center flex-sm-column flex-column position-relative
-        " style="height: 100vh !important">
+        " style="min-height: 100vh !important">
 
 
             <!-- the card with text the btn arrow down -->
-            <div class="slider1-text mt-sm-auto mt-auto mt-md-0 d-flex pe-5 flex-column animate__animated animate__fadeInRight col-lg-6 col-md-6 col-sm-10 align-items-start justify-content-center text-white"
+            <div style="height: 520px !important;" class="slider1-text  mt-sm-auto mt-auto mt-md-0 d-flex pe-5 flex-column animate__animated animate__fadeInRight col-lg-6 col-md-6 col-sm-10 align-items-start justify-content-center text-white"
                 >
                 <div class="d-flex flex-column justify-content-around position-relative">
                     <span class="separator position-absolute"></span>
@@ -611,7 +611,7 @@
 
         <!-- Read more articles  -->
         <div class="container d-block small-secreen-read-more  d-lg-none my-5 py-5" data-aos="fade-up">
-            <h3 class=" text-center" style="font-size: 50px !important;color: #7FE0B2 !important;">تاريخ مجيد</h3>
+            <!-- <h3 class=" text-center" style="font-size: 50px !important;color: #7FE0B2 !important;">تاريخ مجيد</h3> -->
 
             <ul class="nav d-flex  flex-column align-items-center justify-content-end">
                 <li class="mt-0">
@@ -887,7 +887,7 @@
 
             <!-- the nachatat title -->
             <div data-aos="fade-up" data-aos-duration="1200"
-                class="container section-4 d-flex flex-column align-items-end">
+                class="container section-4 d-flex flex-column align-items-start">
                 <h1 class="red">النشاطات</h1>
                 <div class="separator"></div>
             </div>
@@ -1080,8 +1080,8 @@
     </main>
 
     <footer class="pt-5 pb-0 px-3">
-        <div class="row flex-row-reverse">
-            <div class="col-md-4 col-sm-12 text-center text-md-end">
+        <div class="row flex-row">
+            <div class="col-md-4 col-sm-12 text-center text-md-start">
                 <div class="p-4"><img src="./assets/images/logo.png" alt="60 algeria logo independance"></div>
                 <p class="p-4 pt-0">
                     هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض
@@ -1097,7 +1097,7 @@
                             class="fa-brands fa-twitter"></i></a>
                 </div>
             </div>
-            <div class="col-md-2 col-sm-12 text-center text-md-end">
+            <div class="col-md-2 col-sm-12 text-center text-md-start">
                 <h3 class="py-3">روابط مفيدة</h3>
                 <ul class="nav d-flex flex-column">
                     <li class="nav-item">
@@ -1114,7 +1114,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-2 col-sm-12 text-center text-md-end">
+            <div class="col-md-2 col-sm-12 text-center text-md-start">
                 <h3 class="py-3">روابط سريعة</h3>
                 <ul class="nav d-flex flex-column">
                     <li class="nav-item">
@@ -1128,7 +1128,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-4 col-sm-12 mt-4 px-5 text-center text-md-end">
+            <div class="col-md-4 col-sm-12 mt-4 px-5 text-center text-md-start">
                 <form action="#" method="post">
                     <div class="input-group mb-1">
                         <input type="text" class="form-control p-2 ps-3" placeholder="example@domain.com"
