@@ -76,11 +76,7 @@
   color: #D21034 !important;
 }
 
-header .main-nav {
-  z-index: 100;
-}
-
-header #anniversary-logo {
+#anniversary-logo {
   width: 100vw;
   height: 50px;
   top: 70px !important;
@@ -90,32 +86,36 @@ header #anniversary-logo {
 }
 
 @media screen and (max-width: 960px) {
-  header #anniversary-logo {
+  #anniversary-logo {
     top: 70px !important;
   }
 }
 
 @media screen and (max-width: 400px) {
-  header #anniversary-logo {
+  #anniversary-logo {
     top: 50px !important;
   }
 }
 
-header #anniversary-logo h1 {
+#anniversary-logo h1 {
   font-size: 25px;
   font-weight: 600;
   z-index: 1;
 }
 
-header #anniversary-logo img {
+#anniversary-logo img {
   height: 120px;
   width: auto;
 }
 
+header .main-nav {
+  z-index: 100;
+}
+
 header.add-shadow {
-  background: black;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(3%, rgba(0, 0, 0, 0.794528)), to(rgba(0, 0, 0, 0.37037)));
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.794528) 3%, rgba(0, 0, 0, 0.37037) 100%);
+  background: rgba(0, 0, 0, 0.6);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(3%, rgba(0, 0, 0, 0.671)), to(rgba(0, 0, 0, 0.37037)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.671) 3%, rgba(0, 0, 0, 0.37037) 100%);
 }
 
 .slider1-text {
@@ -842,9 +842,9 @@ html {
 }
 
 .gradient {
-  background: #006633 !important;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(28%, rgba(0, 102, 51, 0.0866625)), to(#006633)) !important;
-  background: linear-gradient(180deg, rgba(0, 102, 51, 0.0866625) 28%, #006633 100%) !important;
+  background: black;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.78891)), color-stop(43%, rgba(0, 0, 0, 0.611943)), color-stop(80%, rgba(0, 0, 0, 0.140033)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.78891) 0%, rgba(0, 0, 0, 0.611943) 43%, rgba(0, 0, 0, 0.140033) 80%, rgba(0, 0, 0, 0) 100%);
 }
 
 .section-7 {
@@ -892,6 +892,15 @@ html {
   font-weight: 900;
   color: #FFFFFF;
   font-size: 25px;
+  -webkit-transition: -webkit-transform ease-in-out .4s;
+  transition: -webkit-transform ease-in-out .4s;
+  transition: transform ease-in-out .4s;
+  transition: transform ease-in-out .4s, -webkit-transform ease-in-out .4s;
+}
+
+.section-7 .nav > li > a:hover {
+  -webkit-transform: scale(1.35);
+          transform: scale(1.35);
 }
 
 .section-7 .nav > li > a.active {
@@ -964,8 +973,8 @@ html {
 .section-7 .carousel-inner .carousel-img-bislem p {
   position: absolute;
   top: -100%;
-  -webkit-transition: all ease .2s;
-  transition: all ease .2s;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
   right: 0;
   text-align: justify;
   text-align-last: right;
@@ -974,10 +983,10 @@ html {
 
 .section-7 .carousel-inner .carousel-img-bislem,
 .section-7 .carousel-inner .carousel-img-bislem * {
-  -webkit-transition: -webkit-transform ease .2s, -webkit-filter ease-in-out .2s;
-  transition: -webkit-transform ease .2s, -webkit-filter ease-in-out .2s;
-  transition: transform ease .2s, filter ease-in-out .2s;
-  transition: transform ease .2s, filter ease-in-out .2s, -webkit-transform ease .2s, -webkit-filter ease-in-out .2s;
+  -webkit-transition: -webkit-transform ease .5s, -webkit-filter ease-in-out .5s;
+  transition: -webkit-transform ease .5s, -webkit-filter ease-in-out .5s;
+  transition: transform ease .5s, filter ease-in-out .5s;
+  transition: transform ease .5s, filter ease-in-out .5s, -webkit-transform ease .5s, -webkit-filter ease-in-out .5s;
 }
 
 .section-7 .carousel-inner .carousel-img-bislem:hover img {
