@@ -3,16 +3,10 @@ const menuTabs = document.getElementById("menu-tabs");
 const mainSlider = document.getElementById("main-slider");
 const header = document.getElementById("header");
 const mutebtn = document.getElementById("muteBtn");
-
-//the media
-const audio = document.getElementById("audio");
-var muted = false;
-function watchNavBar() {
-  // get the header height first
-}
+var audio = document.getElementById('audio')
 
 window.addEventListener("load", ui);
-
+var audio;
 // the ui function
 function ui() {
   //getting the navigation drawer buttons
@@ -23,29 +17,21 @@ function ui() {
       document.getElementById("pills-tabContent").classList.remove("d-none");
     });
   }
-
-  // try to run the audio
-  try {
-    audio.play();
-  } catch (e) {
-    console.error(e);
-  }
-
+  let paused = true;
   mutebtn.addEventListener("click", () => {
-    // alert(muted)
-    console.log(audio);
-    audio.muted = !muted;
-    muted = !muted;
-    console.log("this is his fucking child", mutebtn.firstChild);
-    if (muted) {
-      mutebtn.firstElementChild.classList.replace(
-        "fa-volume-high",
-        "fa-volume-off"
-      );
-    } else {
+    if (paused) {
+      audio.play();
+      paused = !paused;
       mutebtn.firstElementChild.classList.replace(
         "fa-volume-off",
         "fa-volume-high"
+      );
+    } else {
+      paused = !paused;
+      audio.pause();
+      mutebtn.firstElementChild.classList.replace(
+        "fa-volume-high",
+        "fa-volume-off"
       );
     }
   });
@@ -75,12 +61,12 @@ function ui() {
 
   tebouncard.addEventListener("mouseenter", function () {
     tebounimg.classList.remove("d-none");
-    tebountxt.classList.add("show")
+    tebountxt.classList.add("show");
   });
 
   tebouncard.addEventListener("mouseleave", function () {
     tebounimg.classList.add("d-none");
-    tebountxt.classList.remove("show")
+    tebountxt.classList.remove("show");
   });
   $(".panel-heading").hover(
     function () {
@@ -89,5 +75,5 @@ function ui() {
     function () {
       $(".panel-collapse").collapse("hide");
     }
-  );s
+  );
 }

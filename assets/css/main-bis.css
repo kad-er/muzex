@@ -972,13 +972,20 @@ html {
 
 .section-7 .carousel-inner .carousel-img-bislem p {
   position: absolute;
-  top: -100%;
+  top: -200%;
   -webkit-transition: all ease .5s;
   transition: all ease .5s;
   right: 0;
   text-align: justify;
   text-align-last: right;
   font-size: 15px;
+  padding-top: 20px !important;
+}
+
+@media screen and (max-width: 992px) {
+  .section-7 .carousel-inner .carousel-img-bislem p {
+    font-size: 10px;
+  }
 }
 
 .section-7 .carousel-inner .carousel-img-bislem,
