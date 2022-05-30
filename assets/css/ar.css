@@ -331,7 +331,7 @@ footer h3 {
 
 /* nav page history home */
 
-.nav li {
+.salim-nav li {
   font-family: 'STV';
   z-index: 100000000;
   font-style: normal;
@@ -340,3 +340,17 @@ footer h3 {
   line-height: 31px;
   color: white;
 }
+
+.nav li {
+  font-family: 'STV';
+  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 31px;
+  color: white;
+}
+
+
+
+
