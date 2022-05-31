@@ -68,12 +68,4 @@ function ui() {
     tebounimg.classList.add("d-none");
     tebountxt.classList.remove("show");
   });
-  $(".panel-heading").hover(
-    function () {
-      $(".panel-collapse").collapse("show");
-    },
-    function () {
-      $(".panel-collapse").collapse("hide");
-    }
-  );
 }
