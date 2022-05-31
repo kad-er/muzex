@@ -343,6 +343,10 @@ html {
           box-sizing: border-box !important;
 }
 
+.section-3 > div > div > ul li a:hover{
+  color: #006633;
+}
+
 @media screen and (min-width: 700px) {
   .section-3 {
     background-image: url("../images/Group 220.png");
