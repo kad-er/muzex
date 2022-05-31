@@ -276,7 +276,52 @@ footer h3 {
 }
 
 
+/* page histrory home */
+.titre1 h3 {
+  font-family: 'AlWatanHeadlines';
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: white;
 
+
+}
+
+.titre1 h3 p {
+  font-family: 'AlWatanHeadlines';
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: white;
+
+
+}
+
+.titre1 p {
+  max-height: 200px;
+  font-family: STV;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: justify;
+  color: white;
+}
+
+.href-s a {
+  font-family: STV;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #1D1D1B;
+
+}
 
 
 
@@ -286,9 +331,18 @@ footer h3 {
 
 /* nav page history home */
 
+.salim-nav li {
+  font-family: 'STV';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 31px;
+  color: white;
+}
+
 .nav li {
   font-family: 'STV';
-  z-index: 100000000;
+  
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
