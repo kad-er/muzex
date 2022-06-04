@@ -1,4 +1,3 @@
-
 <!--████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
 █░░░░░░░░░░░░░░░░░░█░░░░░░░░░░░░░░███░░░░░░░░░░░░░░█░░░░░░░░░░░░░░░░███░░░░░░░░░░░░░░███░░░░░░░░░░░░░░█░░░░░░░░░░░░░░░░███░░░░░░░░░░░░░░███░░░░░░░░░░░░░░█░░░░░░░░░░░░░░░░███░░░░░░░░░░░░░░█
 █░░▄▀▄▀▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░███░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀▄▀░░███░░▄▀▄▀▄▀▄▀▄▀░░███░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀▄▀░░███░░▄▀▄▀▄▀▄▀▄▀░░███░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀▄▀░░███░░▄▀▄▀▄▀▄▀▄▀░░█
@@ -17,30 +16,33 @@
 <html amp lang="ar">
 
 <head>
-    <base href=" ./"> <meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!-- The bootstrap css link from node modules -->
-<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
-<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-utilities.rtl.css" />
-<!-- fontawsome css link  -->
-<link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-<!-- bootstrap javascript  -->
-<link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
-<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<!-- fontawsome script -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous"> -->
-<script src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
-<!-- custom css includs importing fonts -->
-<link rel="stylesheet" href="./assets/css/main-bis.css" />
-<!-- latin fonts including rtl styles -->
-<link rel="stylesheet" href="./assets/css/ar-bis.css" />
-<!-- animation css -->
-<script src="./node_modules/aos/dist/aos.js"></script>
-<link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
-<!-- custom js -->
-<title>Histroy</title>
+    <base href=" ./">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- The bootstrap css link from node modules -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-utilities.rtl.css" />
+    <!-- fontawsome css link  -->
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- bootstrap javascript  -->
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- fontawsome script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous"> -->
+    <script src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+    <!-- custom css includs importing fonts -->
+    <link rel="stylesheet" href="./assets/css/main-bis.css" />
+    <!-- latin fonts including rtl styles -->
+    <link rel="stylesheet" href="./assets/css/ar-bis.css" />
+    <!-- animation css -->
+    <script src="./node_modules/aos/dist/aos.js"></script>
+    <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
+    <!-- custom js -->
+    <title>Histroy</title>
 </head>
 <!-- ###################################################################################################################################################################################################################################################################################
 ########################################################################################################################################################################################################################################################################################
@@ -48,23 +50,34 @@
 ########################################################################################################################################################################################################################################################################################
 ########################################################################################################################################################################################################################################################################################
 ######################################################################################################################################################################################################################################################################################## -->
-<body dir="rtl" style="overflow-x: hidden;">
+
+<body dir="rtl">
     <!-- Header containing the main slider and the navigation and the search bar -->
     <!-- the 60 logo in the center -->
-    <div class="position-absolute top-0 left fade-in-down subsection-on-scroll" data-mdb-animation-start="onScroll"
-        id="anniversary-logo">
+    <div class="position-absolute top-0 left fade-in-down " id="anniversary-logo">
         <div class="container d-flex flex-row align-items-center justify-content-center text-white">
             <h1 class="col-5 w-auto d-inline">تاريخ مجيد</h1>
             <img class="col-2 mx-3 text-center" src="./assets/images/logo.png"
-            alt="Algeria 60th anniversary indepence logo">
+                alt="Algeria 60th anniversary indepence logo">
             <h1 class="col-5 w-auto d-inline">عهد جديد</h1>
         </div>
     </div>
-    <header id="header" class="fixed-top">
+
+    <div class="position-fixed bottom-0 mb-3 ms-3" style="width: fit-content;left: 0;z-index: 1;">
+        <button role="button" class="rounded-btn btn" id="muteBtn">
+            <i class="fa-solid fa-volume-off"></i>
+        </button>
+        <button role="button" class="rounded-btn btn" style="font-size: 14px;" id="muteBtn">
+            AR/EN
+        </button>
+    </div>
+
+
+    <header id="header" class="fixed-top top-0 end-0 start-0">
 
         <nav class="navbar gradient transparent main-nav">
 
-            <div class="container d-flex flex-row">
+            <div class="container-lg container-xxl container-xl d-flex flex-row">
                 <!-- search bar and language link to switch -->
 
                 <div class="d-flex flex-row align-items-center">
@@ -74,9 +87,6 @@
                         <!-- the menu humburger icon -->
                         <i class="fa-solid fa-bars fa-2x"></i>
                     </button>
-
-                    <!-- link to toggle the language -->
-                    <a class="nav-link active" x href="index_ar.html">En/Ar</a>
                 </div>
 
                 <!-- Main navigation -->
@@ -99,7 +109,7 @@
 
                     <li>
                         <!-- Button trigger modal -->
-                        <a type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                        <a type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal"
                             class="btn btn-default navbar-btn">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </a>
@@ -114,8 +124,8 @@
                 </ul>
 
                 <!-- The navigation drawer  -->
-                <div class="offcanvas offcanvas-end navigationdrawer min-vw-100" tabindex="-1"
-                    id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas offcanvas-end navigationdrawer min-vw-100" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
                     <!-- the close button in the top -->
                     <div class="offcanvas-header d-flex flex-row-reverse fixed-top">
                         <h5 class="offcanvas-title text-white" style="font-weight: 100" id="offcanvasNavbarLabel">
@@ -127,13 +137,13 @@
                     </div>
 
                     <!-- this section is the menu that will show up when window > 768px -->
-                    <div class="d-flex flex-row-reverse  min-vh-100 d-none d-md-flex d-lg-flex d-xxl-flex">
+                    <div class="d-flex flex-row-reverse  min-vh-100 d-md-flex d-lg-flex d-xxl-flex">
 
                         <!-- the image of the martyr's memorial -->
                         <div class="col-6 overflow-hidden">
                             <div class="tab-content navigationdrawer-tabs d-block d-none" id="pills-tabContent">
                                 <!-- tabs starts from here  -->
-                                <div>
+                                <div class="d-">
 
                                     <!-- history tab -->
                                     <div class="tab-pane fade p-5" id="history-tab" role="tabpanel"
@@ -221,25 +231,20 @@
 
                         <!-- the content of the navigation drawer  -->
                         <div class="col-6">
-                            <div  class="d-flex flex-row">
+                            <div class="d-flex flex-row">
                                 <!-- Nav menu  -->
-                                <ul  id="pills-tab" role="tablist"
+                                <ul id="pills-tab" role="tablist"
                                     class="col-md-12 nav nav-pills justify-content-center navbar-nav d-flex flex-column pt-5 px-0">
                                     <li class="nav-item d-inline text-capitalize">
-                                        <a  class="nav-link text-black tab-trigger" aria-current="page" id="history"
+                                        <a class="nav-link text-black tab-trigger" aria-current="page" id="history"
                                             data-bs-toggle="pill" data-bs-target="#history-tab" type="button" role="tab"
                                             aria-controls="history-tab" aria-selected="false">
-                                            الرئيسية</a>
-                                    </li>
-                                    <li class="nav-item text-capitalize">
-                                        <a class="nav-link text-black tab-trigger" href="#" id="years"
-                                            data-bs-toggle="pill" data-bs-target="#years-tab" type="button" role="tab"
-                                            aria-controls="years-tab" aria-selected="false">تاريخ مجيد</a>
+                                            تاريخ مجيد</a>
                                     </li>
                                     <li class="nav-item text-capitalize">
                                         <a class="nav-link text-black tab-trigger" aria-current="page" href="#"
                                             id="events" data-bs-toggle="pill" data-bs-target="#events-tab" type="button"
-                                            role="tab" aria-controls="evenst-tab" aria-selected="false">عهد جديد</a>
+                                            role="tab" aria-controls="evenst-tab" aria-selected="false">إنجازات</a>
                                     </li>
                                     <li class="nav-item text-capitalize">
                                         <a class="nav-link text-black tab-trigger" aria-current="page" href="#"
@@ -247,17 +252,14 @@
                                             role="tab" aria-controls="evenst-tab" aria-selected="false">النشاطات</a>
                                     </li>
                                     <li class="nav-item text-capitalize">
-                                        <a class="nav-link text-black tab-trigger" aria-current="page" href="#"
-                                            id="events" data-bs-toggle="pill" data-bs-target="#events-tab" type="button"
-                                            role="tab" aria-controls="evenst-tab" aria-selected="false">برامج النشاطات</a>
-                                    </li>
-                                    <li class="nav-item text-capitalize">
                                         <a class="nav-link text-black" href="#">إتصل بنا</a>
                                     </li>
-                                    <!-- the red separator -->
-                                    <div class="separator"></div>
+                                    <li class="nav-item text-capitalize">
+                                        <a class="nav-link text-black" href="#">الرئيسية</a>
+                                    </li>
 
-                                    <!--div class="contacts">
+                                    <div class="separator my-0 w-50" style="margin-right: 100px;"></div>
+                                    <div class="contacts">
                                         <li class="nav-item text-capitalize">
                                             <a class="text-black" href="tel:+213xxxxxxxxx">023-555-555</a>
                                         </li>
@@ -265,9 +267,9 @@
                                             <a class="text-black"
                                                 href="mailto:contact@domain.com">contact@domain.com</a>
                                         </li>
-                                        <li class="nav-item text-capitalize"-->
+                                        <li class="nav-item text-capitalize" -->
                                             <!-- Social media Icons -->
-                                            <!--span class="mb-2 d-block"><strong class="montserrat">Follow
+                                            <span class="mb-2 d-block"><strong class="montserrat">Follow
                                                     us</strong></span>
                                             <div class="row">
                                                 <div class="col-1">
@@ -287,7 +289,7 @@
                                                 </div>
                                             </div>
                                         </li>
-                                    </div-->
+                                    </div>
                                 </ul>
                             </div>
                         </div>
@@ -379,85 +381,66 @@
     </header>
     <!-- the main content -->
     <main>
-
-
         <!-- first section with some words and the president words tebboun -->
-        <div id="mainSlider" class="d-flex  align-items-md-end flex-md-row flex-lg-row flex-xl-row align-items-sm-center justify-content-sm-center flex-sm-column flex-column position-relative
-        " style="min-height: 100vh !important">
+        <div id="mainSlider" class="d-flex flex-column" style="min-height: 100vh !important">
 
+            <div style="height: fit-content;"
+                class="d-flex my-auto col-12 align-items-md-end flex-md-row flex-lg-row flex-xl-row align-items-sm-center justify-content-sm-center flex-sm-column flex-column position-relative">
+                <!-- the card with text the btn arrow down -->
+                <div
+                    class="slider1-text mt-auto mt-md-0 d-flex pe-5 flex-column animate__animated animate__fadeInRight col-lg-6 col-md-6 col-sm-10 align-items-start justify-content-center text-white">
+                    <div class="d-flex flex-column justify-content-around position-relative">
+                        <span class="separator position-absolute"></span>
+                        <h1>لنتعرف علي
+                            تاريخ
+                            الجزائر
 
-            <!-- the card with text the btn arrow down -->
-            <div style="height: 520px !important;" class="slider1-text  mt-sm-auto mt-auto mt-md-0 d-flex pe-5 flex-column animate__animated animate__fadeInRight col-lg-6 col-md-6 col-sm-10 align-items-start justify-content-center text-white"
-                >
-                <div class="d-flex flex-column justify-content-around position-relative">
-                    <span class="separator position-absolute"></span>
-                    <h1>لنتعرف علي
-                        تاريخ
-                        الجزائر
-
-                    </h1>
-                </div>
-                <p class="mb-0">جزائر يا مطلع المعجزات ويا حجة الله في الكائنات ويا بسمة الرب في أرضه ويا وجهه الضاحك القسمات شغلنا الورى وملأ نا الدنيا بشعر نزلته كالصلاة تسابيحه من حنايا الجزائر
-
-                </p>
-                <a href="index_ar.html#section_2"
-                    class="d-none d-md-block btn btn-outline-light nav-link d-lg-block d-xl-block m-0 mt-5 align-self-start">
-                    <i class="fa-solid fa-arrow-down"></i>
-                </a>
-            </div>
-
-
-            <div class="col-lg-6 col-md-6 mx-sm-auto mt-md-0 mt-auto animate__fadeInLeft animate__animated">
-                <div class="d-flex flex-column-reverse">
-                    <!-- the social icons -->
-                    <div class="align-self-end mb-5 d-none d-lg-flex d-xl-flex  ms-5 text-white d-flex flex-column">
-                        <a href="#" class="text-white nav-link">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="text-white nav-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-white nav-link"><i class="fab fa-twitter"></i></a>
-                        <span class="nav-link"><img src="./assets/icons/Follow us (1).png" style="height: 80px;"
-                            alt=""></span>
-                            <button role="button" style="cursor: pointer; background-color: transparent;border: none;" class="text-white nav-link" id="muteBtn"
-                                style="border-radius: 50%;"><i class="fa-solid fa-volume-off"></i></button>
+                        </h1>
                     </div>
+                    <p class="mb-0">جزائر يا مطلع المعجزات ويا حجة الله في الكائنات ويا بسمة الرب في أرضه ويا وجهه
+                        الضاحك
+                        القسمات شغلنا الورى وملأ نا الدنيا بشعر نزلته كالصلاة تسابيحه من حنايا الجزائر
 
-                    <!-- the tebboun's card  -->
-                    <div id="teboucard" data-bs-toggle="" data-bs-target=".multi-collapse" aria-expanded="false"
-                        aria-controls="" class="teboun align-self-end p-4 me-lg-5 me-md-4 me-sm-0 rounded-3 d-flex flex-row-reverse">
-                        <div class="pe-2">
-                            <div class="d-flex flex-column ">
-                                <div class="d-flex flex-row-reverse justify-content-between">
-                                    <img src="./assets/icons/Vector.png" alt="quotes">
-                                    <div class="text-start px-0 pe-4 me-4">
-                                        <h1 class="text-white">رئيس الجمهورية</h1>
-                                        <small>السيد عبد المجيد تبون</small>
+                    </p>
+                </div>
+
+
+                <div
+                    class="col-lg-6 mt-sm-auto col-md-6 mx-sm-auto mt-md-0 mt-auto animate__fadeInLeft animate__animated">
+                    <div class="d-flex flex-column-reverse">
+                        <!-- the tebboun's card  -->
+                        <div id="teboucard" data-bs-toggle="" data-bs-target=".multi-collapse" aria-expanded="false"
+                            aria-controls="" class="teboun align-self-end p-4 mb-0 rounded-3 d-flex flex-row-reverse">
+                            <div class="pe-2">
+                                <div class="d-flex flex-column ">
+                                    <div class="d-flex flex-row-reverse justify-content-between">
+                                        <img src="./assets/icons/Vector.png" alt="quotes">
+                                        <div class="text-start px-0 pe-4 me-4">
+                                            <h1 class="text-white">رئيس الجمهورية</h1>
+                                            <small>السيد عبد المجيد تبون</small>
+                                        </div>
+                                    </div>
+                                    <div id="tebountxt"
+                                        class="text-white  text-end multi-collapse collapse collapse-horizontal">
+
+                                        <p>
+                                            هناك حقيقة مثبتة منذ زمن طويل وهي
+                                            أن المحتوى المقروء
+                                            لصفحة ما سيلهي
+                                            القارئ عن التركيز على
+                                            الشكل
+                                            الخارجي للنص أو شكل توضع</p>
                                     </div>
                                 </div>
-                                <div id="tebountxt"
-                                    class="text-white  text-end multi-collapse collapse collapse-horizontal">
-
-                                    <p>
-                                        هناك حقيقة مثبتة منذ زمن طويل وهي
-                                        أن المحتوى المقروء
-                                        لصفحة ما سيلهي
-                                        القارئ عن التركيز على
-                                        الشكل
-                                        الخارجي للنص أو شكل توضع</p>
-                                </div>
+                            </div>
+                            <div id="tebounimg" class="align-self-center d-none animate__animated animate__fadeInLeft">
+                                <img class="teboun-img" src="./assets/images/teboun.png" alt="Abdelmajid tebboun">
                             </div>
                         </div>
-                        <div id="tebounimg" class="align-self-center d-none animate__animated animate__fadeInLeft">
-                            <img class="teboun-img" src="./assets/images/teboun.png" alt="Abdelmajid tebboun">
-                        </div>
                     </div>
-
-                    <script>
-                     
-                    </script>
                 </div>
-            </div>
 
+            </div>
             <!-- the bg video -->
             <div class="position-absolute align-self-center top-0 w-100 overflow-hidden h-100" style="z-index: -1;">
                 <video autoplay loop muted src="./assets/videos/L.Algerie.vue.du.ciel.2015.FRENCH.HDTV.x264.mp4" style="z-index: -1;filter: brightness(50%); width: 100vw;
@@ -469,9 +452,15 @@
                     z-index: -1;" class="d-block w-100" alt="..." />
             </div>
 
-
+            <div
+                class="d-none d-md-flex d-lg-flex d-xl-flex d-xxl-flex w-100 d-flex mb-3 flex-row justify-content-center align-items-center">
+                <a href="index_ar.html#section_2" class="rounded-btn btn">
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
+            </div>
 
         </div>
+
 
 
 
@@ -481,25 +470,296 @@
         <div id="section_2" class="py-auto section-3" style="overflow-anchor: none;">
 
             <!-- title and read more wedget -->
-            <div class="d-flex align-items-end align-items-sm-center flex-row" data-aos="fade-up"
+            <div class="d-flex align-items-end align-items-sm-center flex-column" data-aos="fade-up"
                 data-aos-duration="1000" data-aos-anchor-placement="top-center">
 
                 <!-- the title Tarikh majid -->
                 <div data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center"
-                    class="d-sm-flex d-md-block me-lg-5 justify-content-sm-center align-items-sm-center col-lg-7 col-xl-7 col-md-12 offset-sm-0 col-sm-12 col-12 offset-md-2 offset-lg-0">
-                    <h1 class="me-5"><span class="red">
+                    class="me-lg-5 col-12 justify-content-end align-items-end">
+                    <h1 class=""><span class="red">
                             تاريخ مجيد
                         </span></h1>
                 </div>
 
-                <!-- Read more articles  -->
-                <div class="col-lg-3 col-xl-3 me-5 col-md-4 d-none d-md-none d-lg-block d-xl-block d-xxl-block">
-                    
 
-                    <ul class="nav d-flex  flex-column align-items-center justify-content-end">
+                <!-- secondary navigation  -->
+                <nav class="mt-5">
+
+
+
+
+
+                    <div class="nav-container-bislem">
+                        <div class="page-content">
+                            <div class="_card">
+                                <a class="_nav-link" href="historyhome_ar.html#4">
+                                    <div class="content">
+                                        <h2 class="_title">الجزائر في العصور القديمة</h2>
+                                        <p class="copy">التاريخ القديم هي محصلة أو مجموع أحداث سابقة بدأت مع بداية تسجيل
+                                            وكتابة تاريخ البشرية، وامتدت حتى العصور القديمة المتأخرة</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="_card">
+                                <a class="_nav-link" href="historyhome_ar.html#4">
+                                    <div class="content">
+                                        <h2 class="_title"> الجزائر في العصر اﻹسلامي </h2>
+                                        <p class="copy">وصل الإسلام إلى الجزائر في عهد الدولة الأموية في أعقاب الفتح في
+                                            عملية استغرقت فترة طويلة من سنة 670 إلى سنة 71
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="_card">
+                                <a class="_nav-link" href="historyhome_ar.html#4">
+                                    <div class="content">
+                                        <h2 class="_title">الجزائر في العصر الحديث</h2>
+                                        <p class="copy">شهدت الجزائر في الفتره الممتدة من 1515 م إلى 1830م عدة تنظيمات
+                                            للدولة الجزائريه مما زادها ازدهارا وتطورا
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="_card">
+                                <a class="_nav-link" href="historyhome_ar.html#4">
+                                    <div class="content">
+                                        <h2 class="_title">الجزائر في التاريخ المعاصر</h2>
+                                        <p class="copy">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                                            سيلهي
+                                            القارئ عن التركيز على الشكل الخارجي للنص .</p>
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    <style>
+                        :root {
+                            --d: 700ms;
+                            --e: cubic-bezier(0.19, 1, 0.22, 1);
+                            --font-sans: "Rubik", sans-serif;
+                            --font-serif: "Cardo", serif;
+                        }
+
+                        * {
+                            box-sizing: border-box;
+                        }
+
+
+
+                        .nav-container-bislem {
+                            display: grid;
+                            place-items: center;
+                        }
+
+                        .page-content {
+                            display: grid;
+                            grid-gap: 1rem;
+                            padding: 1rem;
+                            margin: 0 auto;
+                            font-family: 'STV';
+                        }
+
+                        @media (min-width: 600px) {
+                            .page-content {
+                                grid-template-columns: repeat(2, 1fr);
+                            }
+                        }
+
+                        @media (min-width: 1000px) {
+                            .page-content {
+                                grid-template-columns: repeat(4, 1fr);
+                            }
+                        }
+
+                        ._card {
+                            position: relative;
+                            display: flex;
+                            align-items: flex-end;
+                            overflow: hidden;
+                            padding: 1rem;
+                            width: 100%;
+                            text-align: center;
+                            color: whitesmoke;
+                            background-color: whitesmoke;
+                            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+                        }
+
+                        @media (min-width: 600px) {
+                            ._card {
+                                height: 300px;
+                            }
+                        }
+
+                        ._card:before {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 110%;
+                            background-size: cover;
+                            background-position: 0 0;
+                            transition: transform calc(var(--d) * 1.5) var(--e);
+                            pointer-events: none;
+                        }
+
+                        ._card:after {
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 200%;
+                            pointer-events: none;
+                            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+                            transform: translateY(-50%);
+                            transition: transform calc(var(--d) * 2) var(--e);
+                        }
+
+                        ._card:nth-child(1):before {
+                            background-position: center;
+
+                            background-image: url(./assets/images/image\ 1.jpg);
+                        }
+
+                        ._card:nth-child(2):before {
+                            background-position: center;
+                            background-image: url(./assets/images/الأمير\ عبد\ القادر\ سنة\ 1860م.jpg);
+                        }
+
+                        ._card:nth-child(3):before {
+                            background-position: center;
+
+                            background-image: url(./assets/images/مبايعة\ الأمير\ عبد\ القادر\ 27\ نوفمبر\ 1832.jpg);
+                        }
+
+                        ._card:nth-child(4):before {
+                            background-position: center;
+
+                            background-image: url(assets/images/martyrsMemorial.png);
+                        }
+
+                        .content {
+                            position: relative;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            width: 100%;
+                            padding: 1rem;
+                            transition: transform var(--d) var(--e);
+                            z-index: 1;
+                        }
+
+                        .content>*+* {
+                            margin-top: 1rem;
+                        }
+
+                        ._title {
+                            font-size: 25px !important;
+                            font-weight: bold;
+                        }
+
+                        .copy {
+                            font-family: var(--font-serif);
+                            font-size: 15px;
+                            font-style: italic;
+                            line-height: 1.35;
+                        }
+
+                        ._nav-link {
+                            text-decoration: none;
+                            text-shadow: 1px 2px 3px black;
+                            z-index: 1;
+                        }
+                        p{
+                            z-index: 1;
+                        }
+
+                        ._nav-link:hover {
+                            color: white !important;
+                        }
+
+                        ._btn:hover {
+                            background-color: #0d0d0d;
+                        }
+
+                        ._btn:focus {
+                            outline: 1px dashed yellow;
+                            outline-offset: 3px;
+                        }
+
+                        @media (hover: hover) and (min-width: 600px) {
+                            ._card:after {
+                                transform: translateY(0);
+                            }
+
+                            .content {
+                                transform: translateY(calc(100% - 4.5rem));
+                            }
+
+                            .content>*:not(._title) {
+                                opacity: 0;
+                                transform: translateY(1rem);
+                                transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+                            }
+
+                            ._card:hover,
+                            ._card:focus-within {
+                                align-items: center;
+                            }
+
+                            ._card:hover:before,
+                            ._card:focus-within:before {
+                                transform: translateY(-4%);
+                            }
+
+                            ._card:hover:after,
+                            ._card:focus-within:after {
+                                transform: translateY(-50%);
+                            }
+
+                            ._card:hover .content,
+                            ._card:focus-within .content {
+                                transform: translateY(0);
+                            }
+
+                            ._card:hover .content>*:not(._title),
+                            ._card:focus-within .content>*:not(._title) {
+                                opacity: 1;
+                                transform: translateY(0);
+                                transition-delay: calc(var(--d) / 8);
+                            }
+
+                            ._card:focus-within:before,
+                            ._card:focus-within:after,
+                            ._card:focus-within .content,
+                            ._card:focus-within .content>*:not(._title) {
+                                transition-duration: 0s;
+                            }
+                        }
+                    </style>
+
+
+
+
+
+                </nav>
+
+                <!-- Read more articles  -->
+                <div>
+                    <ul class="nav d-flex flex-row align-items-end justify-content-between">
                         <!-- element of read more  -->
-                        <li class="mt-0">
-                            <div class="mt-0">
+                        <li class="col">
+                            <div>
                                 <div class="d-flex flex-row  align-items-center justify-content-start">
                                     <div class="separator"></div>
                                     <a href="articledeplomasya_ar.html" class="nav-link pb-0 text-white">التاريخ العسكري
@@ -507,11 +767,12 @@
                                 </div>
                             </div>
                             <div class="text-white">
-                                <p class="mb-1">اندلعت ثورة التحرير الجزائرية في 1 نوفمبر 1954 ضد الاستعمار الفرنسي الذي احتلّ البلاد منذ سنة 1830 «احتلال دام 132 سنة»، ودامت ثورة التحرير الجزائرية طيلة سبعة سنوات ونصف من الكفاح المسلح والعمل السياسي، وانتهت بإعلان استقلال الجزائر يوم 5 جويلية 1962 بعد أن سقط فيها أكثر من مليون ونصف مليون شهيد جزائري</p>
+                                <p class="mb-1">اندلعت ثورة التحرير الجزائرية في 1 نوفمبر 1954 ضد الاستعمار الفرنسي الذي
+                                    ...</p>
                             </div>
                         </li>
                         <!-- element of read more  -->
-                        <li>
+                        <li class="col">
                             <div>
                                 <div class="d-flex flex-row  align-items-center justify-content-start">
                                     <div class="separator"></div>
@@ -522,26 +783,29 @@
                                 </div>
                             </div>
                             <div class="text-white">
-                                <p class="mb-1">يوم الدبلوماسية الجزائرية هو يوم يوافق 8 أكتوبر من كل سنة تحتفل الجزائر حكومة وشعبا بالإنجازات الدبلوماسية للدولة الجزائرية
+                                <p class="mb-1">يوم الدبلوماسية الجزائرية هو يوم يوافق 8 أكتوبر من كل سنة تحتفل
+                                    الجزائر...
+
                                 </p>
                             </div>
                         </li>
                         <!-- element of read more  -->
-                        <li>
+                        <li class="col">
                             <div>
-                                <div class="d-flex flex-row align-items-center justify-content-start">
+                                <div class="d-flex flex-row  align-items-center justify-content-start">
                                     <div class="separator"></div>
-                                    <a href="articledeplomasya_ar.html" class="nav-link pb-0 text-white">علماء و اعلام الجزائر 
-                                         </a>
+                                    <a href="articledeplomasya_ar.html" class="nav-link pb-0 text-white">علماء و اعلام
+                                        الجزائر
+                                    </a>
                                 </div>
                             </div>
                             <div class=" text-white">
-                                <p class="mb-1">شهد تاريخ الجزائر شخصيات وأعلام ساهمت في بناء التاريخ والحضارة وخلدت أسماءهم بحروف من ذهب</p>
+                                <p class="mb-1">شهد تاريخ الجزائر شخصيات وأعلام ساهمت في بناء التاريخ والحضارة وخلدت</p>
 
                             </div>
                         </li>
                         <!-- element of read more  -->
-                        <li>
+                        <li class="col">
                             <div>
                                 <div class="d-flex flex-row align-items-center justify-content-start">
                                     <div class="separator"></div>
@@ -549,13 +813,12 @@
                                 </div>
                             </div>
                             <div class="text-white">
-                                <p class="mb-1">تشمل الأدب والموسيقى، والمطبخ، والدين وجوانب أخرى من حياة الجزائري، وهي غنية ومتنوعة وعريقة جدا، في كل منطقة وكل مدينة أو واحة مساحة ثقافية معينة. منطقة القبائل، الأوراس، منطقة الجزائر العاصمة، الهضاب العليا، وادي مزاب
-                                </p>
+                                <p class="mb-1">تشمل الأدب والموسيقى، والمطبخ، والدين وجوانب أخرى من حياة الجزائري، وهي
+                                    ... </p>
                             </div>
                         </li>
-
                         <!-- element of read more  -->
-                        <li>
+                        <li class="col">
                             <div>
                                 <div class="d-flex flex-row  align-items-center justify-content-start">
                                     <div class="separator"></div>
@@ -563,128 +826,16 @@
                                 </div>
                             </div>
                             <div class="text-white">
-                                <p class="mb-1">هو ذلك الموروث الحضاري للدولة الجزائرية المتداول عبر الأجيال من عادات وتقاليد وفنون وعلوم ونمط حياة وعمران وآثار وهي تمثل قيم المجتمع ويعتبر ركيزة أساسية للهويه</p>
+                                <p class="mb-1">هو ذلك الموروث الحضاري للدولة الجزائرية المتداول عبر الأجيال من عادات
+                                    وتقاليد وفنون</p>
                             </div>
                         </li>
-
                     </ul>
                 </div>
             </div>
 
-            <!-- secondary navigation  -->
-            <nav class="mt-5">
-                <ul class="nav d-flex flex-row justify-content-center">
-                    <!-- add active class to <a> tag to make it active  -->
-
-                    <li class="nav-item mx-2 d-flex flex-column-reverse text-center">
-                        <a href="historyhome_ar.html#1" class="nav-link">
-                            <div class="separator"></div>
-                           
-                           الجزائر في العصور القديمة
-                        </a>
-                    </li>
-
-                    <li class="nav-item mx-2 d-flex flex-column-reverse text-center">
-                        <a href="historyhome_ar.html#2" class="nav-link">
-                            <div class="separator"></div>
-                             الجزائر في العصر الحديث
-                        </a>
-                    </li>
-                    <li class="nav-item mx-2 d-flex flex-column-reverse text-center">
-                        <a href="historyhome_ar.html#3" class="nav-link">
-                            <div class="separator"></div>
-                             الجزائر في العصر اﻹسلامي
-                        </a>
-                    </li>
-                    <li class="nav-item mx-2 d-flex flex-column-reverse text-center">
-                        <a href="historyhome_ar.html#4" class="nav-link">
-                            <div class="separator"></div>
-
-                             الجزائر في التاريخ المعاصر
-                        </a>
-                    </li>
-
-                </ul>
-            </nav>
         </div>
 
-
-        <!-- Read more articles  -->
-        <div class="container d-block small-secreen-read-more  d-lg-none my-5 py-5" data-aos="fade-up">
-            <!-- <h3 class=" text-center" style="font-size: 50px !important;color: #7FE0B2 !important;">تاريخ مجيد</h3> -->
-
-            <ul class="nav d-flex  flex-column align-items-center justify-content-end">
-                <li class="mt-0">
-                    <div class="mt-0">
-                        <div class="d-flex flex-row  align-items-center justify-content-start">
-                            <div class="separator"></div>
-                            <a href="articledeplomasya_ar.html" class="nav-link pb-0 text-white">التاريخ العسكري
-                                للجزائر</a>
-                        </div>
-                    </div>
-                    <div class="text-white">
-                        <p class="mb-1">اندلعت ثورة التحرير الجزائرية في 1 نوفمبر 1954 ضد الاستعمار الفرنسي الذي احتلّ البلاد منذ سنة 1830 «احتلال دام 132 سنة»، ودامت ثورة التحرير الجزائرية طيلة سبعة سنوات ونصف من الكفاح المسلح والعمل السياسي، وانتهت بإعلان استقلال الجزائر يوم 5 جويلية 1962 بعد أن سقط فيها أكثر من مليون ونصف مليون شهيد جزائري</p>
-                    </div>
-                </li>
-                <!-- element of read more  -->
-                <li>
-                    <div>
-                        <div class="d-flex flex-row  align-items-center justify-content-start">
-                            <div class="separator"></div>
-                            <a href="articledeplomasya_ar.html" class="nav-link pb-0 text-white">
-                                الديبلوماسية
-                                الجزائرية عبر التاريخ
-                            </a>
-                        </div>
-                    </div>
-                    <div class="text-white">
-                        <p class="mb-1">يوم الدبلوماسية الجزائرية هو يوم يوافق 8 أكتوبر من كل سنة تحتفل الجزائر حكومة وشعبا بالإنجازات الدبلوماسية للدولة الجزائرية
-                        </p>
-                    </div>
-                </li>
-                <!-- element of read more  -->
-                <li>
-                    <div>
-                        <div class="d-flex flex-row align-items-center justify-content-start">
-                            <div class="separator"></div>
-                            <a href="articledeplomasya_ar.html" class="nav-link pb-0 text-white">علماء و اعلام الجزائر 
-                                 </a>
-                        </div>
-                    </div>
-                    <div class=" text-white">
-                        <p class="mb-1">شهد تاريخ الجزائر شخصيات وأعلام ساهمت في بناء التاريخ والحضارة وخلدت أسماءهم بحروف من ذهب</p>
-
-                    </div>
-                </li>
-                <!-- element of read more  -->
-                <li>
-                    <div>
-                        <div class="d-flex flex-row align-items-center justify-content-start">
-                            <div class="separator"></div>
-                            <a href="moqawama.html" class="nav-link pb-0 text-white">الفنون والحضاره </a>
-                        </div>
-                    </div>
-                    <div class="text-white">
-                        <p class="mb-1">تشمل الأدب والموسيقى، والمطبخ، والدين وجوانب أخرى من حياة الجزائري، وهي غنية ومتنوعة وعريقة جدا، في كل منطقة وكل مدينة أو واحة مساحة ثقافية معينة. منطقة القبائل، الأوراس، منطقة الجزائر العاصمة، الهضاب العليا، وادي مزاب
-                        </p>
-                    </div>
-                </li>
-
-                <!-- element of read more  -->
-                <li>
-                    <div>
-                        <div class="d-flex flex-row  align-items-center justify-content-start">
-                            <div class="separator"></div>
-                            <a href="moqawama.html" class="nav-link pb-0 text-white">التراث العالمي للجزائر </a>
-                        </div>
-                    </div>
-                    <div class="text-white">
-                        <p class="mb-1">هو ذلك الموروث الحضاري للدولة الجزائرية المتداول عبر الأجيال من عادات وتقاليد وفنون وعلوم ونمط حياة وعمران وآثار وهي تمثل قيم المجتمع ويعتبر ركيزة أساسية للهويه</p>
-                    </div>
-                </li>
-
-            </ul>
-        </div>
 
         <!-- the Injazat (aahd jadid) title  -->
         <div id="section_3" class="container section-4">
@@ -695,7 +846,7 @@
 
 
         <!-- the injazat slider -->
-        <div  class="section-7 bg-light mb-5 min-vh-100">
+        <div class="section-7 bg-light mb-5 min-vh-100">
             <div class="d-flex flex-column-reverse justify-content-center">
                 <!-- these are the years and they are just buttons of tabs (collapsable) -->
                 <ul data-aos="fade-up" data-aos-duration="1000"
@@ -734,10 +885,11 @@
                 <div data-aos="fade-up" data-aos-duration="900" class="separator"></div>
 
                 <!-- the slides content (the cards) -->
-                <div  class="tab-content bg-dark overflow-hidden" id="injazat-content">
+                <div class="tab-content bg-dark overflow-hidden" id="injazat-content">
 
                     <!-- the slider content of the first year 1960  (active tab)-->
-                    <div dir=""  class="tab-pane fade show active" id="year1" role="tabpanel" aria-labelledby="year1-tab">
+                    <div dir="" class="tab-pane fade show active" id="year1" role="tabpanel"
+                        aria-labelledby="year1-tab">
                         <div class="container text-center my-3">
                             <div class="row mx-auto my-auto justify-content-center">
                                 <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -774,7 +926,8 @@
                                         <!-- another slide item  -->
                                         <div class="carousel-item">
                                             <div class="col-md-3 p-2 rounded-3">
-                                                <a href="#" class="nav-link p-0" target="_blank" rel="noopener noreferrer">
+                                                <a href="#" class="nav-link p-0" target="_blank"
+                                                    rel="noopener noreferrer">
                                                     <div class="d-flex flex-column">
                                                         <h3>جامع الجزائر</h3>
                                                         <div
@@ -798,7 +951,8 @@
                                         <!-- another slide item  -->
                                         <div class="carousel-item">
                                             <div class="col-md-3 p-2 rounded-3">
-                                                <a href="#" class="nav-link p-0" target="_blank" rel="noopener noreferrer">
+                                                <a href="#" class="nav-link p-0" target="_blank"
+                                                    rel="noopener noreferrer">
                                                     <div class="d-flex flex-column">
                                                         <h3>جامع الجزائر</h3>
                                                         <div
@@ -822,7 +976,8 @@
                                         <!-- another slide item  -->
                                         <div class="carousel-item">
                                             <div class="col-md-3 p-2 rounded-3">
-                                                <a href="#" class="nav-link p-0" target="_blank" rel="noopener noreferrer">
+                                                <a href="#" class="nav-link p-0" target="_blank"
+                                                    rel="noopener noreferrer">
                                                     <div class="d-flex flex-column">
                                                         <h3>جامع 55الجزائر</h3>
                                                         <div
@@ -845,7 +1000,8 @@
                                     </div>
 
                                     <!-- sliders controllers -->
-                                    <div dir="ltr" class="slider-controllers d-flex bg-dark flex-row justify-content-between">
+                                    <div dir="ltr"
+                                        class="slider-controllers d-flex bg-dark flex-row justify-content-between">
                                         <div>
                                             <a class="nav-link" href="#recipeCarousel" role="button"
                                                 data-bs-slide="prev">
@@ -1077,6 +1233,23 @@
 
 
 
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered bg-transparent">
+                <div class="modal-content">
+                    <form action="#" action="" class="d-flex flex-row">
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="إبحث في تاريخ الجزائر">
+                        <button type="submit" class="btn btn-toolbar">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
     </main>
 
     <footer class="pt-5 pb-0 px-3">
@@ -1245,8 +1418,6 @@
             }
         </script>
     </div>
-
-
 </body>
 <script src="./assets/js/main.js" defer></script>
 

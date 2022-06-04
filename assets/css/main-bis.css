@@ -85,6 +85,15 @@
   z-index: 1;
 }
 
+#anniversary-logo h1 {
+  font-size: 30px !important;
+}
+
+#anniversary-logo img {
+  height: 90px !important;
+  width: 85px !important;
+}
+
 @media screen and (max-width: 960px) {
   #anniversary-logo {
     top: 70px !important;
@@ -95,17 +104,13 @@
   #anniversary-logo {
     top: 50px !important;
   }
-}
-
-#anniversary-logo h1 {
-  font-size: 25px;
-  font-weight: 600;
-  z-index: 1;
-}
-
-#anniversary-logo img {
-  height: 120px;
-  width: auto;
+  #anniversary-logo h1 {
+    font-size: 25px !important;
+  }
+  #anniversary-logo img {
+    height: 70px !important;
+    width: 65px !important;
+  }
 }
 
 header .main-nav {
@@ -116,6 +121,41 @@ header.add-shadow {
   background: rgba(0, 0, 0, 0.6);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(3%, rgba(0, 0, 0, 0.671)), to(rgba(0, 0, 0, 0.37037)));
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.671) 3%, rgba(0, 0, 0, 0.37037) 100%);
+}
+
+.rounded-btn {
+  font-size: 30px;
+  color: #FFFFFF;
+  justify-self: flex-end;
+  padding: 8px;
+  border: 2px solid #FFFFFF;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.rounded-btn:hover {
+  color: #D21034;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 0 5px white;
+          box-shadow: 0 0 5px white;
+}
+
+@media screen and (max-width: 700px) {
+  .rounded-btn {
+    font-size: 30px;
+    color: #FFFFFF;
+    justify-self: flex-end;
+    padding: 8px;
+    border: 2px solid #006233;
+    height: 60px;
+    width: 60px;
+    background-color: #006233;
+    border-radius: 50%;
+  }
+  .rounded-btn:hover {
+    color: #D21034;
+  }
 }
 
 .slider1-text {
@@ -131,21 +171,6 @@ header.add-shadow {
   height: 25px !important;
   width: 100% !important;
   z-index: -1;
-}
-
-.slider1-text a {
-  font-size: 30px;
-  color: #FFFFFF;
-  justify-self: flex-end;
-  padding: 8px;
-  border: 2px solid #FFFFFF;
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-}
-
-.slider1-text a:hover {
-  color: #D21034;
 }
 
 .slider1-text h1,
@@ -181,6 +206,9 @@ header.add-shadow {
   .slider1-text h2 {
     font-size: 40px !important;
     line-height: 60px !important;
+  }
+  .slider1-text p {
+    font-size: 17px !important;
   }
 }
 
@@ -299,10 +327,21 @@ header.add-shadow {
     -webkit-box-direction: reverse !important;
         -ms-flex-direction: column-reverse !important;
             flex-direction: column-reverse !important;
+    margin-bottom: 0;
+    padding: 10px !important;
   }
   #mainSlider .teboun #tebountxt p {
     width: 70vw !important;
     text-align: justify;
+    font-size: 15px;
+  }
+  #mainSlider .teboun img {
+    height: 42px;
+    width: 60px;
+  }
+  #mainSlider .teboun .teboun-img {
+    height: 70px !important;
+    width: auto;
   }
 }
 
@@ -331,6 +370,8 @@ header.add-shadow {
 
 body {
   background-color: #1D1D1B;
+  overflow-x: hidden;
+  position: relative;
 }
 
 html {
@@ -341,10 +382,6 @@ html {
   min-height: 100vh !important;
   -webkit-box-sizing: border-box !important;
           box-sizing: border-box !important;
-}
-
-.section-3 > div > div > ul li a:hover{
-  color: #006633;
 }
 
 @media screen and (min-width: 700px) {
@@ -366,17 +403,12 @@ html {
   width: 32px;
 }
 
-.section-3 h1,
-.section-3 h2 {
-  font-size: 80px;
+.section-3 h1 * {
+  font-size: 130px !important;
   font-weight: 700;
   color: #FFFFFF;
-}
-
-.section-3 h1 span,
-.section-3 h2 span {
-  font-size: 168px;
-  font-weight: 700;
+  line-height: 130px;
+  overflow: hidden;
 }
 
 .section-3 a {
