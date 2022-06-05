@@ -1,11 +1,12 @@
 /* Importing arabic fonts */
 @import url('../fonts/STV/style.css');
 @import url('../fonts/AlWatanHeadlines-Bold/style.css');
+@import url('../fonts/wazara/stylesheet.css');
 
 
 #anniversary-logo {
     h1 {
-        font-family: 'AlWatanHeadlines' !important;
+        font-family: 'Janna LT' !important;
     }
 }
 
@@ -17,23 +18,23 @@ nav a {
 
 /*the navigation drawer nav links font here */
 #pills-tab>li a {
-    font-family: 'AlWatanHeadlines' !important;
+    font-family: 'Janna LT' !important;
     font-size: bold;
 }
 
 #pills-tabContent>div {
     span {
-        font-family: 'AlWatanHeadlines' !important;
+        font-family: 'Janna LT' !important;
     }
 }
 
 #mobile-nav {
     &>li>a {
-        font-family: 'AlWatanHeadlines' !important;
+        font-family: 'Janna LT' !important;
     }
 
     &>li>div>ul>li>a {
-        font-family: 'AlWatanHeadlines' !important;
+        font-family: 'Janna LT' !important;
 
     }
 
@@ -50,13 +51,13 @@ nav a {
     h2,
     a,
     h3 {
-        font-family: 'AlWatanHeadlines' !important;
+        font-family: 'Janna LT' !important;
     }
 }
 
 .section-6 {
     .title {
-        font-family: 'AlWatanHeadlines';
+        font-family: 'Janna LT';
     }
 
     .date,
@@ -69,7 +70,7 @@ nav a {
         h1,
         h2,
         h3 {
-            font-family: 'AlWatanHeadlines' !important;
+            font-family: 'Janna LT' !important;
         }
 
         p {
@@ -93,7 +94,7 @@ footer {
     }
 
     h3 {
-        font-family: 'AlWatanHeadlines';
+        font-family: 'Janna LT';
     }
 }
 
@@ -107,14 +108,14 @@ footer {
 
         h2,
         h1 {
-            font-family: 'AlWatanHeadlines' !important;
+            font-family: 'Janna LT' !important;
 
         }
     }
 
     .teboun {
         h1 {
-            font-family: 'AlWatanHeadlines';
+            font-family: 'Janna LT';
         }
 
         small,
@@ -131,7 +132,7 @@ footer {
     h1,
     h2,
     h3 {
-        font-family: 'AlWatanHeadlines' !important;
+        font-family: 'Janna LT' !important;
     }
 }
 
@@ -141,7 +142,7 @@ footer {
     }
     .carousel-inner{
         h3{
-        font-family: 'AlWatanHeadlines' !important;
+        font-family: 'Janna LT' !important;
         }
     }
 }
