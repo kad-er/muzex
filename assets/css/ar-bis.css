@@ -7,7 +7,7 @@
 }
 
 nav a {
-  font-family: 'STV' !important;
+  font-family: 'Janna LT' !important;
 }
 
 /*the navigation drawer nav links font here */
@@ -29,7 +29,7 @@ nav a {
 }
 
 #mobile-nav > li > div > ul > li > div > ul > li > a {
-  font-family: 'STV' !important;
+  font-family: 'Janna LT' !important;
 }
 
 .section-3 h1,
@@ -49,7 +49,7 @@ nav a {
 
 .section-6 .date,
 .section-6 .source {
-  font-family: 'STV' !important;
+  font-family: 'Janna LT' !important;
 }
 
 .section-6 .youth h1,
@@ -59,18 +59,18 @@ nav a {
 }
 
 .section-6 .youth p {
-  font-family: 'STV';
+  font-family: 'Janna LT';
 }
 
 .section-6 .cta-link {
-  font-family: 'STV';
+  font-family: 'Janna LT';
 }
 
 footer .copy-rights,
 footer p,
 footer a,
 footer .input-group input {
-  font-family: 'STV';
+  font-family: 'Janna LT';
 }
 
 footer h3 {
@@ -93,7 +93,7 @@ footer h3 {
 
 #mainSlider .teboun small,
 #mainSlider .teboun p {
-  font-family: "STV";
+  font-family: "Janna LT";
 }
 
 .small-secreen-read-more a,
@@ -104,7 +104,7 @@ footer h3 {
 }
 
 .section-7 .nav > li > a {
-  font-family: 'Playfair Display' !important;
+  font-family: 'Janna LT' !important;
 }
 
 .section-7 .carousel-inner h3 {
@@ -194,7 +194,7 @@ footer h3 {
 }
 
 .navigationdrawer #pills-tabContent > div > div > div > div > a {
-  font-family: 'Playfair Display' !important;
+  font-family: 'Janna LT' !important;
   color: #181818 !important;
   font-size: 24px;
 }
@@ -231,7 +231,7 @@ footer h3 {
 
 .navigationdrawer .contacts > li a {
   text-decoration: none;
-  font-family: 'Montserrat' !important;
+  font-family: 'Janna LT' !important;
   display: block;
   color: #1D1D1B;
 }
@@ -243,5 +243,9 @@ footer h3 {
 
 #pills-tab li {
   text-indent: 100px;
+}
+
+* {
+  font-family: 'Janna LT' !important;
 }
 /*# sourceMappingURL=ar-bis.css.map */

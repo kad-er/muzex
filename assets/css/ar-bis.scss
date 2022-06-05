@@ -12,7 +12,7 @@
 
 
 nav a {
-    font-family: 'STV' !important;
+    font-family: 'Janna LT' !important;
 }
 
 
@@ -39,7 +39,7 @@ nav a {
     }
 
     &>li>div>ul>li>div>ul>li>a {
-        font-family: 'STV' !important;
+        font-family: 'Janna LT' !important;
 
     }
 }
@@ -62,7 +62,7 @@ nav a {
 
     .date,
     .source {
-        font-family: 'STV' !important;
+        font-family: 'Janna LT' !important;
     }
 
     .youth {
@@ -74,13 +74,13 @@ nav a {
         }
 
         p {
-            font-family: 'STV';
+            font-family: 'Janna LT';
         }
 
     }
 
     .cta-link {
-        font-family: 'STV';
+        font-family: 'Janna LT';
     }
 }
 
@@ -90,7 +90,7 @@ footer {
     p,
     a,
     .input-group input {
-        font-family: 'STV';
+        font-family: 'Janna LT';
     }
 
     h3 {
@@ -120,7 +120,7 @@ footer {
 
         small,
         p {
-            font-family: "STV";
+            font-family: "Janna LT";
         }
     }
 
@@ -138,7 +138,7 @@ footer {
 
 .section-7 {
     .nav > li > a {
-        font-family: 'Playfair Display' !important;
+        font-family: 'Janna LT' !important;
     }
     .carousel-inner{
         h3{
@@ -241,7 +241,7 @@ footer {
         }
 
         &>div>div>div>a {
-            font-family: 'Playfair Display' !important;
+            font-family: 'Janna LT' !important;
             color: #181818 !important;
             font-size: 24px;
         }
@@ -283,7 +283,7 @@ footer {
 
         &>li a {
             text-decoration: none;
-            font-family: 'Montserrat' !important;
+            font-family: 'Janna LT' !important;
             display: block;
             color: #1D1D1B;
         }
@@ -300,4 +300,8 @@ footer {
     li{
         text-indent: 100px;
     }
+}
+
+*{
+    font-family: 'Janna LT' !important;
 }
