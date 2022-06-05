@@ -391,7 +391,9 @@
                     class="slider1-text mt-auto mt-md-0 d-flex pe-5 flex-column animate__animated animate__fadeInRight col-lg-6 col-md-6 col-sm-10 align-items-start justify-content-center text-white">
                     <div class="d-flex flex-column justify-content-around position-relative">
                         <span class="separator position-absolute"></span>
-                        <h1>لنتعرف علي
+                        <h1>لنتعرف
+                            <br>
+                            علي
                             تاريخ
                             الجزائر
 
@@ -484,11 +486,6 @@
 
                 <!-- secondary navigation  -->
                 <nav class="mt-5">
-
-
-
-
-
                     <div class="nav-container-bislem">
                         <div class="page-content">
                             <div class="_card">
@@ -680,7 +677,8 @@
                             text-shadow: 1px 2px 3px black;
                             z-index: 1;
                         }
-                        p{
+
+                        p {
                             z-index: 1;
                         }
 
@@ -754,8 +752,41 @@
 
                 </nav>
 
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+                <script defer>
+                    $(document).ready(function () {
+                        $('#responsive').lightSlider({
+                            item: 4,
+                            loop: false,
+                            slideMove: 2,
+                            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+                            speed: 600,
+                            responsive: [{
+                                    breakpoint: 800,
+                                    settings: {
+                                        item: 3,
+                                        slideMove: 1,
+                                        slideMargin: 6,
+                                    }
+                                },
+                                {
+                                    breakpoint: 480,
+                                    settings: {
+                                        item: 2,
+                                        slideMove: 1
+                                    }
+                                }
+                            ]
+                        });
+                    });
+                </script>
+
+
+              
                 <!-- Read more articles  -->
                 <div>
+                    <h3 style="color: #7FE0B2;" class="me-5">مقالات عبر التاريخ</h3>
+
                     <ul class="nav d-flex flex-row align-items-end justify-content-between">
                         <!-- element of read more  -->
                         <li class="col">

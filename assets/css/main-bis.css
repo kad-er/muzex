@@ -1043,4 +1043,33 @@ html {
 .section-7 .carousel-inner .carousel-img-bislem:hover p {
   top: 0;
 }
+
+.nav-link:hover ~ .separator {
+  -webkit-animation: navanimation 5s linear;
+          animation: navanimation 5s linear;
+}
+
+@-webkit-keyframes navanimation {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 50%;
+  }
+  0% {
+    width: 0%;
+  }
+}
+
+@keyframes navanimation {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 50%;
+  }
+  0% {
+    width: 0%;
+  }
+}
 /*# sourceMappingURL=main-bis.css.map */
