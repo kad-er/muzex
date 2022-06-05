@@ -29,9 +29,6 @@
     <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- fontawsome script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous"> -->
     <script src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
     <!-- custom css includs importing fonts -->
@@ -752,53 +749,27 @@
 
                 </nav>
 
-                <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-                <script defer>
-                    $(document).ready(function () {
-                        $('#responsive').lightSlider({
-                            item: 4,
-                            loop: false,
-                            slideMove: 2,
-                            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
-                            speed: 600,
-                            responsive: [{
-                                    breakpoint: 800,
-                                    settings: {
-                                        item: 3,
-                                        slideMove: 1,
-                                        slideMargin: 6,
-                                    }
-                                },
-                                {
-                                    breakpoint: 480,
-                                    settings: {
-                                        item: 2,
-                                        slideMove: 1
-                                    }
-                                }
-                            ]
-                        });
-                    });
-                </script>
 
 
-              
+
                 <!-- Read more articles  -->
-                <div>
+                <div class="w-100">
                     <h3 style="color: #7FE0B2;" class="me-5">مقالات عبر التاريخ</h3>
 
-                    <ul class="nav d-flex flex-row align-items-end justify-content-between">
+                    <ul id="responsive" class="d-flex flex-row">
                         <!-- element of read more  -->
                         <li class="col">
                             <div>
                                 <div class="d-flex flex-row  align-items-center justify-content-start">
                                     <div class="separator"></div>
-                                    <a href="articledeplomasya_ar.html" class="nav-link pb-0 text-white">التاريخ العسكري
+                                    <a href="articledeplomasya_ar.html" class="nav-link  pb-0 text-white">التاريخ
+                                        العسكري
                                         للجزائر</a>
                                 </div>
                             </div>
                             <div class="text-white">
-                                <p class="mb-1">اندلعت ثورة التحرير الجزائرية في 1 نوفمبر 1954 ضد الاستعمار الفرنسي الذي
+                                <p class="mb-1">اندلعت ثورة التحرير الجزائرية في 1 نوفمبر 1954 ضد الاستعمار
+                                    الفرنسي الذي
                                     ...</p>
                             </div>
                         </li>
@@ -825,13 +796,15 @@
                             <div>
                                 <div class="d-flex flex-row  align-items-center justify-content-start">
                                     <div class="separator"></div>
-                                    <a href="articledeplomasya_ar.html" class="nav-link pb-0 text-white">علماء و اعلام
+                                    <a href="articledeplomasya_ar.html" class="nav-link pb-0 text-white">علماء و
+                                        اعلام
                                         الجزائر
                                     </a>
                                 </div>
                             </div>
                             <div class=" text-white">
-                                <p class="mb-1">شهد تاريخ الجزائر شخصيات وأعلام ساهمت في بناء التاريخ والحضارة وخلدت</p>
+                                <p class="mb-1">شهد تاريخ الجزائر شخصيات وأعلام ساهمت في بناء التاريخ والحضارة
+                                    وخلدت</p>
 
                             </div>
                         </li>
@@ -840,11 +813,13 @@
                             <div>
                                 <div class="d-flex flex-row align-items-center justify-content-start">
                                     <div class="separator"></div>
-                                    <a href="moqawama.html" class="nav-link pb-0 text-white">الفنون والحضاره </a>
+                                    <a href="moqawama.html" class="nav-link pb-0 text-white">الفنون والحضاره
+                                    </a>
                                 </div>
                             </div>
                             <div class="text-white">
-                                <p class="mb-1">تشمل الأدب والموسيقى، والمطبخ، والدين وجوانب أخرى من حياة الجزائري، وهي
+                                <p class="mb-1">تشمل الأدب والموسيقى، والمطبخ، والدين وجوانب أخرى من حياة
+                                    الجزائري، وهي
                                     ... </p>
                             </div>
                         </li>
@@ -853,14 +828,17 @@
                             <div>
                                 <div class="d-flex flex-row  align-items-center justify-content-start">
                                     <div class="separator"></div>
-                                    <a href="moqawama.html" class="nav-link pb-0 text-white">التراث العالمي للجزائر </a>
+                                    <a href="moqawama.html" class="nav-link pb-0 text-white">التراث العالمي
+                                        للجزائر </a>
                                 </div>
                             </div>
                             <div class="text-white">
-                                <p class="mb-1">هو ذلك الموروث الحضاري للدولة الجزائرية المتداول عبر الأجيال من عادات
+                                <p class="mb-1">هو ذلك الموروث الحضاري للدولة الجزائرية المتداول عبر الأجيال من
+                                    عادات
                                     وتقاليد وفنون</p>
                             </div>
                         </li>
+
                     </ul>
                 </div>
             </div>
@@ -876,140 +854,7 @@
         </div>
 
 
-       <!-- the injazat slider -->
-       <div class="section-7 bg-light mb-5 min-vh-100">
-        <div class="d-flex flex-column-reverse justify-content-center">
-            <!-- these are the years and they are just buttons of tabs (collapsable) -->
-           
 
-            <!-- just a separator  -->
-            <div data-aos="fade-up" data-aos-duration="900" class="separator"></div>
-
-            <!-- the slides content (the cards) -->
-            <div class="tab-content bg-dark overflow-hidden" id="injazat-content">
-
-                <!-- the slider content of the first year 1960  (active tab)-->
-                <div dir="" class="tab-pane fade show active" id="year1" role="tabpanel"
-                    aria-labelledby="year1-tab">
-                    <div class="container text-center my-3">
-                        <div class="row mx-auto my-auto justify-content-center">
-                            <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
-
-                                <!-- the slider content  -->
-                                <div class="carousel-inner" role="listbox">
-                                   
-
-
-                                    <!-- another slide item  -->
-                                    <div class="carousel-item active">
-                                        <div class="col-md-3 p-2 sh" style="max-height: 400px; ">
-                                            <a href="injazat-ministere.html" class="nav-link p-0" target="_blank"
-                                                rel="noopener noreferrer">
-                                                <div class="d-flex flex-column">
-                                                    
-                                                   
-                                                    <div class="carousel-img-bislem ">
-                                                        <img src="./assets/images/martyrsMemorial.png"
-                                                            class="img-fluid mt-2" alt="maqam chahid">
-                                                       
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-
-                                    <!-- another slide item  -->
-                                    <div class="carousel-item ">
-                                        <div class="col-md-3 p-1  sh" style="max-height: 400px; ">
-                                            <a href="injazat-ministere.html" class="nav-link p-0" target="_blank"
-                                                rel="noopener noreferrer">
-                                                <div class="d-flex flex-column">
-                                                   
-                                                    
-                                                    <div class="carousel-img-bislem " >
-                                                        <img src="./assets/images/jame3.jpg"
-                                                            class="img-fluid mt-2" alt="maqam chahid">
-                                                      
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                   <!-- another slide item  -->
-                                   <div class="carousel-item ">
-                                    <div class="col-md-3 p-1  sh" style="max-height: 400px; ">
-                                        <a href="injazat-ministere.html" class="nav-link p-0" target="_blank"
-                                            rel="noopener noreferrer">
-                                            <div class="d-flex flex-column">
-                                               
-                                                
-                                                <div class="carousel-img-bislem " >
-                                                    <img src="./assets/images/tramway.jpg"
-                                                        class="img-fluid mt-2" alt="maqam chahid">
-                                                    
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-
-
-                                    <!-- another slide item  -->
-                                    <div class="carousel-item ">
-                                        <div class="col-md-3 p-1  sh" style="max-height: 400px; ">
-                                            <a href="injazat-ministere.html" class="nav-link p-0" target="_blank"
-                                                rel="noopener noreferrer">
-                                                <div class="d-flex flex-column">
-                                                    
-                                                    
-                                                    <div class="carousel-img-bislem " >
-                                                        <img src="./assets/images/chu.jpg"
-                                                            class="img-fluid mt-2" alt="maqam chahid">
-                                                        
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <!-- sliders controllers -->
-                                <div dir="ltr"
-                                    class="slider-controllers d-flex bg-dark flex-row justify-content-between">
-                                    <div>
-                                        <a class="nav-link" href="#recipeCarousel" role="button"
-                                            data-bs-slide="prev">
-                                            <img src="./assets/icons/arrow-left.png" alt="arrow left">
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <!-- you add `over` class to make the arrow look disabled  -->
-                                        <a class="nav-link" href="#recipeCarousel" role="button"
-                                            data-bs-slide="next">
-                                            <img src="./assets/icons/arrow-left.png"
-                                                style="transform: rotate(180deg);" alt="arrow left">
-                                        </a>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- these are more tabs u can put more slides like the one before here for the other year -->
-                <div class="tab-pane fade" id="year2" role="tabpanel" aria-labelledby="year2-tab">
-                    year 2</div>
-                <div class="tab-pane fade" id="year3" role="tabpanel" aria-labelledby="year3-tab">
-                    year 3</div>
-
-
-            </div>
-        </div>
-    </div>
 
 
 
