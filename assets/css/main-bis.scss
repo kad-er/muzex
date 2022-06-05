@@ -99,30 +99,34 @@
     left: 0;
     overflow: none;
     z-index: 1;
+
     h1 {
         font-size: 30px !important;
-        }
+    }
 
     img {
         height: 90px !important;
         width: 85px !important;
     }
+
     @media screen and (max-width: 960px) {
         top: 70px !important;
     }
 
     @media screen and (max-width: 400px) {
         top: 50px !important;
-        h1{
+
+        h1 {
             font-size: 25px !important;
         }
-        img{
+
+        img {
             height: 70px !important;
             width: 65px !important;
         }
     }
 
-    
+
 }
 
 header {
@@ -354,6 +358,7 @@ header.add-shadow {
             flex-direction: column-reverse !important;
             margin-bottom: 0;
             padding: 10px !important;
+
             #tebountxt {
                 p {
                     width: 70vw !important;
@@ -361,11 +366,13 @@ header.add-shadow {
                     font-size: 15px;
                 }
             }
-            img{
+
+            img {
                 height: 42px;
                 width: 60px;
 
             }
+
             .teboun-img {
                 height: 70px !important;
                 width: auto;
@@ -430,14 +437,13 @@ html {
         width: 32px;
     }
 
-    h1 *
-    {
+    h1 * {
         font-size: 130px !important;
         font-weight: 700;
         color: #FFFFFF;
         line-height: 130px;
         overflow: hidden;
-        
+
     }
 
     a {
@@ -1067,3 +1073,21 @@ html {
         }
     }
 }
+.nav-link:hover {
+     & ~ .separator{
+         animation: navanimation 5s linear;
+     }
+}
+
+ @keyframes navanimation {
+     0% {
+         width: 0;
+     }
+     50%{
+         width: 50%;
+     }
+
+     0%{
+         width: 0%;
+     }
+ }
