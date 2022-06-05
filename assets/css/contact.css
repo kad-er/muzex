@@ -4359,40 +4359,40 @@ input[type="button"].btn-block {
     display: block;
 }
 
-    .card-group>.card+.card {
-        margin-left: 0;
-        border-left: 0;
-    }
+.card-group>.card+.card {
+    margin-left: 0;
+    border-left: 0;
+}
 
-    .card-group>.card:not(:last-child) {
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-    }
+.card-group>.card:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
 
-    .card-group>.card:not(:last-child) .card-img-top,
-    .card-group>.card:not(:last-child) .card-header {
-        border-top-right-radius: 0;
-    }
+.card-group>.card:not(:last-child) .card-img-top,
+.card-group>.card:not(:last-child) .card-header {
+    border-top-right-radius: 0;
+}
 
-    .card-group>.card:not(:last-child) .card-img-bottom,
-    .card-group>.card:not(:last-child) .card-footer {
-        border-bottom-right-radius: 0;
-    }
+.card-group>.card:not(:last-child) .card-img-bottom,
+.card-group>.card:not(:last-child) .card-footer {
+    border-bottom-right-radius: 0;
+}
 
-    .card-group>.card:not(:first-child) {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-    }
+.card-group>.card:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
 
-    .card-group>.card:not(:first-child) .card-img-top,
-    .card-group>.card:not(:first-child) .card-header {
-        border-top-left-radius: 0;
-    }
+.card-group>.card:not(:first-child) .card-img-top,
+.card-group>.card:not(:first-child) .card-header {
+    border-top-left-radius: 0;
+}
 
-    .card-group>.card:not(:first-child) .card-img-bottom,
-    .card-group>.card:not(:first-child) .card-footer {
-        border-bottom-left-radius: 0;
-    }
+.card-group>.card:not(:first-child) .card-img-bottom,
+.card-group>.card:not(:first-child) .card-footer {
+    border-bottom-left-radius: 0;
+}
 }
 
 .card-columns .card {
@@ -10575,7 +10575,7 @@ a.text-dark:focus {
 }
 
 body {
-     padding: 0;
+    padding: 0;
     margin: 0;
     overflow: hidden;
     background-color: #FEE9D1;
@@ -10677,7 +10677,7 @@ textarea.form-control {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 600;
-    
+
 }
 
 .dbox p a {
@@ -10782,95 +10782,153 @@ textarea.form-control {
 
 
 
-  
-  .main-nav > div > div > a,
-  .main-nav > div ul > li > a {
+
+.main-nav>div>div>a,
+.main-nav>div ul>li>a {
     font-size: 20px;
     font-family: 'Montserrat';
     font-weight: 500;
     color: black;
-  }
-   
-  .main-nav > div ul > li > a:hover {
+}
+
+.main-nav>div ul>li>a:hover {
     color: #7FE0B2;
-  }
-  
-  .main-nav .small-secreen > ul > li > a,
-  .main-nav .small-secreen > ul > li > div > ul > li a {
+}
+
+.main-nav .small-secreen>ul>li>a,
+.main-nav .small-secreen>ul>li>div>ul>li a {
     color: #181818 !important;
-  }
-  
-  .main-nav svg {
+}
+
+.main-nav svg {
     fill: black;
-  }
-  
-  #mobile-nav > li > a {
+}
+
+#mobile-nav>li>a {
     font-size: 30px;
     font-weight: 400;
     line-height: 63.98px;
-  }
-  
-  #mobile-nav a:hover,
-  #mobile-nav a:focus {
+}
+
+#mobile-nav a:hover,
+#mobile-nav a:focus {
     color: #D21034;
-  }
-  
-  #mobile-nav > li > div > ul > li > a {
+}
+
+#mobile-nav>li>div>ul>li>a {
     font-size: 24px;
     font-weight: 400;
-  }
-  
-  #mobile-nav > li > div > ul > li > div > ul > li > a {
+}
+
+#mobile-nav>li>div>ul>li>div>ul>li>a {
     font-size: 18px;
     font-weight: 400;
-  }
-  
-  .separator {
+}
+
+.separator {
     height: 3px;
     width: 100px;
     background-color: #D21034;
     display: block;
-  }
-  
-  .red {
+}
+
+.red {
     color: #D21034 !important;
-  }
-  
-  header .main-nav {
+}
+
+header .main-nav {
     z-index: 100;
-  }
-  
-  header #anniversary-logo {
+}
+
+
+.main-nav>div>div>a,
+.main-nav>div ul>li>a {
+    font-size: 20px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: black;
+}
+
+.main-nav>div ul>li>a:hover {
+    color: #7FE0B2;
+}
+
+.main-nav .small-secreen>ul>li>a,
+.main-nav .small-secreen>ul>li>div>ul>li a {
+    color: #181818 !important;
+}
+
+.main-nav svg {
+    fill: black;
+}
+
+#mobile-nav>li>a {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 63.98px;
+}
+
+#mobile-nav a:hover,
+#mobile-nav a:focus {
+    color: #D21034;
+}
+
+#mobile-nav>li>div>ul>li>a {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#mobile-nav>li>div>ul>li>div>ul>li>a {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.separator {
+    height: 3px;
+    width: 100px;
+    background-color: #D21034;
+    display: block;
+}
+
+.red {
+    color: #D21034 !important;
+}
+
+header .main-nav {
+    z-index: 100;
+}
+
+header #anniversary-logo {
     width: 100vw;
     height: 50px;
     top: 70px !important;
     left: 0;
     overflow: none;
     z-index: 1;
-  }
-  
-  @media screen and (max-width: 960px) {
+}
+
+@media screen and (max-width: 960px) {
     header #anniversary-logo {
-      top: 70px !important;
+        top: 70px !important;
     }
-  }
-  
-  @media screen and (max-width: 400px) {
+}
+
+@media screen and (max-width: 400px) {
     header #anniversary-logo {
-      top: 50px !important;
+        top: 50px !important;
     }
-  }
-  
-  header #anniversary-logo h1 {
+}
+
+header #anniversary-logo h1 {
     font-size: 25px;
     font-weight: 600;
     z-index: 1;
-  }
-  
-  header #anniversary-logo img {
+}
+
+header #anniversary-logo img {
     height: 120px;
     width: auto;
-  }
+}
 
 
 
@@ -10880,106 +10938,132 @@ textarea.form-control {
 
 @import url("../fonts/STV/style.css");
 @import url("../fonts/AlWatanHeadlines-Bold/style.css");
+
 #anniversary-logo h1 {
-  font-family: 'AlWatanHeadlines' !important;
-  font-size: 30px !important;
-  font-weight: 100 !important;
+    font-family: 'AlWatanHeadlines' !important;
+    font-size: 30px !important;
+    font-weight: 100 !important;
 }
 
 #anniversary-logo img {
-  height: 60px !important;
+    height: 60px !important;
 }
 
 nav a {
-  font-family: 'STV' !important;
+    font-family: 'STV' !important;
 }
 
 /*the navigation drawer nav links font here */
-#pills-tab > li a {
-  font-family: 'AlWatanHeadlines' !important;
-  font-size: bold;
+#pills-tab>li a {
+    font-family: 'AlWatanHeadlines' !important;
+    font-size: bold;
 }
 
-#pills-tabContent > div span {
-  font-family: 'AlWatanHeadlines' !important;
+#pills-tabContent>div span {
+    font-family: 'AlWatanHeadlines' !important;
 }
 
-#mobile-nav > li > a {
-  font-family: 'AlWatanHeadlines' !important;
+#mobile-nav>li>a {
+    font-family: 'AlWatanHeadlines' !important;
 }
 
-#mobile-nav > li > div > ul > li > a {
-  font-family: 'AlWatanHeadlines' !important;
+#mobile-nav>li>div>ul>li>a {
+    font-family: 'AlWatanHeadlines' !important;
 }
 
-#mobile-nav > li > div > ul > li > div > ul > li > a {
-  font-family: 'STV' !important;
+#mobile-nav>li>div>ul>li>div>ul>li>a {
+    font-family: 'STV' !important;
 }
 
 
-.navigationdrawer #pills-tabContent > div .sous-nav a {
-  font-size: 16px !important;
-  color: #181818 !important;
+.navigationdrawer #pills-tabContent>div .sous-nav a {
+    font-size: 16px !important;
+    color: #181818 !important;
 }
 
-.navigationdrawer #pills-tabContent > div span {
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 63.98px;
+.navigationdrawer #pills-tabContent>div span {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 63.98px;
 }
 
-.navigationdrawer #pills-tabContent > div > div > div > div > a {
-  font-family: 'Playfair Display' !important;
-  color: #181818 !important;
-  font-size: 24px;
+.navigationdrawer #pills-tabContent>div>div>div>div>a {
+    font-family: 'Playfair Display' !important;
+    color: #181818 !important;
+    font-size: 24px;
 }
 
-.navigationdrawer #pills-tabContent > div a.active {
-  background-color: transparent;
-  color: #D21034 !important;
+.navigationdrawer #pills-tabContent>div a.active {
+    background-color: transparent;
+    color: #D21034 !important;
 }
 
-.navigationdrawer #pills-tabContent > div a:hover {
-  color: #D21034 !important;
+.navigationdrawer #pills-tabContent>div a:hover {
+    color: #D21034 !important;
 }
 
-.navigationdrawer #pills-tabContent > div .separator {
-  margin: 10px 0 50px 0;
-  width: 90%;
-  background-color: #88BFA5;
+.navigationdrawer #pills-tabContent>div .separator {
+    margin: 10px 0 50px 0;
+    width: 90%;
+    background-color: #88BFA5;
 }
 
-.navigationdrawer > div > div > div > ul > li > a {
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 63.98px;
+.navigationdrawer>div>div>div>ul>li>a {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 63.98px;
 }
 
-.navigationdrawer > div > div > div > ul > li > a.active {
-  background-color: transparent !important;
-  color: #D21034 !important;
+.navigationdrawer>div>div>div>ul>li>a.active {
+    background-color: transparent !important;
+    color: #D21034 !important;
 }
 
-.navigationdrawer .contacts > li {
-  padding-top: 10px;
+.navigationdrawer .contacts>li {
+    padding-top: 10px;
 }
 
-.navigationdrawer .contacts > li a {
-  text-decoration: none;
-  font-family: 'Montserrat' !important;
-  display: block;
-  color: #1D1D1B;
+.navigationdrawer .contacts>li a {
+    text-decoration: none;
+    font-family: 'Montserrat' !important;
+    display: block;
+    color: #1D1D1B;
 }
 
 .navigationdrawer .separator {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 #pills-tab li {
-  text-indent: 100px;
+    text-indent: 100px;
 }
+
 /*# sourceMappingURL=ar-bis.css.map */
-  
- 
-/*# sourceMappingURL=ar-bis.css.map */
+
+
+
+
+.text p span {
+    font-family: 'AlWatanHeadlines-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 39px;
+
+    color: #1D1D1B;
+}
+
+.text p a {
+    font-family: 'STV';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    /* or 114% */
+
+    text-align: right;
+
+    color: #1D1D1B;
+
+}
