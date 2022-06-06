@@ -1113,3 +1113,8 @@ html {
 .element::-webkit-scrollbar {
   display: none; /* for Chrome, Safari, and Opera */
 }
+
+
+*{
+  font-family: 'Janna LT' !important;
+}

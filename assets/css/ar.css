@@ -1,6 +1,7 @@
 /* Importing arabic fonts */
 @import url("../fonts/STV/style.css");
 @import url("../fonts/AlWatanHeadlines-Bold/style.css");
+@import url('../fonts/wazara/stylesheet.css');
 
 #anniversary-logo h1 {
   font-family: 'AlWatanHeadlines' !important;
@@ -353,3 +354,9 @@ footer h3 {
 
 
 
+
+
+
+*{
+  font-family: 'Janna LT' !important;
+}

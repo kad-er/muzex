@@ -1,34 +1,35 @@
 /* Importing arabic fonts */
 @import url("../fonts/STV/style.css");
 @import url("../fonts/AlWatanHeadlines-Bold/style.css");
+@import url("../fonts/wazara/stylesheet.css");
 #anniversary-logo h1 {
-  font-family: 'AlWatanHeadlines' !important;
+  font-family: 'Janna LT' !important;
 }
 
 nav a {
-  font-family: 'STV' !important;
+  font-family: 'Janna LT' !important;
 }
 
 /*the navigation drawer nav links font here */
 #pills-tab > li a {
-  font-family: 'AlWatanHeadlines' !important;
+  font-family: 'Janna LT' !important;
   font-size: bold;
 }
 
 #pills-tabContent > div span {
-  font-family: 'AlWatanHeadlines' !important;
+  font-family: 'Janna LT' !important;
 }
 
 #mobile-nav > li > a {
-  font-family: 'AlWatanHeadlines' !important;
+  font-family: 'Janna LT' !important;
 }
 
 #mobile-nav > li > div > ul > li > a {
-  font-family: 'AlWatanHeadlines' !important;
+  font-family: 'Janna LT' !important;
 }
 
 #mobile-nav > li > div > ul > li > div > ul > li > a {
-  font-family: 'STV' !important;
+  font-family: 'Janna LT' !important;
 }
 
 .section-3 h1,
@@ -39,41 +40,41 @@ nav a {
 .section-4 h2,
 .section-4 a,
 .section-4 h3 {
-  font-family: 'AlWatanHeadlines' !important;
+  font-family: 'Janna LT' !important;
 }
 
 .section-6 .title {
-  font-family: 'AlWatanHeadlines';
+  font-family: 'Janna LT';
 }
 
 .section-6 .date,
 .section-6 .source {
-  font-family: 'STV' !important;
+  font-family: 'Janna LT' !important;
 }
 
 .section-6 .youth h1,
 .section-6 .youth h2,
 .section-6 .youth h3 {
-  font-family: 'AlWatanHeadlines' !important;
+  font-family: 'Janna LT' !important;
 }
 
 .section-6 .youth p {
-  font-family: 'STV';
+  font-family: 'Janna LT';
 }
 
 .section-6 .cta-link {
-  font-family: 'STV';
+  font-family: 'Janna LT';
 }
 
 footer .copy-rights,
 footer p,
 footer a,
 footer .input-group input {
-  font-family: 'STV';
+  font-family: 'Janna LT';
 }
 
 footer h3 {
-  font-family: 'AlWatanHeadlines';
+  font-family: 'Janna LT';
 }
 
 #mainSlider .slider1-text {
@@ -83,31 +84,31 @@ footer h3 {
 
 #mainSlider .slider1-text h2,
 #mainSlider .slider1-text h1 {
-  font-family: 'AlWatanHeadlines' !important;
+  font-family: 'Janna LT' !important;
 }
 
 #mainSlider .teboun h1 {
-  font-family: 'AlWatanHeadlines';
+  font-family: 'Janna LT';
 }
 
 #mainSlider .teboun small,
 #mainSlider .teboun p {
-  font-family: "STV";
+  font-family: "Janna LT";
 }
 
 .small-secreen-read-more a,
 .small-secreen-read-more h1,
 .small-secreen-read-more h2,
 .small-secreen-read-more h3 {
-  font-family: 'AlWatanHeadlines' !important;
+  font-family: 'Janna LT' !important;
 }
 
 .section-7 .nav > li > a {
-  font-family: 'Playfair Display' !important;
+  font-family: 'Janna LT' !important;
 }
 
 .section-7 .carousel-inner h3 {
-  font-family: 'AlWatanHeadlines' !important;
+  font-family: 'Janna LT' !important;
 }
 
 .section-6 {
@@ -193,7 +194,7 @@ footer h3 {
 }
 
 .navigationdrawer #pills-tabContent > div > div > div > div > a {
-  font-family: 'Playfair Display' !important;
+  font-family: 'Janna LT' !important;
   color: #181818 !important;
   font-size: 24px;
 }
@@ -230,7 +231,7 @@ footer h3 {
 
 .navigationdrawer .contacts > li a {
   text-decoration: none;
-  font-family: 'Montserrat' !important;
+  font-family: 'Janna LT' !important;
   display: block;
   color: #1D1D1B;
 }
@@ -242,5 +243,9 @@ footer h3 {
 
 #pills-tab li {
   text-indent: 100px;
+}
+
+* {
+  font-family: 'Janna LT' !important;
 }
 /*# sourceMappingURL=ar-bis.css.map */

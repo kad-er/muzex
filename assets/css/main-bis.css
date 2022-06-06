@@ -1,5 +1,6 @@
 /* importing fonts for both arabic and latin lang pages */
 @import url("../fonts/Montserrat/style.css");
+@import url("../fonts/wazara/stylesheet.css");
 .stv {
   font-family: 'STV' !important;
 }
@@ -176,7 +177,6 @@ header.add-shadow {
 .slider1-text h1,
 .slider1-text h2 {
   font-family: 'Playfair Display';
-  font-size: 70px;
   font-weight: 600;
   text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.6);
 }
@@ -184,16 +184,16 @@ header.add-shadow {
 @media screen and (min-width: 1200px) {
   .slider1-text h1,
   .slider1-text h2 {
-    font-size: 50px !important;
-    line-height: 60px !important;
+    font-size: 90px !important;
+    line-height: 90px !important;
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 1200px) {
   .slider1-text h1,
   .slider1-text h2 {
-    font-size: 50px !important;
-    line-height: 60px !important;
+    font-size: 70px !important;
+    line-height: 70px !important;
   }
   .slider1-text p {
     font-size: 20px !important;
@@ -201,11 +201,22 @@ header.add-shadow {
   }
 }
 
+@media screen and (max-width: 700px) {
+  .slider1-text h1,
+  .slider1-text h2 {
+    font-size: 60px !important;
+    line-height: 60px !important;
+  }
+  .slider1-text p {
+    font-size: 17px !important;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .slider1-text h1,
   .slider1-text h2 {
     font-size: 40px !important;
-    line-height: 60px !important;
+    line-height: 40px !important;
   }
   .slider1-text p {
     font-size: 17px !important;
@@ -1042,5 +1053,34 @@ html {
 
 .section-7 .carousel-inner .carousel-img-bislem:hover p {
   top: 0;
+}
+
+.nav-link:hover ~ .separator {
+  -webkit-animation: navanimation 5s linear;
+          animation: navanimation 5s linear;
+}
+
+@-webkit-keyframes navanimation {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 50%;
+  }
+  0% {
+    width: 0%;
+  }
+}
+
+@keyframes navanimation {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 50%;
+  }
+  0% {
+    width: 0%;
+  }
 }
 /*# sourceMappingURL=main-bis.css.map */

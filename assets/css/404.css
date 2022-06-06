@@ -10,6 +10,10 @@ a {
     text-decoration: none;
 }
 
+
+*{
+  font-family: 'Janna LT' !important;
+}
 .errorPage__templeweed-container {
     position: absolute;
     bottom: 20px;

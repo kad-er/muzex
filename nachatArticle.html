@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ar" style="height:100%">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prehistoric Article</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- bootstrap javascript  -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- custom css includs importing fonts -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/main-bis.css">
+    <!-- latin fonts including rtl styles -->
+    <link rel="stylesheet" href="./assets/css/ar-bis.css">
+    <!-- Font awsome -->
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <script src="./node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+</head>
+
+<body dir="rtl" style="min-height: 100%;background-color: #FEE9D1;">
+    <div class="d-flex">
+        <!-- three butons offcanvas -->
+        <div class="align-items-center d-flex min-vh-100 mx-4" data-bs-toggle="offcanvas" href="#offcanvasExample"
+            role="button" aria-controls="offcanvasExample">
+            <svg width="8" height="40" viewBox="0 0 8 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="4" cy="36" r="4" transform="rotate(-90 4 36)" fill="#D21034" />
+                <circle cx="4" cy="4" r="4" transform="rotate(-90 4 4)" fill="#D21034" />
+                <circle cx="4" cy="20" r="4" transform="rotate(-90 4 20)" fill="#D21034" />
+            </svg>
+
+        </div>
+        <!-- <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"
+            style="background-color: #A4E2C5B2;">
+            <div class="offcanvas-header ">
+                <h5 class="offcanvas-title my-4 mx-5" id="offcanvasExampleLabel" style="font-family: AlWatanHeadlines;
+              font-size: 24px;
+              font-weight: 700;
+              line-height: 52px;
+              letter-spacing: 0em;
+              text-align: right;
+              ">المقالات المتعلقة بهذا الموضوع</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <nav class="nav flex-column">
+                    <li class="nav-item my-2">
+                        <span class="separator w-25"></span>
+                        <a class="nav-link active" href="#" style="font-family: STV;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 22px;
+                        letter-spacing: 0em;
+                        text-align: right;
+                        color: #1D1D1B;
+                        ">I-الديبلوماسية الجزائرية عبر التاريخ 
+                        </a>
+                    </li>
+                    <li class="nav-item my-2">
+                        <span class="separator w-25"></span>
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" style="font-family: STV;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 22px;
+                        letter-spacing: 0em;
+                        text-align: right;
+                        color: #1D1D1B;
+                        ">II-الديبلوماسية الجزائرية عبر التاريخ 
+                        </a>
+                    </li>
+                    <li class="nav-item my-2">
+                        <span class="separator w-25"></span>
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" style="font-family: STV;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 22px;
+                        letter-spacing: 0em;
+                        text-align: right;
+                        color: #1D1D1B;
+                        ">  III-الديبلوماسية الجزائرية عبر التاريخ
+                        </a>
+                    </li>
+                    
+                </nav>
+            </div>
+        </div> -->
+
+
+
+        <header id="header" class="fixed-top top-0 end-0 start-0">
+
+            <nav class="navbar bg-dark transparent main-nav">
+
+                <div class="container-lg container-xxl container-xl d-flex flex-row">
+                    <!-- search bar and language link to switch -->
+
+                    <div class="d-flex flex-row align-items-center">
+                        <!-- Menu button  -->
+                        <button class="navbar-toggler shadow-none me-3 text-white" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                            aria-controls="offcanvasNavbar">
+                            <!-- the menu humburger icon -->
+                            <i class="fa-solid fa-bars fa-2x"></i>
+                        </button>
+                    </div>
+
+                    <!-- Main navigation -->
+                    <ul class="nav flex-row">
+                        <li class="nav-item d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+                            <a class="nav-link text-end" href="index.html#">الرئيسية</a>
+                        </li>
+                        <li class="nav-item d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+                            <a class="nav-link text-end" href="index.html#section_2">تاريخ مجيد</a>
+                        </li>
+                        <li class="nav-item d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+                            <a class="nav-link active" aria-current="page" href="index.html#section_4">النشاطات</a>
+                        </li>
+                        <li class="nav-item d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+                            <a class="nav-link" href="index.html#section_5">برامج النشاطات</a>
+                        </li>
+
+                        <li>
+                            <!-- Button trigger modal -->
+                            <a type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                class="btn btn-default navbar-btn">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </li>
+
+
+                        <!-- <li class="nav-item">
+                        <a class="nav-link">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </li> -->
+                    </ul>
+
+                    <!-- The navigation drawer  -->
+                    <div class="offcanvas offcanvas-end navigationdrawer min-vw-100" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <!-- the close button in the top -->
+                        <div class="offcanvas-header d-flex flex-row-reverse fixed-top">
+                            <h5 class="offcanvas-title text-white" style="font-weight: 100" id="offcanvasNavbarLabel">
+                                #مقام_الشهيد
+                            </h5>
+                            <button type="button" class="btn-close btn btn-outline-light p-2 m-1 me-3"
+                                style="font-size: 20px;border-radius: 50%;" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+
+                        <!-- this section is the menu that will show up when window > 768px -->
+                        <div class="d-flex flex-row-reverse  min-vh-100 d-md-flex d-lg-flex d-xxl-flex">
+
+                            <!-- the image of the martyr's memorial -->
+                            <div class="col-6 overflow-hidden">
+                                <div class="tab-content navigationdrawer-tabs d-block d-none" id="pills-tabContent">
+                                    <!-- tabs starts from here  -->
+                                    <div class="d-">
+
+                                        <!-- history tab -->
+                                        <div class="tab-pane fade p-5" id="history-tab" role="tabpanel"
+                                            aria-labelledby="pills-history-tab">
+                                            <span dir="rtl" class="mt-3 d-block">
+                                                تاريخ</span>
+                                            <div class="separator"></div>
+                                            <div class="d-flex align-items-start">
+                                                <div class="nav flex-column nav-pills me-3" id="v-pills-tab"
+                                                    role="tablist" aria-orientation="vertical">
+                                                    <a class="nav-link active" id="v-pills-b-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#v-pills-b" type="button" role="tab"
+                                                        aria-controls="v-pills-b" aria-selected="true">العصور القديمة
+                                                    </a>
+                                                    <a class="nav-link" id="v-pills-a-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#v-pills-a" type="button" role="tab"
+                                                        aria-controls="v-pills-a" aria-selected="false">العصر الوسيط
+                                                    </a>
+                                                    <a class="nav-link" id="v-pills-z-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#v-pills-z" type="button" role="tab"
+                                                        aria-controls="v-pills-z" aria-selected="false">العصر الحديث</a>
+                                                    <a class="nav-link" id="v-pills-y-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#v-pills-y" type="button" role="tab"
+                                                        aria-controls="v-pills-y" aria-selected="false">التاريخ
+                                                        المعاصر</a>
+                                                </div>
+                                                <!-- the tab > tab contents -->
+                                                <div class="tab-content" id="v-pills-tabContent">
+
+                                                    <div class="tab-pane fade show active" id="v-pills-b"
+                                                        role="tabpanel" aria-labelledby="v-pills-b-tab">
+                                                        <ul class="sous-nav nav flex-column">
+                                                            <li class="nav-item">
+                                                                <a href="#" class="nav-link">
+                                                                    رجل ما قبل التاريخ
+                                                                </a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a href="#" class="nav-link">
+                                                                    حضارة ما قبل التاريخ
+                                                                </a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a href="#" class="nav-link">
+                                                                    مواقع ما قبل التاريخ
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-a" role="tabpanel"
+                                                        aria-labelledby="v-pills-a-tab">
+                                                        العصور القديمة
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-z" role="tabpanel"
+                                                        aria-labelledby="v-pills-z-tab">
+                                                        العصور الوسطى
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-y" role="tabpanel"
+                                                        aria-settings="v-pills-y-tab">
+                                                        العصور الحديثة </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="offcanvas-img" id="offcanvas-img">
+                                    <img class="img-fluid min-vh-100" src="./assets/images/martyrsMemorial.png"
+                                        alt="Martyr's Memorial Algeria" />
+                                </div>
+
+                            </div>
+
+
+                            <!-- the content of the navigation drawer  -->
+                            <div class="col-6">
+                                <div class="d-flex flex-row">
+                                    <!-- Nav menu  -->
+                                    <ul id="pills-tab" role="tablist"
+                                        class="col-md-12 nav nav-pills justify-content-center navbar-nav d-flex flex-column pt-5 px-0">
+                                        <li class="nav-item d-inline text-capitalize">
+                                            <a class="nav-link text-black tab-trigger" aria-current="page" id="history"
+                                                data-bs-toggle="pill" data-bs-target="#history-tab" type="button"
+                                                role="tab" aria-controls="history-tab" aria-selected="false">
+                                                تاريخ مجيد</a>
+                                        </li>
+                                        <li class="nav-item text-capitalize">
+                                            <a class="nav-link text-black tab-trigger" aria-current="page" href="#"
+                                                id="events" data-bs-toggle="pill" data-bs-target="#events-tab"
+                                                type="button" role="tab" aria-controls="evenst-tab"
+                                                aria-selected="false">إنجازات</a>
+                                        </li>
+                                        <li class="nav-item text-capitalize">
+                                            <a class="nav-link text-black tab-trigger" aria-current="page" href="#"
+                                                id="events" data-bs-toggle="pill" data-bs-target="#events-tab"
+                                                type="button" role="tab" aria-controls="evenst-tab"
+                                                aria-selected="false">النشاطات</a>
+                                        </li>
+                                        <li class="nav-item text-capitalize">
+                                            <a class="nav-link text-black" href="#">إتصل بنا</a>
+                                        </li>
+                                        <li class="nav-item text-capitalize">
+                                            <a class="nav-link text-black" href="#">الرئيسية</a>
+                                        </li>
+
+                                        <div class="separator my-0 w-50" style="margin-right: 100px;"></div>
+                                        <div class="contacts">
+                                            <li class="nav-item text-capitalize">
+                                                <a class="text-black" href="tel:+213xxxxxxxxx">023-555-555</a>
+                                            </li>
+                                            <li class="nav-item text-capitalize">
+                                                <a class="text-black"
+                                                    href="mailto:contact@domain.com">contact@domain.com</a>
+                                            </li>
+                                            <li class="nav-item text-capitalize" -->
+                                                <!-- Social media Icons -->
+                                                <span class="mb-2 d-block"><strong class="montserrat">Follow
+                                                        us</strong></span>
+                                                <div class="row">
+                                                    <div class="col-1">
+                                                        <a href="#" target="_blank" rel="noopener noreferrer">
+                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-1">
+                                                        <a href="#" target="_blank" rel="noopener noreferrer">
+                                                            <i class="fa-brands fa-twitter"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-1">
+                                                        <a href="#" target="_blank" rel="noopener noreferrer">
+                                                            <i class="fa-brands fa-instagram"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- this is the mobile menu is will show up only in mobiles will show in small screens  -->
+                        <div class="d-flex justify-content-center text-center flex-row mt-5 small-secreen">
+                            <ul class="nav d-flex flex-column justify-content-center text-center" id="mobile-nav">
+                                <li class="nav-item text-center">
+                                    <a class="nav-link text-center" data-bs-toggle="collapse" href="#h" role="button"
+                                        aria-expanded="false" aria-controls="h">
+                                        تاريخ
+                                    </a>
+                                    <div class="collapse" id="h">
+                                        <ul class="sous-nav nav flex-column">
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-bs-toggle="collapse" href="#man" role="button"
+                                                    aria-expanded="false" aria-controls="man">
+                                                    عصور ما قبل التاريخ
+                                                </a>
+                                                <div class="collapse" id="man">
+                                                    <ul class="sous-nav nav flex-column">
+                                                        <li class="nav-item">
+                                                            <a href="#" class="nav-link">
+                                                                رجل ما قبل التاريخ
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="#" class="nav-link">
+                                                                مواقع ما قبل التاريخ
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="#" class="nav-link">
+                                                                حضارة ما قبل التاريخ
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link">
+                                                    العصور القديمة
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link">
+                                                    العصور الوسطى
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link">
+                                                    العصور الحديثة
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link">
+                                                    الحقبة المعاصرة
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item text-center">
+                                    <a class="nav-link text-center" data-bs-toggle="collapse" href="#" role="button"
+                                        aria-expanded="false" aria-controls="">
+                                        عهد جديد
+                                    </a>
+                                </li>
+                                <li class="nav-item text-center">
+                                    <a class="nav-link text-center" data-bs-toggle="collapse" href="#" role="button"
+                                        aria-expanded="false" aria-controls="">
+                                        النشاطات
+                                    </a>
+                                </li>
+                                <li class="nav-item text-center">
+                                    <a class="nav-link text-center" data-bs-toggle="collapse" href="#" role="button"
+                                        aria-expanded="false" aria-controls="">
+                                        إتصل بنا
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+
+        <div class="container mt-5 my-2">
+            <nav class="nav my-2">
+                <main class="d-flex">
+                    <div class="col mx-4 mt-5">
+                        <h3 style="font-family: AlWatanHeadlines;
+                    font-size: 64px;
+                    font-weight: 700;
+                    line-height: 64px;
+                    letter-spacing: 0em;
+                    text-align: right;
+                    ">
+                            نشاط اليوم
+                        </h3>
+                        <p style="font-family: STV;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 28px;
+                    letter-spacing: 0em;
+                    text-align:justify;
+                    ">
+                            نشاط اليوم :<br>
+                            استخدم الإنسان في فجر هذا العصر حجر الصوان في صناعة أدواته وكانت على شكل قطع مسطحة ذات حواف
+                            مسننة نتيجة عملية التشظية عرفت بالأداة ذات الوجهين، وكان الإنسان يستخدم في صناعة هذه الآلات
+                            تقنيات مختلفة، وقد تطورت هذه الصناعة الحجرية بعد ذلك فظهرت الفأس اليدوية التي تميزت بشكلها
+                            الكمثري وجوانبها الحادة غير المنتظمة، وإذا كان العلماء قد شككوا في بداية الامر أن تكون مثل
+                            هذه
+                            الأدوات من صنع الإنسان إلا أن ازدياد العثور على مثل هذه الأدوات وبكميات كبيرة في أماكن
+                            مختلفة
+                            وإلى جانب بقايا حيوانية لم تدع مجالا للشك في أنها ليست من صنع الطبيعة.
+                            وتنتمي هذه الصناعة إلى ما يعرف بالحضارة الأشولية نسبة الى موقع سانت أشول بفرنسا الذي تم
+                            الكشف
+                            فيه على هذه الفؤوس الحجرية لأول مرة، وتسمى أدواتها باسم صناعة النواة لأنها كانت تصنع مباشرة
+                            من
+                            نواة الصوان حيث يقوم الانسان بإدخال بعض التحسينات على وجهيها عن طريق الطرق قصد الحصول على
+                            حافة
+                            حادة، أما زمنيا فتعتبر من حضارات العصر الحجري القديم الأسفل.
+                            وظهرت هذه الصناعة الأشولية أول الأمر في إفريقيا الشرقية ثم انتشرت فيما بعد في افريقيا
+                            الشمالية
+                            والشرق الاوسط وتوسع مجالها بعد ذلك ليشمل ‬مختلف مناطق اوروبا .
+                        </p>
+                    </div>
+                    <div class="col mt-5">
+                        <div id="imgtext" style="font-family: STV;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 28px;
+                    letter-spacing: 0em;
+                    text-align: justify;
+                    ">نشاط اليوم</div>
+                        <div class="col my-2">
+
+                            <!-- Expanded image -->
+                            <img class="img-fluid rounded-2" id="expandedImg" src="./assets/images/d3.png"
+                                style="max-height: 300px;max-width:300px" alt="image 1">
+
+                        </div>
+                        <div class="row d-flex">
+
+                            <div class="col">
+                                <img class="img-fluid" src="./assets/images/d2.png" onclick="myFunction(this);"
+                                    alt="أدوات حجرية أشولية">
+                            </div>
+                            <div class="col">
+                                <img class="img-fluid" src="./assets/images/d1.png" onclick="myFunction(this);"
+                                    alt="نقوش داخل الكهوف">
+                            </div>
+                            <div class="col">
+                                <img class="img-fluid" src="./assets/images/d3.png" alt="أثار قديمة"
+                                    onclick="myFunction(this);">
+                            </div>
+                        </div>
+                    </div>
+
+                </main>
+        </div>
+    </div>
+    <script>
+        function myFunction(imgs) {
+            // Get the expanded image
+            var expandImg = document.getElementById("expandedImg");
+            // Get the image text
+            var imgText = document.getElementById("imgtext");
+            // Use the same src in the expanded image as the image being clicked on from the grid
+            expandImg.src = imgs.src;
+            // Use the value of the alt attribute of the clickable image as text inside the expanded image
+            imgText.innerHTML = imgs.alt;
+            // Show the container element (hidden with CSS)
+            expandImg.parentElement.style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
