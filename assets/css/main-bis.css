@@ -381,13 +381,21 @@ header.add-shadow {
 }
 
 body {
-  background-color: #FFFFFF;
-  overflow-x: hidden;
-  position: relative;
+  background-color: #1D1D1B;
 }
 
 html {
   overflow-x: hidden !important;
+}
+
+#jdida {
+  min-height: 100vh !important;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  background-image: url("../images/Group 220.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px 50px;
 }
 
 .section-3 {
