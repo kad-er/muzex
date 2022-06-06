@@ -17,27 +17,6 @@ nav a {
   font-family: 'STV' !important;
 }
 
-/*the navigation drawer nav links font here */
-#pills-tab>li a {
-  font-family: 'AlWatanHeadlines' !important;
-  font-size: bold;
-}
-
-#pills-tabContent>div span {
-  font-family: 'AlWatanHeadlines' !important;
-}
-
-#mobile-nav>li>a {
-  font-family: 'AlWatanHeadlines' !important;
-}
-
-#mobile-nav>li>div>ul>li>a {
-  font-family: 'AlWatanHeadlines' !important;
-}
-
-#mobile-nav>li>div>ul>li>div>ul>li>a {
-  font-family: 'STV' !important;
-}
 
 .section-3 h1,
 .section-3 h2,
@@ -214,11 +193,9 @@ footer h3 {
   font-size: 48px;
   font-weight: 500;
   line-height: 63.98px;
-  text-align: left;
 }
 
 .navigationdrawer #pills-tabContent>div>div>div>div>a {
-  font-family: 'Playfair Display' !important;
   color: #181818 !important;
   font-size: 24px;
 }
@@ -242,7 +219,6 @@ footer h3 {
   font-size: 48px;
   font-weight: 500;
   line-height: 63.98px;
-  text-align: left;
 }
 
 .navigationdrawer>div>div>div>ul>li>a.active {
@@ -251,13 +227,13 @@ footer h3 {
 }
 
 .navigationdrawer .contacts>li {
-  text-align: left !important;
+  text-align: right !important;
   padding-top: 10px;
 }
 
 .navigationdrawer .contacts>li a {
   text-decoration: none;
-  text-align: left !important;
+  text-align: right !important;
   font-family: 'Montserrat' !important;
   display: block;
   color: #1D1D1B;
@@ -343,18 +319,11 @@ footer h3 {
 
 .nav li {
   font-family: 'STV';
-  
   font-style: normal;
   font-weight: 400;
-  font-size: 28px;
   line-height: 31px;
   color: white;
 }
-
-
-
-
-
 
 
 *{

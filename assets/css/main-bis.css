@@ -126,10 +126,11 @@ header.add-shadow {
 
 .rounded-btn {
   font-size: 30px;
-  color: #FFFFFF;
+  color: #1D1D1B;
   justify-self: flex-end;
   padding: 8px;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #a6a6a6;
+  background-color: #FFFFFF;
   height: 60px;
   width: 60px;
   border-radius: 50%;
@@ -380,7 +381,7 @@ header.add-shadow {
 }
 
 body {
-  background-color: #1D1D1B;
+  background-color: #FFFFFF;
   overflow-x: hidden;
   position: relative;
 }
@@ -393,15 +394,10 @@ html {
   min-height: 100vh !important;
   -webkit-box-sizing: border-box !important;
           box-sizing: border-box !important;
-}
-
-@media screen and (min-width: 700px) {
-  .section-3 {
-    background-image: url("../images/Group 220.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 10px 50px;
-  }
+  background-image: url("../images/Group 220.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px 50px;
 }
 
 @media screen and (max-width: 500px) {
@@ -1082,5 +1078,46 @@ html {
   0% {
     width: 0%;
   }
+}
+
+.section-jadid {
+  min-height: 100vh;
+}
+
+.section-jadid h1 {
+  font-size: 100px;
+  line-height: 100px;
+}
+
+@media (max-width: 992px) {
+  .section-jadid h1 {
+    font-size: 70px;
+  }
+  .section-jadid img {
+    width: 100%;
+    -webkit-transform: none !important;
+            transform: none !important;
+  }
+}
+
+.section-jadid .slider1-text {
+  padding-left: 150px !important;
+  background: #D21034;
+  display: inline-block !important;
+}
+
+@media (max-width: 992px) {
+  .section-jadid .slider1-text {
+    padding: 20px !important;
+  }
+}
+
+.section-jadid .slider1-text h2 {
+  font-size: 50px !important;
+  line-height: 50px !important;
+}
+
+.section-jadid .slider1-text p {
+  font-size: 18px !important;
 }
 /*# sourceMappingURL=main-bis.css.map */
