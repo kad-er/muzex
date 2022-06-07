@@ -55,7 +55,7 @@
       text-shadow: 7px 7px 20px #00000026;
     }
 
-    .errorPage__text h1 {
+    .errorPage__text h4 {
              
       font-family: 'Janna LT';
       font-style: normal;
@@ -66,13 +66,14 @@
       line-height: 1;
       margin: 0;
       letter-spacing: 0.1em;
-      margin-bottom: 50px;
+      margin-bottom: 35px;
       color: #006233;
       text-shadow: 7px 7px 20px #00000026;
    
-
+      margin-bottom: 0rem;
       
     }
+    
 
     .errorPage__text p {
       font-family: 'Montserrat';
@@ -84,7 +85,27 @@
       color: #1D1D1B;
       text-shadow: 7px 7px 20px #00000026;
 
+
     }
+
+    
+    .pa {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 25px;
+      text-align: center;
+      color: #1D1D1B;
+      text-shadow: 7px 7px 20px #00000026;
+      margin-bottom: 0rem;
+
+    }
+
+    
+
+    
+
 
     .errorPage__text a {
       font-family: 'Montserrat';
@@ -95,6 +116,8 @@
       text-align: center;
       color: #1D1D1B;
       text-shadow: 7px 7px 20px #00000026;
+    
+
     }
 
     .errorPage__text a:hover {
