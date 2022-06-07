@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" style="height:100%">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,15 +16,37 @@
     <!-- Font awsome -->
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
     <script src="./node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+    <style>
+        .carousel-control-prev-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+        }
+
+        .carousel-control-next-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+        }
+
+        .main-nav>div>div>a,
+        .main-nav>div ul>li>a {
+            font-size: 20px;
+            font-family: "Montserrat";
+            font-weight: 500;
+            color: #323232;
+        }
+
+        .justified {
+            text-align: justify;
+        }
+    </style>
 </head>
-<body dir="rtl">
-    <nav class="navbar gradient bg-dark transparent main-nav">
+
+<body dir="rtl" class="d-flex flex-column vh-100 ">
+    <nav class="navbar gradient container transparent main-nav d-block position-static">
         <div class="container-lg container-xxl container-xl d-flex flex-row">
             <!-- search bar and language link to switch -->
 
             <div class="d-flex flex-row align-items-center">
                 <!-- Menu button  -->
-                <button class="navbar-toggler shadow-none me-3 text-white" type="button" data-bs-toggle="offcanvas"
+                <button class="navbar-toggler shadow-none me-3 text-dark" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <!-- the menu humburger icon -->
                     <i class="fa-solid fa-bars fa-2x"></i>
@@ -65,7 +88,7 @@
                 aria-labelledby="offcanvasNavbarLabel">
                 <!-- the close button in the top -->
                 <div class="offcanvas-header d-flex flex-row-reverse fixed-top">
-                    <h5 class="offcanvas-title text-white" style="font-weight: 100" id="offcanvasNavbarLabel">
+                    <h5 class="offcanvas-title" style="font-weight: 100" id="offcanvasNavbarLabel">
                         #مقام_الشهيد
                     </h5>
                     <button type="button" class="btn-close btn btn-outline-light p-2 m-1 me-3"
@@ -163,14 +186,14 @@
                                         تاريخ مجيد</a>
                                 </li>
                                 <li class="nav-item text-capitalize">
-                                    <a class="nav-link text-black tab-trigger" aria-current="page" href="#"
-                                        id="events" data-bs-toggle="pill" data-bs-target="#events-tab" type="button"
-                                        role="tab" aria-controls="evenst-tab" aria-selected="false">إنجازات</a>
+                                    <a class="nav-link text-black tab-trigger" aria-current="page" href="#" id="events"
+                                        data-bs-toggle="pill" data-bs-target="#events-tab" type="button" role="tab"
+                                        aria-controls="evenst-tab" aria-selected="false">إنجازات</a>
                                 </li>
                                 <li class="nav-item text-capitalize">
-                                    <a class="nav-link text-black tab-trigger" aria-current="page" href="#"
-                                        id="events" data-bs-toggle="pill" data-bs-target="#events-tab" type="button"
-                                        role="tab" aria-controls="evenst-tab" aria-selected="false">النشاطات</a>
+                                    <a class="nav-link text-black tab-trigger" aria-current="page" href="#" id="events"
+                                        data-bs-toggle="pill" data-bs-target="#events-tab" type="button" role="tab"
+                                        aria-controls="evenst-tab" aria-selected="false">النشاطات</a>
                                 </li>
                                 <li class="nav-item text-capitalize">
                                     <a class="nav-link text-black" href="#">إتصل بنا</a>
@@ -185,8 +208,7 @@
                                         <a class="text-black" href="tel:+213xxxxxxxxx">023-555-555</a>
                                     </li>
                                     <li class="nav-item text-capitalize">
-                                        <a class="text-black"
-                                            href="mailto:contact@domain.com">contact@domain.com</a>
+                                        <a class="text-black" href="mailto:contact@domain.com">contact@domain.com</a>
                                     </li>
                                     <li class="nav-item text-capitalize" -->
                                         <!-- Social media Icons -->
@@ -289,5 +311,97 @@
             </div>
         </div>
     </nav>
+    <main class=" container flex-auto flex-fill justify-content-center align-items-center d-flex" style="width: 100%;">
+        <div id="carouselId" class="carousel slide" data-bs-ride="carousel" style="width: 100%" data-bs-wrap="false"
+            data-bs-interval="false">
+
+            <div class="carousel-inner" role="listbox">
+
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row justify-content-center d-block d-lg-flex">
+                            <div class="col-5 ">
+                                <div
+                                    style="height: 350px;width:350px;background-color: red; position:absolute;z-index: -1;transform: translate(25px,-25px);">
+                                </div>
+                                <img src="./assets/images/11.jpg" alt=""
+                                    style="width: 350px;height: 350px;transform: translateY(25px)">
+                            </div>
+                            <div class="col-4">
+                                <h3>
+                                    المقاومة
+                                    في بلاد القبائل
+                                </h3>
+                                <p class="justified">خاضت منطقة جرجرة مواجهات مستمرة و عنيفة ضد محاولات الاستدمار
+                                    الفرنسي التوغل في المنطقة،و محاولة اخضاعها بالقوة العسكرية ،وقد برزت العديد من
+                                    الشخصيات المقاومة و كتبت المنطقة فصول رائعة من التضحيات رغم الآمها.</p>
+                                <a href="moqawama-article.html" class="align-left" style="color:red"> اقرأ المزيد</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="container">
+                        <div class="row justify-content-center d-block d-lg-flex">
+                            <div class="col-5 ">
+                                <div
+                                    style="height: 350px;width:350px;background-color: red; position:absolute;z-index: -1;transform: translate(25px,-25px);">
+                                </div>
+                                <img src="./assets/images/10.jpg" alt=""
+                                    style="width: 350px;height: 350px;transform: translateY(25px)">
+                            </div>
+                            <div class="col-4">
+                                <h3>
+                                    المقاومة
+                                    في بلاد القبائل
+                                </h3>
+                                <p class="justified">خاضت منطقة جرجرة مواجهات مستمرة و عنيفة ضد محاولات الاستدمار
+                                    الفرنسي التوغل في المنطقة،و محاولة اخضاعها بالقوة العسكرية ،وقد برزت العديد من
+                                    الشخصيات المقاومة و كتبت المنطقة فصول رائعة من التضحيات رغم الآمها.</p>
+                                <a href="moqawama-article.html" class="align-left" style="color:red"> اقرأ المزيد</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev text-black align-items-end" type="button" data-bs-target="#carouselId"
+                data-bs-slide="prev">
+                <svg width="48" height="16" viewBox="0 0 48 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.25492 12.9782L5.78827 9.51159L48 9.51159V6.48773L5.78827 6.48773L9.25492 3.02098L7.11685 0.882813L0 7.99966L7.11685 15.1164L9.25492 12.9782Z"
+                        fill="#1D1D1B" />
+                </svg>
+            </button>
+            <button class="carousel-control-next text-black align-items-end" type="button" data-bs-target="#carouselId"
+                data-bs-slide="next">
+                <svg aria-hidden="false" width="48" height="16" viewBox="0 0 48 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M38.7451 3.02176L42.2117 6.48841L0 6.48841L0 9.51227L42.2117 9.51227L38.7451 12.979L40.8831 15.1172L48 8.00034L40.8831 0.883589L38.7451 3.02176Z"
+                        fill="#8F8F8F" />
+                </svg>
+
+
+            </button>
+        </div>
+    </main>
+
+    <footer class="justify-self-end w-100 container">
+        <span class="separator w-100 bg-black"></span>
+        <div class="d-flex  justify-content-between">
+            <div class="col-auto my-2">
+                <span class="separator w-50 my-2" style="background-color: green"></span>
+                <span class="" style="color: green">المقاومات</span>
+            </div>
+            <div class="col-auto my-2">
+                <span>الحقبة</span>
+                <p>1,5 مليون سنة الى 100.000 سنة</p>
+            </div>
+        </div>
+
+    </footer>
 </body>
+
 </html>
