@@ -428,15 +428,24 @@ header.add-shadow {
 }
 
 body {
-    background-image: url(../images/1028.png);
-    overflow-x: hidden;
-    position: relative;
+    background-color: #1D1D1B;
 }
 
 html {
     overflow-x: hidden !important;
 }
 
+
+#jdida{
+    min-height: 100vh !important;
+    box-sizing: border-box !important;
+
+    background-image: url('../images/Group\ 220.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 50px;
+
+}
 
 .section-3 {
     min-height: 100vh !important;
@@ -1133,7 +1142,7 @@ html {
     }
     .slider1-text {
         padding-left: 150px !important;
-        background: #D21034;
+        background: hsla(0, 0%, 100%, 0.8);
         display: inline-block !important;
         @media (max-width: 992px) {
             padding: 20px !important;
