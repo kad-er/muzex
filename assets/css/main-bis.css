@@ -1088,6 +1088,10 @@ html {
   }
 }
 
+.contacts-bislem-footer a {
+  color: black !important;
+}
+
 .section-jadid {
   min-height: 100vh;
 }
@@ -1110,7 +1114,6 @@ html {
 
 .section-jadid .slider1-text {
   padding-left: 150px !important;
-  background: #d210343c;
   display: inline-block !important;
 }
 
@@ -1121,8 +1124,8 @@ html {
 }
 
 .section-jadid .slider1-text h2 {
-  font-size: 50px !important;
-  line-height: 50px !important;
+  font-size: 80px !important;
+  line-height: 80px !important;
 }
 
 .section-jadid .slider1-text p {
