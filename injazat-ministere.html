@@ -33,15 +33,43 @@
     <!-- Font awsome -->
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
     <script src="./node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
-    
+
+    <style>
+        
+            ::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: #EEE;
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background: rgb(22, 116, 10);
+}
+.nav-link{
+    color: white;
+    font-weight: bold;
+}
+.nav-link:hover{
+color: rgb(115, 238, 115);
+}
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(115, 238, 115);
+}
+        
+    </style>
 
 </head>
 
-<body dir="rtl" style="background-color:#A4E2C5; background-image: url('./assets/images/Group\ 220.png');background-repeat: no-repeat;background-size: cover;"
-    class="h-100 flex-column d-flex">
+<body dir="rtl" style="background-color:#A4E2C5; background-image: url('./assets/images/Group\ 220.png');background-size: cover;"
+    class="h-100 flex-md-column d-md-flex">
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent " style="height: fit-content">
+    <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-transparent " style="height: fit-content">
         <div class="container">
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
@@ -54,7 +82,7 @@
               font-weight: 500;
               ">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index_ar.html#">الرئيسية</a>
+                        <a class="nav-link linked" href="index_ar.html#">الرئيسية</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="index_ar.html#section_2">تاريخ مجيد <span
@@ -81,7 +109,7 @@
         </div>
     </nav>
 
-    <div class="container-fluid d-sm-flex d-xs-block justify-content-evenly flex-grow-1 align-items-center" style="min-height: 500px;">
+    <div class="container-fluid d-md-flex d-xs-block justify-content-evenly flex-grow-1 align-items-center" style="min-height: 500px;">
         <nav class="nav flex-sm-column flex-nowrap overflow-auto" style="max-height: 500px ; min-width: fit-content;">
             <div class="nav-item col-auto d-flex ">
                 <div class="d-flex align-items-center w-25">
@@ -271,7 +299,7 @@
         </div>
 
     </div>
-    <footer class="container-fluid d-flex justify-content-end my-2" style="">
+    <footer class="container-fluid d-flex justify-content-end my-2 bg-transparent" style="">
         <div class="d-flex rounded-2" style=" max-width: fit-content;background-color:burlywood;max-height: 60px; ">
             <div class="col mx-2">
                 <img src="./assets/images/logo.png" alt="" class="img-fluid img"
