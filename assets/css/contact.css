@@ -10577,7 +10577,7 @@ a.text-dark:focus {
 body {
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    overflow:hidden;
     background-color: #FEE9D1;
 }
 
@@ -11066,4 +11066,7 @@ nav a {
 
     color: #1D1D1B;
 
+}
+.ftco-section{
+    margin-top: 48px;
 }
