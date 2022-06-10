@@ -29,7 +29,8 @@
     <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css" />
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- fontawsome script -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous"> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
     <script src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
     <!-- custom css includs importing fonts -->
     <link rel="stylesheet" href="./assets/css/main-bis.css" />
@@ -60,6 +61,26 @@
         </div>
     </div>
 
+
+    <!-- Modal -->
+    <div class="modal fade"  id="allowAudio" tabindex="-1" role="document" 
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="width: 250px;" role="document">
+            <div class="modal-content">
+                
+                <div class="modal-body">
+                    إستمع الى إلياذة الجزائر بينما انت تكتشف تاريخ و الجزائر
+                </div>
+                <div class="modal-footer d-flex flex-row justify-content-center align-items-center">
+                    <button style="width: 50px;" type="button" class="btn btn-danger close" id="closeModalAudio" data-bs-dismiss="modal">لا</button>
+                    <button style="width: 50px;" type="button" id="playAudio" class="btn btn-success" data-bs-dismiss="modal">نعم</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <div class="position-fixed bottom-0 mb-3 ms-3" style="width: fit-content; left: 0; z-index: 1">
         <button role="button" class="rounded-btn btn" id="muteBtn">
             <i class="fa-solid fa-volume-off"></i>
@@ -74,14 +95,16 @@
             <div class="container-lg container-xxl container-xl d-flex flex-row">
                 <!-- search bar and language link to switch -->
 
-                <div class="d-flex flex-row align-items-center">
+                <div class="d-sm-flex d-md-flex d-md-none d-flex flex-row align-items-center">
                     <!-- Menu button  -->
-                    <button class="d-sm-block d-md-block d-md-none navbar-toggler shadow-none me-3 text-white"
-                        type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                        aria-controls="offcanvasNavbar">
+                    <button class="navbar-toggler shadow-none text-white" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <!-- the menu humburger icon -->
                         <i class="fa-solid fa-bars fa-2x"></i>
                     </button>
+                </div>
+                <div class="petit-logo nav-link d-flex flex-row align-items-center">
+                    <img style="width: 50px;height: 50px;" src="./assets/images/logo.png" alt=".">
                 </div>
 
                 <!-- Main navigation -->
@@ -355,28 +378,46 @@
                 class="d-flex my-auto col-12 align-items-md-end flex-md-row flex-lg-row flex-xl-row align-items-sm-center justify-content-sm-center flex-sm-column flex-column-reverse position-relative">
                 <!-- the card with text the btn arrow down -->
                 <div
-                    class="slider1-text mt-auto mt-md-0 d-flex pe-5 flex-column animate__animated animate__fadeInRight col-lg-6 col-md-6 col-sm-10 align-items-start justify-content-center text-white">
+                    class="slider1-text mt-auto mt-md-0 d-flex pe-lg-5 pe-md-4 pe-sm-0 flex-column animate__animated animate__fadeInRight col-lg-6 col-md-6 col-sm-10 align-items-start justify-content-center text-white">
                     <div class="d-flex flex-column justify-content-around position-relative">
                         <span class="separator position-absolute"></span>
                         <h1 class="mb-3">
                             لنتعرف
                             <br />
-                            على تاريخ الجزائر
+                            على جزائر التاريخ
                         </h1>
                     </div>
-                    <p class="mb-0" style="text-align: justify">
-                        جزائر يا مطلع المعجزات ويا حجة الله في الكائنات ويا بسمة الرب في
-                        أرضه ويا وجهه الضاحك القسمات شغلنا الورى وملأ نا الدنيا بشعر نزلته
-                        كالصلاة تسابيحه من حنايا الجزائر
-                    </p>
+                    <div class="mb-0 chi3r">
+                        <p>جزائر يا مطـلع المعجزات</p>
+                        <p>و يا حجـة الله في الكـائنات</p>
+                        <br>
+                        <p>ويا بسمة الرّب في أرضـه</p>
+                        <p> يا وجهه الضاحك القسـمات</p>
+                        <div>
+                            <p>شغلنا الورى، وملأنا الدنا
+                                <br>
+                                بشـعر نرتـله كالـصلاة
+                                <br>
+                                تسابيحه من حنايا الجزائر
+                            </p>
+                        </div>
+                        <span>
+                            <p>
+                                إلياذة الجزائر
+                                <br>
+                                المؤلف: مفدي زكريا
+                            </p>
+                        </span>
+                    </div>
                 </div>
 
-                <div
-                    class="col-lg-6 mt-sm-auto col-md-6 mx-sm-auto mb-3 mt-auto mt-md-0 mt-auto animate__fadeInLeft animate__animated">
+                <div style="height:200px !important;"
+                    class="col-lg-6 mx-sm-auto mt-sm-auto col-md-6 mx-sm-auto mb-3 mt-auto mt-md-0 mt-auto animate__fadeInLeft animate__animated">
                     <div class="d-flex flex-column-reverse">
                         <!-- the tebboun's card  -->
                         <div id="teboucard" data-bs-toggle="" data-bs-target=".multi-collapse" aria-expanded="false"
-                            aria-controls="" class="teboun align-self-end p-4 mb-0 rounded-3 d-flex flex-row-reverse">
+                            aria-controls=""
+                            class="teboun align-self-lg-end p-3 align-self-md-end align-self-sm-center  rounded-3 d-flex flex-row-reverse">
                             <div class="pe-2">
                                 <div class="d-flex flex-column">
                                     <div class="d-flex flex-row-reverse justify-content-between">
@@ -388,7 +429,7 @@
                                     </div>
                                     <div id="tebountxt" style="text-align: justify"
                                         class="text-white multi-collapse collapse collapse-horizontal">
-                                        <p>
+                                        <p style="width: 75%;">
                                             هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء
                                             لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص
                                             أو شكل توضع
@@ -405,17 +446,21 @@
             </div>
             <!-- the bg video -->
             <div class="position-absolute align-self-center top-0 w-100 overflow-hidden h-100" style="z-index: -1">
-                <video src="./assets/videos/video landing page .mp4" autoplay loop style="
-              z-index: -1;
-              filter: brightness(50%);
-              width: 100vw;
-              height: 100vh;
-              object-fit: cover;
-              left: 0;
-              right: 0;
-              top: 0;
-              z-index: -1;
-            " class="d-block w-100" alt="..." />
+                <video autoplay muted style="
+                        z-index: -1;
+                        filter: brightness(50%);
+                        width: 100vw;
+                        height: 100vh;
+                        object-fit: cover;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        z-index: -1;
+            " class="d-block w-100">
+                    <source src="./assets/videos/video landing page .mp4">
+                    <source src="./assets/videos/video landing page .webm">
+                    <source src="./assets/videos/video-landing-page-.ogg">
+                </video>
             </div>
 
             <div
@@ -435,11 +480,10 @@
                 <!-- the title Tarikh majid -->
                 <div data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center"
                     class="me-lg-5 col-12 justify-content-end align-items-end">
-                    <h1 class="d-inline">
+                    <h1 class="d-block">
                         <span class="d-inline">
                             تاريخ مجيد
-                            <div class="separator position-absolute end-0"
-                                style="width: 550px; height: 70px; z-index: -1; bottom: -30px"></div>
+                            <div class="separator position-absolute end-0"></div>
                         </span>
                     </h1>
                 </div>
@@ -726,11 +770,11 @@
 
                 <!-- Read more articles  -->
                 <div class="w-100">
-                    <h3 style="color: #7fe0b2" class="me-5">مقالات عبر التاريخ</h3> 
+                    <h3 style="color: #7fe0b2" class="me-5">مقالات عبر التاريخ</h3>
 
                     <ul id="responsive" class="nav px-0 mt-4 d-flex flex-row">
                         <!-- element of read more  -->
-                        <li class="col p-1 ps-3 rounded-3 mx-1" style="background-color: rgba(255, 255, 255, 0.3)">
+                        <li class="col p-1 ps-3 rounded-3 mx-1 my-1" style="background-color: rgba(255, 255, 255, 0.3)">
                             <div>
                                 <div class="d-flex flex-row align-items-center justify-content-start">
                                     <div class="separator"></div>
@@ -742,12 +786,12 @@
                             </div>
                         </li>
                         <!-- element of read more  -->
-                        <li class="col p-1 ps-3 rounded-3 mx-1" style="background-color: rgba(255, 255, 255, 0.3)">
+                        <li class="col p-1 ps-3 rounded-3 mx-1 my-1" style="background-color: rgba(255, 255, 255, 0.3)">
                             <div>
                                 <div class="d-flex flex-row align-items-center justify-content-start">
                                     <div class="separator"></div>
                                     <a href="articledeplomasya_ar.html" class="nav-link pb-0 text-white">
-                                        الديبلوماسية الجزائرية  
+                                        الديبلوماسية الجزائرية
                                     </a>
                                 </div>
                             </div>
@@ -756,7 +800,7 @@
                             </div>
                         </li>
                         <!-- element of read more  -->
-                        <li class="col p-1 ps-3 rounded-3 mx-1" style="background-color: rgba(255, 255, 255, 0.3)">
+                        <li class="col p-1 ps-3 rounded-3 mx-1 my-1" style="background-color: rgba(255, 255, 255, 0.3)">
                             <div>
                                 <div class="d-flex flex-row align-items-center justify-content-start">
                                     <div class="separator"></div>
@@ -770,7 +814,7 @@
                             </div>
                         </li>
                         <!-- element of read more  -->
-                        <li class="col p-1 ps-3 rounded-3 mx-1"
+                        <li class="col p-1 ps-3 rounded-3 mx-1 my-1"
                             style="background-color: rgba(255, 255, 255, 0.3) !important">
                             <div>
                                 <div class="d-flex flex-row align-items-center justify-content-start">
@@ -784,7 +828,7 @@
                             </div>
                         </li>
                         <!-- element of read more  -->
-                        <li class="col p-1 ps-3 rounded-3 mx-1" style="background-color: rgba(255, 255, 255, 0.3)">
+                        <li class="col p-1 ps-3 rounded-3 mx-1 my-1" style="background-color: rgba(255, 255, 255, 0.3)">
                             <div>
                                 <div class="d-flex flex-row align-items-center justify-content-start">
                                     <div class="separator"></div>
@@ -1006,7 +1050,8 @@
                                 <div class="title pt-2">
                                     <a href="https://m-moudjahidine.dz/?p=4214" class="nav-link text-white"
                                         style="text-align: end">
-                                        <p>وزير المجاهدين و ذوي الحقوق السيد #العيد_ربيقة رفقة أصدقاء الثورة الجزائرية في عرض سينمائي لفيلم أسوار القلاع السبع</p>
+                                        <p>وزير المجاهدين و ذوي الحقوق السيد #العيد_ربيقة رفقة أصدقاء الثورة الجزائرية
+                                            في عرض سينمائي لفيلم أسوار القلاع السبع</p>
                                     </a>
                                 </div>
                             </li>
@@ -1032,7 +1077,8 @@
                                         style="text-align: end">
                                         <p>
                                             الوزيررموز و شخصيات وطنية
-                                            أستقبل أمسية الخميس 19 ماي 2022، السيد وزير المجاهدين وذوي الحقوق، بمقر الوزارة، السيدة روزانجيلا ماتيي والسيد ارولدو كورسي ماتيي                                        </p>
+                                            أستقبل أمسية الخميس 19 ماي 2022، السيد وزير المجاهدين وذوي الحقوق، بمقر
+                                            الوزارة، السيدة روزانجيلا ماتيي والسيد ارولدو كورسي ماتيي </p>
                                     </a>
                                 </div>
                             </li>
@@ -1059,9 +1105,10 @@
                                     <a href="https://m-moudjahidine.dz/?p=4214" class="nav-link text-white"
                                         style="text-align: end">
                                         <p>
-                                وزير المجاهدين و ذوي الحقوق السيد العيد ربيقة يشرف على ندوة تاريخية مخلدة لذاكرة المناضل موريس اودان ( 1932- 1957) بحضور نجله بيار أودان
+                                            وزير المجاهدين و ذوي الحقوق السيد العيد ربيقة يشرف على ندوة تاريخية مخلدة
+                                            لذاكرة المناضل موريس اودان ( 1932- 1957) بحضور نجله بيار أودان
 
-                            </p>
+                                        </p>
                                     </a>
                                 </div>
                             </li>
@@ -1080,7 +1127,7 @@
                     <img style="width: auto !important; height: 200px !important" src="./assets/images/logo.png"
                         alt="60 algeria logo independance" />
                 </div>
-             
+
                 <div class="p-4 pt-0 social">
                     <span>إتبعونا على</span>
                     <a href="#" class="nav-link d-inline" target="_blank" rel="noopener noreferrer"><i
@@ -1138,7 +1185,8 @@
                 <p class="p-4 pt-0 contacts-bislem-footer" dir="ltr">
                     <h3 class="py-3">إتصلو بنا على</h3>
 
-                    <a href="mailto:sinformatique@m-moudjahidine.dz" class="nav-link d-block text-black">sinformatique@m-moudjahidine.dz</a>
+                    <a href="mailto:sinformatique@m-moudjahidine.dz"
+                        class="nav-link d-block text-black">sinformatique@m-moudjahidine.dz</a>
                     <a href="tel:+213021923516" class="nav-link d-block text-black text-start">0 21 92 35 16</a>
                     <!-- جزائر يا مطلع المعجزات ويا حجة الله في الكائنات ويا بسمة الرب في أرضه ويا وجهه الضاحك القسمات شغلنا الورى وملأ نا الدنيا بشعر نزلته كالصلاة تسابيحه من حنايا الجزائر -->
                 </p>

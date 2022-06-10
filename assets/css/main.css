@@ -1424,7 +1424,7 @@ transition: transform ease .3s;
 }
 
 .carousel-item .offcanvas {
-  top: 60px;
+  top: 75px;
   background-color: #7fe0b2 !important;
   z-index: 1000000000000 !important;
   }
@@ -1443,3 +1443,10 @@ transition: transform ease .3s;
   
 }
 /*# sourceMappingURL=ar-bis.css.map */
+
+@media screen and (max-width: 650px) {
+  main.historyhome {
+    overflow-y: scroll !important;
+  }
+  
+}
