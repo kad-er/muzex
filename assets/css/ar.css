@@ -1,331 +1,330 @@
-/* Importing arabic fonts */
-@import url("../fonts/STV/style.css");
-@import url("../fonts/AlWatanHeadlines-Bold/style.css");
-@import url('../fonts/wazara/stylesheet.css');
+  /* Importing arabic fonts */
+  @import url("../fonts/STV/style.css");
+  @import url("../fonts/AlWatanHeadlines-Bold/style.css");
+  @import url('../fonts/wazara/stylesheet.css');
 
-#anniversary-logo h1 {
-  font-family: 'AlWatanHeadlines' !important;
-  font-size: 30px !important;
-  font-weight: 100 !important;
-}
+  #anniversary-logo h1 {
+    font-family: 'AlWatanHeadlines' !important;
+    font-size: 30px !important;
+    font-weight: 100 !important;
+  }
 
-#anniversary-logo img {
-  height: 90px !important;
-}
+  #anniversary-logo img {
+    height: 90px !important;
+  }
 
-nav a {
-  font-family: 'STV' !important;
-}
+  nav a {
+    font-family: 'STV' !important;
+  }
 
 
-.section-3 h1,
-.section-3 h2,
-.section-3 a,
-.section-3 h3,
-.section-4 h1,
-.section-4 h2,
-.section-4 a,
-.section-4 h3 {
-  font-family: 'AlWatanHeadlines' !important;
-}
+  .section-3 h1,
+  .section-3 h2,
+  .section-3 a,
+  .section-3 h3,
+  .section-4 h1,
+  .section-4 h2,
+  .section-4 a,
+  .section-4 h3 {
+    font-family: 'AlWatanHeadlines' !important;
+  }
 
-.section-6 .title {
-  font-family: 'AlWatanHeadlines';
-}
+  .section-6 .title {
+    font-family: 'AlWatanHeadlines';
+  }
 
-.section-6 .date,
-.section-6 .source {
-  font-family: 'STV' !important;
-}
+  .section-6 .date,
+  .section-6 .source {
+    font-family: 'STV' !important;
+  }
 
-.section-6 .youth h1,
-.section-6 .youth h2,
-.section-6 .youth h3 {
-  font-family: 'AlWatanHeadlines' !important;
-}
+  .section-6 .youth h1,
+  .section-6 .youth h2,
+  .section-6 .youth h3 {
+    font-family: 'AlWatanHeadlines' !important;
+  }
 
-.section-6 .youth p {
-  font-family: 'STV';
-}
+  .section-6 .youth p {
+    font-family: 'STV';
+  }
 
-.section-6 .cta-link {
-  font-family: 'STV';
-}
+  .section-6 .cta-link {
+    font-family: 'STV';
+  }
 
-footer .copy-rights,
-footer p,
-footer a,
-footer .input-group input {
-  font-family: 'STV';
-}
+  footer .copy-rights,
+  footer p,
+  footer a,
+  footer .input-group input {
+    font-family: 'STV';
+  }
 
-footer h3 {
-  font-family: 'AlWatanHeadlines';
-}
+  footer h3 {
+    font-family: 'AlWatanHeadlines';
+  }
 
-#mainSlider .slider1-text {
-  right: 10vw !important;
-  left: unset !important;
-  text-align: right;
-}
+  #mainSlider .slider1-text {
+    right: 10vw !important;
+    left: unset !important;
+    text-align: right;
+  }
 
-#mainSlider .slider1-text h2,
-#mainSlider .slider1-text h1 {
-  font-family: 'AlWatanHeadlines' !important;
-}
+  #mainSlider .slider1-text h2,
+  #mainSlider .slider1-text h1 {
+    font-family: 'AlWatanHeadlines' !important;
+  }
 
-#mainSlider .teboun h1 {
-  font-family: 'AlWatanHeadlines';
-}
+  #mainSlider .teboun h1 {
+    font-family: 'AlWatanHeadlines';
+  }
 
-#mainSlider .teboun small,
-#mainSlider .teboun p {
-  font-family: "STV";
-}
+  #mainSlider .teboun small,
+  #mainSlider .teboun p {
+    font-family: "STV";
+  }
 
-.small-secreen-read-more a,
-.small-secreen-read-more h1,
-.small-secreen-read-more h2,
-.small-secreen-read-more h3 {
-  font-family: 'AlWatanHeadlines' !important;
-}
+  .small-secreen-read-more a,
+  .small-secreen-read-more h1,
+  .small-secreen-read-more h2,
+  .small-secreen-read-more h3 {
+    font-family: 'AlWatanHeadlines' !important;
+  }
 
-.section-7 .nav>li>a {
-  font-family: 'Playfair Display' !important;
-}
+  .section-7 .nav>li>a {
+    font-family: 'Playfair Display' !important;
+  }
 
-.section-7 .carousel-inner h3 {
-  font-family: 'AlWatanHeadlines' !important;
-}
+  .section-7 .carousel-inner h3 {
+    font-family: 'AlWatanHeadlines' !important;
+  }
 
-.section-6 {
-  background-image: url("../images/martyrsMemorial.png");
-  background-repeat: no-repeat;
-  background-size: 594px auto;
-  background-position: center;
-}
+  .section-6 {
+    background-image: url("../images/martyrsMemorial.png");
+    background-repeat: no-repeat;
+    background-size: 594px auto;
+    background-position: center;
+  }
 
-.section-6 .separator {
-  background-color: #D21034;
-  width: 10vw;
-  min-width: 100px;
-}
+  .section-6 .separator {
+    background-color: #D21034;
+    width: 10vw;
+    min-width: 100px;
+  }
 
-.section-6 .nav {
-  margin-top: 400px;
-}
-
-@media screen and (max-width: 992px) {
   .section-6 .nav {
-    margin-top: 50px !important;
+    margin-top: 400px;
   }
-}
 
-.section-6 .source a {
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 20px;
-  letter-spacing: 0em;
-  padding: 0;
-  color: #181818;
-  text-align: left;
-}
-
-.section-6 .title a {
-  font-size: 24px !important;
-  font-weight: 500;
-  line-height: 32px;
-  text-align: left;
-  padding: 0;
-  color: #181818;
-}
-
-.section-6 .title a:hover {
-  color: #D21034;
-}
-
-.section-6 .youth p {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 29px;
-  letter-spacing: 0em;
-  text-align: justify;
-}
-
-.section-6 .youth .link {
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 15px;
-  letter-spacing: 0.07em;
-  text-align: left;
-  text-decoration: none;
-  color: #181818;
-}
-
-.section-6 .cta-link a {
-  font-size: 16px;
-  font-weight: 700;
-  text-align: left;
-  color: #D21034;
-  text-decoration: none;
-}
-
-.section-6 .cta-link img {
-  width: 55px;
-}
-
-.navigationdrawer .navigationdrawer-tabs {
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  background-color: #FFF1E2;
-  right: 0 !important;
-  left: unset;
-  width: inherit;
-}
-
-.navigationdrawer #pills-tabContent>div .sous-nav a {
-  font-size: 16px !important;
-  color: #181818 !important;
-}
-
-.navigationdrawer #pills-tabContent>div span {
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 63.98px;
-}
-
-.navigationdrawer #pills-tabContent>div>div>div>div>a {
-  color: #181818 !important;
-  font-size: 24px;
-}
-
-.navigationdrawer #pills-tabContent>div a.active {
-  background-color: transparent;
-  color: #D21034 !important;
-}
-
-.navigationdrawer #pills-tabContent>div a:hover {
-  color: #D21034 !important;
-}
-
-.navigationdrawer #pills-tabContent>div .separator {
-  margin: 10px 0 50px 0;
-  width: 90%;
-  background-color: #88BFA5;
-}
-
-.navigationdrawer>div>div>div>ul>li>a {
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 63.98px;
-}
-
-.navigationdrawer>div>div>div>ul>li>a.active {
-  background-color: transparent !important;
-  color: #D21034 !important;
-}
-
-.navigationdrawer .contacts>li {
-  text-align: right !important;
-  padding-top: 10px;
-}
-
-.navigationdrawer .contacts>li a {
-  text-decoration: none;
-  text-align: right !important;
-  font-family: 'Montserrat' !important;
-  display: block;
-  color: #1D1D1B;
-}
-
-.navigationdrawer .separator {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-/*# sourceMappingURL=ar.css.map */
-@media screen and (max-width: 460px) {
-  .slide-text-img {
-    height: 150px !important;
-    margin-top: 100px;
+  @media screen and (max-width: 992px) {
+    .section-6 .nav {
+      margin-top: 50px !important;
+    }
   }
-}
+
+  .section-6 .source a {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0em;
+    padding: 0;
+    color: #181818;
+    text-align: left;
+  }
+
+  .section-6 .title a {
+    font-size: 24px !important;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: left;
+    padding: 0;
+    color: #181818;
+  }
+
+  .section-6 .title a:hover {
+    color: #D21034;
+  }
+
+  .section-6 .youth p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: justify;
+  }
+
+  .section-6 .youth .link {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0.07em;
+    text-align: left;
+    text-decoration: none;
+    color: #181818;
+  }
+
+  .section-6 .cta-link a {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    color: #D21034;
+    text-decoration: none;
+  }
+
+  .section-6 .cta-link img {
+    width: 55px;
+  }
+
+  .navigationdrawer .navigationdrawer-tabs {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background-color: #FFF1E2;
+    right: 0 !important;
+    left: unset;
+    width: inherit;
+  }
+
+  .navigationdrawer #pills-tabContent>div .sous-nav a {
+    font-size: 16px !important;
+    color: #181818 !important;
+  }
+
+  .navigationdrawer #pills-tabContent>div span {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 63.98px;
+  }
+
+  .navigationdrawer #pills-tabContent>div>div>div>div>a {
+    color: #181818 !important;
+    font-size: 24px;
+  }
+
+  .navigationdrawer #pills-tabContent>div a.active {
+    background-color: transparent;
+    color: #D21034 !important;
+  }
+
+  .navigationdrawer #pills-tabContent>div a:hover {
+    color: #D21034 !important;
+  }
+
+  .navigationdrawer #pills-tabContent>div .separator {
+    margin: 10px 0 50px 0;
+    width: 90%;
+    background-color: #88BFA5;
+  }
+
+  .navigationdrawer>div>div>div>ul>li>a {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 63.98px;
+  }
+
+  .navigationdrawer>div>div>div>ul>li>a.active {
+    background-color: transparent !important;
+    color: #D21034 !important;
+  }
+
+  .navigationdrawer .contacts>li {
+    text-align: right !important;
+    padding-top: 10px;
+  }
+
+  .navigationdrawer .contacts>li a {
+    text-decoration: none;
+    text-align: right !important;
+    font-family: 'Montserrat' !important;
+    display: block;
+    color: #1D1D1B;
+  }
+
+  .navigationdrawer .separator {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  /*# sourceMappingURL=ar.css.map */
+  @media screen and (max-width: 460px) {
+    .slide-text-img {
+      height: 150px !important;
+      margin-top: 100px;
+    }
+  }
 
 
-/* page histrory home */
-.titre1 h3 {
-  font-family: 'AlWatanHeadlines';
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 64px;
-  letter-spacing: 0em;
-  text-align: right;
-  color: white;
+  /* page histrory home */
+  .titre1 h3 {
+    font-family: 'AlWatanHeadlines';
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: white;
 
 
-}
+  }
 
-.titre1 h3 p {
-  font-family: 'AlWatanHeadlines';
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 64px;
-  letter-spacing: 0em;
-  text-align: right;
-  color: white;
-
-
-}
-
-.titre1 p {
-  max-height: 200px;
-  font-family: STV;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: justify;
-  color: white;
-}
-
-.href-s a {
-  font-family: STV;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
-  text-align: right;
-  color: #1D1D1B;
-
-}
+  .titre1 h3 p {
+    font-family: 'AlWatanHeadlines';
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: white;
 
 
+  }
+
+  .titre1 p {
+    font-family: STV;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: justify;
+    color: white;
+  }
+
+  .href-s a {
+    font-family: STV;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #1D1D1B;
+
+  }
 
 
 
 
 
-/* nav page history home */
-
-.salim-nav li {
-  font-family: 'STV';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 31px;
-  color: white;
-}
-
-.nav li {
-  font-family: 'STV';
-  font-style: normal;
-  font-weight: 400;
-  line-height: 31px;
-  color: white;
-}
 
 
-*{
-  font-family: 'Janna LT' !important;
-}
+  /* nav page history home */
+
+  .salim-nav li {
+    font-family: 'STV';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 31px;
+    color: white;
+  }
+
+  .nav li {
+    font-family: 'STV';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31px;
+    color: white;
+  }
+
+
+  *{
+    font-family: 'Janna LT' !important;
+  }

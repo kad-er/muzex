@@ -20,10 +20,59 @@
 
 </head>
 
-<body dir="rtl" style="min-height: 100vh;">
+<body dir="rtl" style="min-height: 100vh;" class="position-relative">
 
+    <style>
+        #anniversary-logo {
+            width: 100vw;
+            height: 50px;
+            top: 70px !important;
+            left: 0;
+            overflow: none;
+            z-index: 3 !important;
+        }
 
-    <header id="header" class="fixed-top top-0 end-0 start-0">
+        #anniversary-logo h1 {
+            font-size: 30px !important;
+        }
+
+        #anniversary-logo img {
+            height: 90px !important;
+            width: 85px !important;
+        }
+
+        @media screen and (max-width: 960px) {
+            #anniversary-logo {
+                top: 70px !important;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            #anniversary-logo {
+                top: 50px !important;
+            }
+
+            #anniversary-logo h1 {
+                font-size: 25px !important;
+            }
+
+            #anniversary-logo img {
+                height: 70px !important;
+                width: 65px !important;
+            }
+        }
+    </style>
+
+    <!-- the 60 logo in the center -->
+    <div class="position-absolute top-0 left fade-in-down d-sm-none d-none d-md-block" id="anniversary-logo">
+        <div class="container d-flex flex-row align-items-center justify-content-center text-white">
+            <h1 class="col-5 w-auto d-inline">تاريخ مجيد</h1>
+            <img class="col-2 mx-3 text-center" src="./assets/images/logo.png"
+                alt="Algeria 60th anniversary indepence logo" />
+            <h1 class="col-5 w-auto d-inline">عهد جديد</h1>
+        </div>
+    </div>
+    <header style="z-index: 2;" id="header" class="fixed-top top-0 end-0 start-0">
         <nav class="navbar gradient transparent main-nav">
             <div class="container-lg container-xxl container-xl d-flex flex-row">
                 <!-- search bar and language link to switch -->
@@ -301,9 +350,8 @@
             </div>
         </nav>
     </header>
-    <div class="align-self-center position-relative justify-content-center">
 
-
+    <div style="z-index: 1;" class="align-self-center position-relative justify-content-center">
         <div id="my-carousel" class="carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="false"
             data-bs-pause="false" data-bs-wrap="false">
             <div class="carousel-inner min-vh-100 ">
@@ -321,7 +369,7 @@
                     </div>
 
                     <!-- Menu button -->
-                    <button
+                    <button style="z-index: 1;"
                         class="d-xs-block mt-5 mx-4 pt-3 d-sm-block d-md-none d-lg-none navbar-toggler position-absolute top-0 start-0 shadow-none me-3 text-white"
                         type="button" data-bs-toggle="offcanvas" data-bs-target="#s1-offcanvase"
                         aria-controls="s1-offcanvase">
@@ -381,12 +429,16 @@
                                         alt="banner-img">
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-md-12 col-lg-7 col-xl-8 px-5 titre1">
+                            <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7 offset-1 px-5 titre1">
                                 <h3>الجزائر في العصور
                                     <p style="color: #d21034;"> القديمة </p>
                                 </h3>
-                                <p>التاريخ القديم هي محصلة أو مجموع أحداث سابقة بدأت مع بداية تسجيل وكتابة تاريخ
-                                    البشرية، وامتدت حتى العصور القديمة المتأخرة</p>
+                                <p>
+                                    يعتبر التاريخ القديم أولى فترات تاريخ الإنسانية تسبقها فترة عصور ما قبل التاريخ وتعقبها فترة العصور الوسطى. وتعتبر الكتابة مؤشرا ماديا على بداية التاريخ القديم ، وهي حقيقة تاريخية مهمة للغاية سمحت للإنسان بتطوير وسيلة أكثر تقدمًا للتواصل
+                                    يعتبر التاريخ القديم أولى فترات تاريخ الإنسانية تسبقها فترة عصور ما قبل التاريخ وتعقبها فترة العصور الوسطى. وتعتبر الكتابة مؤشرا ماديا على بداية التاريخ القديم ، وهي حقيقة تاريخية مهمة للغاية سمحت للإنسان بتطوير وسيلة أكثر تقدمًا للتواصل
+                                    يعتبر التاريخ القديم أولى فترات تاريخ الإنسانية تسبقها فترة عصور ما قبل التاريخ وتعقبها فترة العصور الوسطى. وتعتبر الكتابة مؤشرا ماديا على بداية التاريخ القديم ، وهي حقيقة تاريخية مهمة للغاية سمحت للإنسان بتطوير وسيلة أكثر تقدمًا للتواصل
+                                
+                                </p>
                             </div>
                         </main>
                     </div>
@@ -429,7 +481,7 @@
                 <div class="carousel-item d-flex flex-column justify-content-center align-items-center vh-100" id="s2">
                     <!-- the bg img -->
                     <div class="position-absolute top-0 w-100 overflow-hidden d-flex" style="z-index: -1;">
-                        <img class="img-fluid" src="./assets/images/image 2@2x.png" alt="banner-img" style="z-index: -1;filter: brightness(50%); width: 100vw;
+                        <img class="img-fluid" src="./assets/images/aserwasite.svg" alt="banner-img" style="z-index: -1;filter: brightness(50%); width: 100vw;
                                     height: 100vh;
                                     object-fit: cover;
                                     left: 0;
@@ -460,13 +512,13 @@
                                 <li class="nav-item my-2 href-s">
                                     <span class="separator w-100"></span>
                                     <a class="nav-link active" href="prehistoric-ar.html">
-                                        الفتح الاسلامي
+                                        الجزائر والفتح الاسلامي
                                     </a>
                                 </li>
                                 <li class="nav-item my-2 href-s">
                                     <span class="separator w-100"></span>
                                     <a class="nav-link" href="prehistoric-ar.html" tabindex="-1" aria-disabled="true">
-                                        العهد العثماني
+                                        الجزائر في عهد الدويلات الاسلامية 
                                     </a>
                                 </li>
 
@@ -490,7 +542,7 @@
                         </div>
 
                         <main
-                            class="col-sm-11 d-flex flex-lg-row flex-xl-row flex-xxl-row flex-md-column flex-sm-column flex-column mt-5 mb-5 justify-content-center align-items-center text-align-center">
+                            class=" historyhome col-sm-11 d-flex flex-lg-row flex-xl-row flex-xxl-row flex-md-column flex-sm-column flex-column mt-5 mb-5 justify-content-center align-items-center text-align-center">
                             <div class="col-sm-12 col-md-12 col-lg-3 col-xl-4 align-self-center">
                                 <div class="d-flex align-items-center justify-content-center">
                                     <img class="img-fluid slide-text-img" src="./assets/images/Ellipse 93.svg"
@@ -499,11 +551,58 @@
                             </div>
                             <div class="col-sm-12 col-md-12 col-lg-9 col-xl-8 px-5 titre1">
                                 <h3>الجزائر في العصر
-                                    <p style="color: #d21034;"> اﻹسلامي </p>
+                                    <p style="color: #d21034;"> الوسيط </p>
                                 </h3>
                                 <p>وصل الإسلام إلى الجزائر في عهد الدولة الأموية في أعقاب الفتح في عملية استغرقت فترة
-                                    طويلة من سنة 670 إلى سنة 71</p>
+                                    طويلة من سنة 670 إلى سنة 71
+                                    طويلة من سنة 670 إلى سنة 71
+                                    طويلة من سنة 670 إلى سنة 71
+                                    طويلة من سنة 670 إلى سنة 71
+                                    طويلة من سنة 670 إلى سنة 71
+                                    طويلة من سنة 670 إلى سنة 71
+                                    طويلة من سنة 670 إلى سنة 71
+                                    طويلة من سنة 670 إلى سنة 71
+                                    طويلة من سنة 670 إلى سنة 71
+                                    طويلة من سنة 670 إلى سنة 71
+                                    طويلة من سنة 670 إلى سنة 71
+                                    طويلة من سنة 670 إلى سنة 71
+                                    طويلة من سنة 670 إلى سنة 71
+                                    طويلة من سنة 670 إلى سنة 71
+                                    طويلة من سنة 670 إلى سنة 71
+                                    طويلة من سنة 670 إلى سنة 71
+                                    طويلة من سنة 670 إلى سنة 71
+                                    طويلة من سنة 670 إلى سنة 71
+                                
+<!--                                 
+                                    <ul id="historyhome_ul">
+                                        <li>
+                                            <a href="#">hmm</a>
+                                            <a href="#">hmm</a>
+                                            <a href="#">hmm</a>
+                                            <a href="#">hmm</a>
+                                            <a href="#">hmm</a>
+                                            <a href="#">hmm</a>
+                                            <a href="#">hmm</a>
+                                            <a href="#">hmm</a>
+                                            <a href="#">hmm</a>
+                                            <a href="#">hmm</a>
+                                            <a href="#">hmm</a>
+                                            <a href="#">hmm</a>
+                                            <a href="#">hmm</a>
+                                            <a href="#">hmm</a>
+                                            <a href="#">hmm</a>
+                                            <a href="#">hmm</a>
+                                        </li>
+                                    </ul> -->
+                                </p>
                             </div>
+                            <style>
+                                main{
+                                    height: 100% !important;
+                                    overflow-y: scroll !important;
+                                }
+                             
+                            </style >
                         </main>
                     </div>
 
@@ -518,23 +617,18 @@
                                 <li class="nav-item d-flex flex-column-reverse text-center">
                                     <a href="prehistoric-ar.html" class="nav-link text-white">
                                         <div class="separator"></div>
-                                        الفتح الاسلامي
+                                        الجزائر والفتح الاسلامي 
                                     </a>
                                 </li>
 
                                 <li class="nav-item d-flex flex-column-reverse text-center">
                                     <a href="prehistoric-ar.html" class="nav-link text-white">
                                         <div class="separator"></div>
-                                        العهد العثماني
+                                        الجزائر في عهد الدويلات الاسلامية
                                     </a>
                                 </li>
 
-                                <li class="nav-item d-flex flex-column-reverse text-center">
-                                    <a href="prehistoric-ar.html" class="nav-link text-white">
-                                        <div class="separator"></div>
-                                        التاريخ القديم
-                                    </a>
-                                </li>
+                                
 
 
 
@@ -548,151 +642,10 @@
 
                 <!-- third item -->
 
-                <div class="carousel-item d-flex flex-column justify-content-center align-items-center vh-100" id="s3">
-                    <!-- the bg img -->
-                    <div class="position-absolute top-0 w-100 overflow-hidden d-flex" style="z-index: -1;">
-                        <img class="img-fluid" src="./assets/images/image3.png" alt="banner-img" style="z-index: -1;filter: brightness(50%); width: 100vw;
-                                    height: 100vh;
-                                    object-fit: cover;
-                                    left: 0;
-                                    right: 0;
-                                    top: 0;
-                                    z-index: -1;" class="d-block w-100" alt="..." />
-                    </div>
-                    <!-- Menu button -->
-                    <button
-                        class="d-xs-block mt-5 mx-4 pt-3 d-sm-block d-md-none d-lg-none navbar-toggler position-absolute top-0 start-0 shadow-none me-3 text-white"
-                        type="button" data-bs-toggle="offcanvas" data-bs-target="#s3-offcanvase"
-                        aria-controls="s1-offcanvase">
-                        <!-- the menu humburger icon -->
-                        <i class="fas fa-ellipsis fa-2x"></i>
-                    </button>
-
-
-                    <div class="offcanvas offcanvas-end" tabindex="2" id="s3-offcanvase"
-                        aria-labelledby="offcanvasExampleLabel" style="background-color: #A4E2C5B2; z-index: 99999999;">
-                        <div class="offcanvas-header ">
-                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <nav class="nav flex-column">
-                                <li class="nav-item my-2 href-s">
-                                    <span class="separator w-25 "></span>
-                                    <a class="nav-link active" href="prehistoric-ar.html">
-                                        ثورة التحرير الوطني
-                                    </a>
-                                </li>
-                                <li class="nav-item my-2 href-s">
-                                    <span class="separator w-25"></span>
-                                    <a class="nav-link" href="prehistoric-ar.html" tabindex="-1"
-                                        aria-disabled="true">الحركة الوطنية
-                                    </a>
-                                </li>
-
-
-                                <li class="nav-item my-2 href-s">
-                                    <span class="separator w-25"></span>
-                                    <a class="nav-link" href="prehistoric-ar.html" tabindex="-1" aria-disabled="true">
-                                        المقاومة الشعبية
-                                    </a>
-                                </li>
-
-                                <li class="nav-item my-2 href-s">
-                                    <span class="separator w-25"></span>
-                                    <a class="nav-link" href="prehistoric-ar.html" tabindex="-1" aria-disabled="true">
-                                        الجزائر قبيل الاحتلال
-                                    </a>
-                                </li>
-
-
-                            </nav>
-                        </div>
-                    </div>
-
-
-                    <div
-                        class="d-flex flex-lg-row flex-xl-row flex-xxl-row flex-md-column flex-sm-column align-items-center">
-                        <div class="align-self-center col px-2">
-                            <div class="offcanvas offcanvas-start w-100">
-                                <div class="offcanvas-header">
-                                    <h1 class="offcanvas-title"></h1>
-                                </div>
-                                <div class="offcanvas-body">
-                                </div>
-                            </div>
-                        </div>
-
-                        <main
-                            class="col-sm-11 d-flex flex-lg-row flex-xl-row flex-xxl-row flex-md-column flex-sm-column flex-column mt-5 mb-5 justify-content-center align-items-center text-align-center">
-                            <div class="col-sm-12 col-md-12 col-lg-3 col-xl-4 align-self-center">
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <img class="img-fluid slide-text-img" src="./assets/images/Ellipse 93.svg"
-                                        alt="banner-img">
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-12 col-lg-9 col-xl-8 px-5 titre1">
-                                <h3> الجزائر في التاريخ
-                                    <p style="color: #d21034;"> المعاصر </p>
-                                </h3>
-                                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز
-                                    على الشكل
-                                    الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة
-                                    لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ</p>
-                            </div>
-                        </main>
-                    </div>
-
-                    <footer
-                        class="d-none container d-md-block d-lg-block d-xl-block d-flex flex-row justify-content-start w-100"
-                        style="background-color:transparent; margin-right: 2%">
-                        <!-- secondary navigation  -->
-                        <nav>
-                            <ul class="salim-nav d-flex flex-row ">
-                                <!-- add active class to <a> tag to make it active  -->
-
-                                <li class="nav-item mx-2 d-flex flex-column-reverse text-center">
-                                    <a href="prehistoric-ar.html " class="nav-link text-white">
-                                        <div class="separator"></div>
-                                        ثورة التحرير الوطني
-                                    </a>
-                                </li>
-
-                                <li class="nav-item mx-2 d-flex flex-column-reverse text-center">
-                                    <a href="prehistoric-ar.html" class="nav-link text-white">
-                                        <div class="separator"></div>
-                                        الحركة الوطنية
-                                    </a>
-                                </li>
-                                <li class="nav-item mx-2 d-flex flex-column-reverse text-center">
-                                    <a href="prehistoric-ar.html" class="nav-link text-white">
-                                        <div class="separator"></div>
-                                        المقاومة الشعبية
-                                    </a>
-                                </li>
-                                <li class="nav-item mx-2 d-flex flex-column-reverse text-center">
-                                    <a href="prehistoric-ar.html" class="nav-link text-white">
-                                        <div class="separator"></div>
-                                        الجزائر قبيل الاحتلال
-                                    </a>
-                                </li>
-
-
-
-                            </ul>
-                        </nav>
-                    </footer>
-
-
-                </div>
-
-
-                <!-- foor item -->
-
                 <div class="carousel-item d-flex flex-column justify-content-center align-items-center vh-100" id="s4">
                     <!-- the bg img -->
                     <div class="position-absolute top-0 w-100 overflow-hidden d-flex" style="z-index: -1;">
-                        <img class="img-fluid" src="./assets/images/image3.png" alt="banner-img" style="z-index: -1;filter: brightness(50%); width: 100vw;
+                        <img class="img-fluid" src="./assets/images/aserhadith.svg" alt="banner-img" style="z-index: -1;filter: brightness(50%); width: 100vw;
                                     height: 100vh;
                                     object-fit: cover;
                                     left: 0;
@@ -700,6 +653,7 @@
                                     top: 0;
                                     z-index: -1;" class="d-block w-100" alt="..." />
                     </div>
+                    
 
                     <!-- Menu button -->
                     <button
@@ -869,6 +823,150 @@
                 </div>
 
 
+                <!-- foor item -->
+
+
+                <div class="carousel-item d-flex flex-column justify-content-center align-items-center vh-100" id="s3">
+                    <!-- the bg img -->
+                    <div class="position-absolute top-0 w-100 overflow-hidden d-flex" style="z-index: -1;">
+                        <img class="img-fluid" src="./assets/images/mo3asire.svg" alt="banner-img" style="z-index: -1;filter: brightness(50%); width: 100vw;
+                                    height: 200vh;
+                                    object-fit: cover;
+                                    left: 0;
+                                    right: 0;
+                                    top: 0;
+                                    z-index: -1;" class="d-block w-100" alt="..." />
+                    </div>
+                    <!-- Menu button -->
+                    <button
+                        class="d-xs-block mt-5 mx-4 pt-3 d-sm-block d-md-none d-lg-none navbar-toggler position-absolute top-0 start-0 shadow-none me-3 text-white"
+                        type="button" data-bs-toggle="offcanvas" data-bs-target="#s3-offcanvase"
+                        aria-controls="s1-offcanvase">
+                        <!-- the menu humburger icon -->
+                        <i class="fas fa-ellipsis fa-2x"></i>
+                    </button>
+
+
+                    <div class="offcanvas offcanvas-end" tabindex="2" id="s3-offcanvase"
+                        aria-labelledby="offcanvasExampleLabel" style="background-color: #A4E2C5B2; z-index: 99999999;">
+                        <div class="offcanvas-header ">
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <nav class="nav flex-column">
+                                <li class="nav-item my-2 href-s">
+                                    <span class="separator w-25 "></span>
+                                    <a class="nav-link active" href="prehistoric-ar.html">
+                                        ثورة التحرير الوطني
+                                    </a>
+                                </li>
+                                <li class="nav-item my-2 href-s">
+                                    <span class="separator w-25"></span>
+                                    <a class="nav-link" href="prehistoric-ar.html" tabindex="-1"
+                                        aria-disabled="true">الحركة الوطنية
+                                    </a>
+                                </li>
+
+
+                                <li class="nav-item my-2 href-s">
+                                    <span class="separator w-25"></span>
+                                    <a class="nav-link" href="prehistoric-ar.html" tabindex="-1" aria-disabled="true">
+                                        المقاومة الشعبية
+                                    </a>
+                                </li>
+
+                                <li class="nav-item my-2 href-s">
+                                    <span class="separator w-25"></span>
+                                    <a class="nav-link" href="prehistoric-ar.html" tabindex="-1" aria-disabled="true">
+                                        الجزائر قبيل الاحتلال
+                                    </a>
+                                </li>
+
+
+                            </nav>
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="d-flex flex-lg-row flex-xl-row flex-xxl-row flex-md-column flex-sm-column align-items-center">
+                        <div class="align-self-center col px-2">
+                            <div class="offcanvas offcanvas-start w-100">
+                                <div class="offcanvas-header">
+                                    <h1 class="offcanvas-title"></h1>
+                                </div>
+                                <div class="offcanvas-body">
+                                </div>
+                            </div>
+                        </div>
+
+                        <main
+                            class="col-sm-11 d-flex flex-lg-row flex-xl-row flex-xxl-row flex-md-column flex-sm-column flex-column mt-5 mb-5 justify-content-center align-items-center text-align-center">
+                            <div class="col-sm-12 col-md-12 col-lg-3 col-xl-4 align-self-center">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img class="img-fluid slide-text-img" src="./assets/images/Ellipse 93.svg"
+                                        alt="banner-img">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-9 col-xl-8 px-5 titre1">
+                                <h3> الجزائر في التاريخ
+                                    <p style="color: #d21034;"> المعاصر </p>
+                                </h3>
+                                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز
+                                    على الشكل
+                                    الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة
+                                    لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ</p>
+                            </div>
+                        </main>
+                    </div>
+
+                    <footer
+                        class="d-none container d-md-block d-lg-block d-xl-block d-flex flex-row justify-content-start w-100"
+                        style="background-color:transparent; margin-right: 2%">
+                        <!-- secondary navigation  -->
+                        <nav>
+                            <ul class="salim-nav d-flex flex-row ">
+                                <!-- add active class to <a> tag to make it active  -->
+
+                                <li class="nav-item mx-2 d-flex flex-column-reverse text-center">
+                                    <a href="prehistoric-ar.html " class="nav-link text-white">
+                                        <div class="separator"></div>
+                                        ثورة التحرير الوطني
+                                    </a>
+                                </li>
+
+                                <li class="nav-item mx-2 d-flex flex-column-reverse text-center">
+                                    <a href="prehistoric-ar.html" class="nav-link text-white">
+                                        <div class="separator"></div>
+                                        الحركة الوطنية
+                                    </a>
+                                </li>
+                                <li class="nav-item mx-2 d-flex flex-column-reverse text-center">
+                                    <a href="prehistoric-ar.html" class="nav-link text-white">
+                                        <div class="separator"></div>
+                                        المقاومة الشعبية
+                                    </a>
+                                </li>
+                                <li class="nav-item mx-2 d-flex flex-column-reverse text-center">
+                                    <a href="prehistoric-ar.html" class="nav-link text-white">
+                                        <div class="separator"></div>
+                                        الجزائر قبيل الاحتلال
+                                    </a>
+                                </li>
+
+
+
+                            </ul>
+                        </nav>
+                    </footer>
+
+
+                </div>
+
+                
+
+
                 <div class="d-flex align-items-end">
 
                     <button class="carousel-control-prev p-2 rounded-3 bislem-history-btn" type="button"
@@ -884,17 +982,17 @@
 
             </div>
 
+        </div>
+    </div>
+    <script>
+        const elCarousel = document.getElementById('my-carousel');
 
-
-            <script>
-                const elCarousel = document.getElementById('my-carousel');
-
-                window.addEventListener('load', () => {
-                    var id = window.location.toString().split('#')[1]
-                    if (!id) id = 1
-                    document.getElementById(`s${id}`).classList.add('active')
-                })
-            </script>
+        window.addEventListener('load', () => {
+            var id = window.location.toString().split('#')[1]
+            if (!id) id = 1
+            document.getElementById(`s${id}`).classList.add('active')
+        })
+    </script>
 
 </body>
 

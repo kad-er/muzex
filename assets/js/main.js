@@ -3,8 +3,7 @@ const menuTabs = document.getElementById("menu-tabs");
 const mainSlider = document.getElementById("main-slider");
 const header = document.getElementById("header");
 const mutebtn = document.getElementById("muteBtn");
-var audio = document.getElementById('audio')
-
+var audio = document.getElementById("audio");
 
 function myFunction(imgs) {
   // Get the expanded image
@@ -19,11 +18,18 @@ function myFunction(imgs) {
   expandImg.parentElement.style.display = "block";
 }
 
+$(document).ready(function () {
+  $("#allowAudio").modal("show");
+});
 
 window.addEventListener("load", ui);
 var audio;
 // the ui function
 function ui() {
+   // Fix up for prefixing
+   window.AudioContext = window.AudioContext||window.webkitAudioContext;
+   context = new AudioContext();
+   
   //getting the navigation drawer buttons
   for (let i = 0; i < tabTriggers.length; i++) {
     let tt = tabTriggers[i];
@@ -33,7 +39,7 @@ function ui() {
     });
   }
   let paused = true;
-  mutebtn.addEventListener("click", () => {
+  const toggleAudio = () => {
     if (paused) {
       audio.play();
       paused = !paused;
@@ -41,6 +47,7 @@ function ui() {
         "fa-volume-off",
         "fa-volume-high"
       );
+      audio.resume();
     } else {
       paused = !paused;
       audio.pause();
@@ -49,6 +56,13 @@ function ui() {
         "fa-volume-off"
       );
     }
+  };
+
+  mutebtn.addEventListener("click", () => {
+    toggleAudio();
+  });
+  document.getElementById("playAudio").addEventListener("click", () => {
+    toggleAudio();
   });
 
   //init the aos annimation

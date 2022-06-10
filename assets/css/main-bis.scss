@@ -100,7 +100,6 @@
     left: 0;
     overflow: none;
     z-index: 1;
-
     h1 {
         font-size: 30px !important;
     }
@@ -220,11 +219,7 @@ header.add-shadow {
             line-height: 70px !important;
         }
 
-        p {
-            font-size: 20px !important;
-            font-weight: 500;
 
-        }
     }
 
     @media screen and (max-width: 700px) {
@@ -235,9 +230,6 @@ header.add-shadow {
             line-height: 60px !important;
         }
 
-        p {
-            font-size: 17px !important;
-        }
     }
 
     @media screen and (max-width: 400px) {
@@ -246,10 +238,6 @@ header.add-shadow {
         h2 {
             font-size: 40px !important;
             line-height: 40px !important;
-        }
-
-        p {
-            font-size: 17px !important;
         }
     }
 
@@ -345,6 +333,55 @@ header.add-shadow {
 #mainSlider {
     height: inherit;
 
+    .chi3r {
+        margin: 0;
+
+        &>p {
+            display: inline-block !important;
+            width: 230px !important;
+            margin: 0px 0 !important;
+            text-align: center !important;
+        }
+
+        &>div {
+            width: 230px;
+            margin: 0 auto;
+        }
+
+        &>div>p {
+            display: block;
+            text-align: center !important;
+            margin: 0;
+        }
+        span p{
+            font-size: 13px !important;
+        }
+
+        @media screen and (max-width: 1135px) {
+            margin: 0 auto;
+            p,
+            &>div {
+                width: 170px !important;
+            }
+
+            & p {
+                font-size: 15px !important;
+            }
+        }
+
+        @media screen and (max-width: 360px) {
+
+            p,
+            &>div {
+                width: 120px !important;
+            }
+
+            p {
+                font-size: 10px !important;
+            }
+        }
+    }
+
 
     .nav {
         a {
@@ -427,8 +464,11 @@ header.add-shadow {
     }
 }
 
+
+
 body {
     background-color: #1D1D1B;
+    overflow-y: hidden !important;
 }
 
 html {
@@ -436,7 +476,7 @@ html {
 }
 
 
-#jdida{
+#jdida {
     min-height: 100vh !important;
     box-sizing: border-box !important;
 
@@ -463,6 +503,22 @@ html {
 
     .separator {
         width: 32px;
+    }
+
+    h1 {
+        span{
+            display: inline-block;
+            width: fit-content !important;
+            overflow: hidden;
+            position: relative;
+        }
+   
+        .separator {
+            width: 100% !important;
+            height: 70px;
+            z-index: -1;
+            bottom: 30px
+        }
     }
 
     h1 * {
@@ -507,8 +563,6 @@ html {
         a:hover {
             color: #7FE0B2;
             transition: transform ease .5s;
-            transform: scale(1.1);
-
             &>.separator {
                 background-color: #D21034;
             }
@@ -1122,36 +1176,39 @@ html {
     }
 }
 
-.contacts-bislem-footer{
-    a{
+.contacts-bislem-footer {
+    a {
         color: black !important;
     }
 }
 
 .section-jadid {
     min-height: 100vh;
+
     h1 {
         font-size: 100px;
         line-height: 100px;
     }
 
     @media (max-width: 992px) {
-        h1{
+        h1 {
             font-size: 70px;
         }
-        img{
-            width: 100%;
-            transform: none !important; 
-        }
 
-        
+        img {
+            width: 100%;
+            transform: none !important;
+        }
     }
+
     .slider1-text {
         padding-left: 150px !important;
         display: inline-block !important;
+
         @media (max-width: 992px) {
             padding: 20px !important;
         }
+
         h2 {
             font-size: 80px !important;
             line-height: 80px !important;
@@ -1160,6 +1217,6 @@ html {
         p {
             font-size: 18px !important;
         }
-        
+
     }
 }
