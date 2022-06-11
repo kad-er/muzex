@@ -100,6 +100,7 @@
     left: 0;
     overflow: none;
     z-index: 1;
+
     h1 {
         font-size: 30px !important;
     }
@@ -333,55 +334,6 @@ header.add-shadow {
 #mainSlider {
     height: inherit;
 
-    .chi3r {
-        margin: 0;
-
-        &>p {
-            display: inline-block !important;
-            width: 230px !important;
-            margin: 0px 0 !important;
-            text-align: center !important;
-        }
-
-        &>div {
-            width: 230px;
-            margin: 0 auto;
-        }
-
-        &>div>p {
-            display: block;
-            text-align: center !important;
-            margin: 0;
-        }
-        span p{
-            font-size: 13px !important;
-        }
-
-        @media screen and (max-width: 1135px) {
-            margin: 0 auto;
-            p,
-            &>div {
-                width: 170px !important;
-            }
-
-            & p {
-                font-size: 15px !important;
-            }
-        }
-
-        @media screen and (max-width: 360px) {
-
-            p,
-            &>div {
-                width: 120px !important;
-            }
-
-            p {
-                font-size: 10px !important;
-            }
-        }
-    }
-
 
     .nav {
         a {
@@ -454,9 +406,6 @@ header.add-shadow {
             padding: 0;
         }
 
-        small {
-            font-size: 16px;
-        }
 
         p {
             margin: 0;
@@ -498,7 +447,9 @@ html {
 
 
     @media screen and (max-width: 500px) {
+        padding: 10px;
         padding-top: 50px;
+
     }
 
     .separator {
@@ -506,13 +457,13 @@ html {
     }
 
     h1 {
-        span{
+        span {
             display: inline-block;
             width: fit-content !important;
             overflow: hidden;
             position: relative;
         }
-   
+
         .separator {
             width: 100% !important;
             height: 70px;
@@ -563,6 +514,7 @@ html {
         a:hover {
             color: #7FE0B2;
             transition: transform ease .5s;
+
             &>.separator {
                 background-color: #D21034;
             }
@@ -1214,9 +1166,64 @@ html {
             line-height: 80px !important;
         }
 
-        p {
-            font-size: 18px !important;
+    }
+}
+
+
+
+
+
+.chi3r {
+    margin: 0;
+
+    &>p {
+        display: inline-block !important;
+        width: 230px !important;
+        margin: 0px 0 !important;
+        text-align: center !important;
+    }
+
+    &>div {
+        width: 230px;
+        margin: 0 auto;
+    }
+
+    &>div>p {
+        display: block;
+        text-align: center !important;
+        margin: 0;
+    }
+
+    span p {
+        font-size: 13px !important;
+    }
+
+    @media screen and (max-width: 1135px) {
+        margin: 0 auto;
+
+        p,
+        &>div {
+            width: 170px !important;
         }
 
+        & p {
+            font-size: 15px !important;
+        }
+    }
+
+    small {
+        font-size: 16px;
+    }
+
+    @media screen and (max-width: 360px) {
+
+        p,
+        &>div {
+            width: 120px !important;
+        }
+
+        p {
+            font-size: 10px !important;
+        }
     }
 }

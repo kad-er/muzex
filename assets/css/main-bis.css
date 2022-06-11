@@ -294,55 +294,6 @@ header.add-shadow {
   height: inherit;
 }
 
-#mainSlider .chi3r {
-  margin: 0;
-}
-
-#mainSlider .chi3r > p {
-  display: inline-block !important;
-  width: 230px !important;
-  margin: 0px 0 !important;
-  text-align: center !important;
-}
-
-#mainSlider .chi3r > div {
-  width: 230px;
-  margin: 0 auto;
-}
-
-#mainSlider .chi3r > div > p {
-  display: block;
-  text-align: center !important;
-  margin: 0;
-}
-
-#mainSlider .chi3r span p {
-  font-size: 13px !important;
-}
-
-@media screen and (max-width: 1135px) {
-  #mainSlider .chi3r {
-    margin: 0 auto;
-  }
-  #mainSlider .chi3r p,
-  #mainSlider .chi3r > div {
-    width: 170px !important;
-  }
-  #mainSlider .chi3r p {
-    font-size: 15px !important;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  #mainSlider .chi3r p,
-  #mainSlider .chi3r > div {
-    width: 120px !important;
-  }
-  #mainSlider .chi3r p {
-    font-size: 10px !important;
-  }
-}
-
 #mainSlider .nav a {
   font-size: 20px;
   color: #FFFFFF;
@@ -411,10 +362,6 @@ header.add-shadow {
   padding: 0;
 }
 
-#mainSlider .teboun small {
-  font-size: 16px;
-}
-
 #mainSlider .teboun p {
   margin: 0;
 }
@@ -450,6 +397,7 @@ html {
 
 @media screen and (max-width: 500px) {
   .section-3 {
+    padding: 10px;
     padding-top: 50px;
   }
 }
@@ -1182,7 +1130,56 @@ html {
   line-height: 80px !important;
 }
 
-.section-jadid .slider1-text p {
-  font-size: 18px !important;
+.chi3r {
+  margin: 0;
+}
+
+.chi3r > p {
+  display: inline-block !important;
+  width: 230px !important;
+  margin: 0px 0 !important;
+  text-align: center !important;
+}
+
+.chi3r > div {
+  width: 230px;
+  margin: 0 auto;
+}
+
+.chi3r > div > p {
+  display: block;
+  text-align: center !important;
+  margin: 0;
+}
+
+.chi3r span p {
+  font-size: 13px !important;
+}
+
+@media screen and (max-width: 1135px) {
+  .chi3r {
+    margin: 0 auto;
+  }
+  .chi3r p,
+  .chi3r > div {
+    width: 170px !important;
+  }
+  .chi3r p {
+    font-size: 15px !important;
+  }
+}
+
+.chi3r small {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 360px) {
+  .chi3r p,
+  .chi3r > div {
+    width: 120px !important;
+  }
+  .chi3r p {
+    font-size: 10px !important;
+  }
 }
 /*# sourceMappingURL=main-bis.css.map */

@@ -49,9 +49,41 @@
 ########################################################################################################################################################################################################################################################################################
 ######################################################################################################################################################################################################################################################################################## -->
 
-<body dir="rtl">
-    <!-- Header containing the main slider and the navigation and the search bar -->
-    <!-- the 60 logo in the center -->
+<body dir="rtl" class="position-relative overflow-hidden vw-100 vh-100">
+    <div id="myvideocontainer" class="position-absolute top-0 end-0 vh-100 vw-100 bg-dark" style="z-index: 1111111;">
+        <video id="myVideo" autoplay muted style="
+        z-index: -1;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: -1;
+" class="d-block w-100">
+            <source src="./assets/videos/loading.mp4">
+        </video>
+    </div>
+    
+    <script type='text/javascript'>
+        const entred = sessionStorage.getItem('loaded');
+        if(entred && entred == 'yes'){
+            hideVideo();
+        }else{
+            sessionStorage.setItem('loaded','yes')
+            document.getElementById('myVideo').addEventListener('ended',hideVideo,false);
+        }
+        function hideVideo() {
+            document.body.classList.remove('overflow-hidden');
+            document.body.classList.remove('vh-100');
+            document.body.classList.remove('vw-100');
+            document.getElementById("myvideocontainer").classList.add('d-none');
+        }
+        </script>
+
+<!-- Header containing the main slider and the navigation and the search bar -->
+            <!-- the 60 logo in the center -->
+
     <div class="position-absolute top-0 left fade-in-down" id="anniversary-logo">
         <div class="container d-flex flex-row align-items-center justify-content-center text-white">
             <h1 class="col-5 w-auto d-inline">تاريخ مجيد</h1>
@@ -63,17 +95,18 @@
 
 
     <!-- Modal -->
-    <div class="modal fade"  id="allowAudio" tabindex="-1" role="document" 
-        aria-hidden="true">
+    <div class="modal fade" id="allowAudio" tabindex="-1" role="document" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" style="width: 250px;" role="document">
             <div class="modal-content">
-                
+
                 <div class="modal-body">
                     إستمع الى إلياذة الجزائر بينما انت تكتشف تاريخ و الجزائر
                 </div>
                 <div class="modal-footer d-flex flex-row justify-content-center align-items-center">
-                    <button style="width: 50px;" type="button" class="btn btn-danger close" id="closeModalAudio" data-bs-dismiss="modal">لا</button>
-                    <button style="width: 50px;" type="button" id="playAudio" class="btn btn-success" data-bs-dismiss="modal">نعم</button>
+                    <button style="width: 50px;" type="button" class="btn btn-danger close" id="closeModalAudio"
+                        data-bs-dismiss="modal">لا</button>
+                    <button style="width: 50px;" type="button" id="playAudio" class="btn btn-success"
+                        data-bs-dismiss="modal">نعم</button>
                 </div>
             </div>
         </div>
